@@ -15,7 +15,10 @@ export async function createPresentation({jsPDF, data, prices, readBase64}) {
     pdf.setFont(font,'normal');pdf.setFontSize(size);pdf.setTextColor(color);
     const clean=String(value).replace(/[\u00a0\u202f]/g,' ');
     const lines=width?pdf.splitTextToSize(clean,width):clean.split('\n');
-    pdf.text(lines,x,y,{lineHeightFactor:1.45});return y+lines.length*size*1.45;
+    // jsPDF reads the base outlines of variable Montserrat (its light master).
+    // A proportional outline keeps the embedded text legible at presentation size.
+    pdf.setDrawColor(color);pdf.setLineWidth(font==='Body'?size*.025:0);
+    pdf.text(lines,x,y,{lineHeightFactor:1.45,renderingMode:font==='Body'?'fillThenStroke':'fill'});return y+lines.length*size*1.45;
   }
   function line(x1,y,x2=W-42){pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.line(x1,y,x2,y);}
   function page(label,title,subtitle=''){
