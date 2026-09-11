@@ -1,40 +1,341 @@
 {
-  "brand": "Ameli Rental", "status": "prototype",
-  "packages": [{"guests":20,"price":null},{"guests":30,"price":null},{"guests":40,"price":null},{"guests":50,"price":null},{"guests":60,"price":null},{"guests":70,"price":null},{"guests":80,"price":null},{"guests":90,"price":null},{"guests":100,"price":null}],
+  "brand": "Ameli Rental",
+  "status": "prototype",
+  "packages": [
+    {
+      "guests": 20,
+      "price": null
+    },
+    {
+      "guests": 30,
+      "price": null
+    },
+    {
+      "guests": 40,
+      "price": null
+    },
+    {
+      "guests": 50,
+      "price": null
+    },
+    {
+      "guests": 60,
+      "price": null
+    },
+    {
+      "guests": 70,
+      "price": null
+    },
+    {
+      "guests": 80,
+      "price": null
+    },
+    {
+      "guests": 90,
+      "price": null
+    },
+    {
+      "guests": 100,
+      "price": null
+    }
+  ],
   "ceremony": [
-    {"id":"C01","title":"Жемчужная волна","description":"Мягкие линии и светлая драпировка.","image":"assets/ceremony-pearl.jpg","alt":"Волнообразный задник церемонии с жемчужной драпировкой"},
-    {"id":"C02","title":"Оливковый акцент","description":"Светлая основа и природная палитра.","image":"assets/ceremony-green.jpg","alt":"Пример церемонии со светлой драпировкой и оливковым текстилем"},
-    {"id":"C03","title":"Розовая история","description":"Нежная палитра с розовым акцентом.","image":"assets/ceremony-pink.jpg","alt":"Пример зоны церемонии с розовым текстилем"}
+    {
+      "id": "C01",
+      "title": "Белатрикс",
+      "description": "Кокосовый раф. Волнообразный задник с декоративными цветами.",
+      "image": "assets/catalog-ceremony-20790.jpg",
+      "alt": "Зона церемонии на 40 гостей c флористикой",
+      "catalogName": "Зона церемонии на 40 гостей c флористикой",
+      "catalogId": 20790,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20790"
+    },
+    {
+      "id": "C02",
+      "title": "Кастор",
+      "description": "Жемчужные колонны с декоративными цветами.",
+      "image": "assets/catalog-ceremony-20995.jpg",
+      "alt": "Зона церемонии на 40 гостей с флористикой",
+      "catalogName": "Зона церемонии на 40 гостей с флористикой",
+      "catalogId": 20995,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20995"
+    },
+    {
+      "id": "C03",
+      "title": "Белатрикс в розовом",
+      "description": "Бледно-розовая драпировка. Вариант цветового оформления.",
+      "image": "assets/catalog-ceremony-20040.jpg",
+      "alt": "Зона церемонии на 28 гостей",
+      "catalogName": "Зона церемонии на 28 гостей",
+      "catalogId": 20040,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20040"
+    }
   ],
   "tableCompositions": [
-    {"id":"T01","title":"Низкая композиция","description":"Компактная искусственная флористика в центре стола. Сохраняет обзор для гостей.","image":null,"draft":true},
-    {"id":"T02","title":"Воздушная композиция","description":"Более свободный силуэт с зеленью и цветами в общей палитре.","image":null,"draft":true}
+    {
+      "id": "T01",
+      "title": "Равенкло + Лавгуд",
+      "description": "Набор подсвечников и светодиодных свечей.",
+      "image": "assets/catalog-compositions-18855.jpg",
+      "alt": "Набор подсвечников \"Равенкло\" и светодиодные свечи \"Лавгуд\"",
+      "catalogName": "Набор подсвечников \"Равенкло\" и светодиодные свечи \"Лавгуд\"",
+      "catalogId": 18855,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18855"
+    },
+    {
+      "id": "T02",
+      "title": "Рути + Лавгуд",
+      "description": "Подсвечник «Рути+9» со светодиодными свечами.",
+      "image": "assets/catalog-compositions-18856.jpg",
+      "alt": "Подсвечник \"Рути+9\" прозначный и светодиодные свечи \"Лавгуд\"",
+      "catalogName": "Подсвечник \"Рути+9\" прозначный и светодиодные свечи \"Лавгуд\"",
+      "catalogId": 18856,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18856"
+    },
+    {
+      "id": "T03",
+      "title": "Эрукто · белый",
+      "description": "Набор светодиодных свечей с пультом.",
+      "image": "assets/catalog-compositions-4127.jpg",
+      "alt": "Набор свечей с пультом  \"Эрукто\" белый",
+      "catalogName": "Набор свечей с пультом  \"Эрукто\" белый",
+      "catalogId": 4127,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4127"
+    },
+    {
+      "id": "T04",
+      "title": "Эрукто · дымчатый",
+      "description": "Набор светодиодных свечей с пультом.",
+      "image": "assets/catalog-compositions-4132.jpg",
+      "alt": "Набор свечей с пультом \"Эрукто\" дымчатый",
+      "catalogName": "Набор свечей с пультом \"Эрукто\" дымчатый",
+      "catalogId": 4132,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4132"
+    },
+    {
+      "id": "T05",
+      "title": "Эрукто · золотой",
+      "description": "Набор светодиодных свечей с пультом.",
+      "image": "assets/catalog-compositions-4137.jpg",
+      "alt": "Набор свечей с пультом \"Эрукто\" золотой",
+      "catalogName": "Набор свечей с пультом \"Эрукто\" золотой",
+      "catalogId": 4137,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4137"
+    },
+    {
+      "id": "T06",
+      "title": "Эванеско 20",
+      "description": "Светильник-шар для композиции на столе.",
+      "image": "assets/catalog-compositions-18116.jpg",
+      "alt": "Светильник шар \"Эванеско 20\"",
+      "catalogName": "Светильник шар \"Эванеско 20\"",
+      "catalogId": 18116,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18116"
+    }
   ],
-  "presidiumFlorals": [
-    {"id":"F01","title":"По центру","description":"Одна вытянутая композиция из искусственных цветов на столе пары.","image":null,"draft":true},
-    {"id":"F02","title":"Асимметрия","description":"Акцентная композиция со смещением к одной стороне президиума.","image":null,"draft":true},
-    {"id":"F03","title":"Два акцента","description":"Парные искусственные композиции по краям стола.","image":null,"draft":true}
-  ],
+  "presidiumFlorals": [],
   "presidiumBackdrops": [
-    {"id":"B01","title":"Мягкая драпировка","description":"Текстильный задник с плавными складками.","image":null,"draft":true},
-    {"id":"B02","title":"Волна","description":"Объёмный задник из нескольких драпированных секций.","image":null,"draft":true},
-    {"id":"B03","title":"Лаконичная линия","description":"Спокойный однотонный фон, который выделяет флористику.","image":null,"draft":true}
+    {
+      "id": "P01",
+      "title": "Альфа Центавра",
+      "description": "Арка с драпировкой. Жемчужный бархат.",
+      "image": "assets/catalog-backdrops-20036.jpg",
+      "alt": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
+      "catalogName": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
+      "catalogId": 20036,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20036"
+    },
+    {
+      "id": "P02",
+      "title": "Полярис",
+      "description": "Задник с драпировкой. Бледно-розовый бархат.",
+      "image": "assets/catalog-backdrops-20018.jpg",
+      "alt": "Задник \"Полярис\" с драпировкой, бледно-розовый бархат",
+      "catalogName": "Задник \"Полярис\" с драпировкой, бледно-розовый бархат",
+      "catalogId": 20018,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20018"
+    },
+    {
+      "id": "P03",
+      "title": "Мира",
+      "description": "Набор задников с драпировкой. Жемчужный бархат.",
+      "image": "assets/catalog-backdrops-19137.jpg",
+      "alt": "Набор задников  \"Мира\"  с драпировкой, жемчужный бархат",
+      "catalogName": "Набор задников  \"Мира\"  с драпировкой, жемчужный бархат",
+      "catalogId": 19137,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19137"
+    },
+    {
+      "id": "P04",
+      "title": "Белатрикс",
+      "description": "Волнообразный задник. Светло-зелёный бархат.",
+      "image": "assets/catalog-backdrops-19135.jpg",
+      "alt": "Задник \"Белатрикс\" с драпировкой, светло-зеленый бархат",
+      "catalogName": "Задник \"Белатрикс\" с драпировкой, светло-зеленый бархат",
+      "catalogId": 19135,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19135"
+    }
   ],
   "napkins": [
-    {"id":"N01","title":"Пломбир","description":"Светлая нейтральная основа.","image":"assets/napkin-pearl.jpg","alt":"Салфетка Альфа в цвете пломбир"},
-    {"id":"N02","title":"Олива","description":"Природный зелёный оттенок.","image":"assets/napkin-olive.jpg","alt":"Оливковая салфетка Альфа"},
-    {"id":"N03","title":"Нежно-розовый","description":"Мягкий цветовой акцент.","image":"assets/napkin-pink.jpg","alt":"Бледно-розовая бархатная салфетка"}
+    {
+      "id": "N01",
+      "title": "Снежная",
+      "description": "Салфетка «Альфа».",
+      "image": "assets/catalog-napkins-5749.jpg",
+      "alt": "Салфетка \"Альфа\" снежная",
+      "catalogName": "Салфетка \"Альфа\" снежная",
+      "catalogId": 5749,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5749"
+    },
+    {
+      "id": "N02",
+      "title": "Пломбир",
+      "description": "Салфетка «Альфа».",
+      "image": "assets/catalog-napkins-5689.jpg",
+      "alt": "Салфетка \"Альфа\" пломбир",
+      "catalogName": "Салфетка \"Альфа\" пломбир",
+      "catalogId": 5689,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5689"
+    },
+    {
+      "id": "N03",
+      "title": "Бледно-розовая",
+      "description": "Бархатная салфетка «Бета».",
+      "image": "assets/catalog-napkins-5786.jpg",
+      "alt": "Салфетка бархатная \"Бета\" бледно-розовая",
+      "catalogName": "Салфетка бархатная \"Бета\" бледно-розовая",
+      "catalogId": 5786,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5786"
+    },
+    {
+      "id": "N04",
+      "title": "Роза мента",
+      "description": "Салфетка канвас «Гамма».",
+      "image": "assets/catalog-napkins-2914.jpg",
+      "alt": "Салфетка канвас \"Гамма\" роза мента",
+      "catalogName": "Салфетка канвас \"Гамма\" роза мента",
+      "catalogId": 2914,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2914"
+    },
+    {
+      "id": "N05",
+      "title": "Светло-серая",
+      "description": "Салфетка «Альфа».",
+      "image": "assets/catalog-napkins-2817.jpg",
+      "alt": "Салфетка \"Альфа\" светло-серая",
+      "catalogName": "Салфетка \"Альфа\" светло-серая",
+      "catalogId": 2817,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2817"
+    },
+    {
+      "id": "N06",
+      "title": "Шоколадная",
+      "description": "Салфетка «Шелк».",
+      "image": "assets/catalog-napkins-23491.jpg",
+      "alt": "Салфетка \"Шелк\" шоколадная",
+      "catalogName": "Салфетка \"Шелк\" шоколадная",
+      "catalogId": 23491,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491"
+    }
   ],
   "palette": [
-    {"name":"Снежный","hex":"#F9F9F5"},{"name":"Айвори","hex":"#F1EBDE"},{"name":"Пломбир","hex":"#E6DDCD"},{"name":"Шампань","hex":"#D8C4A4"},{"name":"Песочный","hex":"#C5B193"},
-    {"name":"Пудровый","hex":"#DFC3C0"},{"name":"Роза","hex":"#CDA7A6"},{"name":"Персиковый","hex":"#E3B096"},{"name":"Терракота","hex":"#B56F56"},{"name":"Бордо","hex":"#733C46"},
-    {"name":"Фисташка","hex":"#C3CCB6"},{"name":"Шалфей","hex":"#A4B39B"},{"name":"Олива","hex":"#818970"},{"name":"Лесной","hex":"#485E4D"},{"name":"Небесный","hex":"#BDD0D9"},
-    {"name":"Пыльно-синий","hex":"#8B9EA9"},{"name":"Лавандовый","hex":"#B9ADC7"},{"name":"Серый жемчуг","hex":"#C1C0BA"},{"name":"Графит","hex":"#676767"},{"name":"Чёрный","hex":"#2F302F"}
+    {
+      "name": "Снежный",
+      "hex": "#F9F9F5"
+    },
+    {
+      "name": "Айвори",
+      "hex": "#F1EBDE"
+    },
+    {
+      "name": "Пломбир",
+      "hex": "#E6DDCD"
+    },
+    {
+      "name": "Шампань",
+      "hex": "#D8C4A4"
+    },
+    {
+      "name": "Песочный",
+      "hex": "#C5B193"
+    },
+    {
+      "name": "Пудровый",
+      "hex": "#DFC3C0"
+    },
+    {
+      "name": "Роза",
+      "hex": "#CDA7A6"
+    },
+    {
+      "name": "Персиковый",
+      "hex": "#E3B096"
+    },
+    {
+      "name": "Терракота",
+      "hex": "#B56F56"
+    },
+    {
+      "name": "Бордо",
+      "hex": "#733C46"
+    },
+    {
+      "name": "Фисташка",
+      "hex": "#C3CCB6"
+    },
+    {
+      "name": "Шалфей",
+      "hex": "#A4B39B"
+    },
+    {
+      "name": "Олива",
+      "hex": "#818970"
+    },
+    {
+      "name": "Лесной",
+      "hex": "#485E4D"
+    },
+    {
+      "name": "Небесный",
+      "hex": "#BDD0D9"
+    },
+    {
+      "name": "Пыльно-синий",
+      "hex": "#8B9EA9"
+    },
+    {
+      "name": "Лавандовый",
+      "hex": "#B9ADC7"
+    },
+    {
+      "name": "Серый жемчуг",
+      "hex": "#C1C0BA"
+    },
+    {
+      "name": "Графит",
+      "hex": "#676767"
+    },
+    {
+      "name": "Чёрный",
+      "hex": "#2F302F"
+    }
   ],
   "terms": [
-    {"title":"Доставка и монтаж","text":"Доставка, монтаж и вывоз входят в пакет в пределах МКАД. За МКАД к доставке добавляется 170 ₽ за километр."},
-    {"title":"Логистика площадки","text":"Стандартный расчёт действует для зала на первом этаже или при наличии грузового лифта. При сложной логистике доплата за грузчиков составляет 3 000–10 000 ₽."},
-    {"title":"Бронирование и оплата","text":"70% при бронировании даты. Остаток — за 7 дней до мероприятия."},
-    {"title":"Варианты оформления","text":"Цвет, конкретные композиции и задники согласуем перед бронированием. Фото показывают стилистику. Состав пакета указан отдельно: мебель, посуда и свечи на фото в него не входят."}
+    {
+      "title": "Доставка и монтаж",
+      "text": "Доставка, монтаж и вывоз входят в пакет в пределах МКАД. За МКАД к доставке добавляется 170 ₽ за километр."
+    },
+    {
+      "title": "Логистика площадки",
+      "text": "Стандартный расчёт действует для зала на первом этаже или при наличии грузового лифта. При сложной логистике доплата за грузчиков составляет 3 000–10 000 ₽."
+    },
+    {
+      "title": "Бронирование и оплата",
+      "text": "70% при бронировании даты. Остаток — за 7 дней до мероприятия."
+    },
+    {
+      "title": "Варианты оформления",
+      "text": "Конкретные варианты оформления и наличие на дату подтвердим перед бронированием. Для столов предусмотрены композиции без флористики. Посадочные места, дорожка, столы и посуда на фотографиях не включены в пакет и согласуются отдельно."
+    }
   ]
 }

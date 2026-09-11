@@ -1,0 +1,158 @@
+{
+  "catalog": "https://catalog.ameli-rental.ru",
+  "retrievedAt": "2026-09-11",
+  "assets": [
+    {
+      "section": "ceremony",
+      "id": 20790,
+      "name": "Зона церемонии на 40 гостей c флористикой",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ccb63a8f-f836-4318-8e3f-33c88f3804fa_арка_волна_тотал_кокос_раф_цветы.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20790",
+      "image": "assets/catalog-ceremony-20790.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20995,
+      "name": "Зона церемонии на 40 гостей с флористикой",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/6391584f-4064-47c2-a654-4b80ab1f852b_Колонны_жемчуг_рюфики.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20995",
+      "image": "assets/catalog-ceremony-20995.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20040,
+      "name": "Зона церемонии на 28 гостей",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/fea89754-9fbd-456b-92cd-8eb3ab2592a6_арка_волна_розовая_фиолет.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20040",
+      "image": "assets/catalog-ceremony-20040.jpg"
+    },
+    {
+      "section": "backdrops",
+      "id": 20036,
+      "name": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/6fa10dc3-1cf4-4ec2-8f9e-a742733df1ff_Арка_центавра_жемчужныи.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20036",
+      "image": "assets/catalog-backdrops-20036.jpg"
+    },
+    {
+      "section": "backdrops",
+      "id": 20018,
+      "name": "Задник \"Полярис\" с драпировкой, бледно-розовый бархат",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ca986278-a79b-4be4-b61c-76318dc3cba1_полярис_драпировка_бледно_розовыи.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20018",
+      "image": "assets/catalog-backdrops-20018.jpg"
+    },
+    {
+      "section": "backdrops",
+      "id": 19137,
+      "name": "Набор задников  \"Мира\"  с драпировкой, жемчужный бархат",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/edb5ac3b-f99f-4bd1-b541-ca6fc4f24b81_каркас_волна_с_драпировкои_прямоуг_жемчуг.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19137",
+      "image": "assets/catalog-backdrops-19137.jpg"
+    },
+    {
+      "section": "backdrops",
+      "id": 19135,
+      "name": "Задник \"Белатрикс\" с драпировкой, светло-зеленый бархат",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/f30d3bfe-1d27-467d-8e5e-44ff03dc269e_image_18.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19135",
+      "image": "assets/catalog-backdrops-19135.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 18855,
+      "name": "Набор подсвечников \"Равенкло\" и светодиодные свечи \"Лавгуд\"",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/c701f928-9491-4c5a-8415-5083fd6fe39c_image_1.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18855",
+      "image": "assets/catalog-compositions-18855.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 18856,
+      "name": "Подсвечник \"Рути+9\" прозначный и светодиодные свечи \"Лавгуд\"",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1cbe4ff4-d3ee-4835-993d-5ab1f0d1d6bb_image_2.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18856",
+      "image": "assets/catalog-compositions-18856.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 4127,
+      "name": "Набор свечей с пультом  \"Эрукто\" белый",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/589e432d-af4c-48d8-86c1-f270b3f15bf4_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4127",
+      "image": "assets/catalog-compositions-4127.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 4132,
+      "name": "Набор свечей с пультом \"Эрукто\" дымчатый",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ecee203e-caec-45f3-8cd1-fed062f55e2e_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4132",
+      "image": "assets/catalog-compositions-4132.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 4137,
+      "name": "Набор свечей с пультом \"Эрукто\" золотой",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/e6ee1c42-c3c9-4515-af2d-2fab1c08da02_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4137",
+      "image": "assets/catalog-compositions-4137.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 18116,
+      "name": "Светильник шар \"Эванеско 20\"",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1a6bb013-b9e8-43e4-b40d-d09cf1c908ff_шарик_Д.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18116",
+      "image": "assets/catalog-compositions-18116.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5749,
+      "name": "Салфетка \"Альфа\" снежная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/506b4bfd-48d9-4903-a853-b855ccfdd060_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5749",
+      "image": "assets/catalog-napkins-5749.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5689,
+      "name": "Салфетка \"Альфа\" пломбир",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/019616bd-09b3-47a9-8468-b6b950567b29_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5689",
+      "image": "assets/catalog-napkins-5689.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5786,
+      "name": "Салфетка бархатная \"Бета\" бледно-розовая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/70ed3772-72c1-4883-bdc4-a3ccdc401585_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5786",
+      "image": "assets/catalog-napkins-5786.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2914,
+      "name": "Салфетка канвас \"Гамма\" роза мента",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1f390be1-4535-47f8-b235-95947e1ef726_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2914",
+      "image": "assets/catalog-napkins-2914.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2817,
+      "name": "Салфетка \"Альфа\" светло-серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/d6c6752d-5d05-4dcc-88b4-e9fced1676ff_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2817",
+      "image": "assets/catalog-napkins-2817.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 23491,
+      "name": "Салфетка \"Шелк\" шоколадная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/d9cc9e11-12cc-4d61-af49-89fab6d1cf97_салфетка_шелк_шоколадная.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491",
+      "image": "assets/catalog-napkins-23491.jpg"
+    }
+  ]
+}

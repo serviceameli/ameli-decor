@@ -1,1 +1,1 @@
-{"name":"ameli-decor-collection","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/model.test.mjs","dev":"python3 -u -m http.server 7791 --bind 127.0.0.1"}}
+{"name":"ameli-decor-collection","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/model.test.mjs","dev":"python3 -u -m http.server 7792 --bind 127.0.0.1"}}

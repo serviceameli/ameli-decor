@@ -1,30 +1,43 @@
 import { parsePrice, formatPrice, packageCounts, validatePrices } from './model.mjs';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const galleryCard = (item) => `<figure><button class="gallery-image" data-image="${escape(item.image)}" data-caption="${escape(item.title)}" aria-label="Увеличить: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="zoom" aria-hidden="true">↗</span></button><figcaption><div class="caption-title"><h3>${escape(item.title)}</h3><span class="caption-code">${escape(item.id)}</span></div><p>${escape(item.description)}</p></figcaption></figure>`;
-const contentRows = (items) => items.map((item) => `<div class="content-row"><span>${escape(item.id)}</span><div><h3>${escape(item.title)}</h3><p>${escape(item.description)}</p>${item.draft ? '<span class="provisional">Предварительный вариант · фото уточняются</span>' : ''}</div></div>`).join('');
-const extraGallery = (items) => items.some((item) => item.image) ? `<div class="gallery three detail-gallery">${items.filter((item) => item.image).map(galleryCard).join('')}</div>` : '';
+const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
+const galleryCard = (item) => `<figure><button class="gallery-image" data-image="${escape(item.image)}" data-caption="${escape(item.catalogName || item.title)}" aria-label="Увеличить: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="zoom" aria-hidden="true">↗</span></button><figcaption><span class="caption-code">${escape(item.id)}</span><h3>${escape(item.title)}</h3><p>${escape(item.description)}</p><a class="catalog-source" href="${escape(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">В каталоге ↗</a></figcaption></figure>`;
 let data;
+let selectedGuests=40;
 try {
-  const response = await fetch('content.json');
-  if (!response.ok) throw new Error('content unavailable');
-  data = await response.json(); render(data);
-} catch (error) {
-  document.querySelectorAll('[data-export]').forEach((button) => { button.disabled = true; });
-  $('#price-rows').innerHTML = '<tr><td colspan="4">Не удалось загрузить коллекцию. Обновите страницу.</td></tr>';
-  console.error('Не удалось загрузить коллекцию', error);
+  const response=await fetch('content.json');if(!response.ok)throw new Error('content unavailable');
+  data=await response.json();render(data);
+} catch(error) {
+  document.querySelectorAll('[data-export]').forEach(button=>{button.disabled=true;});
+  $('#package-summary').textContent='Не удалось загрузить предложение. Обновите страницу.';
+  console.error('Не удалось загрузить коллекцию',error);
 }
 function render(content) {
-  $('#ceremony-gallery').innerHTML = content.ceremony.filter((item) => item.image).map(galleryCard).join('');
-  $('#tables').innerHTML = `<div class="split"><figure><button class="gallery-image split-picture" data-image="assets/table-green.jpg" data-caption="Пример цветового сочетания. В пакет входят флористика и салфетки." aria-label="Увеличить пример сервировки"><img src="assets/table-green.jpg" alt="Оливковые салфетки в сервировке гостевого стола" loading="lazy"><span class="zoom" aria-hidden="true">↗</span></button><figcaption class="small-note">Пример сочетания цветов. Мебель, посуда и свечи на фотографиях не входят в этот пакет.</figcaption></figure><div><span class="eyebrow">Гостевые столы</span><h2>Детали, которые<br>собирают всё вместе</h2><p>На каждый стол — одна флористическая композиция. На каждого гостя — цветная салфетка.</p><div class="content-rows">${contentRows(content.tableCompositions)}</div><p class="small-note">1 стол на 10 гостей. Для 60 гостей — 6 столов, 6 композиций и 60 салфеток.</p></div></div>${extraGallery(content.tableCompositions)}`;
-  $('#presidium-content').innerHTML = `<div class="section-heading"><div><span class="eyebrow">Президиум</span><h2>Главный акцент<br>вашей истории</h2></div><p>Оформление стола пары: искусственная флористика и задник. По одному варианту из каждого раздела входит в пакет.</p></div><div class="presidium-columns"><div><h3>Флористика на столе</h3>${contentRows(content.presidiumFlorals)}</div><div><h3>Задник за президиумом</h3>${contentRows(content.presidiumBackdrops)}</div></div>${extraGallery([...content.presidiumFlorals, ...content.presidiumBackdrops])}`;
-  $('#textile').innerHTML = `<div class="section-heading"><div><span class="eyebrow">Цветные салфетки</span><h2>Небольшая деталь.<br>Общее настроение.</h2></div><p>По одной салфетке на гостя. Текстиль поддерживает цвет церемонии, композиций и президиума.</p></div><div class="gallery three">${content.napkins.filter((item) => item.image).map(galleryCard).join('')}</div><p class="small-note">Примеры текстиля из коллекции. Остальные оттенки — в палитре ниже.</p>`;
-  $('#swatches').innerHTML = content.palette.map((color,i) => `<div class="swatch"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex) ? color.hex : '#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span><span class="swatch-number">${String(i+1).padStart(2,'0')}</span></div>`).join('');
-  $('#terms-list').innerHTML = content.terms.map((term,i) => `<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}</p></div></article>`).join('');
-  $('#price-rows').innerHTML = content.packages.map((item) => { const c=packageCounts(item.guests); return `<tr><td>${item.guests}</td><td>${c.tables} / ${c.compositions}</td><td>${c.napkins} шт.</td><td>${item.price == null ? 'Цена уточняется' : formatPrice(item.price)}</td></tr>`; }).join('');
-  if (content.packages.every((item) => item.price != null)) $('.price-note').textContent = 'Стоимость для организаторов. Цены для клиента вы задаёте при скачивании PDF.';
-  $('#export-fields').innerHTML = content.packages.map((item) => `<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
+  for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');
+  $('#guest-options').innerHTML=content.packages.map(item=>`<button class="guest-button" type="button" data-guests="${item.guests}" aria-pressed="${item.guests===selectedGuests}" aria-label="Пакет на ${item.guests} гостей">${item.guests}</button>`).join('');
+  $('#swatches').innerHTML=content.palette.map(color=>`<div class="swatch"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></div>`).join('');
+  $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}</p></div></article>`).join('');
+  $('#price-rows').innerHTML=content.packages.map(item=>{const c=packageCounts(item.guests);return `<tr data-package-row="${item.guests}"><td>${item.guests}</td><td>1 зона</td><td>1 зона</td><td>${c.tables} / ${c.compositions}</td><td>${c.napkins} шт.</td><td>${item.price==null?'Цена уточняется':formatPrice(item.price)}</td></tr>`;}).join('');
+  if(content.packages.every(item=>item.price!=null))$('.price-note').textContent='Стоимость для организаторов. Цены для клиента вы задаёте при скачивании PDF.';
+  $('#export-fields').innerHTML=content.packages.map(item=>`<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
+  updatePackage(selectedGuests);
 }
+function updatePackage(guests) {
+  const c=packageCounts(guests);selectedGuests=guests;
+  const cards=[
+    {href:'ceremony',title:'Зона церемонии',image:data.ceremony[0].image,count:'1 зона',note:'на выбор'},
+    {href:'presidium',title:'Зона президиума',image:data.presidiumBackdrops[0].image,count:'1 зона',note:'на выбор'},
+    {href:'tables',title:'Композиции на стол',image:data.tableCompositions[0].image,count:`${c.compositions} ${plural(c.compositions,'композиция','композиции','композиций')}`,note:`на ${c.tables} ${plural(c.tables,'стол','стола','столов')}`},
+    {href:'textile',title:'Салфетки',image:data.napkins[0].image,count:`${c.napkins} ${plural(c.napkins,'салфетка','салфетки','салфеток')}`,note:'по числу гостей'}
+  ];
+  $('#package-summary').innerHTML=cards.map(card=>`<a class="summary-card" href="#${card.href}"><div class="summary-photo"><img src="${escape(card.image)}" alt="${escape(card.title)}" decoding="async"></div><div class="summary-copy"><h3>${card.title}</h3><div class="summary-count"><b>${card.count}</b><span>${card.note} ↗</span></div></div></a>`).join('');
+  $('#table-quantity').textContent=`${c.compositions} ${plural(c.compositions,'композиция','композиции','композиций')} на ${c.tables} ${plural(c.tables,'стол','стола','столов')}`;
+  $('#napkin-quantity').textContent=`${c.napkins} ${plural(c.napkins,'салфетка','салфетки','салфеток')}`;
+  document.querySelectorAll('[data-guests]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.guests)===guests)));
+  document.querySelectorAll('[data-package-row]').forEach(row=>row.classList.toggle('is-selected',Number(row.dataset.packageRow)===guests));
+}
+$('#guest-options').addEventListener('click',event=>{const button=event.target.closest('[data-guests]');if(button&&data)updatePackage(Number(button.dataset.guests));});
 const exportDialog = $('#export-dialog');
 document.querySelectorAll('[data-export]').forEach((button) => button.addEventListener('click', () => { if (data) exportDialog.showModal(); }));
 $('#close-export').addEventListener('click', () => exportDialog.close());
