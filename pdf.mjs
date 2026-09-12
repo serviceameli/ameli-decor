@@ -50,23 +50,70 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
   }
   if(selection){
     const c=selection.counts;
-    page('Ваше оформление','Пакет декора на '+selection.guests+' гостей','Выбранное оформление для согласования с менеджером Ameli Rental.');
-    text(formatPrice(selection.price),46,199,36,'Display');
-    text('Стоимость пакета',46,224,10,'Body',mid);
-    text(selection.palette.length?`Выбрано оттенков: ${selection.palette.length}`:'Цветовая гамма пока не выбрана',438,224,10,'Body',mid);
-    const counts=['1 зона · задник и искусственная флористика','1 зона · задник и искусственная флористика',`Композиции без флористики: ${c.compositions}; столы: ${c.tables}`,`${c.napkins} цветных салфеток`];
-    selection.sections.forEach((section,i)=>{
-      const x=46+(i%2)*392,y=285+Math.floor(i/2)*102;
-      text(section.title,x,y,25,'Display');text(counts[i],x,y+24,10,'Body',mid,350);
-      text(section.items.length?`Отмечено вариантов: ${section.items.length}`:'Варианты пока не выбраны',x,y+45,9,'Body',mid);
-    });
-    text('Для каждого раздела — один вариант оформления. Цена зависит от количества гостей.',46,483,10,'Body',mid,W-92);
-    text('Доставка, монтаж и вывоз в пределах МКАД включены. Доплаты за логистику — по условиям.',46,511,9,'Body',mid,W-92);
-    for(const section of selection.sections)await gallery('Выбранные варианты',section.title,section.items,'Выбранный вариант оформления. Наличие на дату подтвердит менеджер.');
-    if(selection.palette.length){
-      page('Выбранная палитра','Цветовая гамма','Оттенки на экране приблизительные. Цвет готового текстиля согласуем по образцу.');
-      selection.palette.forEach((color,i)=>{const x=46+(i%5)*150,y=160+Math.floor(i/5)*87;pdf.setFillColor(color.hex);pdf.rect(x,y,128,50,'F');text(color.name,x,y+67,9,'Body',mid);});
+    let shortened=false;
+    // Bounded text keeps the selected proposal at exactly three pages.
+    function compact(value,x,y,width,maxLines,size=11,font='Body',color=ink){
+      pdf.setFont(font,'normal');pdf.setFontSize(size);
+      let lines=pdf.splitTextToSize(String(value||'').replace(/[\u00a0\u202f]/g,' '),width);
+      if(lines.length>maxLines){
+        shortened=true;lines=lines.slice(0,maxLines);
+        let last=lines[maxLines-1];while(last&&pdf.getTextWidth(last+'…')>width)last=last.slice(0,-1);
+        lines[maxLines-1]=last+'…';
+      }
+      return text(lines.join('\n'),x,y,size,font,color);
     }
+    page('Ваше событие','Свадебное оформление','Персональное предложение Ameli Rental');
+    text('МОЛОДОЖЁНЫ',46,165,8,'Body',mid);
+    compact(selection.coupleNames||'Имена пока не указаны',46,194,450,2,27,'Display');
+    const date=/^\d{4}-\d{2}-\d{2}$/.test(selection.weddingDate||'')?selection.weddingDate.split('-').reverse().join('.'):'пока не указана';
+    text('ДАТА СВАДЬБЫ',46,250,8,'Body',mid);text(date,46,270,12);
+    text('ПЛОЩАДКА',226,250,8,'Body',mid);
+    compact(selection.venue||'Пока не указана',226,270,278,2,11);
+    text(`${selection.guests} гостей`,550,170,25,'Display');
+    text(formatPrice(selection.price),550,211,35,'Display');text('Стоимость пакета под ключ',550,235,9,'Body',mid);
+    text(`1 церемония · 1 президиум`,550,265,9,'Body',mid);
+    text(`Композиции: ${c.compositions} · салфетки: ${c.napkins}`,550,284,9,'Body',mid);
+    line(46,307);
+    text('ПОЖЕЛАНИЯ',46,330,8,'Body',mid);
+    compact(selection.comment||'Общие пожелания пока не указаны.',46,350,351,3,10,'Body',mid);
+    text('ДОПОЛНИТЕЛЬНЫЕ ПОЗИЦИИ',438,330,8,'Body',mid);
+    compact(selection.extrasNeeded?(selection.extraItems||'Нужна помощь с подбором.'):'Не требуются.',438,350,357,3,10,'Body',mid);
+    if(selection.extrasNeeded)text('Рассчитываются отдельно от пакета.',438,393,8,'Body',mid);
+    line(46,407);
+    text('Цветовая гамма',46,432,23,'Display');
+    if(selection.palette.length){
+      selection.palette.forEach((color,i)=>{
+        const x=46+(i%10)*75,y=448+Math.floor(i/10)*44;
+        pdf.setFillColor(color.hex);pdf.rect(x,y,64,22,'F');
+        compact(color.name,x,y+33,68,1,7,'Body',mid);
+      });
+    }else text('Цветовая гамма пока не выбрана.',46,467,11,'Body',mid);
+    if(shortened)text('Длинные поля сокращены. Полный текст — в заявке менеджеру.',46,550,8,'Body',mid);
+    else text('Оттенки на экране приблизительные. Цвет текстиля согласуем по образцу.',46,550,8,'Body',mid);
+
+    page('Ваш выбор','Всё выбранное — на одной странице',`${selection.guests} гостей · ${formatPrice(selection.price)} · один вариант в каждом разделе`);
+    const quantities=['1 зона церемонии','1 зона президиума',`${c.compositions} композиций на ${c.tables} столов`,`${c.napkins} салфеток`];
+    selection.sections.forEach((section,i)=>{
+      const x=46+(i%2)*392,y=157+Math.floor(i/2)*190;
+      text(section.title,x,y,21,'Display');line(x,y+12,x+357);
+    });
+    for(let i=0;i<selection.sections.length;i++){
+      const section=selection.sections[i],item=section.items[0],x=46+(i%2)*392,top=180+Math.floor(i/2)*190,tx=x+179;
+      if(item){
+        await photo(item.image,x,top,163,145);
+        text(`${item.id} · арт. ${item.catalogId}`,tx,top+11,8,'Body',mid);
+        const after=compact(item.title,tx,top+37,178,2,21,'Display');
+        text(quantities[i],tx,after+7,9,'Body',ink);
+        compact(item.description,tx,after+28,178,3,9,'Body',mid);
+        pdf.link(x,top,357,145,{url:item.sourceUrl});
+      }else{
+        pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.rect(x,top,163,145);
+        text('Не выбрано',x+41,top+76,16,'Display',mid);
+        text(quantities[i],tx,top+32,10);
+        compact('Вариант оформления согласуем с менеджером.',tx,top+58,178,3,10,'Body',mid);
+      }
+    }
+    text('Наличие на дату и итоговое оформление подтвердит менеджер. Общие условия — на следующей странице.',46,550,8,'Body',mid);
   }else{
   // Open on the four actual package components, matching the landing.
   page('Декор под ключ','Всё, что входит в ваш пакет','Готовые предложения на 20, 30, 40, 50, 60, 70, 80, 90 и 100 гостей.');
