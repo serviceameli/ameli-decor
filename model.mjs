@@ -32,7 +32,7 @@ export function resolveSelection(data, state) {
   if(!pack)throw new Error('Пакет не найден');
   const ids=new Set(Array.isArray(state.ids)?state.ids:[]);
   const colors=new Set(Array.isArray(state.colors)?state.colors:[]);
-  return {guests:state.guests,price:pack.price,counts,
+  return {guests:state.guests,price:pack.price,counts,comment:typeof state.comment==='string'?state.comment.trim():'',
     sections:selectionSections.map(section=>({...section,items:data[section.key].filter(item=>ids.has(item.id)).slice(0,1)})),
     palette:data.palette.filter(color=>colors.has(color.name))};
 }
@@ -65,5 +65,6 @@ export function selectionMessage(selection) {
   }
   lines.push('',`Палитра: ${selection.palette.map(c=>c.name).join(', ')||'пока не выбрана'}.`,
     '', 'Прошу подтвердить наличие на дату и согласовать итоговое оформление.');
+  if(selection.comment)lines.push('', 'Комментарий к заказу:', selection.comment);
   return lines.join('\n');
 }

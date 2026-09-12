@@ -17,6 +17,7 @@ try {
   console.error('Не удалось загрузить коллекцию',error);
 }
 function render(content) {
+  $('#order-comment').value=typeof state.comment==='string'?state.comment:'';
   for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');
   $('#guest-options').innerHTML=content.packages.map(item=>`<button class="guest-button" type="button" data-guests="${item.guests}" aria-pressed="${item.guests===selectedGuests}" aria-label="Пакет на ${item.guests} гостей">${item.guests}</button>`).join('');
   $('#swatches').innerHTML=content.palette.map(color=>`<button type="button" class="swatch" data-color="${escape(color.name)}" aria-pressed="false" aria-label="Выбрать цвет: ${escape(color.name)}"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></button>`).join('');
@@ -61,6 +62,12 @@ document.addEventListener('click',event=>{
   if(color){const name=color.dataset.color;state.colors=state.colors.includes(name)?state.colors.filter(value=>value!==name):[...state.colors,name];refreshSelection();}
 });
 $('#clear-selection').addEventListener('click',()=>{if(!data)return;state.ids=[];state.colors=[];refreshSelection();});
+$('#order-comment').addEventListener('input',event=>{
+  state.comment=event.target.value;
+  try{localStorage.setItem('ameli-decor-selection-v1',JSON.stringify(state));}catch{}
+  if(data)$('#selection-text').value=selectionMessage(resolveSelection(data,state));
+  $('#selection-status').textContent='';
+});
 $('#copy-selection').addEventListener('click',async()=>{
   if(!data)return;
   try{await navigator.clipboard.writeText(selectionMessage(resolveSelection(data,state)));$('#selection-status').textContent='Скопировано. Вставьте сообщение в чат с менеджером.';}
