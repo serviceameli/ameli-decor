@@ -54,3 +54,15 @@ test('Каждая карточка имеет конкретный состав
   assert.ok(message.includes('Светодиодные свечи «Лавгуд» — 9 шт.'));
   assert.ok(message.includes('Состав одной композиции'));
 });
+test('Единая заявка включает детали свадьбы, дополнительные позиции и комментарий',()=>{
+  const selection=resolveSelection(data,{guests:60,ids:['C02'],colors:['Роза'],coupleNames:' Анна и Александр ',weddingDate:'2027-06-12',venue:'Усадьба «Сад», Москва',extrasNeeded:true,extraItems:'Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/',comment:'Монтаж к 14:00.\nНужен тёплый свет.'});
+  const message=selectionMessage(selection);
+  for(const value of ['Заявка на оформление свадьбы','Молодожёны: Анна и Александр','Дата свадьбы: 12.06.2027','Площадка: Усадьба «Сад», Москва','Гостей: 60','C02 — Кастор','Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/','Монтаж к 14:00.\nНужен тёплый свет.'])assert.ok(message.includes(value),value);
+  assert.equal(selection.price,85000);
+  assert.ok(message.includes('рассчитать дополнительные позиции отдельно'));
+});
+test('Скрытые дополнительные позиции не попадают в заявку; незаполненные поля отмечены',()=>{
+  const message=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[],extrasNeeded:false,extraItems:'Не отправлять эту позицию'}));
+  assert.ok(!message.includes('Не отправлять эту позицию'));assert.match(message,/Дополнительные позиции из каталога: не нужны/);assert.match(message,/Дата свадьбы: пока не указана/);
+  const needed=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[],extrasNeeded:true}));assert.match(needed,/Нужна помощь менеджера с подбором/);
+});

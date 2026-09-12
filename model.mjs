@@ -33,6 +33,11 @@ export function resolveSelection(data, state) {
   const ids=new Set(Array.isArray(state.ids)?state.ids:[]);
   const colors=new Set(Array.isArray(state.colors)?state.colors:[]);
   return {guests:state.guests,price:pack.price,counts,comment:typeof state.comment==='string'?state.comment.trim():'',
+    coupleNames:typeof state.coupleNames==='string'?state.coupleNames.trim():'',
+    weddingDate:typeof state.weddingDate==='string'?state.weddingDate:'',
+    venue:typeof state.venue==='string'?state.venue.trim():'',
+    extrasNeeded:state.extrasNeeded===true,
+    extraItems:state.extrasNeeded===true&&typeof state.extraItems==='string'?state.extraItems.trim():'',
     sections:selectionSections.map(section=>({...section,items:data[section.key].filter(item=>ids.has(item.id)).slice(0,1)})),
     palette:data.palette.filter(color=>colors.has(color.name))};
 }
@@ -47,7 +52,11 @@ export function toggleItem(data,state,id) {
 }
 export function selectionMessage(selection) {
   const {counts:c}=selection;
-  const lines=['AMELI RENTAL · Пожелания к оформлению',`Гостей: ${selection.guests}`,`Стоимость пакета: ${formatPrice(selection.price)}`,'',
+  const date=/^\d{4}-\d{2}-\d{2}$/.test(selection.weddingDate||'')?selection.weddingDate.split('-').reverse().join('.'):'пока не указана';
+  const lines=['AMELI RENTAL · Заявка на оформление свадьбы',
+    `Молодожёны: ${selection.coupleNames||'имена пока не указаны'}`,
+    `Дата свадьбы: ${date}`,`Площадка: ${selection.venue||'пока не указана'}`,'',
+    `Гостей: ${selection.guests}`,`Стоимость пакета: ${formatPrice(selection.price)}`,'',
     'Состав пакета:', '• Зона церемонии: 1, задник и искусственная флористика.',
     '• Зона президиума: 1, задник и искусственная флористика.',
     `• Композиции без флористики: ${c.compositions} на ${c.tables} гостевых столов.`,
@@ -63,8 +72,10 @@ export function selectionMessage(selection) {
       if(item.detailsNote)lines.push(item.detailsNote);
     }
   }
-  lines.push('',`Палитра: ${selection.palette.map(c=>c.name).join(', ')||'пока не выбрана'}.`,
-    '', 'Прошу подтвердить наличие на дату и согласовать итоговое оформление.');
+  lines.push('',`Палитра: ${selection.palette.map(c=>c.name).join(', ')||'пока не выбрана'}.`);
+  lines.push('', 'Дополнительные позиции из каталога: '+(selection.extrasNeeded?'нужны.':'не нужны.'));
+  if(selection.extrasNeeded)lines.push(selection.extraItems||'Нужна помощь менеджера с подбором.', 'Просьба рассчитать дополнительные позиции отдельно от пакета.');
   if(selection.comment)lines.push('', 'Комментарий к заказу:', selection.comment);
+  lines.push('', 'Прошу подтвердить наличие на дату и подготовить предложение по заявке.');
   return lines.join('\n');
 }
