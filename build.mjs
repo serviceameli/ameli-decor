@@ -6,8 +6,11 @@ if(data.packages.length!==9||data.palette.length!==20)throw new Error('Ожид�
 const guests=new Set(data.packages.map(p=>p.guests));if(guests.size!==9)throw new Error('Пакеты повторяются');
 data.packages.forEach(p=>packageCounts(p.guests));validatePrices(Object.fromEntries(data.packages.map(p=>[p.guests,p.price])),data.packages);
 const assets=new Set(['fonts/montserrat.ttf','fonts/cormorant.ttf','vendor/jspdf.umd.min.js']);
+const itemIds=new Set();
 for(const key of ['ceremony','tableCompositions','presidiumFlorals','presidiumBackdrops','napkins'])for(const item of data[key]){
   if(!item.title||!item.id||!item.image||!item.sourceUrl)throw new Error('У варианта нет названия или кода');
+  if(itemIds.has(item.id)||!item.catalogId)throw new Error('У варианта повторяется код или отсутствует артикул');
+  itemIds.add(item.id);
   if(item.image){if(!/^assets\/[\w.-]+$/.test(item.image))throw new Error('Используйте локальные изображения assets/');assets.add(item.image);}
 }
 for(const asset of assets)await fs.access(asset);

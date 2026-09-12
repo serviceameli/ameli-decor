@@ -1,8 +1,8 @@
 import {packageCounts,formatPrice,validatePrices} from './model.mjs';
 
-// Shared browser / Node renderer. Only the explicit client-price map enters the PDF.
-export async function createPresentation({jsPDF,data,prices,readBase64}) {
-  validatePrices(prices,data.packages);
+// Shared browser / Node renderer for the selected package and organizer collection.
+export async function createPresentation({jsPDF,data,prices,selection,readBase64}) {
+  if(!selection)validatePrices(prices,data.packages);
   const pdf=new jsPDF({orientation:'landscape',unit:'pt',format:'a4',compress:true,putOnlyUsedFonts:true});
   const W=pdf.internal.pageSize.getWidth(),H=pdf.internal.pageSize.getHeight();
   const [sans,serif]=await Promise.all([readBase64('fonts/montserrat.ttf'),readBase64('fonts/cormorant.ttf')]);
@@ -32,17 +32,42 @@ export async function createPresentation({jsPDF,data,prices,readBase64}) {
   async function gallery(label,title,items,note){
     for(let offset=0;offset<items.length;offset+=6){
       const batch=items.slice(offset,offset+6);page(label,title);
-      const rows=batch.length>4?2:1,cols=rows===2?3:Math.max(3,batch.length),gap=20,w=(W-92-gap*(cols-1))/cols;
+      const rows=batch.length>4?2:1,cols=rows===2?3:Math.max(2,batch.length),gap=20,w=(W-92-gap*(cols-1))/cols;
       for(let i=0;i<batch.length;i++){
-        const item=batch[i],x=46+(i%cols)*(w+gap),top=rows===2?145+Math.floor(i/cols)*194:147;
-        await photo(item.image,x,top,w,rows===2?124:245);
-        const titleY=rows===2?top+145:422,sz=rows===2?19:22;
+        const item=batch[i],x=batch.length===1?(W-w)/2:46+(i%cols)*(w+gap),top=rows===2?145+Math.floor(i/cols)*194:147;
+        await photo(item.image,x,top,w,rows===2?104:225);
+        const titleY=rows===2?top+134:402;
+        text(`${item.id} · арт. ${item.catalogId}`,x,titleY-16,8,'Body',mid);
+        let sz=rows===2?17:21;
+        pdf.setFont('Display','normal');pdf.setFontSize(sz);
+        while(pdf.splitTextToSize(item.title,w).length>2&&sz>12){sz--;pdf.setFontSize(sz);}
         const afterTitle=text(item.title,x,titleY,sz,'Display',ink,w);
-        text(item.description,x,afterTitle+4,rows===2?8.5:9.5,'Body',mid,w);
+        if(!selection)text(item.description,x,afterTitle+4,rows===2?8:9,'Body',mid,w);
+        pdf.link(x,top,w,rows===2?170:330,{url:item.sourceUrl});
       }
       if(note)text(note,46,540,8.5,'Body',mid,W-92);
     }
   }
+  if(selection){
+    const c=selection.counts;
+    page('Ваше оформление','Пакет декора на '+selection.guests+' гостей','Понравившиеся варианты для согласования с менеджером Ameli Rental.');
+    text(formatPrice(selection.price),46,199,36,'Display');
+    text('Стоимость пакета',46,224,10,'Body',mid);
+    text(selection.palette.length?`Выбрано оттенков: ${selection.palette.length}`:'Цветовая гамма пока не выбрана',438,224,10,'Body',mid);
+    const counts=['1 зона · задник и искусственная флористика','1 зона · задник и искусственная флористика',`${c.compositions} композиций без флористики на ${c.tables} столов`,`${c.napkins} цветных салфеток`];
+    selection.sections.forEach((section,i)=>{
+      const x=46+(i%2)*392,y=285+Math.floor(i/2)*102;
+      text(section.title,x,y,25,'Display');text(counts[i],x,y+24,10,'Body',mid,350);
+      text(section.items.length?`Отмечено вариантов: ${section.items.length}`:'Варианты пока не выбраны',x,y+45,9,'Body',mid);
+    });
+    text('Выбранные позиции — альтернативы для обсуждения. Их количество не меняет цену пакета.',46,483,10,'Body',mid,W-92);
+    text('Доставка, монтаж и вывоз в пределах МКАД включены. Доплаты за логистику — по условиям.',46,511,9,'Body',mid,W-92);
+    for(const section of selection.sections)await gallery('Выбранные варианты',section.title,section.items,'Отмеченные позиции — пожелания к оформлению. Наличие и итоговый вариант подтвердит менеджер.');
+    if(selection.palette.length){
+      page('Выбранная палитра','Цветовая гамма','Оттенки на экране приблизительные. Цвет готового текстиля согласуем по образцу.');
+      selection.palette.forEach((color,i)=>{const x=46+(i%5)*150,y=160+Math.floor(i/5)*87;pdf.setFillColor(color.hex);pdf.rect(x,y,128,50,'F');text(color.name,x,y+67,9,'Body',mid);});
+    }
+  }else{
   // Open on the four actual package components, matching the landing.
   page('Декор под ключ','Всё, что входит в ваш пакет','Готовые предложения на 20, 30, 40, 50, 60, 70, 80, 90 и 100 гостей.');
   const summary=[
@@ -67,6 +92,7 @@ export async function createPresentation({jsPDF,data,prices,readBase64}) {
   ['Гости','Церемония','Президиум','Столы / композиции','Салфетки','Стоимость'].forEach((label,i)=>text(label,columns[i],177,9,'Body',mid));line(46,192);
   data.packages.forEach((item,i)=>{const y=220+i*32,c=packageCounts(item.guests);text(item.guests,46,y,21,'Display');text('1 зона',116,y,10);text('1 зона',244,y,10);text(`${c.tables} / ${c.compositions}`,373,y,10);text(`${c.napkins} шт.`,546,y,10);text(formatPrice(prices[item.guests]??null),655,y,10);line(46,y+12);});
   text('Доставка, монтаж и вывоз в пределах МКАД включены при стандартной логистике площадки.',46,540,9,'Body',mid,W-92);
+  }
   page('Перед бронированием','Условия');
   data.terms.forEach((term,i)=>{const x=46+(i%2)*392,y=184+Math.floor(i/2)*174;line(x,y-23,x+351);text(term.title,x,y,26,'Display');text(term.text,x,y+30,11,'Body',mid,345);});
   for(let i=1;i<=pdf.getNumberOfPages();i++){pdf.setPage(i);text('AMELI RENTAL',46,H-25,8,'Body',mid);text(`${String(i).padStart(2,'0')} / ${String(pdf.getNumberOfPages()).padStart(2,'0')}`,W-79,H-25,8,'Body',mid);}

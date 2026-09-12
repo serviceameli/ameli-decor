@@ -4,39 +4,39 @@
   "packages": [
     {
       "guests": 20,
-      "price": null
+      "price": 45000
     },
     {
       "guests": 30,
-      "price": null
+      "price": 55000
     },
     {
       "guests": 40,
-      "price": null
+      "price": 65000
     },
     {
       "guests": 50,
-      "price": null
+      "price": 75000
     },
     {
       "guests": 60,
-      "price": null
+      "price": 85000
     },
     {
       "guests": 70,
-      "price": null
+      "price": 95000
     },
     {
       "guests": 80,
-      "price": null
+      "price": 105000
     },
     {
       "guests": 90,
-      "price": null
+      "price": 115000
     },
     {
       "guests": 100,
-      "price": null
+      "price": 125000
     }
   ],
   "ceremony": [

@@ -14,3 +14,23 @@ test('Экспорт принимает только допустимые кли
   assert.doesNotThrow(()=>validatePrices({'20':100000,'100':null},packages));
   for(const invalid of [{'25':1000},{'20':-1},{'20':'1000'},{'20':0},null,[]])assert.throws(()=>validatePrices(invalid,packages));
 });
+
+import fs from 'node:fs';
+import {resolveSelection,selectionMessage} from '../model.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('../content.json',import.meta.url)));
+test('Фиксированная цена каждого пакета: от 45 до 125 тысяч',()=>{
+  for(let guests=20;guests<=100;guests+=10){
+    assert.equal(resolveSelection(data,{guests,ids:[],colors:[]}).price,45000+(guests-20)*1000);
+  }
+});
+test('В сообщение попадают только выбранные позиции и цвета; альтернативы не увеличивают цену',()=>{
+  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P03','N06','T01','unknown'],colors:['Роза','Олива','unknown']});
+  const message=selectionMessage(choice);
+  assert.equal(choice.price,95000);assert.equal(choice.counts.compositions,7);assert.equal(choice.counts.napkins,70);
+  assert.equal(choice.sections.flatMap(s=>s.items).length,5);
+  assert.match(message,/C02 — Кастор/);assert.match(message,/T04 — Эрукто/);assert.match(message,/Роза, Олива/);
+  assert.doesNotMatch(message,/C01|T02|unknown|Снежный/);
+  assert.ok(message.includes(data.ceremony[1].sourceUrl));
+  const empty=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[]}));
+  assert.match(empty,/Пока не выбрано/);assert.match(empty,/палитра: пока не выбрана/i);
+});
