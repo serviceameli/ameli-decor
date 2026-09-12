@@ -33,8 +33,17 @@ export function resolveSelection(data, state) {
   const ids=new Set(Array.isArray(state.ids)?state.ids:[]);
   const colors=new Set(Array.isArray(state.colors)?state.colors:[]);
   return {guests:state.guests,price:pack.price,counts,
-    sections:selectionSections.map(section=>({...section,items:data[section.key].filter(item=>ids.has(item.id))})),
+    sections:selectionSections.map(section=>({...section,items:data[section.key].filter(item=>ids.has(item.id)).slice(0,1)})),
     palette:data.palette.filter(color=>colors.has(color.name))};
+}
+export function toggleItem(data,state,id) {
+  const section=selectionSections.find(section=>data[section.key].some(item=>item.id===id));
+  if(!section)return state;
+  const current=resolveSelection(data,state);
+  const selected=current.sections.flatMap(section=>section.items.map(item=>item.id));
+  const ids=selected.filter(value=>!data[section.key].some(item=>item.id===value));
+  if(!selected.includes(id))ids.push(id);
+  return {...state,ids};
 }
 export function selectionMessage(selection) {
   const {counts:c}=selection;
@@ -44,11 +53,15 @@ export function selectionMessage(selection) {
     `• Композиции без флористики: ${c.compositions} на ${c.tables} гостевых столов.`,
     `• Цветные салфетки: ${c.napkins} шт.`,
     '• Доставка, монтаж и вывоз в пределах МКАД. Доплаты за логистику — по условиям.','',
-    'Понравившиеся варианты (альтернативы на согласование):'];
+    'Выбранное оформление (по одному варианту в разделе):'];
   for(const section of selection.sections){
     lines.push('',section.title+':');
     if(!section.items.length)lines.push('— Пока не выбрано.');
-    for(const item of section.items)lines.push(`• ${item.id} — ${item.title} (арт. ${item.catalogId})`,item.sourceUrl);
+    for(const item of section.items){
+      lines.push(`• ${item.id} — ${item.title} (арт. ${item.catalogId})`,item.sourceUrl);
+      if(item.components?.length)lines.push(item.componentLabel+':',...item.components.map(text=>'  — '+text));
+      if(item.detailsNote)lines.push(item.detailsNote);
+    }
   }
   lines.push('',`Палитра: ${selection.palette.map(c=>c.name).join(', ')||'пока не выбрана'}.`,
     '', 'Прошу подтвердить наличие на дату и согласовать итоговое оформление.');

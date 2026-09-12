@@ -1,8 +1,9 @@
-import { parsePrice, formatPrice, packageCounts, validatePrices, resolveSelection, selectionMessage, selectionSections } from './model.mjs';
+import { parsePrice, formatPrice, packageCounts, validatePrices, resolveSelection, selectionMessage, selectionSections, toggleItem } from './model.mjs';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
-const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-select="${escape(item.id)}" aria-pressed="false" aria-label="Выбрать: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true">+</span></button><button class="zoom" data-image="${escape(item.image)}" data-caption="${escape(item.title)}" aria-label="Увеличить: ${escape(item.title)}">↗</button></div><figcaption><span class="caption-code">${escape(item.id)}</span><h3>${escape(item.title)}</h3><p>${escape(item.description)}</p><a class="catalog-source" href="${escape(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">В каталоге ↗</a></figcaption></figure>`;
+const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span><span class="photo-detail-label">Фото и состав ↗</span></button></div><figcaption><span class="caption-code">${escape(item.id)}</span><h3><button class="card-title" data-details="${escape(item.id)}">${escape(item.title)}</button></h3><p>${escape(item.description)}</p><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+let activeDetail=null;
 let data;
 let state={guests:40,ids:[],colors:[]};
 try {const saved=JSON.parse(localStorage.getItem('ameli-decor-selection-v1'));if(saved&&Array.isArray(saved.ids)&&Array.isArray(saved.colors)&&Number.isInteger(saved.guests)&&saved.guests>=20&&saved.guests<=100&&saved.guests%10===0)state=saved;}catch{}
@@ -38,8 +39,10 @@ function refreshSelection() {
   state.colors=selection.palette.map(color=>color.name);
   try {localStorage.setItem('ameli-decor-selection-v1',JSON.stringify(state));}catch{}
   document.querySelectorAll('[data-select]').forEach(button=>{
-    const checked=state.ids.includes(button.dataset.select);button.setAttribute('aria-pressed',String(checked));button.querySelector('.selection-mark').textContent=checked?'✓':'+';button.closest('figure').classList.toggle('is-selected',checked);
+    const checked=state.ids.includes(button.dataset.select);button.setAttribute('aria-pressed',String(checked));button.textContent=checked?'Выбрано ✓':'Выбрать';
+    const card=button.closest('figure');if(card){card.classList.toggle('is-selected',checked);card.querySelector('.selection-mark').hidden=!checked;}
   });
+  updateDetailChoice();
   document.querySelectorAll('[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(state.colors.includes(button.dataset.color))));
   $('#header-selection-count').textContent=state.ids.length;
   $('#nav-selection-count').textContent=state.ids.length;
@@ -53,7 +56,7 @@ function refreshSelection() {
 document.addEventListener('click',event=>{
   if(!data)return;
   const item=event.target.closest('[data-select],[data-remove]');
-  if(item){const id=item.dataset.select||item.dataset.remove;state.ids=state.ids.includes(id)?state.ids.filter(value=>value!==id):[...state.ids,id];refreshSelection();return;}
+  if(item){const id=item.dataset.select||item.dataset.remove;state=toggleItem(data,state,id);refreshSelection();return;}
   const color=event.target.closest('[data-color]');
   if(color){const name=color.dataset.color;state.colors=state.colors.includes(name)?state.colors.filter(value=>value!==name):[...state.colors,name];refreshSelection();}
 });
@@ -124,9 +127,36 @@ async function downloadPresentation(prices) {
   } finally { button.disabled=false; }
 }
 const imageDialog=$('#image-dialog');
-document.addEventListener('click', (event) => {
-  const trigger=event.target.closest('[data-image]');if (!trigger) return;
-  $('#large-image').src=trigger.dataset.image;$('#large-image').alt=trigger.dataset.caption;$('#image-caption').textContent=trigger.dataset.caption;imageDialog.showModal();
+function updateDetailChoice(){
+  if(!activeDetail||!data)return;
+  const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===activeDetail);
+  if(!item)return;
+  const selected=state.ids.includes(item.id);const button=$('#detail-select');
+  button.dataset.select=item.id;button.setAttribute('aria-pressed',String(selected));button.textContent=selected?'Выбрано · убрать':'Выбрать этот вариант';
+  const section=selectionSections.find(section=>data[section.key].some(i=>i.id===item.id));
+  const counts=packageCounts(state.guests);
+  const quantity=section.key==='napkins'?`${counts.napkins} салфеток`:section.key==='tableCompositions'?`${counts.compositions} ${plural(counts.compositions,'комплект','комплекта','комплектов')} на ${counts.tables} ${plural(counts.tables,'стол','стола','столов')}`:'1 зона';
+  $('#detail-quantity').textContent=`В пакете на ${state.guests} гостей: ${quantity}.`;
+}
+document.addEventListener('click',event=>{
+  const trigger=event.target.closest('[data-details]');if(!trigger||!data)return;
+  const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===trigger.dataset.details);if(!item)return;
+  activeDetail=item.id;
+  $('#large-image').src=item.image;$('#large-image').alt=item.alt||item.title;
+  $('#image-caption').textContent=item.title;
+  $('#detail-code').textContent=`${item.id} · Артикул ${item.catalogId}`;
+  $('#detail-description').textContent=item.description;
+  $('#detail-composition-title').textContent=item.componentLabel||'Состав';
+  $('#detail-components').innerHTML=(item.components||[]).map(text=>`<li>${escape(text)}</li>`).join('');
+  $('#detail-note').textContent=item.detailsNote||'';
+  $('#detail-source').href=item.sourceUrl;
+  $('#detail-photo-frame').classList.remove('is-zoomed');$('#toggle-photo-zoom').setAttribute('aria-pressed','false');$('#toggle-photo-zoom').textContent='Увеличить фото +';
+  updateDetailChoice();imageDialog.showModal();
+});
+$('#toggle-photo-zoom').addEventListener('click',()=>{
+  const zoomed=$('#detail-photo-frame').classList.toggle('is-zoomed');
+  $('#toggle-photo-zoom').setAttribute('aria-pressed',String(zoomed));$('#toggle-photo-zoom').textContent=zoomed?'Уменьшить фото −':'Увеличить фото +';
+  if(!zoomed){$('#detail-photo-frame').scrollTop=0;$('#detail-photo-frame').scrollLeft=0;}
 });
 $('#close-image').addEventListener('click',()=>imageDialog.close());
 for (const dialog of [exportDialog,imageDialog]) dialog.addEventListener('click',(event)=>{ if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();} });

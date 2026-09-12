@@ -50,19 +50,19 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
   }
   if(selection){
     const c=selection.counts;
-    page('Ваше оформление','Пакет декора на '+selection.guests+' гостей','Понравившиеся варианты для согласования с менеджером Ameli Rental.');
+    page('Ваше оформление','Пакет декора на '+selection.guests+' гостей','Выбранное оформление для согласования с менеджером Ameli Rental.');
     text(formatPrice(selection.price),46,199,36,'Display');
     text('Стоимость пакета',46,224,10,'Body',mid);
     text(selection.palette.length?`Выбрано оттенков: ${selection.palette.length}`:'Цветовая гамма пока не выбрана',438,224,10,'Body',mid);
-    const counts=['1 зона · задник и искусственная флористика','1 зона · задник и искусственная флористика',`${c.compositions} композиций без флористики на ${c.tables} столов`,`${c.napkins} цветных салфеток`];
+    const counts=['1 зона · задник и искусственная флористика','1 зона · задник и искусственная флористика',`Композиции без флористики: ${c.compositions}; столы: ${c.tables}`,`${c.napkins} цветных салфеток`];
     selection.sections.forEach((section,i)=>{
       const x=46+(i%2)*392,y=285+Math.floor(i/2)*102;
       text(section.title,x,y,25,'Display');text(counts[i],x,y+24,10,'Body',mid,350);
       text(section.items.length?`Отмечено вариантов: ${section.items.length}`:'Варианты пока не выбраны',x,y+45,9,'Body',mid);
     });
-    text('Выбранные позиции — альтернативы для обсуждения. Их количество не меняет цену пакета.',46,483,10,'Body',mid,W-92);
+    text('Для каждого раздела — один вариант оформления. Цена зависит от количества гостей.',46,483,10,'Body',mid,W-92);
     text('Доставка, монтаж и вывоз в пределах МКАД включены. Доплаты за логистику — по условиям.',46,511,9,'Body',mid,W-92);
-    for(const section of selection.sections)await gallery('Выбранные варианты',section.title,section.items,'Отмеченные позиции — пожелания к оформлению. Наличие и итоговый вариант подтвердит менеджер.');
+    for(const section of selection.sections)await gallery('Выбранные варианты',section.title,section.items,'Выбранный вариант оформления. Наличие на дату подтвердит менеджер.');
     if(selection.palette.length){
       page('Выбранная палитра','Цветовая гамма','Оттенки на экране приблизительные. Цвет готового текстиля согласуем по образцу.');
       selection.palette.forEach((color,i)=>{const x=46+(i%5)*150,y=160+Math.floor(i/5)*87;pdf.setFillColor(color.hex);pdf.rect(x,y,128,50,'F');text(color.name,x,y+67,9,'Body',mid);});

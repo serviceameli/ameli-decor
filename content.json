@@ -48,7 +48,14 @@
       "alt": "Зона церемонии на 40 гостей c флористикой",
       "catalogName": "Зона церемонии на 40 гостей c флористикой",
       "catalogId": 20790,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20790"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20790",
+      "components": [
+        "Задник «Белатрикс» с драпировкой из бархата «кокосовый раф» — 1 шт.",
+        "Флористическая композиция для зоны «Белатрикс» из декоративных цветов — 1 шт."
+      ],
+      "componentLabel": "Состав зоны в пакете",
+      "detailsNote": "Пуфы, стулья и дорожка на фото не входят в пакет и согласуются отдельно.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "C02",
@@ -58,7 +65,17 @@
       "alt": "Зона церемонии на 40 гостей с флористикой",
       "catalogName": "Зона церемонии на 40 гостей с флористикой",
       "catalogId": 20995,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20995"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20995",
+      "components": [
+        "Круглый подиум «Канопус», жемчужный бархат — 1 шт.",
+        "Колонны «Кастор» высотой 90 см — 2 шт.",
+        "Колонны «Кастор» высотой 110 см — 2 шт.",
+        "Колонны «Кастор» высотой 140 см — 2 шт.",
+        "Флористические композиции из декоративных цветов на колонны — 6 шт."
+      ],
+      "componentLabel": "Состав зоны в пакете",
+      "detailsNote": "Пуфы, стулья и дорожка на фото не входят в пакет и согласуются отдельно.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "C03",
@@ -68,7 +85,13 @@
       "alt": "Зона церемонии на 28 гостей",
       "catalogName": "Зона церемонии на 28 гостей",
       "catalogId": 20040,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20040"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20040",
+      "components": [
+        "Задник «Белатрикс» с драпировкой из бледно-розового бархата — 1 шт."
+      ],
+      "componentLabel": "Состав зоны в пакете",
+      "detailsNote": "На фото решение без флористики. Искусственная флористика входит в пакет; конкретную композицию подбираем с менеджером. Пуфы и дорожка на фото не входят в пакет.",
+      "detailsSourceChecked": "2026-09-12"
     }
   ],
   "tableCompositions": [
@@ -80,7 +103,15 @@
       "alt": "Набор подсвечников \"Равенкло\" и светодиодные свечи \"Лавгуд\"",
       "catalogName": "Набор подсвечников \"Равенкло\" и светодиодные свечи \"Лавгуд\"",
       "catalogId": 18855,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18855"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18855",
+      "components": [
+        "Прозрачные подсвечники «Равенкло» — 1 набор.",
+        "Светодиодные свечи «Лавгуд» — 6 шт.",
+        "Высота подсвечников — от 6 до 21 см; жёлтый свет свечей, управление пультом."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "T02",
@@ -90,7 +121,15 @@
       "alt": "Подсвечник \"Рути+9\" прозначный и светодиодные свечи \"Лавгуд\"",
       "catalogName": "Подсвечник \"Рути+9\" прозначный и светодиодные свечи \"Лавгуд\"",
       "catalogId": 18856,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18856"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18856",
+      "components": [
+        "Прозрачный подсвечник «Рути+9» на 9 свечей — 1 шт.",
+        "Светодиодные свечи «Лавгуд» — 9 шт.",
+        "Высота конструкции с плафонами — до 132 см, диаметр — 28 см."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "T03",
@@ -100,7 +139,15 @@
       "alt": "Набор свечей с пультом  \"Эрукто\" белый",
       "catalogName": "Набор свечей с пультом  \"Эрукто\" белый",
       "catalogId": 4127,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4127"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4127",
+      "components": [
+        "Белые светодиодные свечи «Эрукто» — 3 шт.",
+        "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+        "Пульт управления."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "T04",
@@ -110,7 +157,15 @@
       "alt": "Набор свечей с пультом \"Эрукто\" дымчатый",
       "catalogName": "Набор свечей с пультом \"Эрукто\" дымчатый",
       "catalogId": 4132,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4132"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4132",
+      "components": [
+        "Дымчатые светодиодные свечи «Эрукто» — 3 шт.",
+        "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+        "Пульт управления."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "T05",
@@ -120,7 +175,15 @@
       "alt": "Набор свечей с пультом \"Эрукто\" золотой",
       "catalogName": "Набор свечей с пультом \"Эрукто\" золотой",
       "catalogId": 4137,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4137"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4137",
+      "components": [
+        "Золотые светодиодные свечи «Эрукто» — 3 шт.",
+        "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+        "Пульт управления."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "T06",
@@ -130,7 +193,15 @@
       "alt": "Светильник шар \"Эванеско 20\"",
       "catalogName": "Светильник шар \"Эванеско 20\"",
       "catalogId": 18116,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18116"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/18116",
+      "components": [
+        "Беспроводной светодиодный шар «Эванеско 20» — 1 шт.",
+        "Матовый белый плафон, диаметр — 20 см.",
+        "Пульт управления; 16 оттенков свечения."
+      ],
+      "componentLabel": "Состав одной композиции",
+      "detailsNote": "Без флористики. Один такой комплект на каждый гостевой стол из расчёта 10 гостей за столом. Время работы без подзарядки — до 6 часов.",
+      "detailsSourceChecked": "2026-09-12"
     }
   ],
   "presidiumFlorals": [],
@@ -143,7 +214,15 @@
       "alt": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
       "catalogName": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
       "catalogId": 20036,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20036"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20036",
+      "components": [
+        "Арка «Альфа Центавра» — 1 шт.",
+        "Драпировка жемчужным бархатом.",
+        "Размер арки: ширина 200 см, высота 270 см."
+      ],
+      "componentLabel": "Состав выбранного задника",
+      "detailsNote": "На фото показан задник. Искусственная флористика на стол пары входит в пакет; конкретная композиция согласуется с менеджером. Стол пары не входит в пакет.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "P02",
@@ -153,7 +232,15 @@
       "alt": "Задник \"Полярис\" с драпировкой, бледно-розовый бархат",
       "catalogName": "Задник \"Полярис\" с драпировкой, бледно-розовый бархат",
       "catalogId": 20018,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20018"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/20018",
+      "components": [
+        "Задник «Полярис» — 1 шт.",
+        "Драпировка бледно-розовым бархатом.",
+        "Размер задника: ширина 360 см, высота 270 см."
+      ],
+      "componentLabel": "Состав выбранного задника",
+      "detailsNote": "На фото показан задник. Искусственная флористика на стол пары входит в пакет; конкретная композиция согласуется с менеджером. Стол пары не входит в пакет.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "P03",
@@ -163,7 +250,15 @@
       "alt": "Набор задников  \"Мира\"  с драпировкой, жемчужный бархат",
       "catalogName": "Набор задников  \"Мира\"  с драпировкой, жемчужный бархат",
       "catalogId": 19137,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19137"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19137",
+      "components": [
+        "Набор задников «Мира» с драпировкой жемчужным бархатом — 1 комплект.",
+        "Телескопический конструктив с утяжелённым основанием.",
+        "Высота регулируется от 180 до 500 см; расчётная ширина — 300 см."
+      ],
+      "componentLabel": "Состав выбранного задника",
+      "detailsNote": "На фото показан задник. Искусственная флористика на стол пары входит в пакет; конкретная композиция согласуется с менеджером. Стол пары не входит в пакет.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "P04",
@@ -173,7 +268,15 @@
       "alt": "Задник \"Белатрикс\" с драпировкой, светло-зеленый бархат",
       "catalogName": "Задник \"Белатрикс\" с драпировкой, светло-зеленый бархат",
       "catalogId": 19135,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19135"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/19135",
+      "components": [
+        "Задник «Белатрикс» с драпировкой светло-зелёным бархатом — 1 шт.",
+        "Телескопический конструктив; длина волны — 260 см.",
+        "Высота вертикальных направляющих регулируется от 100 до 300 см."
+      ],
+      "componentLabel": "Состав выбранного задника",
+      "detailsNote": "На фото показан задник. Искусственная флористика на стол пары входит в пакет; конкретная композиция согласуется с менеджером. Стол пары не входит в пакет.",
+      "detailsSourceChecked": "2026-09-12"
     }
   ],
   "napkins": [
@@ -185,7 +288,14 @@
       "alt": "Салфетка \"Альфа\" снежная",
       "catalogName": "Салфетка \"Альфа\" снежная",
       "catalogId": 5749,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5749"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5749",
+      "components": [
+        "Салфетка \"Альфа\" снежная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "N02",
@@ -195,7 +305,14 @@
       "alt": "Салфетка \"Альфа\" пломбир",
       "catalogName": "Салфетка \"Альфа\" пломбир",
       "catalogId": 5689,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5689"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5689",
+      "components": [
+        "Салфетка \"Альфа\" пломбир — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "N03",
@@ -205,7 +322,14 @@
       "alt": "Салфетка бархатная \"Бета\" бледно-розовая",
       "catalogName": "Салфетка бархатная \"Бета\" бледно-розовая",
       "catalogId": 5786,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5786"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5786",
+      "components": [
+        "Салфетка бархатная \"Бета\" бледно-розовая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "N04",
@@ -215,7 +339,14 @@
       "alt": "Салфетка канвас \"Гамма\" роза мента",
       "catalogName": "Салфетка канвас \"Гамма\" роза мента",
       "catalogId": 2914,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2914"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2914",
+      "components": [
+        "Салфетка канвас \"Гамма\" роза мента — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "N05",
@@ -225,7 +356,14 @@
       "alt": "Салфетка \"Альфа\" светло-серая",
       "catalogName": "Салфетка \"Альфа\" светло-серая",
       "catalogId": 2817,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2817"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2817",
+      "components": [
+        "Салфетка \"Альфа\" светло-серая — 1 шт.",
+        "Размер — 50 × 50 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     },
     {
       "id": "N06",
@@ -235,7 +373,14 @@
       "alt": "Салфетка \"Шелк\" шоколадная",
       "catalogName": "Салфетка \"Шелк\" шоколадная",
       "catalogId": 23491,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491"
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491",
+      "components": [
+        "Салфетка \"Шелк\" шоколадная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу.",
+      "detailsSourceChecked": "2026-09-12"
     }
   ],
   "palette": [
