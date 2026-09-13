@@ -1,0 +1,599 @@
+{
+  "checkedAt": "2026-09-13",
+  "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy",
+  "criterion": "quantity_on_hand_now > 130",
+  "totalChecked": 93,
+  "addedIds": [
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N24",
+    "N25",
+    "N26",
+    "N27",
+    "N28",
+    "N29",
+    "N30",
+    "N31",
+    "N32",
+    "N33",
+    "N34",
+    "N35",
+    "N36",
+    "N37"
+  ],
+  "items": [
+    {
+      "catalogId": 23491,
+      "name": "Салфетка \"Шелк\" шоколадная",
+      "quantityOnHand": 75,
+      "eligible": false
+    },
+    {
+      "catalogId": 18296,
+      "name": "Салфетка \"Традиция\" ночной сад",
+      "quantityOnHand": 100,
+      "eligible": false
+    },
+    {
+      "catalogId": 11692,
+      "name": "Салфетка \"Каппа\" Диор синяя",
+      "quantityOnHand": 67,
+      "eligible": false
+    },
+    {
+      "catalogId": 9977,
+      "name": "Салфетка \"Каппа\" Диор зеленая",
+      "quantityOnHand": 163,
+      "eligible": true
+    },
+    {
+      "catalogId": 19074,
+      "name": "Салфетка бархатная \"Бета\" ледяной белый",
+      "quantityOnHand": 0,
+      "eligible": false
+    },
+    {
+      "catalogId": 5899,
+      "name": "Салфетка канвас \"Гамма\" белая",
+      "quantityOnHand": 99,
+      "eligible": false
+    },
+    {
+      "catalogId": 5749,
+      "name": "Салфетка \"Альфа\" снежная",
+      "quantityOnHand": 71,
+      "eligible": false
+    },
+    {
+      "catalogId": 5966,
+      "name": "Салфетка \"Шелк\" белая глазурь",
+      "quantityOnHand": 117,
+      "eligible": false
+    },
+    {
+      "catalogId": 5762,
+      "name": "Салфетка бархатная \"Бета\" ландыш",
+      "quantityOnHand": 240,
+      "eligible": true
+    },
+    {
+      "catalogId": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "quantityOnHand": 160,
+      "eligible": true
+    },
+    {
+      "catalogId": 5689,
+      "name": "Салфетка \"Альфа\" пломбир",
+      "quantityOnHand": 283,
+      "eligible": true
+    },
+    {
+      "catalogId": 5962,
+      "name": "Салфетка \"Шелк\" айвори",
+      "quantityOnHand": 151,
+      "eligible": true
+    },
+    {
+      "catalogId": 3608,
+      "name": "Салфетка канвас \"Гамма\" ванильная",
+      "quantityOnHand": 146,
+      "eligible": true
+    },
+    {
+      "catalogId": 10946,
+      "name": "Салфетка канвас \"Гамма\" сливочный",
+      "quantityOnHand": 86,
+      "eligible": false
+    },
+    {
+      "catalogId": 4113,
+      "name": "Салфетка \"Шелк\" кремовая",
+      "quantityOnHand": 101,
+      "eligible": false
+    },
+    {
+      "catalogId": 5834,
+      "name": "Салфетка бархатная \"Бета\" кокосовый раф",
+      "quantityOnHand": 123,
+      "eligible": false
+    },
+    {
+      "catalogId": 5998,
+      "name": "Салфетка \"Шелк\" шампань",
+      "quantityOnHand": 70,
+      "eligible": false
+    },
+    {
+      "catalogId": 2817,
+      "name": "Салфетка \"Альфа\" светло-серая",
+      "quantityOnHand": 127,
+      "eligible": false
+    },
+    {
+      "catalogId": 5958,
+      "name": "Салфетка \"Тета\" льняная овсяное молоко",
+      "quantityOnHand": 146,
+      "eligible": true
+    },
+    {
+      "catalogId": 12229,
+      "name": "Салфетка \"Йота\" льняная натуральный холст",
+      "quantityOnHand": 29,
+      "eligible": false
+    },
+    {
+      "catalogId": 5684,
+      "name": "Салфетка \"Альфа\" песочно-ванильная",
+      "quantityOnHand": 84,
+      "eligible": false
+    },
+    {
+      "catalogId": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "quantityOnHand": 154,
+      "eligible": true
+    },
+    {
+      "catalogId": 5907,
+      "name": "Салфетка канвас \"Гамма\" пшеничная",
+      "quantityOnHand": 125,
+      "eligible": false
+    },
+    {
+      "catalogId": 2800,
+      "name": "Салфетка бархатная \"Бета\" миндальный латте",
+      "quantityOnHand": 163,
+      "eligible": true
+    },
+    {
+      "catalogId": 2977,
+      "name": "Салфетка \"Альфа\" капучино",
+      "quantityOnHand": 218,
+      "eligible": true
+    },
+    {
+      "catalogId": 5975,
+      "name": "Салфетка \"Шелк\" лунно-розовая",
+      "quantityOnHand": 170,
+      "eligible": true
+    },
+    {
+      "catalogId": 2914,
+      "name": "Салфетка канвас \"Гамма\" роза мента",
+      "quantityOnHand": 142,
+      "eligible": true
+    },
+    {
+      "catalogId": 5786,
+      "name": "Салфетка бархатная \"Бета\" бледно-розовая",
+      "quantityOnHand": 87,
+      "eligible": false
+    },
+    {
+      "catalogId": 3032,
+      "name": "Салфетка канвас \"Гамма\" пудровая",
+      "quantityOnHand": 105,
+      "eligible": false
+    },
+    {
+      "catalogId": 3015,
+      "name": "Салфетка \"Альфа\" нежно-розовая",
+      "quantityOnHand": 91,
+      "eligible": false
+    },
+    {
+      "catalogId": 5949,
+      "name": "Салфетка льняная \"Сигма\" розовый кварц",
+      "quantityOnHand": 66,
+      "eligible": false
+    },
+    {
+      "catalogId": 3028,
+      "name": "Салфетка \"Альфа\" розово-персиковая",
+      "quantityOnHand": 124,
+      "eligible": false
+    },
+    {
+      "catalogId": 3012,
+      "name": "Салфетка \"Альфа\" пыльно-розовая",
+      "quantityOnHand": 84,
+      "eligible": false
+    },
+    {
+      "catalogId": 5847,
+      "name": "Салфетка бархатная \"Бета\" розовая сакура",
+      "quantityOnHand": 131,
+      "eligible": true
+    },
+    {
+      "catalogId": 5735,
+      "name": "Салфетка \"Альфа\" розовый щербет",
+      "quantityOnHand": 105,
+      "eligible": false
+    },
+    {
+      "catalogId": 5888,
+      "name": "Салфетка бархатная \"Бета\" фруктовый зефир",
+      "quantityOnHand": 128,
+      "eligible": false
+    },
+    {
+      "catalogId": 3022,
+      "name": "Салфетка \"Альфа\" персиковая",
+      "quantityOnHand": 107,
+      "eligible": false
+    },
+    {
+      "catalogId": 5633,
+      "name": "Салфетка \"Альфа\" лимонадная",
+      "quantityOnHand": 141,
+      "eligible": true
+    },
+    {
+      "catalogId": 5871,
+      "name": "Салфетка бархатная \"Бета\" спелая дыня",
+      "quantityOnHand": 107,
+      "eligible": false
+    },
+    {
+      "catalogId": 5815,
+      "name": "Салфетка бархатная \"Бета\" золотая горчица",
+      "quantityOnHand": 120,
+      "eligible": false
+    },
+    {
+      "catalogId": 5660,
+      "name": "Салфетка \"Альфа\" оранжево-коралловая",
+      "quantityOnHand": 53,
+      "eligible": false
+    },
+    {
+      "catalogId": 5657,
+      "name": "Салфетка \"Альфа\" охровая",
+      "quantityOnHand": 95,
+      "eligible": false
+    },
+    {
+      "catalogId": 5852,
+      "name": "Салфетка бархатная \"Бета\" рыжая лиса",
+      "quantityOnHand": 189,
+      "eligible": true
+    },
+    {
+      "catalogId": 2939,
+      "name": "Салфетка бархатная \"Бета\" янтарная",
+      "quantityOnHand": 117,
+      "eligible": false
+    },
+    {
+      "catalogId": 5789,
+      "name": "Салфетка бархатная \"Бета\" гранатовая",
+      "quantityOnHand": 280,
+      "eligible": true
+    },
+    {
+      "catalogId": 5529,
+      "name": "Салфетка \"Альфа\" бордо",
+      "quantityOnHand": 86,
+      "eligible": false
+    },
+    {
+      "catalogId": 5838,
+      "name": "Салфетка бархатная \"Бета\" красный дракон",
+      "quantityOnHand": 440,
+      "eligible": true
+    },
+    {
+      "catalogId": 16818,
+      "name": "Салфетка бархатная \"Бета\" клубничный",
+      "quantityOnHand": 107,
+      "eligible": false
+    },
+    {
+      "catalogId": 5754,
+      "name": "Салфетка \"Альфа\" фуксия",
+      "quantityOnHand": 170,
+      "eligible": true
+    },
+    {
+      "catalogId": 3001,
+      "name": "Салфетка \"Альфа\" пыльно-инжирная",
+      "quantityOnHand": 117,
+      "eligible": false
+    },
+    {
+      "catalogId": 10195,
+      "name": "Салфетка \"Шелк\" блеск аметиста",
+      "quantityOnHand": 295,
+      "eligible": true
+    },
+    {
+      "catalogId": 5865,
+      "name": "Салфетка бархатная \"Бета\" сиреневая дымка",
+      "quantityOnHand": 55,
+      "eligible": false
+    },
+    {
+      "catalogId": 2809,
+      "name": "Салфетка бархатная \"Бета\" пастельно-сиреневая",
+      "quantityOnHand": 98,
+      "eligible": false
+    },
+    {
+      "catalogId": 5744,
+      "name": "Салфетка \"Альфа\" сиреневый туман",
+      "quantityOnHand": 203,
+      "eligible": true
+    },
+    {
+      "catalogId": 2806,
+      "name": "Салфетка \"Альфа\" лавандовая",
+      "quantityOnHand": 68,
+      "eligible": false
+    },
+    {
+      "catalogId": 5884,
+      "name": "Салфетка бархатная \"Бета\" фиалковая",
+      "quantityOnHand": 157,
+      "eligible": true
+    },
+    {
+      "catalogId": 9974,
+      "name": "Салфетка бархатная \"Бета\" фиолетовый люпин",
+      "quantityOnHand": 119,
+      "eligible": false
+    },
+    {
+      "catalogId": 5554,
+      "name": "Салфетка хлопковая \"Омега\" серо-голубая",
+      "quantityOnHand": 63,
+      "eligible": false
+    },
+    {
+      "catalogId": 10410,
+      "name": "Салфетка \"Шелк\" тиффани",
+      "quantityOnHand": 70,
+      "eligible": false
+    },
+    {
+      "catalogId": 20851,
+      "name": "Салфетка бархатная \"Бета\" аквамарин",
+      "quantityOnHand": 31,
+      "eligible": false
+    },
+    {
+      "catalogId": 5574,
+      "name": "Салфетка \"Альфа\" голубая лагуна",
+      "quantityOnHand": 122,
+      "eligible": false
+    },
+    {
+      "catalogId": 5563,
+      "name": "Салфетка \"Альфа\" пастельно-голубая",
+      "quantityOnHand": 80,
+      "eligible": false
+    },
+    {
+      "catalogId": 5568,
+      "name": "Салфетка \"Альфа\" голубая",
+      "quantityOnHand": 84,
+      "eligible": false
+    },
+    {
+      "catalogId": 5903,
+      "name": "Салфетка канвас \"Гамма\" голубое облако",
+      "quantityOnHand": 46,
+      "eligible": false
+    },
+    {
+      "catalogId": 3632,
+      "name": "Салфетка бархатная \"Бета\" голубой сапфир",
+      "quantityOnHand": 128,
+      "eligible": false
+    },
+    {
+      "catalogId": 5879,
+      "name": "Салфетка бархатная \"Бета\" тихий океан",
+      "quantityOnHand": 182,
+      "eligible": true
+    },
+    {
+      "catalogId": 3008,
+      "name": "Салфетка \"Альфа\" пыльно-синяя",
+      "quantityOnHand": 87,
+      "eligible": false
+    },
+    {
+      "catalogId": 5861,
+      "name": "Салфетка бархатная \"Бета\" синий Ван Гога",
+      "quantityOnHand": 112,
+      "eligible": false
+    },
+    {
+      "catalogId": 5875,
+      "name": "Салфетка бархатная \"Бета\" темная ночь",
+      "quantityOnHand": 102,
+      "eligible": false
+    },
+    {
+      "catalogId": 2875,
+      "name": "Салфетка канвас \"Гамма\" темно-синяя",
+      "quantityOnHand": 203,
+      "eligible": true
+    },
+    {
+      "catalogId": 10897,
+      "name": "Салфетка \"Шелк\" мелисса",
+      "quantityOnHand": 46,
+      "eligible": false
+    },
+    {
+      "catalogId": 5638,
+      "name": "Салфетка \"Альфа\" ментоловая",
+      "quantityOnHand": 51,
+      "eligible": false
+    },
+    {
+      "catalogId": 5722,
+      "name": "Салфетка \"Альфа\" приглушенно-мятная",
+      "quantityOnHand": 77,
+      "eligible": false
+    },
+    {
+      "catalogId": 5940,
+      "name": "Салфетка канвас \"Гамма\" эвкалиптовая",
+      "quantityOnHand": 217,
+      "eligible": true
+    },
+    {
+      "catalogId": 5893,
+      "name": "Салфетка бархатная \"Бета\" шалфей серебристый",
+      "quantityOnHand": 99,
+      "eligible": false
+    },
+    {
+      "catalogId": 18863,
+      "name": "Салфетка бархатная \"Бета\" васаби",
+      "quantityOnHand": 72,
+      "eligible": false
+    },
+    {
+      "catalogId": 5921,
+      "name": "Салфетка канвас \"Гамма\" фисташковая",
+      "quantityOnHand": 199,
+      "eligible": true
+    },
+    {
+      "catalogId": 2927,
+      "name": "Салфетка бархатная \"Бета\" светло-зеленая",
+      "quantityOnHand": 121,
+      "eligible": false
+    },
+    {
+      "catalogId": 5646,
+      "name": "Салфетка \"Альфа\" оливковая",
+      "quantityOnHand": 316,
+      "eligible": true
+    },
+    {
+      "catalogId": 5812,
+      "name": "Салфетка бархатная \"Бета\" зеленый чай",
+      "quantityOnHand": 166,
+      "eligible": true
+    },
+    {
+      "catalogId": 5612,
+      "name": "Салфетка \"Альфа\" изумрудная",
+      "quantityOnHand": 179,
+      "eligible": true
+    },
+    {
+      "catalogId": 5598,
+      "name": "Салфетка \"Альфа\" зеленая",
+      "quantityOnHand": 125,
+      "eligible": false
+    },
+    {
+      "catalogId": 5926,
+      "name": "Салфетка канвас \"Гамма\" хвойный лес",
+      "quantityOnHand": 197,
+      "eligible": true
+    },
+    {
+      "catalogId": 5807,
+      "name": "Салфетка бархатная \"Бета\" зеленый малахит",
+      "quantityOnHand": 161,
+      "eligible": true
+    },
+    {
+      "catalogId": 2816,
+      "name": "Салфетка \"Альфа\" серая",
+      "quantityOnHand": 259,
+      "eligible": true
+    },
+    {
+      "catalogId": 5984,
+      "name": "Салфетка \"Шелк\" серый оникс",
+      "quantityOnHand": 69,
+      "eligible": false
+    },
+    {
+      "catalogId": 2811,
+      "name": "Салфетка бархатная \"Бета\" серая",
+      "quantityOnHand": 143,
+      "eligible": true
+    },
+    {
+      "catalogId": 5627,
+      "name": "Салфетка \"Альфа\" кофейная",
+      "quantityOnHand": 100,
+      "eligible": false
+    },
+    {
+      "catalogId": 18357,
+      "name": "Салфетка бархатная \"Бета\" шоколадная",
+      "quantityOnHand": 132,
+      "eligible": true
+    },
+    {
+      "catalogId": 5990,
+      "name": "Салфетка \"Шелк\" черный бриллиант",
+      "quantityOnHand": 96,
+      "eligible": false
+    },
+    {
+      "catalogId": 4785,
+      "name": "Салфетка бархатная \"Бета\" черная",
+      "quantityOnHand": 123,
+      "eligible": false
+    },
+    {
+      "catalogId": 5758,
+      "name": "Салфетка \"Альфа\" черная",
+      "quantityOnHand": 100,
+      "eligible": false
+    },
+    {
+      "catalogId": 4350,
+      "name": "Образцы текстиля",
+      "quantityOnHand": 20,
+      "eligible": false
+    }
+  ]
+}

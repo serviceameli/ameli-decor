@@ -217,6 +217,534 @@
       "originalImage": "https://cdn.frents.ru/ameli-rental/b53460fe-b1ce-475d-b232-3117a8bd82de_полярис_жемчуг_роз_пуф.png",
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20042",
       "image": "assets/catalog-ceremony-20042.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 9977,
+      "name": "Салфетка \"Каппа\" Диор зеленая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/9b00cb61-ae58-4b5a-ba64-13ceba97ddc7_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/9977",
+      "image": "assets/catalog-napkins-9977.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5762,
+      "name": "Салфетка бархатная \"Бета\" ландыш",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/f8cefcb6-47fe-4a76-b26d-482d6cae15f5_Салфетка_бархатная_Бета_жемчужная-1.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5762",
+      "image": "assets/catalog-napkins-5762.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/77bd53be-8f1d-4393-8bda-8090ab6eaafb_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/12e14e35-1961-4c36-adf1-1667f2faff49_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/b027dc6f-9ada-4b47-bf54-d15d0621696b_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/5a1b9df4-80fe-4996-8acb-dd90b1acdef6_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803-4.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/51a3f6a2-7e1a-4a89-a867-5d40974acb11_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803-5.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5803,
+      "name": "Салфетка бархатная \"Бета\" жемчужная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/8ae48c9f-dd72-4e17-9533-729c4307a3b3_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "image": "assets/catalog-napkins-5803-6.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5962,
+      "name": "Салфетка \"Шелк\" айвори",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/e7669411-47d9-401f-a3ad-cd59698456c0_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5962",
+      "image": "assets/catalog-napkins-5962.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 3608,
+      "name": "Салфетка канвас \"Гамма\" ванильная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/3f586b49-91b6-4138-b468-8915c54449e4_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/3608",
+      "image": "assets/catalog-napkins-3608.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 3608,
+      "name": "Салфетка канвас \"Гамма\" ванильная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/84d809e7-1621-4df8-8c84-2a7c75fe2f91_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/3608",
+      "image": "assets/catalog-napkins-3608-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5958,
+      "name": "Салфетка \"Тета\" льняная овсяное молоко",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/5cc44577-344a-4fd1-bfec-d863a02b92c6_овс_молоко.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5958",
+      "image": "assets/catalog-napkins-5958.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/c36461b9-8799-4413-9a64-fc5a6f054aba_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "image": "assets/catalog-napkins-2984.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/781d1cd8-68a6-43d9-9646-1e17a685487f_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "image": "assets/catalog-napkins-2984-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/d7d2122f-80aa-404d-8a5a-f8af3f9bdc96_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "image": "assets/catalog-napkins-2984-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/018c96fa-03c3-4d5b-a25c-b65a75c4a287_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "image": "assets/catalog-napkins-2984-4.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2984,
+      "name": "Салфетка \"Альфа\" латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/5ac9797b-b5f7-41e6-b83b-48af1b199936_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "image": "assets/catalog-napkins-2984-5.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2800,
+      "name": "Салфетка бархатная \"Бета\" миндальный латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/295cfdfa-dc04-4673-b8b3-c25bf31d7ba3_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2800",
+      "image": "assets/catalog-napkins-2800.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2800,
+      "name": "Салфетка бархатная \"Бета\" миндальный латте",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/c4a129f3-0543-43ee-b55e-a81505ceeb16_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2800",
+      "image": "assets/catalog-napkins-2800-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2977,
+      "name": "Салфетка \"Альфа\" капучино",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/a926f993-bebb-48dd-ba95-bb6886f2e885_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2977",
+      "image": "assets/catalog-napkins-2977.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2977,
+      "name": "Салфетка \"Альфа\" капучино",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/a1f18395-9eec-4113-8525-fbcf2dc1e408_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2977",
+      "image": "assets/catalog-napkins-2977-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2977,
+      "name": "Салфетка \"Альфа\" капучино",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/c32b8f96-1076-421c-9b61-e99aba8e9616_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2977",
+      "image": "assets/catalog-napkins-2977-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2977,
+      "name": "Салфетка \"Альфа\" капучино",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/40bafe91-12c9-4f79-a51e-6e3355ff1cbe_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2977",
+      "image": "assets/catalog-napkins-2977-4.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5975,
+      "name": "Салфетка \"Шелк\" лунно-розовая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/6497a5b6-66cb-4792-b708-caed4ab9bcaa_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5975",
+      "image": "assets/catalog-napkins-5975.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5847,
+      "name": "Салфетка бархатная \"Бета\" розовая сакура",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/60dcae82-dca0-4abf-83b9-4c29f83a03ce_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5847",
+      "image": "assets/catalog-napkins-5847.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5847,
+      "name": "Салфетка бархатная \"Бета\" розовая сакура",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/b679d21f-fdbb-4094-ad24-0294dd776124_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5847",
+      "image": "assets/catalog-napkins-5847-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5847,
+      "name": "Салфетка бархатная \"Бета\" розовая сакура",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/29ea186e-e299-4ac0-aa00-cee76b6b45ae_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5847",
+      "image": "assets/catalog-napkins-5847-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5633,
+      "name": "Салфетка \"Альфа\" лимонадная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/0fe90b76-e892-4450-b718-0c4664fa5a68_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5633",
+      "image": "assets/catalog-napkins-5633.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5852,
+      "name": "Салфетка бархатная \"Бета\" рыжая лиса",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ed635d5f-0eec-434f-b3ac-e788db87cdae_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5852",
+      "image": "assets/catalog-napkins-5852.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5789,
+      "name": "Салфетка бархатная \"Бета\" гранатовая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1a0a4196-541c-4e5a-8ec9-d3711a49b08c_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5789",
+      "image": "assets/catalog-napkins-5789.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5838,
+      "name": "Салфетка бархатная \"Бета\" красный дракон",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/4c8cb803-6230-47c8-becd-9fcec13a09b4_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5838",
+      "image": "assets/catalog-napkins-5838.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5838,
+      "name": "Салфетка бархатная \"Бета\" красный дракон",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/4b2690e3-e7dc-46d4-992e-c761383805eb_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5838",
+      "image": "assets/catalog-napkins-5838-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5838,
+      "name": "Салфетка бархатная \"Бета\" красный дракон",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/3a03e51f-32a4-42a9-813c-75389fa51ba7_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5838",
+      "image": "assets/catalog-napkins-5838-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5754,
+      "name": "Салфетка \"Альфа\" фуксия",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/e26a2843-3a2e-45c5-85a1-171cc810dd0a_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5754",
+      "image": "assets/catalog-napkins-5754.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5754,
+      "name": "Салфетка \"Альфа\" фуксия",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/5e3f206b-b7ac-43dd-9b80-7c0c2e87e420_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5754",
+      "image": "assets/catalog-napkins-5754-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5754,
+      "name": "Салфетка \"Альфа\" фуксия",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/88571412-3fb6-4e14-ba06-10ffd7a14c04_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5754",
+      "image": "assets/catalog-napkins-5754-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 10195,
+      "name": "Салфетка \"Шелк\" блеск аметиста",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/3662ea5b-e3bb-49fc-a9bc-7be04a9b0510_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/10195",
+      "image": "assets/catalog-napkins-10195.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5744,
+      "name": "Салфетка \"Альфа\" сиреневый туман",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/07b38a9b-af87-4879-a985-2f5f1a0ae622_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5744",
+      "image": "assets/catalog-napkins-5744.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5884,
+      "name": "Салфетка бархатная \"Бета\" фиалковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/b6c43c97-ed01-4ee8-bed3-87637fef8e02_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5884",
+      "image": "assets/catalog-napkins-5884.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5884,
+      "name": "Салфетка бархатная \"Бета\" фиалковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1720adb0-577e-4aa3-beab-bbddb255b407_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5884",
+      "image": "assets/catalog-napkins-5884-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5879,
+      "name": "Салфетка бархатная \"Бета\" тихий океан",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/040dfae0-e2d5-4d95-b088-fa173fd058bf_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5879",
+      "image": "assets/catalog-napkins-5879.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5879,
+      "name": "Салфетка бархатная \"Бета\" тихий океан",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/24b48bc8-7148-4df9-9a5a-26b5bcf7dc34_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5879",
+      "image": "assets/catalog-napkins-5879-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2875,
+      "name": "Салфетка канвас \"Гамма\" темно-синяя",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/a2c34573-b5c9-43cc-a85b-7bb3096008ce_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2875",
+      "image": "assets/catalog-napkins-2875.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2875,
+      "name": "Салфетка канвас \"Гамма\" темно-синяя",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/b2050584-2769-4d9b-8819-02b9830db764_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2875",
+      "image": "assets/catalog-napkins-2875-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5940,
+      "name": "Салфетка канвас \"Гамма\" эвкалиптовая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/0502f21c-416b-453a-b83b-5f8a9daf011d_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5940",
+      "image": "assets/catalog-napkins-5940.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5921,
+      "name": "Салфетка канвас \"Гамма\" фисташковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/34d027b6-7067-404c-b63a-c74ed8efc00b_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5921",
+      "image": "assets/catalog-napkins-5921.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5921,
+      "name": "Салфетка канвас \"Гамма\" фисташковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/4ff214f9-83da-46dd-a11c-058a0ddc3976_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5921",
+      "image": "assets/catalog-napkins-5921-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5646,
+      "name": "Салфетка \"Альфа\" оливковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/e72a005b-d5f2-4202-b861-0c9a76b4b82c_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5646",
+      "image": "assets/catalog-napkins-5646.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5646,
+      "name": "Салфетка \"Альфа\" оливковая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/eab6ae3e-975d-40f3-a61b-d110bfd85c67_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5646",
+      "image": "assets/catalog-napkins-5646-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5812,
+      "name": "Салфетка бархатная \"Бета\" зеленый чай",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/829a4dfd-3982-4b85-ad49-10aa6d5b7c90_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5812",
+      "image": "assets/catalog-napkins-5812.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5812,
+      "name": "Салфетка бархатная \"Бета\" зеленый чай",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/92ffce51-6a86-4ad7-9a0f-b15af4ea4d55_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5812",
+      "image": "assets/catalog-napkins-5812-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5812,
+      "name": "Салфетка бархатная \"Бета\" зеленый чай",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/968cf35d-5afa-49cf-aeba-5b815851c7df_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5812",
+      "image": "assets/catalog-napkins-5812-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5612,
+      "name": "Салфетка \"Альфа\" изумрудная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/076d214a-3bd3-490e-a150-033ea105f4c6_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5612",
+      "image": "assets/catalog-napkins-5612.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5926,
+      "name": "Салфетка канвас \"Гамма\" хвойный лес",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/514ad88b-d044-4221-a3de-035584b967b3_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5926",
+      "image": "assets/catalog-napkins-5926.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5926,
+      "name": "Салфетка канвас \"Гамма\" хвойный лес",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/e0468f2d-bf92-4fb8-bcad-0d77479d5c1a_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5926",
+      "image": "assets/catalog-napkins-5926-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 5807,
+      "name": "Салфетка бархатная \"Бета\" зеленый малахит",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1e7d1f39-9620-43ea-b79f-0084acbc02ef_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5807",
+      "image": "assets/catalog-napkins-5807.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2816,
+      "name": "Салфетка \"Альфа\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/781f1367-924e-4999-93ad-6d65ca3343aa_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2816",
+      "image": "assets/catalog-napkins-2816.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2816,
+      "name": "Салфетка \"Альфа\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/6222a40f-ea98-42dc-9cec-1820c3a4d54c_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2816",
+      "image": "assets/catalog-napkins-2816-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2816,
+      "name": "Салфетка \"Альфа\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/e4bf9256-6a94-43bb-b722-8971c8a163e5_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2816",
+      "image": "assets/catalog-napkins-2816-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2816,
+      "name": "Салфетка \"Альфа\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/9fdacec8-dacd-4a12-9947-aec16475aba3_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2816",
+      "image": "assets/catalog-napkins-2816-4.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2811,
+      "name": "Салфетка бархатная \"Бета\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/c07785bb-8ff2-4ed3-8218-7404e043e0ca_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2811",
+      "image": "assets/catalog-napkins-2811.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2811,
+      "name": "Салфетка бархатная \"Бета\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/5f7fe3c5-23fa-4344-b59f-ebca0f984248_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2811",
+      "image": "assets/catalog-napkins-2811-2.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2811,
+      "name": "Салфетка бархатная \"Бета\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/44294aeb-907f-40b7-84cf-3a5c0f606a58_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2811",
+      "image": "assets/catalog-napkins-2811-3.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 2811,
+      "name": "Салфетка бархатная \"Бета\" серая",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/8d57accf-c51d-4cd3-95eb-79b5663c39ca_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2811",
+      "image": "assets/catalog-napkins-2811-4.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 18357,
+      "name": "Салфетка бархатная \"Бета\" шоколадная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/2ef830c0-eac8-4080-8135-0742002e35bc_салфетка_шоколад.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/18357",
+      "image": "assets/catalog-napkins-18357.jpg"
+    },
+    {
+      "section": "napkins",
+      "id": 18357,
+      "name": "Салфетка бархатная \"Бета\" шоколадная",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/d1791eee-8685-42b2-a605-37311ef0dc64_temp_image.jpg",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/18357",
+      "image": "assets/catalog-napkins-18357-2.jpg"
     }
   ]
 }

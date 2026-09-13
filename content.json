@@ -632,6 +632,987 @@
           "label": "Основное фото"
         }
       ]
+    },
+    {
+      "id": "N07",
+      "title": "Диор зеленая",
+      "description": "Салфетка \"Каппа\".",
+      "image": "assets/catalog-napkins-9977.jpg",
+      "alt": "Салфетка \"Каппа\" Диор зеленая",
+      "catalogName": "Салфетка \"Каппа\" Диор зеленая",
+      "catalogId": 9977,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/9977",
+      "components": [
+        "Салфетка \"Каппа\" Диор зеленая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 163,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-9977.jpg",
+          "alt": "Салфетка \"Каппа\" Диор зеленая — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "title": "Ландыш",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5762.jpg",
+      "alt": "Салфетка бархатная \"Бета\" ландыш",
+      "catalogName": "Салфетка бархатная \"Бета\" ландыш",
+      "catalogId": 5762,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5762",
+      "components": [
+        "Салфетка бархатная \"Бета\" ландыш — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 240,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5762.jpg",
+          "alt": "Салфетка бархатная \"Бета\" ландыш — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "title": "Жемчужная",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5803.jpg",
+      "alt": "Салфетка бархатная \"Бета\" жемчужная",
+      "catalogName": "Салфетка бархатная \"Бета\" жемчужная",
+      "catalogId": 5803,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
+      "components": [
+        "Салфетка бархатная \"Бета\" жемчужная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 160,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5803.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-4.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 4",
+          "label": "Фото из каталога 4"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-5.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 5",
+          "label": "Фото из каталога 5"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-6.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 6",
+          "label": "Фото из каталога 6"
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "title": "Айвори",
+      "description": "Салфетка \"Шелк\".",
+      "image": "assets/catalog-napkins-5962.jpg",
+      "alt": "Салфетка \"Шелк\" айвори",
+      "catalogName": "Салфетка \"Шелк\" айвори",
+      "catalogId": 5962,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5962",
+      "components": [
+        "Салфетка \"Шелк\" айвори — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 151,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5962.jpg",
+          "alt": "Салфетка \"Шелк\" айвори — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "title": "Ванильная",
+      "description": "Салфетка \"Гамма\" · канвас.",
+      "image": "assets/catalog-napkins-3608.jpg",
+      "alt": "Салфетка канвас \"Гамма\" ванильная",
+      "catalogName": "Салфетка канвас \"Гамма\" ванильная",
+      "catalogId": 3608,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/3608",
+      "components": [
+        "Салфетка канвас \"Гамма\" ванильная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 146,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-3608.jpg",
+          "alt": "Салфетка канвас \"Гамма\" ванильная — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-3608-2.jpg",
+          "alt": "Салфетка канвас \"Гамма\" ванильная — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "title": "Овсяное молоко",
+      "description": "Салфетка \"Тета\" · лён.",
+      "image": "assets/catalog-napkins-5958.jpg",
+      "alt": "Салфетка \"Тета\" льняная овсяное молоко",
+      "catalogName": "Салфетка \"Тета\" льняная овсяное молоко",
+      "catalogId": 5958,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5958",
+      "components": [
+        "Салфетка \"Тета\" льняная овсяное молоко — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 146,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5958.jpg",
+          "alt": "Салфетка \"Тета\" льняная овсяное молоко — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "title": "Латте",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-2984.jpg",
+      "alt": "Салфетка \"Альфа\" латте",
+      "catalogName": "Салфетка \"Альфа\" латте",
+      "catalogId": 2984,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2984",
+      "components": [
+        "Салфетка \"Альфа\" латте — 1 шт.",
+        "Размер — 50 × 50 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 154,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2984.jpg",
+          "alt": "Салфетка \"Альфа\" латте — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2984-2.jpg",
+          "alt": "Салфетка \"Альфа\" латте — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-2984-3.jpg",
+          "alt": "Салфетка \"Альфа\" латте — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-2984-4.jpg",
+          "alt": "Салфетка \"Альфа\" латте — фото 4",
+          "label": "Фото из каталога 4"
+        },
+        {
+          "src": "assets/catalog-napkins-2984-5.jpg",
+          "alt": "Салфетка \"Альфа\" латте — фото 5",
+          "label": "Фото из каталога 5"
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "title": "Миндальный латте",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-2800.jpg",
+      "alt": "Салфетка бархатная \"Бета\" миндальный латте",
+      "catalogName": "Салфетка бархатная \"Бета\" миндальный латте",
+      "catalogId": 2800,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2800",
+      "components": [
+        "Салфетка бархатная \"Бета\" миндальный латте — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 163,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2800.jpg",
+          "alt": "Салфетка бархатная \"Бета\" миндальный латте — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2800-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" миндальный латте — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "title": "Капучино",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-2977.jpg",
+      "alt": "Салфетка \"Альфа\" капучино",
+      "catalogName": "Салфетка \"Альфа\" капучино",
+      "catalogId": 2977,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2977",
+      "components": [
+        "Салфетка \"Альфа\" капучино — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 218,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2977.jpg",
+          "alt": "Салфетка \"Альфа\" капучино — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2977-2.jpg",
+          "alt": "Салфетка \"Альфа\" капучино — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-2977-3.jpg",
+          "alt": "Салфетка \"Альфа\" капучино — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-2977-4.jpg",
+          "alt": "Салфетка \"Альфа\" капучино — фото 4",
+          "label": "Фото из каталога 4"
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "title": "Лунно-розовая",
+      "description": "Салфетка \"Шелк\".",
+      "image": "assets/catalog-napkins-5975.jpg",
+      "alt": "Салфетка \"Шелк\" лунно-розовая",
+      "catalogName": "Салфетка \"Шелк\" лунно-розовая",
+      "catalogId": 5975,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5975",
+      "components": [
+        "Салфетка \"Шелк\" лунно-розовая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 170,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5975.jpg",
+          "alt": "Салфетка \"Шелк\" лунно-розовая — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N17",
+      "title": "Розовая сакура",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5847.jpg",
+      "alt": "Салфетка бархатная \"Бета\" розовая сакура",
+      "catalogName": "Салфетка бархатная \"Бета\" розовая сакура",
+      "catalogId": 5847,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5847",
+      "components": [
+        "Салфетка бархатная \"Бета\" розовая сакура — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 131,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5847.jpg",
+          "alt": "Салфетка бархатная \"Бета\" розовая сакура — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5847-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" розовая сакура — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5847-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" розовая сакура — фото 3",
+          "label": "Фото из каталога 3"
+        }
+      ]
+    },
+    {
+      "id": "N18",
+      "title": "Лимонадная",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-5633.jpg",
+      "alt": "Салфетка \"Альфа\" лимонадная",
+      "catalogName": "Салфетка \"Альфа\" лимонадная",
+      "catalogId": 5633,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5633",
+      "components": [
+        "Салфетка \"Альфа\" лимонадная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 141,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5633.jpg",
+          "alt": "Салфетка \"Альфа\" лимонадная — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N19",
+      "title": "Рыжая лиса",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5852.jpg",
+      "alt": "Салфетка бархатная \"Бета\" рыжая лиса",
+      "catalogName": "Салфетка бархатная \"Бета\" рыжая лиса",
+      "catalogId": 5852,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5852",
+      "components": [
+        "Салфетка бархатная \"Бета\" рыжая лиса — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 189,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5852.jpg",
+          "alt": "Салфетка бархатная \"Бета\" рыжая лиса — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N20",
+      "title": "Гранатовая",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5789.jpg",
+      "alt": "Салфетка бархатная \"Бета\" гранатовая",
+      "catalogName": "Салфетка бархатная \"Бета\" гранатовая",
+      "catalogId": 5789,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5789",
+      "components": [
+        "Салфетка бархатная \"Бета\" гранатовая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 280,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5789.jpg",
+          "alt": "Салфетка бархатная \"Бета\" гранатовая — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N21",
+      "title": "Красный дракон",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5838.jpg",
+      "alt": "Салфетка бархатная \"Бета\" красный дракон",
+      "catalogName": "Салфетка бархатная \"Бета\" красный дракон",
+      "catalogId": 5838,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5838",
+      "components": [
+        "Салфетка бархатная \"Бета\" красный дракон — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 440,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5838.jpg",
+          "alt": "Салфетка бархатная \"Бета\" красный дракон — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5838-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" красный дракон — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5838-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" красный дракон — фото 3",
+          "label": "Фото из каталога 3"
+        }
+      ]
+    },
+    {
+      "id": "N22",
+      "title": "Фуксия",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-5754.jpg",
+      "alt": "Салфетка \"Альфа\" фуксия",
+      "catalogName": "Салфетка \"Альфа\" фуксия",
+      "catalogId": 5754,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5754",
+      "components": [
+        "Салфетка \"Альфа\" фуксия — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 170,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5754.jpg",
+          "alt": "Салфетка \"Альфа\" фуксия — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5754-2.jpg",
+          "alt": "Салфетка \"Альфа\" фуксия — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5754-3.jpg",
+          "alt": "Салфетка \"Альфа\" фуксия — фото 3",
+          "label": "Фото из каталога 3"
+        }
+      ]
+    },
+    {
+      "id": "N23",
+      "title": "Блеск аметиста",
+      "description": "Салфетка \"Шелк\".",
+      "image": "assets/catalog-napkins-10195.jpg",
+      "alt": "Салфетка \"Шелк\" блеск аметиста",
+      "catalogName": "Салфетка \"Шелк\" блеск аметиста",
+      "catalogId": 10195,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/10195",
+      "components": [
+        "Салфетка \"Шелк\" блеск аметиста — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 295,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-10195.jpg",
+          "alt": "Салфетка \"Шелк\" блеск аметиста — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N24",
+      "title": "Сиреневый туман",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-5744.jpg",
+      "alt": "Салфетка \"Альфа\" сиреневый туман",
+      "catalogName": "Салфетка \"Альфа\" сиреневый туман",
+      "catalogId": 5744,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5744",
+      "components": [
+        "Салфетка \"Альфа\" сиреневый туман — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 203,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5744.jpg",
+          "alt": "Салфетка \"Альфа\" сиреневый туман — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N25",
+      "title": "Фиалковая",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5884.jpg",
+      "alt": "Салфетка бархатная \"Бета\" фиалковая",
+      "catalogName": "Салфетка бархатная \"Бета\" фиалковая",
+      "catalogId": 5884,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5884",
+      "components": [
+        "Салфетка бархатная \"Бета\" фиалковая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 157,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5884.jpg",
+          "alt": "Салфетка бархатная \"Бета\" фиалковая — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5884-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" фиалковая — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N26",
+      "title": "Тихий океан",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5879.jpg",
+      "alt": "Салфетка бархатная \"Бета\" тихий океан",
+      "catalogName": "Салфетка бархатная \"Бета\" тихий океан",
+      "catalogId": 5879,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5879",
+      "components": [
+        "Салфетка бархатная \"Бета\" тихий океан — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 182,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5879.jpg",
+          "alt": "Салфетка бархатная \"Бета\" тихий океан — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5879-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" тихий океан — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N27",
+      "title": "Темно-синяя",
+      "description": "Салфетка \"Гамма\" · канвас.",
+      "image": "assets/catalog-napkins-2875.jpg",
+      "alt": "Салфетка канвас \"Гамма\" темно-синяя",
+      "catalogName": "Салфетка канвас \"Гамма\" темно-синяя",
+      "catalogId": 2875,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2875",
+      "components": [
+        "Салфетка канвас \"Гамма\" темно-синяя — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 203,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2875.jpg",
+          "alt": "Салфетка канвас \"Гамма\" темно-синяя — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2875-2.jpg",
+          "alt": "Салфетка канвас \"Гамма\" темно-синяя — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N28",
+      "title": "Эвкалиптовая",
+      "description": "Салфетка \"Гамма\" · канвас.",
+      "image": "assets/catalog-napkins-5940.jpg",
+      "alt": "Салфетка канвас \"Гамма\" эвкалиптовая",
+      "catalogName": "Салфетка канвас \"Гамма\" эвкалиптовая",
+      "catalogId": 5940,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5940",
+      "components": [
+        "Салфетка канвас \"Гамма\" эвкалиптовая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 217,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5940.jpg",
+          "alt": "Салфетка канвас \"Гамма\" эвкалиптовая — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N29",
+      "title": "Фисташковая",
+      "description": "Салфетка \"Гамма\" · канвас.",
+      "image": "assets/catalog-napkins-5921.jpg",
+      "alt": "Салфетка канвас \"Гамма\" фисташковая",
+      "catalogName": "Салфетка канвас \"Гамма\" фисташковая",
+      "catalogId": 5921,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5921",
+      "components": [
+        "Салфетка канвас \"Гамма\" фисташковая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 199,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5921.jpg",
+          "alt": "Салфетка канвас \"Гамма\" фисташковая — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5921-2.jpg",
+          "alt": "Салфетка канвас \"Гамма\" фисташковая — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N30",
+      "title": "Оливковая",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-5646.jpg",
+      "alt": "Салфетка \"Альфа\" оливковая",
+      "catalogName": "Салфетка \"Альфа\" оливковая",
+      "catalogId": 5646,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5646",
+      "components": [
+        "Салфетка \"Альфа\" оливковая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 316,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5646.jpg",
+          "alt": "Салфетка \"Альфа\" оливковая — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5646-2.jpg",
+          "alt": "Салфетка \"Альфа\" оливковая — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N31",
+      "title": "Зеленый чай",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5812.jpg",
+      "alt": "Салфетка бархатная \"Бета\" зеленый чай",
+      "catalogName": "Салфетка бархатная \"Бета\" зеленый чай",
+      "catalogId": 5812,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5812",
+      "components": [
+        "Салфетка бархатная \"Бета\" зеленый чай — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 166,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5812.jpg",
+          "alt": "Салфетка бархатная \"Бета\" зеленый чай — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5812-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" зеленый чай — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5812-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" зеленый чай — фото 3",
+          "label": "Фото из каталога 3"
+        }
+      ]
+    },
+    {
+      "id": "N32",
+      "title": "Изумрудная",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-5612.jpg",
+      "alt": "Салфетка \"Альфа\" изумрудная",
+      "catalogName": "Салфетка \"Альфа\" изумрудная",
+      "catalogId": 5612,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5612",
+      "components": [
+        "Салфетка \"Альфа\" изумрудная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 179,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5612.jpg",
+          "alt": "Салфетка \"Альфа\" изумрудная — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N33",
+      "title": "Хвойный лес",
+      "description": "Салфетка \"Гамма\" · канвас.",
+      "image": "assets/catalog-napkins-5926.jpg",
+      "alt": "Салфетка канвас \"Гамма\" хвойный лес",
+      "catalogName": "Салфетка канвас \"Гамма\" хвойный лес",
+      "catalogId": 5926,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5926",
+      "components": [
+        "Салфетка канвас \"Гамма\" хвойный лес — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 197,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5926.jpg",
+          "alt": "Салфетка канвас \"Гамма\" хвойный лес — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-5926-2.jpg",
+          "alt": "Салфетка канвас \"Гамма\" хвойный лес — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
+    },
+    {
+      "id": "N34",
+      "title": "Зеленый малахит",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5807.jpg",
+      "alt": "Салфетка бархатная \"Бета\" зеленый малахит",
+      "catalogName": "Салфетка бархатная \"Бета\" зеленый малахит",
+      "catalogId": 5807,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5807",
+      "components": [
+        "Салфетка бархатная \"Бета\" зеленый малахит — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 161,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5807.jpg",
+          "alt": "Салфетка бархатная \"Бета\" зеленый малахит — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N35",
+      "title": "Серая",
+      "description": "Салфетка \"Альфа\".",
+      "image": "assets/catalog-napkins-2816.jpg",
+      "alt": "Салфетка \"Альфа\" серая",
+      "catalogName": "Салфетка \"Альфа\" серая",
+      "catalogId": 2816,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2816",
+      "components": [
+        "Салфетка \"Альфа\" серая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 259,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2816.jpg",
+          "alt": "Салфетка \"Альфа\" серая — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2816-2.jpg",
+          "alt": "Салфетка \"Альфа\" серая — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-2816-3.jpg",
+          "alt": "Салфетка \"Альфа\" серая — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-2816-4.jpg",
+          "alt": "Салфетка \"Альфа\" серая — фото 4",
+          "label": "Фото из каталога 4"
+        }
+      ]
+    },
+    {
+      "id": "N36",
+      "title": "Серая",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-2811.jpg",
+      "alt": "Салфетка бархатная \"Бета\" серая",
+      "catalogName": "Салфетка бархатная \"Бета\" серая",
+      "catalogId": 2811,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/2811",
+      "components": [
+        "Салфетка бархатная \"Бета\" серая — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 143,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-2811.jpg",
+          "alt": "Салфетка бархатная \"Бета\" серая — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-2811-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" серая — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-2811-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" серая — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-2811-4.jpg",
+          "alt": "Салфетка бархатная \"Бета\" серая — фото 4",
+          "label": "Фото из каталога 4"
+        }
+      ]
+    },
+    {
+      "id": "N37",
+      "title": "Шоколадная",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-18357.jpg",
+      "alt": "Салфетка бархатная \"Бета\" шоколадная",
+      "catalogName": "Салфетка бархатная \"Бета\" шоколадная",
+      "catalogId": 18357,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/18357",
+      "components": [
+        "Салфетка бархатная \"Бета\" шоколадная — 1 шт.",
+        "Размер — 45 × 45 см."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "В пакет входит по одной такой салфетке на каждого гостя. Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 132,
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-18357.jpg",
+          "alt": "Салфетка бархатная \"Бета\" шоколадная — фото 1",
+          "label": "Основное фото"
+        },
+        {
+          "src": "assets/catalog-napkins-18357-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" шоколадная — фото 2",
+          "label": "Фото из каталога 2"
+        }
+      ]
     }
   ],
   "palette": [
