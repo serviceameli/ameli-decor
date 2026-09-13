@@ -745,6 +745,38 @@
       "originalImage": "https://cdn.frents.ru/ameli-rental/ameli-rental/d1791eee-8685-42b2-a605-37311ef0dc64_temp_image.jpg",
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/18357",
       "image": "assets/catalog-napkins-18357-2.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 23426,
+      "name": "Светильник \"Глиссео\" с прозрачным абажуром",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/93de7dc9-da4d-4868-baba-74868947a8c5_ChatGPT_Image_9_июня_2026_г._21_55_37.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/23426",
+      "image": "assets/catalog-compositions-23426.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 23425,
+      "name": "Светильник \"Глиссео\" с черным абажуром",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/8b0adad7-4eef-4ed6-b549-7bfbbb43093f_черный_светильник.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/23425",
+      "image": "assets/catalog-compositions-23425.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 23424,
+      "name": "Светильник \"Глиссео\" с белым абажуром",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/d3b5c81a-b9fd-4519-9393-076a5b10c61a_ChatGPT_Image_10_июня_2026_г._21_35_15.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/23424",
+      "image": "assets/catalog-compositions-23424.jpg"
+    },
+    {
+      "section": "compositions",
+      "id": 23423,
+      "name": "Светильник \"Глиссео\" с красным абажуром",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/cac44765-0946-451f-8ae4-d400da6fc4cd_ChatGPT_Image_10_июня_2026_г._21_33_57.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/23423",
+      "image": "assets/catalog-compositions-23423.jpg"
     }
   ]
 }
