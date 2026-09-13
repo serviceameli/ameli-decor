@@ -50,8 +50,8 @@ test('Старый множественный выбор нормализует�
 });
 test('Каждая карточка имеет конкретный состав; сообщение показывает состав выбранного комплекта',()=>{
   for(const key of ['ceremony','presidiumBackdrops','tableCompositions','napkins'])for(const item of data[key])assert.ok(item.components.length>0,item.id);
-  const message=selectionMessage(resolveSelection(data,{guests:20,ids:['T02'],colors:[]}));
-  assert.ok(message.includes('Светодиодные свечи «Лавгуд» — 9 шт.'));
+  const message=selectionMessage(resolveSelection(data,{guests:20,ids:['T01'],colors:[]}));
+  assert.ok(message.includes('Светодиодные свечи «Лавгуд» — 6 шт.'));
   assert.ok(message.includes('Состав одной композиции'));
 });
 test('Единая заявка включает детали свадьбы, дополнительные позиции и комментарий',()=>{
