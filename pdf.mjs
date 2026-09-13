@@ -37,13 +37,13 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
         const item=batch[i],x=batch.length===1?(W-w)/2:46+(i%cols)*(w+gap),top=rows===2?145+Math.floor(i/cols)*194:147;
         await photo(item.image,x,top,w,rows===2?104:225);
         const titleY=rows===2?top+134:402;
-        text(`${item.id} · арт. ${item.catalogId}`,x,titleY-16,8,'Body',mid);
+        text(item.catalogId?`${item.id} · арт. ${item.catalogId}`:item.id,x,titleY-16,8,'Body',mid);
         let sz=rows===2?17:21;
         pdf.setFont('Display','normal');pdf.setFontSize(sz);
         while(pdf.splitTextToSize(item.title,w).length>2&&sz>12){sz--;pdf.setFontSize(sz);}
         const afterTitle=text(item.title,x,titleY,sz,'Display',ink,w);
         if(!selection)text(item.description,x,afterTitle+4,rows===2?8:9,'Body',mid,w);
-        pdf.link(x,top,w,rows===2?170:330,{url:item.sourceUrl});
+        if(item.sourceUrl)pdf.link(x,top,w,rows===2?170:330,{url:item.sourceUrl});
       }
       if(note)text(note,46,540,8.5,'Body',mid,W-92);
     }
@@ -101,11 +101,11 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
       const section=selection.sections[i],item=section.items[0],x=46+(i%2)*392,top=180+Math.floor(i/2)*190,tx=x+179;
       if(item){
         await photo(item.image,x,top,163,145);
-        text(`${item.id} · арт. ${item.catalogId}`,tx,top+11,8,'Body',mid);
+        text(item.catalogId?`${item.id} · арт. ${item.catalogId}`:item.id,tx,top+11,8,'Body',mid);
         const after=compact(item.title,tx,top+37,178,2,21,'Display');
         text(quantities[i],tx,after+7,9,'Body',ink);
         compact(item.description,tx,after+28,178,3,9,'Body',mid);
-        pdf.link(x,top,357,145,{url:item.sourceUrl});
+        if(item.sourceUrl)pdf.link(x,top,357,145,{url:item.sourceUrl});
       }else{
         pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.rect(x,top,163,145);
         text('Не выбрано',x+41,top+76,16,'Display',mid);

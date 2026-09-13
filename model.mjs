@@ -67,7 +67,8 @@ export function selectionMessage(selection) {
     lines.push('',section.title+':');
     if(!section.items.length)lines.push('— Пока не выбрано.');
     for(const item of section.items){
-      lines.push(`• ${item.id} — ${item.title} (арт. ${item.catalogId})`,item.sourceUrl);
+      lines.push(`• ${item.id} — ${item.title}${item.catalogId?` (арт. ${item.catalogId})`:''}`);
+      if(item.sourceUrl)lines.push(item.sourceUrl);
       if(item.components?.length)lines.push(item.componentLabel+':',...item.components.map(text=>'  — '+text));
       if(item.detailsNote)lines.push(item.detailsNote);
     }

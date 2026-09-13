@@ -2,8 +2,10 @@ import { parsePrice, formatPrice, packageCounts, validatePrices, resolveSelectio
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
-const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span><span class="photo-detail-label">Фото и состав ↗</span></button></div><figcaption><span class="caption-code">${escape(item.id)}</span><h3><button class="card-title" data-details="${escape(item.id)}">${escape(item.title)}</button></h3><p>${escape(item.description)}</p><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span><span class="photo-detail-label">Фото и состав${item.photos?.length>1?` · ${item.photos.length} фото`:""} ↗</span></button></div><figcaption><span class="caption-code">${escape(item.id)}</span><h3><button class="card-title" data-details="${escape(item.id)}">${escape(item.title)}</button></h3><p>${escape(item.description)}</p><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
 let activeDetail=null;
+let activePhotos=[];
+let activePhotoIndex=0;
 let data;
 let state={guests:40,ids:[],colors:[]};
 try {const saved=JSON.parse(localStorage.getItem('ameli-decor-selection-v1'));if(saved&&Array.isArray(saved.ids)&&Array.isArray(saved.colors)&&Number.isInteger(saved.guests)&&saved.guests>=20&&saved.guests<=100&&saved.guests%10===0)state=saved;}catch{}
@@ -161,17 +163,46 @@ document.addEventListener('click',event=>{
   const trigger=event.target.closest('[data-details]');if(!trigger||!data)return;
   const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===trigger.dataset.details);if(!item)return;
   activeDetail=item.id;
-  $('#large-image').src=item.image;$('#large-image').alt=item.alt||item.title;
+  activePhotos=item.photos?.length?item.photos:[{src:item.image,alt:item.alt||item.title,label:'Основное фото'}];
+  $('#photo-thumbnails').innerHTML=activePhotos.map((photo,i)=>`<button type="button" data-photo-index="${i}" aria-label="${escape(photo.label)}" aria-pressed="false"><img src="${escape(photo.src)}" alt="" loading="lazy"></button>`).join('');
+  $('#photo-thumbnails').hidden=activePhotos.length<2;
+  $('.detail-gallery-controls').hidden=activePhotos.length<2;
+  showDetailPhoto(0);
   $('#image-caption').textContent=item.title;
-  $('#detail-code').textContent=`${item.id} · Артикул ${item.catalogId}`;
+  $('#detail-code').textContent=item.catalogId?`${item.id} · Артикул ${item.catalogId}`:item.id;
   $('#detail-description').textContent=item.description;
   $('#detail-composition-title').textContent=item.componentLabel||'Состав';
   $('#detail-components').innerHTML=(item.components||[]).map(text=>`<li>${escape(text)}</li>`).join('');
   $('#detail-note').textContent=item.detailsNote||'';
-  $('#detail-source').href=item.sourceUrl;
+  $('#detail-source').hidden=!item.sourceUrl;
+  if(item.sourceUrl)$('#detail-source').href=item.sourceUrl;else $('#detail-source').removeAttribute('href');
   $('#detail-photo-frame').classList.remove('is-zoomed');$('#toggle-photo-zoom').setAttribute('aria-pressed','false');$('#toggle-photo-zoom').textContent='Увеличить фото +';
   updateDetailChoice();imageDialog.showModal();
 });
+function showDetailPhoto(index){
+  activePhotoIndex=(index+activePhotos.length)%activePhotos.length;
+  const photo=activePhotos[activePhotoIndex];
+  $('#large-image').src=photo.src;$('#large-image').alt=photo.alt;
+  $('#photo-counter').textContent=`${activePhotoIndex+1} / ${activePhotos.length}`;
+  $('#photo-caption').textContent=photo.caption?`${photo.label}. ${photo.caption}`:photo.label;
+  document.querySelectorAll('[data-photo-index]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.photoIndex)===activePhotoIndex)));
+  const frame=$('#detail-photo-frame');frame.classList.remove('is-zoomed');frame.scrollTop=0;frame.scrollLeft=0;
+  $('#toggle-photo-zoom').setAttribute('aria-pressed','false');$('#toggle-photo-zoom').textContent='Увеличить фото +';
+}
+$('#photo-thumbnails').addEventListener('click',event=>{const button=event.target.closest('[data-photo-index]');if(button)showDetailPhoto(Number(button.dataset.photoIndex));});
+$('#photo-prev').addEventListener('click',()=>showDetailPhoto(activePhotoIndex-1));
+$('#photo-next').addEventListener('click',()=>showDetailPhoto(activePhotoIndex+1));
+imageDialog.addEventListener('keydown',event=>{
+  if(activePhotos.length<2||$('#detail-photo-frame').classList.contains('is-zoomed'))return;
+  if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();showDetailPhoto(activePhotoIndex+(event.key==='ArrowRight'?1:-1));}
+});
+let photoTouch=null;
+$('#detail-photo-frame').addEventListener('touchstart',event=>{photoTouch=event.touches.length===1?{x:event.touches[0].clientX,y:event.touches[0].clientY}:null;},{passive:true});
+$('#detail-photo-frame').addEventListener('touchend',event=>{
+  if(!photoTouch||activePhotos.length<2||$('#detail-photo-frame').classList.contains('is-zoomed'))return;
+  const touch=event.changedTouches[0],dx=touch.clientX-photoTouch.x,dy=touch.clientY-photoTouch.y;photoTouch=null;
+  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)showDetailPhoto(activePhotoIndex+(dx<0?1:-1));
+},{passive:true});
 $('#toggle-photo-zoom').addEventListener('click',()=>{
   const zoomed=$('#detail-photo-frame').classList.toggle('is-zoomed');
   $('#toggle-photo-zoom').setAttribute('aria-pressed',String(zoomed));$('#toggle-photo-zoom').textContent=zoomed?'Уменьшить фото −':'Увеличить фото +';
