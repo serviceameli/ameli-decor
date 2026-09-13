@@ -24,7 +24,7 @@ test('Фиксированная цена каждого пакета: от 45 �
   }
 });
 test('В сообщение попадают выбранные позиции, их состав и цвета',()=>{
-  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P03','N06','T01','unknown'],colors:['Роза','Олива','unknown']});
+  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P07','N06','T01','unknown'],colors:['Роза','Олива','unknown']});
   const message=selectionMessage(choice);
   assert.equal(choice.price,95000);assert.equal(choice.counts.compositions,7);assert.equal(choice.counts.napkins,70);
   assert.equal(choice.sections.flatMap(s=>s.items).length,4);
@@ -36,9 +36,9 @@ test('В сообщение попадают выбранные позиции, 
 });
 
 test('Новая позиция заменяет выбор только в своём разделе; повторное нажатие снимает выбор',()=>{
-  let state={guests:40,ids:['C01','P01','T01','N01'],colors:['Роза','Олива']};
+  let state={guests:40,ids:['C01','P05','T01','N01'],colors:['Роза','Олива']};
   state=toggleItem(data,state,'C02');
-  assert.deepEqual(new Set(state.ids),new Set(['C02','P01','T01','N01']));
+  assert.deepEqual(new Set(state.ids),new Set(['C02','P05','T01','N01']));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T01'));assert.ok(state.ids.includes('T04'));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T04'));assert.ok(state.ids.includes('C02'));
   assert.deepEqual(state.colors,['Роза','Олива']);assert.equal(resolveSelection(data,state).price,65000);

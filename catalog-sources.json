@@ -153,6 +153,70 @@
       "originalImage": "https://cdn.frents.ru/ameli-rental/d9cc9e11-12cc-4d61-af49-89fab6d1cf97_салфетка_шелк_шоколадная.png",
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491",
       "image": "assets/catalog-napkins-23491.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20059,
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/7bb41373-701b-4942-bc07-e3a693775861_арка_волна_тотал_жемчуг.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20059",
+      "image": "assets/catalog-ceremony-20059.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 23467,
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/082ee9f2-f4b5-46cc-8728-6ba9f5f44f96_арка_волна_с_лавками_мал.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
+      "image": "assets/catalog-ceremony-23467.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 23467,
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/a3e1c1c2-7766-427c-8c5a-cc3c4e9a5a8b_арка_волна_с_лавками_зеленыи_чаи.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
+      "image": "assets/catalog-ceremony-23467-2.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 23467,
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/d41f4172-5864-43db-b061-83f2b99a68c7_арка_волна_с_лавками_розовая_сакура.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
+      "image": "assets/catalog-ceremony-23467-3.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 23467,
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/c0f4bc2b-28cd-4a62-9261-9aed0905e70b_арка_волна_с_лавками_светло_зел.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
+      "image": "assets/catalog-ceremony-23467-4.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20038,
+      "name": "Зона церемонии на 40 гостей",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/a4647428-893a-4001-82e8-4f412f76db7a_Арка_жемчуг_желт.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20038",
+      "image": "assets/catalog-ceremony-20038.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20037,
+      "name": "Зона церемонии на 40 гостей",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/1d868181-a5ac-4264-bc3e-16f9a1243311_Арка_белзел.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20037",
+      "image": "assets/catalog-ceremony-20037.jpg"
+    },
+    {
+      "section": "ceremony",
+      "id": 20042,
+      "name": "Зона церемонии на 30 гостей",
+      "originalImage": "https://cdn.frents.ru/ameli-rental/b53460fe-b1ce-475d-b232-3117a8bd82de_полярис_жемчуг_роз_пуф.png",
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20042",
+      "image": "assets/catalog-ceremony-20042.jpg"
     }
   ]
 }

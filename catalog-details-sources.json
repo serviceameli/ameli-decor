@@ -320,6 +320,116 @@
         "diameter": 0
       },
       "components": []
+    },
+    {
+      "catalogId": 20059,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20059",
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "checkedAt": "2026-09-13",
+      "components": [
+        {
+          "quantity": 40,
+          "name": "Пуфик \"Фуфик\" мини жемчужный бархат",
+          "catalogId": 9971
+        },
+        {
+          "quantity": 1,
+          "name": "Задник \"Белатрикс\" с драпировкой, жемчужный бархат",
+          "catalogId": 19133
+        },
+        {
+          "quantity": 1,
+          "name": "Бархат для дорожки 10м",
+          "catalogId": 20039
+        }
+      ]
+    },
+    {
+      "catalogId": 23467,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
+      "name": "Зона церемонии на 40 гостей без флористики",
+      "checkedAt": "2026-09-13",
+      "components": [
+        {
+          "quantity": 10,
+          "name": "Скамейка складная \"Флэт\"  кокосовый раф бархат",
+          "catalogId": 12197
+        },
+        {
+          "quantity": 1,
+          "name": "Задник \"Белатрикс\" с драпировкой, жемчужный бархат",
+          "catalogId": 19133
+        },
+        {
+          "quantity": 1,
+          "name": "Бархат для дорожки 10м",
+          "catalogId": 20039
+        }
+      ]
+    },
+    {
+      "catalogId": 20038,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20038",
+      "name": "Зона церемонии на 40 гостей",
+      "checkedAt": "2026-09-13",
+      "components": [
+        {
+          "quantity": 40,
+          "name": "Пуфик \"Фуфик\" мини спелая дыня бархат",
+          "catalogId": 5430
+        },
+        {
+          "quantity": 1,
+          "name": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
+          "catalogId": 20036
+        }
+      ]
+    },
+    {
+      "catalogId": 20037,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20037",
+      "name": "Зона церемонии на 40 гостей",
+      "checkedAt": "2026-09-13",
+      "components": [
+        {
+          "quantity": 40,
+          "name": "Пуфик \"Квадро\" светло-зеленый бархат",
+          "catalogId": 5109
+        },
+        {
+          "quantity": 1,
+          "name": "Подиум \"Канопус\" круг жемчужный бархат",
+          "catalogId": 12525
+        },
+        {
+          "quantity": 1,
+          "name": "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат",
+          "catalogId": 20036
+        }
+      ]
+    },
+    {
+      "catalogId": 20042,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20042",
+      "name": "Зона церемонии на 30 гостей",
+      "checkedAt": "2026-09-13",
+      "components": [
+        {
+          "quantity": 30,
+          "name": "Пуфик \"Фуфик\" мини розовая сакура бархат",
+          "catalogId": 5392
+        },
+        {
+          "quantity": 1,
+          "name": "Задник \"Полярис\" с драпировкой, жемужный бархат ",
+          "catalogId": 20009
+        },
+        {
+          "quantity": 1,
+          "name": "Бархат для дорожки 10м",
+          "catalogId": 20039
+        }
+      ]
     }
   ]
 }
