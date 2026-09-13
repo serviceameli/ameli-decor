@@ -3,6 +3,13 @@ const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
 const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button></div><button class="photo-detail-label" data-details="${escape(item.id)}" type="button" aria-label="Фото и состав: ${escape(item.title)}">Фото и состав${item.photos?.length>1?` · ${item.photos.length} фото`:""} ↗</button><figcaption><span class="caption-code">${escape(item.id)}</span><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+const sectionIconPaths = [
+  '<path d="M12 51V25a20 20 0 0 1 40 0v26M19 51V26a13 13 0 0 1 26 0v25M8 52h15m18 0h15"/><path d="M12 31c-8-1-9-8-4-11 6 0 9 5 4 11Zm0 0c7-1 10 4 7 8-5 2-9-2-7-8ZM49 15c-5-4-4-10 1-11 5 3 5 8-1 11Z"/>',
+  '<path d="M9 13h46v28M15 13v20m7-20v20m20-20v20m7-20v20M9 40h46l3 13H6l3-13Zm9 0v13m28-13v13"/><path d="M25 40c-4-7 1-12 7-7 6-5 11 0 7 7m-7-7v-6m-4 0c0-5 8-5 8 0-2 3-6 3-8 0Z"/>',
+  '<path d="M10 52h44M17 52V29m-5 0h10m-8 0V15h6v14m12 23V22m-5 0h10m-8 0V9h6v13m12 30V33m-5 0h10m-8 0V20h6v13"/><path d="M17 11c-3-3 0-6 0-6s3 3 0 6Zm15-6c-2-2 0-4 0-4s2 2 0 4Zm15 11c-3-3 0-6 0-6s3 3 0 6Z"/>',
+  '<path d="m32 7 23 43-20-6-11 12L10 43 32 7Zm0 0 3 37m-3-37L24 56M10 43l17-5"/><path d="m38 19 10 27"/>'
+];
+const sectionIcon = (index) => `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${sectionIconPaths[index]}</svg>`;
 let activeDetail=null;
 let activePhotos=[];
 let activePhotoIndex=0;
@@ -27,12 +34,13 @@ function render(content) {
   $('#swatches').innerHTML=content.palette.map(color=>`<button type="button" class="swatch" data-color="${escape(color.name)}" aria-pressed="false" aria-label="Выбрать цвет: ${escape(color.name)}"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></button>`).join('');
   $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}</p></div></article>`).join('');
   $('#export-fields').innerHTML=content.packages.map(item=>`<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
+  document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<4)link.innerHTML=sectionIcon(i)+'<span>'+link.textContent.replace(/^0[1-4] /,'')+'</span>';});
   updatePackage(selectedGuests);
 }
 function updatePackage(guests) {
   state.guests=guests;selectedGuests=guests;
   const notes=['Задник и искусственная флористика','Задник и оформление стола пары','Без флористики · на каждые 10 гостей','По одной на каждого гостя'];
-  $('#package-summary').innerHTML=selectionSections.map((section,i)=>`<a class="summary-card" href="#${section.anchor}"><div class="summary-photo"><img src="${escape(data[section.key][0].image)}" alt="${escape(section.title)}" decoding="async"></div><div class="summary-copy"><h3>${section.title}</h3><p>${notes[i]}</p></div></a>`).join('');
+  $('#package-summary').innerHTML=selectionSections.map((section,i)=>`<a class="summary-card" href="#${section.anchor}"><div class="summary-icon">${sectionIcon(i)}</div><div class="summary-copy"><h3>${section.title}</h3><p>${notes[i]}</p></div></a>`).join('');
   $('#table-quantity').textContent='1 композиция на каждые 10 гостей';
   $('#napkin-quantity').textContent='1 салфетка на гостя';
   document.querySelectorAll('[data-guests]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.guests)===guests)));
