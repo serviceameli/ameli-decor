@@ -18,6 +18,7 @@ for(const key of ['ceremony','tableCompositions','presidiumFlorals','presidiumBa
     assets.add(photo.src);
   }
 }
+for(const group of data.venueVisualizations||[])for(const photo of group.photos){if(!/^assets\/[\w.-]+$/.test(photo.src)||!photo.alt||!photo.label)throw new Error('Проверьте фото визуализации');assets.add(photo.src);}
 for(const asset of assets)await fs.access(asset);
 await fs.rm('dist',{recursive:true,force:true});
 await fs.mkdir('dist',{recursive:true});

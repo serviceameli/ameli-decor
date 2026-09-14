@@ -1810,5 +1810,47 @@
       "title": "Изменения и дополнения",
       "text": "Если вы хотите изменить или дополнить оформление, выберите декор и композиции в каталоге Ameli Rental. Все дополнительные позиции рассчитываются и оплачиваются отдельно."
     }
+  ],
+  "venueVisualizations": [
+    {
+      "title": "Терраса",
+      "photos": [
+        {
+          "src": "assets/venue-visualization-1.jpg",
+          "label": "До оформления",
+          "alt": "Терраса — До оформления"
+        },
+        {
+          "src": "assets/venue-visualization-2.jpg",
+          "label": "Вариант 1",
+          "alt": "Терраса — Вариант 1"
+        },
+        {
+          "src": "assets/venue-visualization-3.jpg",
+          "label": "Вариант 2",
+          "alt": "Терраса — Вариант 2"
+        }
+      ]
+    },
+    {
+      "title": "Банкетный зал",
+      "photos": [
+        {
+          "src": "assets/venue-visualization-4.jpg",
+          "label": "До оформления",
+          "alt": "Банкетный зал — До оформления"
+        },
+        {
+          "src": "assets/venue-visualization-5.jpg",
+          "label": "Вариант 1",
+          "alt": "Банкетный зал — Вариант 1"
+        },
+        {
+          "src": "assets/venue-visualization-6.jpg",
+          "label": "Вариант 2",
+          "alt": "Банкетный зал — Вариант 2"
+        }
+      ]
+    }
   ]
 }

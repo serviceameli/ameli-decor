@@ -35,6 +35,7 @@ function render(content) {
   $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}${term.title==='Изменения и дополнения'?' <a class="terms-catalog-link" href="https://catalog.ameli-rental.ru/" target="_blank" rel="noopener noreferrer">Открыть каталог ↗</a>':''}</p></div></article>`).join('');
   $('#export-fields').innerHTML=content.packages.map(item=>`<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
   document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<4)link.innerHTML=sectionIcon(i)+'<span>'+link.textContent.replace(/^0[1-4] /,'')+'</span>';});
+  $('#venue-examples').innerHTML=(content.venueVisualizations||[]).map((group,g)=>`<article class="venue-example"><h3>${escape(group.title)}</h3><div class="venue-photo-grid">${group.photos.map((photo,i)=>`<figure><button type="button" data-venue-group="${g}" data-venue-photo="${i}" aria-label="Увеличить: ${escape(photo.alt)}"><img src="${escape(photo.src)}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(photo.label)}<span aria-hidden="true">↗</span></figcaption></figure>`).join('')}</div></article>`).join('');
   updatePackage(selectedGuests);
 }
 function updatePackage(guests) {
@@ -226,3 +227,12 @@ if (document.modelContext?.registerTool && data) {
     },{signal:controller.signal});
   } catch(error) { console.info('WebMCP недоступен',error); }
 }
+
+let venueGroup=0,venuePhoto=0;
+const venueDialog=$('#venue-dialog');
+function showVenuePhoto(index){const group=data.venueVisualizations[venueGroup];venuePhoto=(index+group.photos.length)%group.photos.length;const photo=group.photos[venuePhoto];$('#venue-large-image').src=photo.src;$('#venue-large-image').alt=photo.alt;$('#venue-photo-caption').textContent=`${group.title} · ${photo.label} · ${venuePhoto+1} / ${group.photos.length}`;}
+$('#venue-examples').addEventListener('click',event=>{const button=event.target.closest('[data-venue-photo]');if(!button)return;venueGroup=Number(button.dataset.venueGroup);showVenuePhoto(Number(button.dataset.venuePhoto));venueDialog.showModal();});
+$('#close-venue').addEventListener('click',()=>venueDialog.close());
+$('#venue-prev').addEventListener('click',()=>showVenuePhoto(venuePhoto-1));
+$('#venue-next').addEventListener('click',()=>showVenuePhoto(venuePhoto+1));
+venueDialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();showVenuePhoto(venuePhoto+(event.key==='ArrowRight'?1:-1));}});
