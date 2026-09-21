@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-21",
+  "mode": "Built-in image_gen edit",
+  "reference": "Задник с белой флористикой — в парке.png",
+  "prompt": "Preserve the original ceremony backdrop shape, color, material and existing flowers. Remove all seats, benches, poufs, aisle runners and platforms. Place decor directly on grass in a green garden. Landscape 3:2, frontal close-up, complete structure filling 80–85% of image height. Reference is framing only; do not copy its decor or add flowers.",
+  "images": [
+    {
+      "original": "assets/catalog-ceremony-20790.jpg",
+      "web": "assets/ceremony-closeup-20790.jpg",
+      "savedName": "C01 — Белатрикс — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20995.jpg",
+      "web": "assets/ceremony-closeup-20995.jpg",
+      "savedName": "C02 — Кастор — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20040.jpg",
+      "web": "assets/ceremony-closeup-20040.jpg",
+      "savedName": "C03 — Белатрикс в розовом — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20059.jpg",
+      "web": "assets/ceremony-closeup-20059.jpg",
+      "savedName": "C04 — Белатрикс · жемчуг — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-23467.jpg",
+      "web": "assets/ceremony-closeup-23467.jpg",
+      "savedName": "C05 — Белатрикс · айвори — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-23467-2.jpg",
+      "web": "assets/ceremony-closeup-23467-2.jpg",
+      "savedName": "C05 — Белатрикс · айвори — крупный план 2.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-23467-3.jpg",
+      "web": "assets/ceremony-closeup-23467-3.jpg",
+      "savedName": "C05 — Белатрикс · айвори — крупный план 3.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-23467-4.jpg",
+      "web": "assets/ceremony-closeup-23467-4.jpg",
+      "savedName": "C05 — Белатрикс · айвори — крупный план 4.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20038.jpg",
+      "web": "assets/ceremony-closeup-20038.jpg",
+      "savedName": "C06 — Альфа Центавра — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20037.jpg",
+      "web": "assets/ceremony-closeup-20037.jpg",
+      "savedName": "C07 — Альфа Центавра · жемчуг — крупный план.png"
+    },
+    {
+      "original": "assets/catalog-ceremony-20042.jpg",
+      "web": "assets/ceremony-closeup-20042.jpg",
+      "savedName": "C08 — Полярис · жемчуг — крупный план.png"
+    }
+  ]
+}

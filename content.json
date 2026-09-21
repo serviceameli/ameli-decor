@@ -44,8 +44,8 @@
       "id": "C01",
       "title": "Белатрикс",
       "description": "Кокосовый раф. Волнообразный задник с декоративными цветами.",
-      "image": "assets/catalog-ceremony-20790.jpg",
-      "alt": "Зона церемонии на 40 гостей c флористикой",
+      "image": "assets/ceremony-closeup-20790.jpg",
+      "alt": "Белатрикс — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей c флористикой",
       "catalogId": 20790,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20790",
@@ -58,23 +58,23 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20790.jpg",
-          "alt": "Зона церемонии на 40 гостей c флористикой",
+          "src": "assets/ceremony-closeup-20790.jpg",
+          "alt": "Белатрикс — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C02",
       "title": "Кастор",
       "description": "Жемчужные колонны с декоративными цветами.",
-      "image": "assets/catalog-ceremony-20995.jpg",
-      "alt": "Зона церемонии на 40 гостей с флористикой",
+      "image": "assets/ceremony-closeup-20995.jpg",
+      "alt": "Кастор — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей с флористикой",
       "catalogId": 20995,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20995",
       "components": [
-        "Круглый подиум «Канопус», жемчужный бархат — 1 шт.",
         "Колонны «Кастор» высотой 90 см — 2 шт.",
         "Колонны «Кастор» высотой 110 см — 2 шт.",
         "Колонны «Кастор» высотой 140 см — 2 шт.",
@@ -85,18 +85,19 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20995.jpg",
-          "alt": "Зона церемонии на 40 гостей с флористикой",
+          "src": "assets/ceremony-closeup-20995.jpg",
+          "alt": "Кастор — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C03",
       "title": "Белатрикс в розовом",
       "description": "Бледно-розовая драпировка. Вариант цветового оформления.",
-      "image": "assets/catalog-ceremony-20040.jpg",
-      "alt": "Зона церемонии на 28 гостей",
+      "image": "assets/ceremony-closeup-20040.jpg",
+      "alt": "Белатрикс в розовом — крупный план на газоне",
       "catalogName": "Зона церемонии на 28 гостей",
       "catalogId": 20040,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20040",
@@ -108,18 +109,19 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20040.jpg",
-          "alt": "Зона церемонии на 28 гостей",
+          "src": "assets/ceremony-closeup-20040.jpg",
+          "alt": "Белатрикс в розовом — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C04",
       "title": "Белатрикс · жемчуг",
       "description": "Волнообразный задник с драпировкой из жемчужного бархата.",
-      "image": "assets/catalog-ceremony-20059.jpg",
-      "alt": "Белатрикс · жемчуг — фото 1 из каталога",
+      "image": "assets/ceremony-closeup-20059.jpg",
+      "alt": "Белатрикс · жемчуг — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей без флористики",
       "catalogId": 20059,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20059",
@@ -131,18 +133,19 @@
       "detailsSourceChecked": "2026-09-13",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20059.jpg",
-          "alt": "Белатрикс · жемчуг — фото 1 из каталога",
+          "src": "assets/ceremony-closeup-20059.jpg",
+          "alt": "Белатрикс · жемчуг — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C05",
-      "title": "Белатрикс · со скамейками",
+      "title": "Белатрикс · айвори",
       "description": "Волнообразный задник с драпировкой из жемчужного бархата.",
-      "image": "assets/catalog-ceremony-23467.jpg",
-      "alt": "Белатрикс · со скамейками — фото 1 из каталога",
+      "image": "assets/ceremony-closeup-23467.jpg",
+      "alt": "Белатрикс · айвори — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей без флористики",
       "catalogId": 23467,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/23467",
@@ -154,33 +157,34 @@
       "detailsSourceChecked": "2026-09-13",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-23467.jpg",
-          "alt": "Белатрикс · со скамейками — фото 1 из каталога",
+          "src": "assets/ceremony-closeup-23467.jpg",
+          "alt": "Белатрикс · айвори — крупный план на газоне",
           "label": "Основное фото"
         },
         {
-          "src": "assets/catalog-ceremony-23467-2.jpg",
-          "alt": "Белатрикс · со скамейками — фото 2 из каталога",
-          "label": "Вариант цветового оформления 2"
+          "src": "assets/ceremony-closeup-23467-2.jpg",
+          "alt": "Белатрикс · айвори — крупный план на газоне",
+          "label": "Дополнительное фото 2"
         },
         {
-          "src": "assets/catalog-ceremony-23467-3.jpg",
-          "alt": "Белатрикс · со скамейками — фото 3 из каталога",
-          "label": "Вариант цветового оформления 3"
+          "src": "assets/ceremony-closeup-23467-3.jpg",
+          "alt": "Белатрикс · айвори — крупный план на газоне",
+          "label": "Дополнительное фото 3"
         },
         {
-          "src": "assets/catalog-ceremony-23467-4.jpg",
-          "alt": "Белатрикс · со скамейками — фото 4 из каталога",
-          "label": "Вариант цветового оформления 4"
+          "src": "assets/ceremony-closeup-23467-4.jpg",
+          "alt": "Белатрикс · айвори — крупный план на газоне",
+          "label": "Дополнительное фото 4"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C06",
       "title": "Альфа Центавра",
-      "description": "Жемчужная арка с драпировкой. На фото — пример с жёлтыми пуфами.",
-      "image": "assets/catalog-ceremony-20038.jpg",
-      "alt": "Альфа Центавра — фото 1 из каталога",
+      "description": "Жемчужная арка с драпировкой.",
+      "image": "assets/ceremony-closeup-20038.jpg",
+      "alt": "Альфа Центавра — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей",
       "catalogId": 20038,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20038",
@@ -192,23 +196,23 @@
       "detailsSourceChecked": "2026-09-13",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20038.jpg",
-          "alt": "Альфа Центавра — фото 1 из каталога",
+          "src": "assets/ceremony-closeup-20038.jpg",
+          "alt": "Альфа Центавра — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C07",
-      "title": "Альфа Центавра · подиум",
-      "description": "Жемчужная арка с круглым подиумом.",
-      "image": "assets/catalog-ceremony-20037.jpg",
-      "alt": "Альфа Центавра · подиум — фото 1 из каталога",
+      "title": "Альфа Центавра · жемчуг",
+      "description": "Жемчужная арка с драпировкой.",
+      "image": "assets/ceremony-closeup-20037.jpg",
+      "alt": "Альфа Центавра · жемчуг — крупный план на газоне",
       "catalogName": "Зона церемонии на 40 гостей",
       "catalogId": 20037,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20037",
       "components": [
-        "Подиум \"Канопус\" круг жемчужный бархат — 1 шт.",
         "Арка \"Альфа Центавра\" с драпировкой, жемчужный бархат — 1 шт."
       ],
       "componentLabel": "Состав зоны",
@@ -216,18 +220,19 @@
       "detailsSourceChecked": "2026-09-13",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20037.jpg",
-          "alt": "Альфа Центавра · подиум — фото 1 из каталога",
+          "src": "assets/ceremony-closeup-20037.jpg",
+          "alt": "Альфа Центавра · жемчуг — крупный план на газоне",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
     },
     {
       "id": "C08",
       "title": "Полярис · жемчуг",
       "description": "Прямой задник с драпировкой из жемчужного бархата.",
-      "image": "assets/catalog-ceremony-20042.jpg",
-      "alt": "Полярис · жемчуг — фото 1 из каталога",
+      "image": "assets/ceremony-closeup-20042.jpg",
+      "alt": "Полярис · жемчуг — крупный план на газоне",
       "catalogName": "Зона церемонии на 30 гостей",
       "catalogId": 20042,
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/zony-tseremonii-fow/20042",
@@ -239,8 +244,30 @@
       "detailsSourceChecked": "2026-09-13",
       "photos": [
         {
-          "src": "assets/catalog-ceremony-20042.jpg",
-          "alt": "Полярис · жемчуг — фото 1 из каталога",
+          "src": "assets/ceremony-closeup-20042.jpg",
+          "alt": "Полярис · жемчуг — крупный план на газоне",
+          "label": "Основное фото"
+        }
+      ],
+      "imageSource": "AI-редактирование изображения каталога: крупный план без дорожки, подиума и посадочных мест."
+    },
+    {
+      "id": "C09",
+      "title": "Задник с белой флористикой",
+      "description": "Драпированные панели и белая флористика в парке.",
+      "image": "assets/ceremony-white-florals-park.jpg",
+      "alt": "Четыре жемчужные панели с двумя белыми цветочными композициями на газоне",
+      "sourceType": "provided",
+      "components": [
+        "Драпированные панели разной высоты — 4 шт.",
+        "Композиции из искусственных белых цветов — 2 шт."
+      ],
+      "componentLabel": "Состав зоны",
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-white-florals-park.jpg",
+          "alt": "Задник с белой флористикой в парке",
           "label": "Основное фото"
         }
       ]
