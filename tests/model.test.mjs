@@ -30,7 +30,8 @@ test('В сообщение попадают выбранные позиции, 
   assert.equal(choice.sections.flatMap(s=>s.items).length,4);
   assert.match(message,/C02 — Кастор/);assert.match(message,/T01 — Равенкло/);assert.match(message,/Роза, Олива/);
   assert.doesNotMatch(message,/C01|T02|T04|unknown|Снежный/);
-  assert.ok(message.includes(data.ceremony[1].sourceUrl));
+  assert.ok(message.includes(data.tableCompositions.find(item=>item.id==='T01').sourceUrl));
+  assert.doesNotMatch(message,/undefined/);
   const empty=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[]}));
   assert.match(empty,/Пока не выбрано/);assert.match(empty,/палитра: пока не выбрана/i);
 });
