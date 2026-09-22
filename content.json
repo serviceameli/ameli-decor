@@ -243,7 +243,7 @@
       "id": "T03",
       "title": "Эрукто · белый",
       "description": "Набор светодиодных свечей с пультом.",
-      "image": "assets/catalog-compositions-4127.jpg",
+      "image": "assets/erukto-white-six.jpg",
       "alt": "Набор свечей с пультом  \"Эрукто\" белый",
       "catalogName": "Набор свечей с пультом  \"Эрукто\" белый",
       "catalogId": 4127,
@@ -258,17 +258,18 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-compositions-4127.jpg",
+          "src": "assets/erukto-white-six.jpg",
           "alt": "Набор свечей с пультом  \"Эрукто\" белый",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSourceFile": "Изображение Codex 22 сент. 2026 г., 17_26_21.png"
     },
     {
       "id": "T04",
       "title": "Эрукто · дымчатый",
       "description": "Набор светодиодных свечей с пультом.",
-      "image": "assets/catalog-compositions-4132.jpg",
+      "image": "assets/erukto-smoke-six.jpg",
       "alt": "Набор свечей с пультом \"Эрукто\" дымчатый",
       "catalogName": "Набор свечей с пультом \"Эрукто\" дымчатый",
       "catalogId": 4132,
@@ -283,17 +284,18 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-compositions-4132.jpg",
+          "src": "assets/erukto-smoke-six.jpg",
           "alt": "Набор свечей с пультом \"Эрукто\" дымчатый",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSourceFile": "Изображение Codex 22 сент. 2026 г., 17_27_02.png"
     },
     {
       "id": "T05",
       "title": "Эрукто · золотой",
       "description": "Набор светодиодных свечей с пультом.",
-      "image": "assets/catalog-compositions-4137.jpg",
+      "image": "assets/erukto-gold-six.jpg",
       "alt": "Набор свечей с пультом \"Эрукто\" золотой",
       "catalogName": "Набор свечей с пультом \"Эрукто\" золотой",
       "catalogId": 4137,
@@ -308,11 +310,12 @@
       "detailsSourceChecked": "2026-09-12",
       "photos": [
         {
-          "src": "assets/catalog-compositions-4137.jpg",
+          "src": "assets/erukto-gold-six.jpg",
           "alt": "Набор свечей с пультом \"Эрукто\" золотой",
           "label": "Основное фото"
         }
-      ]
+      ],
+      "imageSourceFile": "Изображение Codex 22 сент. 2026 г., 17_26_50.jpg"
     },
     {
       "id": "T06",
