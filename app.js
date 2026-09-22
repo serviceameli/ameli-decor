@@ -27,6 +27,7 @@ try {
   console.error('Не удалось загрузить коллекцию',error);
 }
 function render(content) {
+  $('#ceremony-extras-list').innerHTML=(content.ceremonyExtras||[]).map(item=>`<a class="ceremony-extra" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
   for(const [id,key] of Object.entries(requestFields))$(`#${id}`).value=typeof state[key]==='string'?state[key]:'';
   $('#extras-needed').checked=state.extrasNeeded===true;updateExtraFields();
   for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');

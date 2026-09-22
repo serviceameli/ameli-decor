@@ -1879,5 +1879,28 @@
         }
       ]
     }
+  ],
+  "ceremonyExtras": [
+    {
+      "title": "Подиум",
+      "image": "assets/ceremony-extra-podium.jpg",
+      "alt": "Круглый подиум Канопус, жемчужный бархат",
+      "url": "https://catalog.ameli-rental.ru/catalog/podiumy-wnj",
+      "linkLabel": "Подиумы в каталоге"
+    },
+    {
+      "title": "Тканевая дорожка · 10 м",
+      "image": "assets/ceremony-extra-runner.jpg",
+      "alt": "Пример тканевой дорожки в оформлении церемонии",
+      "url": "https://catalog.ameli-rental.ru/catalog/tkan-mav",
+      "linkLabel": "Ткань в каталоге"
+    },
+    {
+      "title": "Пуфы",
+      "image": "assets/ceremony-extra-pouf.jpg",
+      "alt": "Пуф Квадро в светло-зелёном бархате",
+      "url": "https://catalog.ameli-rental.ru/catalog/pufy-i-skamejki-mow",
+      "linkLabel": "Пуфы в каталоге"
+    }
   ]
 }
