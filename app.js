@@ -27,6 +27,7 @@ try {
   console.error('Не удалось загрузить коллекцию',error);
 }
 function render(content) {
+  renderPortfolio(content);
   $('#ceremony-extras-list').innerHTML=(content.ceremonyExtras||[]).map(item=>`<a class="ceremony-extra" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
   for(const [id,key] of Object.entries(requestFields))$(`#${id}`).value=typeof state[key]==='string'?state[key]:'';
   $('#extras-needed').checked=state.extrasNeeded===true;updateExtraFields();
@@ -237,3 +238,29 @@ $('#close-venue').addEventListener('click',()=>venueDialog.close());
 $('#venue-prev').addEventListener('click',()=>showVenuePhoto(venuePhoto-1));
 $('#venue-next').addEventListener('click',()=>showVenuePhoto(venuePhoto+1));
 venueDialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();showVenuePhoto(venuePhoto+(event.key==='ArrowRight'?1:-1));}});
+
+// Small previews first; full-size photographs are requested only in the viewer.
+function renderPortfolio(content){
+  const grid=$('#portfolio-grid'),photos=content.portfolio||[];
+  const start=grid.children.length,end=Math.min(start+12,photos.length);
+  grid.insertAdjacentHTML('beforeend',photos.slice(start,end).map((photo,i)=>`<button type="button" class="portfolio-photo" data-portfolio="${start+i}" aria-label="Увеличить: ${escape(photo.alt)}"><img src="${escape(photo.thumb)}" alt="${escape(photo.alt)}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async"></button>`).join(''));
+  $('#portfolio-count').textContent=`${end} из ${photos.length}`;
+  $('#portfolio-more').hidden=end>=photos.length;
+}
+let portfolioIndex=0,portfolioTouch=null;
+const portfolioDialog=$('#portfolio-dialog');
+function showPortfolio(index){
+  const photos=data.portfolio;if(!photos?.length)return;
+  portfolioIndex=(index+photos.length)%photos.length;
+  const photo=photos[portfolioIndex];$('#portfolio-image').src=photo.src;$('#portfolio-image').alt=photo.alt;
+  $('#portfolio-caption').textContent=`${portfolioIndex+1} / ${photos.length}`;
+}
+$('#portfolio-more').addEventListener('click',()=>renderPortfolio(data));
+$('#portfolio-grid').addEventListener('click',event=>{const button=event.target.closest('[data-portfolio]');if(!button)return;showPortfolio(Number(button.dataset.portfolio));portfolioDialog.showModal();});
+$('#portfolio-close').addEventListener('click',()=>portfolioDialog.close());
+$('#portfolio-prev').addEventListener('click',()=>showPortfolio(portfolioIndex-1));
+$('#portfolio-next').addEventListener('click',()=>showPortfolio(portfolioIndex+1));
+portfolioDialog.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();showPortfolio(portfolioIndex+(event.key==='ArrowRight'?1:-1));}});
+portfolioDialog.addEventListener('click',event=>{if(event.target!==portfolioDialog)return;const r=portfolioDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)portfolioDialog.close();});
+$('.portfolio-view').addEventListener('touchstart',event=>{portfolioTouch=event.touches.length===1?{x:event.touches[0].clientX,y:event.touches[0].clientY}:null;},{passive:true});
+$('.portfolio-view').addEventListener('touchend',event=>{if(!portfolioTouch)return;const touch=event.changedTouches[0],dx=touch.clientX-portfolioTouch.x,dy=touch.clientY-portfolioTouch.y;portfolioTouch=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)showPortfolio(portfolioIndex+(dx<0?1:-1));},{passive:true});

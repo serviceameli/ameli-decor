@@ -2036,5 +2036,479 @@
       "url": "https://catalog.ameli-rental.ru/catalog/pufy-i-skamejki-mow",
       "linkLabel": "Пуфы в каталоге"
     }
+  ],
+  "portfolio": [
+    {
+      "src": "assets/portfolio-001.webp",
+      "thumb": "assets/portfolio-001-thumb.webp",
+      "width": 360,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 1",
+      "sourceFile": " (75).jpg"
+    },
+    {
+      "src": "assets/portfolio-002.webp",
+      "thumb": "assets/portfolio-002-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 2",
+      "sourceFile": " (96).jpg"
+    },
+    {
+      "src": "assets/portfolio-003.webp",
+      "thumb": "assets/portfolio-003-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 3",
+      "sourceFile": "001.JPG"
+    },
+    {
+      "src": "assets/portfolio-004.webp",
+      "thumb": "assets/portfolio-004-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 4",
+      "sourceFile": "002.JPG"
+    },
+    {
+      "src": "assets/portfolio-005.webp",
+      "thumb": "assets/portfolio-005-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 5",
+      "sourceFile": "003.JPG"
+    },
+    {
+      "src": "assets/portfolio-006.webp",
+      "thumb": "assets/portfolio-006-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 6",
+      "sourceFile": "004.JPG"
+    },
+    {
+      "src": "assets/portfolio-007.webp",
+      "thumb": "assets/portfolio-007-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 7",
+      "sourceFile": "011.jpg"
+    },
+    {
+      "src": "assets/portfolio-008.webp",
+      "thumb": "assets/portfolio-008-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 8",
+      "sourceFile": "013.jpg"
+    },
+    {
+      "src": "assets/portfolio-009.webp",
+      "thumb": "assets/portfolio-009-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 9",
+      "sourceFile": "014.jpg"
+    },
+    {
+      "src": "assets/portfolio-010.webp",
+      "thumb": "assets/portfolio-010-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 10",
+      "sourceFile": "015.jpg"
+    },
+    {
+      "src": "assets/portfolio-011.webp",
+      "thumb": "assets/portfolio-011-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 11",
+      "sourceFile": "021.JPG"
+    },
+    {
+      "src": "assets/portfolio-012.webp",
+      "thumb": "assets/portfolio-012-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 12",
+      "sourceFile": "022.JPG"
+    },
+    {
+      "src": "assets/portfolio-013.webp",
+      "thumb": "assets/portfolio-013-thumb.webp",
+      "width": 480,
+      "height": 325,
+      "alt": "Оформление мероприятия Ameli Rental — фото 13",
+      "sourceFile": "031.JPG"
+    },
+    {
+      "src": "assets/portfolio-014.webp",
+      "thumb": "assets/portfolio-014-thumb.webp",
+      "width": 480,
+      "height": 323,
+      "alt": "Оформление мероприятия Ameli Rental — фото 14",
+      "sourceFile": "032.JPG"
+    },
+    {
+      "src": "assets/portfolio-015.webp",
+      "thumb": "assets/portfolio-015-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 15",
+      "sourceFile": "033.JPG"
+    },
+    {
+      "src": "assets/portfolio-016.webp",
+      "thumb": "assets/portfolio-016-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 16",
+      "sourceFile": "041.JPG"
+    },
+    {
+      "src": "assets/portfolio-017.webp",
+      "thumb": "assets/portfolio-017-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 17",
+      "sourceFile": "042.JPG"
+    },
+    {
+      "src": "assets/portfolio-018.webp",
+      "thumb": "assets/portfolio-018-thumb.webp",
+      "width": 480,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 18",
+      "sourceFile": "043.JPG"
+    },
+    {
+      "src": "assets/portfolio-019.webp",
+      "thumb": "assets/portfolio-019-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 19",
+      "sourceFile": "044.JPG"
+    },
+    {
+      "src": "assets/portfolio-020.webp",
+      "thumb": "assets/portfolio-020-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 20",
+      "sourceFile": "051.JPG"
+    },
+    {
+      "src": "assets/portfolio-021.webp",
+      "thumb": "assets/portfolio-021-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 21",
+      "sourceFile": "052.JPG"
+    },
+    {
+      "src": "assets/portfolio-022.webp",
+      "thumb": "assets/portfolio-022-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 22",
+      "sourceFile": "061.JPG"
+    },
+    {
+      "src": "assets/portfolio-023.webp",
+      "thumb": "assets/portfolio-023-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 23",
+      "sourceFile": "062.JPG"
+    },
+    {
+      "src": "assets/portfolio-024.webp",
+      "thumb": "assets/portfolio-024-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 24",
+      "sourceFile": "063.JPG"
+    },
+    {
+      "src": "assets/portfolio-025.webp",
+      "thumb": "assets/portfolio-025-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 25",
+      "sourceFile": "066 sergeyskripnik.com Родион & Валентина .JPG"
+    },
+    {
+      "src": "assets/portfolio-026.webp",
+      "thumb": "assets/portfolio-026-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 26",
+      "sourceFile": "071 sergeyskripnik.com Родион & Валентина .JPG"
+    },
+    {
+      "src": "assets/portfolio-027.webp",
+      "thumb": "assets/portfolio-027-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 27",
+      "sourceFile": "071.JPG"
+    },
+    {
+      "src": "assets/portfolio-028.webp",
+      "thumb": "assets/portfolio-028-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 28",
+      "sourceFile": "072.jpeg"
+    },
+    {
+      "src": "assets/portfolio-029.webp",
+      "thumb": "assets/portfolio-029-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 29",
+      "sourceFile": "073.jpg"
+    },
+    {
+      "src": "assets/portfolio-030.webp",
+      "thumb": "assets/portfolio-030-thumb.webp",
+      "width": 319,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 30",
+      "sourceFile": "074.jpeg"
+    },
+    {
+      "src": "assets/portfolio-031.webp",
+      "thumb": "assets/portfolio-031-thumb.webp",
+      "width": 480,
+      "height": 319,
+      "alt": "Оформление мероприятия Ameli Rental — фото 31",
+      "sourceFile": "075.jpeg"
+    },
+    {
+      "src": "assets/portfolio-032.webp",
+      "thumb": "assets/portfolio-032-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 32",
+      "sourceFile": "081.JPG"
+    },
+    {
+      "src": "assets/portfolio-033.webp",
+      "thumb": "assets/portfolio-033-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 33",
+      "sourceFile": "082.JPG"
+    },
+    {
+      "src": "assets/portfolio-034.webp",
+      "thumb": "assets/portfolio-034-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 34",
+      "sourceFile": "086.JPG"
+    },
+    {
+      "src": "assets/portfolio-035.webp",
+      "thumb": "assets/portfolio-035-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 35",
+      "sourceFile": "092 sergeyskripnik.com Родион & Валентина .JPG"
+    },
+    {
+      "src": "assets/portfolio-036.webp",
+      "thumb": "assets/portfolio-036-thumb.webp",
+      "width": 315,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 36",
+      "sourceFile": "092.JPG"
+    },
+    {
+      "src": "assets/portfolio-037.webp",
+      "thumb": "assets/portfolio-037-thumb.webp",
+      "width": 316,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 37",
+      "sourceFile": "093.JPG"
+    },
+    {
+      "src": "assets/portfolio-038.webp",
+      "thumb": "assets/portfolio-038-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 38",
+      "sourceFile": "095.JPG"
+    },
+    {
+      "src": "assets/portfolio-039.webp",
+      "thumb": "assets/portfolio-039-thumb.webp",
+      "width": 480,
+      "height": 319,
+      "alt": "Оформление мероприятия Ameli Rental — фото 39",
+      "sourceFile": "096.JPG"
+    },
+    {
+      "src": "assets/portfolio-040.webp",
+      "thumb": "assets/portfolio-040-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 40",
+      "sourceFile": "097.JPG"
+    },
+    {
+      "src": "assets/portfolio-041.webp",
+      "thumb": "assets/portfolio-041-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 41",
+      "sourceFile": "099.JPG"
+    },
+    {
+      "src": "assets/portfolio-042.webp",
+      "thumb": "assets/portfolio-042-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 42",
+      "sourceFile": "151 sergeyskripnik.com Родион & Валентина .JPG"
+    },
+    {
+      "src": "assets/portfolio-043.webp",
+      "thumb": "assets/portfolio-043-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 43",
+      "sourceFile": "158 sergeyskripnik.com Родион & Валентина .JPG"
+    },
+    {
+      "src": "assets/portfolio-044.webp",
+      "thumb": "assets/portfolio-044-thumb.webp",
+      "width": 216,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 44",
+      "sourceFile": "2021-08-02 12_33_49.808+0300.jpg"
+    },
+    {
+      "src": "assets/portfolio-045.webp",
+      "thumb": "assets/portfolio-045-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 45",
+      "sourceFile": "21.06.30_33.jpg"
+    },
+    {
+      "src": "assets/portfolio-046.webp",
+      "thumb": "assets/portfolio-046-thumb.webp",
+      "width": 360,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 46",
+      "sourceFile": "IMG-20210719-WA0067.jpg"
+    },
+    {
+      "src": "assets/portfolio-047.webp",
+      "thumb": "assets/portfolio-047-thumb.webp",
+      "width": 480,
+      "height": 319,
+      "alt": "Оформление мероприятия Ameli Rental — фото 47",
+      "sourceFile": "IMG_1440.JPG"
+    },
+    {
+      "src": "assets/portfolio-048.webp",
+      "thumb": "assets/portfolio-048-thumb.webp",
+      "width": 360,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 48",
+      "sourceFile": "IMG_8452.JPG"
+    },
+    {
+      "src": "assets/portfolio-049.webp",
+      "thumb": "assets/portfolio-049-thumb.webp",
+      "width": 480,
+      "height": 343,
+      "alt": "Оформление мероприятия Ameli Rental — фото 49",
+      "sourceFile": "T&M_006.JPG"
+    },
+    {
+      "src": "assets/portfolio-050.webp",
+      "thumb": "assets/portfolio-050-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 50",
+      "sourceFile": "Web_20.07.04_45.jpg"
+    },
+    {
+      "src": "assets/portfolio-051.webp",
+      "thumb": "assets/portfolio-051-thumb.webp",
+      "width": 480,
+      "height": 320,
+      "alt": "Оформление мероприятия Ameli Rental — фото 51",
+      "sourceFile": "Web_20.07.04_52.jpg"
+    },
+    {
+      "src": "assets/portfolio-052.webp",
+      "thumb": "assets/portfolio-052-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 52",
+      "sourceFile": "Web_20.07.04_58.jpg"
+    },
+    {
+      "src": "assets/portfolio-053.webp",
+      "thumb": "assets/portfolio-053-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 53",
+      "sourceFile": "foto_073.JPG"
+    },
+    {
+      "src": "assets/portfolio-054.webp",
+      "thumb": "assets/portfolio-054-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 54",
+      "sourceFile": "foto_075.JPG"
+    },
+    {
+      "src": "assets/portfolio-055.webp",
+      "thumb": "assets/portfolio-055-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 55",
+      "sourceFile": "foto_079.JPG"
+    },
+    {
+      "src": "assets/portfolio-056.webp",
+      "thumb": "assets/portfolio-056-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 56",
+      "sourceFile": "foto_114.JPG"
+    },
+    {
+      "src": "assets/portfolio-057.webp",
+      "thumb": "assets/portfolio-057-thumb.webp",
+      "width": 320,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 57",
+      "sourceFile": "foto_116.JPG"
+    },
+    {
+      "src": "assets/portfolio-058.webp",
+      "thumb": "assets/portfolio-058-thumb.webp",
+      "width": 360,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 58",
+      "sourceFile": "photo_2021-05-27_13-25-19 (2).jpg"
+    },
+    {
+      "src": "assets/portfolio-059.webp",
+      "thumb": "assets/portfolio-059-thumb.webp",
+      "width": 466,
+      "height": 480,
+      "alt": "Оформление мероприятия Ameli Rental — фото 59",
+      "sourceFile": "главная.jpg"
+    }
   ]
 }
