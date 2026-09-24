@@ -2,7 +2,8 @@ import { parsePrice, formatPrice, packageCounts, validatePrices, resolveSelectio
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
-const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button></div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><div class="card-actions"><button class="card-preview" data-details="${escape(item.id)}" type="button" title="Фото и состав" aria-label="Фото и состав: ${escape(item.title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="4" width="15" height="14" rx="2"/><path d="m4 15 4-4 4 4 3-3 3 3M8 21h11a2 2 0 0 0 2-2V9"/><circle cx="13" cy="8" r="1"/></svg><span>${item.photos?.length||1}</span></button><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></div></figcaption></figure>`;
+const cardPhotoIndices=new Map();
+const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<button class="card-photo-arrow card-photo-prev" type="button" data-card-photo="${escape(item.id)}" data-step="-1" aria-label="Предыдущее фото: ${escape(item.title)}">‹</button><button class="card-photo-arrow card-photo-next" type="button" data-card-photo="${escape(item.id)}" data-step="1" aria-label="Следующее фото: ${escape(item.title)}">›</button>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
 const sectionIconPaths = [
   '<path d="M12 51V25a20 20 0 0 1 40 0v26M19 51V26a13 13 0 0 1 26 0v25M8 52h15m18 0h15"/><path d="M12 31c-8-1-9-8-4-11 6 0 9 5 4 11Zm0 0c7-1 10 4 7 8-5 2-9-2-7-8ZM49 15c-5-4-4-10 1-11 5 3 5 8-1 11Z"/>',
   '<path d="M9 13h46v28M15 13v20m7-20v20m20-20v20m7-20v20M9 40h46l3 13H6l3-13Zm9 0v13m28-13v13"/><path d="M25 40c-4-7 1-12 7-7 6-5 11 0 7 7m-7-7v-6m-4 0c0-5 8-5 8 0-2 3-6 3-8 0Z"/>',
@@ -174,7 +175,7 @@ document.addEventListener('click',event=>{
   $('#photo-thumbnails').innerHTML=activePhotos.map((photo,i)=>`<button type="button" data-photo-index="${i}" aria-label="${escape(photo.label)}" aria-pressed="false"><img src="${escape(photo.src)}" alt="" loading="lazy"></button>`).join('');
   $('#photo-thumbnails').hidden=activePhotos.length<2;
   $('.detail-gallery-controls').hidden=activePhotos.length<2;
-  showDetailPhoto(0);
+  showDetailPhoto(cardPhotoIndices.get(item.id)||0);
   $('#image-caption').textContent=item.title;
   $('#detail-code').textContent=item.catalogId?`${item.id} · Артикул ${item.catalogId}`:item.id;
   $('#detail-description').textContent=item.description;
@@ -264,3 +265,14 @@ portfolioDialog.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight']
 portfolioDialog.addEventListener('click',event=>{if(event.target!==portfolioDialog)return;const r=portfolioDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)portfolioDialog.close();});
 $('.portfolio-view').addEventListener('touchstart',event=>{portfolioTouch=event.touches.length===1?{x:event.touches[0].clientX,y:event.touches[0].clientY}:null;},{passive:true});
 $('.portfolio-view').addEventListener('touchend',event=>{if(!portfolioTouch)return;const touch=event.changedTouches[0],dx=touch.clientX-portfolioTouch.x,dy=touch.clientY-portfolioTouch.y;portfolioTouch=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)showPortfolio(portfolioIndex+(dx<0?1:-1));},{passive:true});
+
+// Preview navigation does not change the chosen item or the presentation cover.
+document.addEventListener('click',event=>{
+  const arrow=event.target.closest('[data-card-photo]');if(!arrow||!data)return;
+  const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===arrow.dataset.cardPhoto);
+  if(!item?.photos?.length)return;
+  const index=((cardPhotoIndices.get(item.id)||0)+Number(arrow.dataset.step)+item.photos.length)%item.photos.length;
+  cardPhotoIndices.set(item.id,index);
+  const photo=item.photos[index],img=arrow.closest('figure').querySelector('.gallery-image img');
+  img.src=photo.src;img.alt=photo.alt||item.title;
+});
