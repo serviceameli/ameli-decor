@@ -43,7 +43,7 @@ function render(content) {
 }
 function updatePackage(guests) {
   state.guests=guests;selectedGuests=guests;
-  const notes=['Задник и искусственная флористика','Задник и оформление стола пары','Без флористики · на каждые 10 гостей','По одной на каждого гостя'];
+  const notes=['Задник и искусственная флористика','Задник и оформление стола пары','Одна композиция на каждые 10 гостей','По одной на каждого гостя'];
   $('#package-summary').innerHTML=selectionSections.map((section,i)=>`<a class="summary-card" href="#${section.anchor}"><div class="summary-icon">${sectionIcon(i)}</div><div class="summary-copy"><h3>${section.title}</h3><p>${notes[i]}</p></div></a>`).join('');
   document.querySelectorAll('[data-guests]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.guests)===guests)));
   refreshSelection();
@@ -61,7 +61,7 @@ function refreshSelection() {
   document.querySelectorAll('[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(state.colors.includes(button.dataset.color))));
   $('#header-selection-count').textContent=state.ids.length;
   const c=selection.counts;
-  $('#package-inclusions').innerHTML=`<b>Состав оформления</b><ul><li>Зона церемонии — 1</li><li>Зона президиума — 1</li><li>Композиции без флористики — ${c.compositions}<br><span>на ${c.tables} гостевых столов</span></li><li>Цветные салфетки — ${c.napkins} шт.</li></ul>`;
+  $('#package-inclusions').innerHTML=`<b>Состав оформления</b><ul><li>Зона церемонии — 1</li><li>Зона президиума — 1</li><li>Композиции на стол — ${c.compositions}<br><span>на ${c.tables} гостевых столов</span></li><li>Цветные салфетки — ${c.napkins} шт.</li></ul>`;
   $('#selected-items').innerHTML=selection.sections.map(section=>`<div class="selected-group"><span>${section.title}</span><div>${section.items.length?section.items.map(item=>`<button type="button" class="selection-chip" data-remove="${escape(item.id)}" aria-label="Убрать: ${escape(item.title)}">${escape(item.id)} · ${escape(item.title)} <span aria-hidden="true">×</span></button>`).join(''):`<a class="empty-selection" href="#${section.anchor}">Выбрать варианты ↗</a>`}</div></div>`).join('')+`<div class="selected-group"><span>Цветовая гамма</span><div>${selection.palette.length?selection.palette.map(color=>`<button type="button" class="selection-chip" data-color="${escape(color.name)}" aria-pressed="true" aria-label="Убрать цвет: ${escape(color.name)}"><i style="background:${color.hex}"></i>${escape(color.name)} ×</button>`).join(''):'<a class="empty-selection" href="#palette">Выбрать цвета ↗</a>'}</div></div>`;
   $('#selection-text').value=selectionMessage(selection);
   $('#selection-status').textContent='';
