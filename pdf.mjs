@@ -126,7 +126,7 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
     const w=(W-92-64)/5,x=46+i*(w+16);await photo(summary[i][1],x,175,w,192);text(summary[i][0],x,397,18,'Display',ink,w);
     text(summary[i][2],x,454,9,'Body',ink,w);text(summary[i][3],x,479,8,'Body',mid,w);
   }
-  text('Доставка, монтаж и вывоз включены. Варианты оформления показаны на следующих страницах.',46,535,9,'Body',mid,W-92);
+  text('Доставка, монтаж и демонтаж включены в стоимость декора под ключ.',46,535,9,'Body',mid,W-92);
   await gallery('01 / Входит в пакет','Зона церемонии',data.ceremony,'Посадочные места и дорожка на фото показаны для примера и согласуются отдельно.');
   await gallery('02 / Входит в пакет','Зона президиума',data.presidiumBackdrops,'Варианты задников. Искусственную флористику на президиуме согласуем в палитре оформления.');
   await gallery('03 / Входит в пакет','Композиция на стол',data.tableCompositions,'Один комплект на гостевой стол. На каждые 10 гостей — один стол и одна композиция.');
@@ -139,7 +139,7 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
   ['Гости','Церемония','Президиум','Столы / композиции','Салфетки','Скатерти*','Стоимость'].forEach((label,i)=>text(label,columns[i],177,9,'Body',mid));line(46,192);
   data.packages.forEach((item,i)=>{const y=220+i*32,c=packageCounts(item.guests);text(item.guests,46,y,21,'Display');text('1 зона',99,y,10);text('1 зона',206,y,10);text(`${c.tables} / ${c.compositions}`,313,y,10);text(`${c.napkins} шт.`,470,y,10);text(`${c.tablecloths} шт.`,575,y,10);text(formatPrice(prices[item.guests]??null),677,y,10);line(46,y+12);});
   text('* Скатерти в подарок. '+data.tableclothOffer.bookingNote,46,533,8,'Body',mid,W-92);
-  text('Доставка, монтаж и вывоз в пределах МКАД включены при стандартной логистике площадки.',46,548,8,'Body',mid,W-92);
+  text('Доставка, монтаж и демонтаж включены в стоимость декора под ключ.',46,548,8,'Body',mid,W-92);
   }
   page('Перед бронированием','Условия');
   data.terms.forEach((term,i)=>{const x=46+(i%2)*392,y=184+Math.floor(i/2)*174;line(x,y-23,x+351);text(term.title,x,y,26,'Display');text(term.text,x,y+30,11,'Body',mid,345);});
