@@ -1,0 +1,37 @@
+{
+  "addedAt": "2026-09-25",
+  "sourceRoot": "!Президиум/!Под ключ",
+  "sourceType": "provided",
+  "records": [
+    {
+      "id": "P13",
+      "title": "Колонны · айвори",
+      "sourceFile": "Изображение Codex 22 сент. 2026 г., 17_51_15.png",
+      "sha256": "a7509702de42390a315f2932803a0dd77772eb3d8deffd291517aa44cae0c98c",
+      "image": "assets/presidium-p13-e1864fa2c407.jpg",
+      "sourceBytes": 2032950,
+      "webBytes": 133943,
+      "width": 1400,
+      "height": 939,
+      "previewBytes": [
+        9066,
+        24554
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "Айвори · кружево",
+      "sourceFile": "Изображение Codex 25 сент. 2026 г., 18_05_38.png",
+      "sha256": "be85c1a9f25f72885dc9856ad7e49a5fff11b55a449c09718fc7a429766ab099",
+      "image": "assets/presidium-p14-1adff0c3415b.jpg",
+      "sourceBytes": 2141887,
+      "webBytes": 135471,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        9082,
+        23386
+      ]
+    }
+  ]
+}
