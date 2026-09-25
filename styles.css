@@ -67,3 +67,7 @@
 
 /* Match the scale of square-source tablecloth photos to the landscape photos. */
 .gallery-image .framed-photo{display:block;width:100%;height:100%;overflow:hidden;transition:transform .3s}.gallery-image:hover .framed-photo{transform:scale(1.035)}
+
+/* Independent columns: read down the right column, then down the left. */
+.terms-grid{grid-template-areas:"left right";align-items:start}.terms-column{display:grid;align-content:start;gap:26px;min-width:0}.terms-column--left{grid-area:left}.terms-column--right{grid-area:right}
+@media(max-width:700px){.terms-grid{grid-template-areas:"right" "left";gap:26px}}
