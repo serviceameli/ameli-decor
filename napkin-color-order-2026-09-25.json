@@ -1,0 +1,92 @@
+{
+  "updatedAt": "2026-09-25",
+  "reference": "Порядок цветовых групп в разделе tablecloths; внутри групп — от светлых к более насыщенным и тёмным оттенкам.",
+  "groups": [
+    {
+      "title": "Светлые и бежевые",
+      "ids": [
+        "N09",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15"
+      ]
+    },
+    {
+      "title": "Розовые",
+      "ids": [
+        "N16",
+        "N03",
+        "N39",
+        "N04",
+        "N17",
+        "N22"
+      ]
+    },
+    {
+      "title": "Жёлтые и оранжевые",
+      "ids": [
+        "N18",
+        "N38",
+        "N19"
+      ]
+    },
+    {
+      "title": "Красные и бордовые",
+      "ids": [
+        "N21",
+        "N20"
+      ]
+    },
+    {
+      "title": "Сиреневые и фиолетовые",
+      "ids": [
+        "N23",
+        "N24",
+        "N25"
+      ]
+    },
+    {
+      "title": "Синие",
+      "ids": [
+        "N26",
+        "N27"
+      ]
+    },
+    {
+      "title": "Зелёные",
+      "ids": [
+        "N07",
+        "N28",
+        "N29",
+        "N30",
+        "N31",
+        "N32",
+        "N33",
+        "N34"
+      ]
+    },
+    {
+      "title": "Серые и тёмные нейтральные",
+      "ids": [
+        "N05",
+        "N35",
+        "N36",
+        "N37",
+        "N40"
+      ]
+    }
+  ],
+  "added": {
+    "id": "N40",
+    "catalogId": 4785,
+    "catalogName": "Салфетка бархатная \"Бета\" черная",
+    "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/4785",
+    "detailsSourceChecked": "2026-09-25",
+    "catalogImageUrl": "https://cdn.frents.ru/ameli-rental/ameli-rental/ff4eb13b-4888-4b3d-9df4-c47ffa787995_temp_image.jpg",
+    "imageSourceType": "provided",
+    "imageSourceFile": "codex-clipboard-6c682c2d-a1ba-413b-8e0b-d917ae84855f.png",
+    "image": "assets/catalog-napkins-4785.jpg"
+  }
+}
