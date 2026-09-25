@@ -2,24 +2,6 @@ export function packageCounts(guests) {
   if (!Number.isInteger(guests) || guests<20 || guests>100 || guests%10!==0) throw new Error('Количество гостей должно быть от 20 до 100 с шагом 10');
   return {guests,tables:guests/10,compositions:guests/10,tablecloths:guests/10,napkins:guests,ceremony:1,presidium:1};
 }
-export function parsePrice(raw) {
-  const value=String(raw??'').replace(/[\s\u00a0\u202f]/g,'');
-  if(!value) return null;
-  if(!/^\d+$/.test(value)) throw new Error('Введите целую цену');
-  const number=Number(value);
-  if(!Number.isSafeInteger(number)||number<1||number>9999999)throw new Error('Цена вне диапазона');
-  return number;
-}
-export function formatPrice(price) {return price==null?'По запросу':new Intl.NumberFormat('ru-RU').format(price)+' ₽';}
-export function validatePrices(prices,packages) {
-  if(!prices || typeof prices!=='object' || Array.isArray(prices))throw new Error('Цены должны быть объектом');
-  const keys=new Set(packages.map(p=>String(p.guests)));
-  for(const [key,value]of Object.entries(prices)){
-    if(!keys.has(key))throw new Error('Неизвестный пакет');
-    if(value!==null && (!Number.isInteger(value)||value<1||value>9999999))throw new Error('Некорректная цена');
-  }
-}
-
 export const selectionSections = [
   {key:'ceremony',title:'Зона церемонии',anchor:'ceremony'},
   {key:'presidiumBackdrops',title:'Зона президиума',anchor:'presidium'},
@@ -33,7 +15,7 @@ export function resolveSelection(data, state) {
   if(!pack)throw new Error('Пакет не найден');
   const ids=new Set(Array.isArray(state.ids)?state.ids:[]);
   const colors=new Set(Array.isArray(state.colors)?state.colors:[]);
-  return {guests:state.guests,price:pack.price,counts,tableclothOffer:data.tableclothOffer,comment:typeof state.comment==='string'?state.comment.trim():'',
+  return {guests:state.guests,counts,tableclothOffer:data.tableclothOffer,comment:typeof state.comment==='string'?state.comment.trim():'',
     coupleNames:typeof state.coupleNames==='string'?state.coupleNames.trim():'',
     weddingDate:typeof state.weddingDate==='string'?state.weddingDate:'',
     venue:typeof state.venue==='string'?state.venue.trim():'',
@@ -57,7 +39,7 @@ export function selectionMessage(selection) {
   const lines=['AMELI RENTAL · Заявка на оформление свадьбы',
     `Молодожёны: ${selection.coupleNames||'имена пока не указаны'}`,
     `Дата свадьбы: ${date}`,`Площадка: ${selection.venue||'пока не указана'}`,'',
-    `Гостей: ${selection.guests}`,`Стоимость пакета: ${formatPrice(selection.price)}`,'',
+    `Гостей: ${selection.guests}`,'',
     'Состав пакета:', '• Зона церемонии: 1, задник и искусственная флористика.',
     '• Зона президиума: 1, задник и искусственная флористика.',
     `• Композиции на стол: ${c.compositions} на ${c.tables} гостевых столов.`,

@@ -1,4 +1,4 @@
-import { parsePrice, formatPrice, packageCounts, validatePrices, resolveSelection, selectionMessage, selectionSections, toggleItem } from './model.mjs';
+import { packageCounts, resolveSelection, selectionMessage, selectionSections, toggleItem } from './model.mjs';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
@@ -42,7 +42,6 @@ function render(content) {
   $('#guest-options').innerHTML=content.packages.map(item=>`<button class="guest-button" type="button" data-guests="${item.guests}" aria-pressed="${item.guests===selectedGuests}" aria-label="Пакет на ${item.guests} гостей">${item.guests}</button>`).join('');
   $('#swatches').innerHTML=content.palette.map(color=>`<button type="button" class="swatch" data-color="${escape(color.name)}" aria-pressed="false" aria-label="Выбрать цвет: ${escape(color.name)}"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></button>`).join('');
   $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}${term.title==='Изменения и дополнения'?' <a class="terms-catalog-link" href="https://catalog.ameli-rental.ru/" target="_blank" rel="noopener noreferrer">Открыть каталог ↗</a>':''}</p></div></article>`).join('');
-  $('#export-fields').innerHTML=content.packages.map(item=>`<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
   document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<sectionIconPaths.length)link.innerHTML=sectionIcon(i)+'<span>'+escape(link.textContent)+'</span>';});
   $('#venue-examples').innerHTML=(content.venueVisualizations||[]).map((group,g)=>`<article class="venue-example"><h3>${escape(group.title)}</h3><div class="venue-photo-grid">${group.photos.map((photo,i)=>`<figure><button type="button" data-venue-group="${g}" data-venue-photo="${i}" aria-label="Увеличить: ${escape(photo.alt)}"><img src="${escape(photo.src)}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(photo.label)}<span aria-hidden="true">↗</span></figcaption></figure>`).join('')}</div></article>`).join('');
   updatePackage(selectedGuests);
@@ -123,24 +122,15 @@ $('#guest-options').addEventListener('click',event=>{const button=event.target.c
 const exportDialog = $('#export-dialog');
 document.querySelectorAll('[data-export]').forEach((button) => button.addEventListener('click', () => { if (data) exportDialog.showModal(); }));
 $('#close-export').addEventListener('click', () => exportDialog.close());
-$('#clear-prices').addEventListener('click', () => { $('#export-form').reset(); $('#export-error').textContent=''; document.querySelectorAll('[aria-invalid]').forEach((input) => input.removeAttribute('aria-invalid')); });
-$('#export-fields').addEventListener('blur', (event) => {
-  const input = event.target;if (!(input instanceof HTMLInputElement)) return;
-  try { const value=parsePrice(input.value); input.value=value == null ? '' : new Intl.NumberFormat('ru-RU').format(value); input.removeAttribute('aria-invalid'); } catch { input.setAttribute('aria-invalid','true'); }
-}, true);
 $('#export-form').addEventListener('submit', async (event) => {
-  event.preventDefault();const prices = {};$('#export-error').textContent = '';
-  for (const item of data.packages) {
-    const input = $(`#price-${item.guests}`);
-    try { prices[item.guests] = parsePrice(input.value); input.removeAttribute('aria-invalid'); }
-    catch { input.setAttribute('aria-invalid','true'); $('#export-error').textContent=`Проверьте цену для ${item.guests} гостей: введите целую сумму от 1 до 9 999 999 ₽ или оставьте поле пустым.`; input.focus(); return; }
-  }
-  try { await downloadPresentation(prices); } catch { /* Error is shown next to the form. */ }
+  event.preventDefault();
+  if(!data)return;
+  try { await downloadPresentation(); } catch { /* Error is shown next to the form. */ }
 });
-async function downloadPresentation(prices) {
-  validatePrices(prices, data.packages);const button = $('#download-pdf');
+async function downloadPresentation() {
+  const button = $('#download-pdf');
   if (button.disabled) throw new Error('PDF уже готовится');
-  button.disabled=true;$('#export-status').textContent='Готовим PDF. Это займёт несколько секунд…';
+  button.disabled=true;$('#export-error').textContent='';$('#export-status').textContent='Готовим PDF. Это займёт несколько секунд…';
   try {
     const { createPresentation } = await import('./pdf.mjs');
     if (!window.jspdf?.jsPDF) throw new Error('PDF library unavailable');
@@ -149,14 +139,14 @@ async function downloadPresentation(prices) {
       const bytes = new Uint8Array(await response.arrayBuffer());let binary='';
       for (let i=0;i<bytes.length;i+=8192) binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(binary);
     };
-    const pdf = await createPresentation({ jsPDF:window.jspdf.jsPDF, data, prices, readBase64 });
+    const pdf = await createPresentation({ jsPDF:window.jspdf.jsPDF, data, readBase64 });
     const blob=pdf.output('blob');const url=URL.createObjectURL(blob);
     const link=document.createElement('a');link.href=url;link.download='Ameli-Decor-Collection.pdf';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
-    $('#export-status').textContent='PDF готов. Скачивание началось. В презентации указаны только ваши цены.';
+    $('#export-status').textContent='PDF готов. Скачивание началось.';
     return {status:'download_started',packages:data.packages.length,pages:pdf.getNumberOfPages()};
   } catch (error) {
     $('#export-error').textContent='Не удалось подготовить PDF. Проверьте соединение и попробуйте ещё раз.';
-    $('#export-status').textContent='Введённые цены сохранены в открытом окне.';console.error(error);throw error;
+    $('#export-status').textContent='';console.error(error);throw error;
   } finally { button.disabled=false; }
 }
 const imageDialog=$('#image-dialog');
@@ -227,10 +217,10 @@ if (document.modelContext?.registerTool && data) {
   try {
     await document.modelContext.registerTool({
       name:'download_decor_presentation',title:'Скачать презентацию декора',
-      description:'Скачать PDF коллекции с ценами клиента для пакетов на 20–100 гостей. Пустые цены отображаются как «По запросу». Прайс сайта не меняется.',
-      inputSchema:{type:'object',properties:{prices:{type:'object',properties:Object.fromEntries(data.packages.map((item)=>[String(item.guests),{type:['integer','null'],minimum:1,maximum:9999999}])),additionalProperties:false}},required:['prices'],additionalProperties:false},
+      description:'Скачать PDF коллекции: варианты оформления, палитра, состав комплектов на 20–100 гостей и условия бронирования.',
+      inputSchema:{type:'object',properties:{},additionalProperties:false},
       annotations:{readOnlyHint:false,untrustedContentHint:false},
-      execute:async(input)=>{if(!input||Object.keys(input).some(k=>k!=='prices'))throw new Error('Укажите только prices');validatePrices(input.prices,data.packages);for(const item of data.packages)$(`#price-${item.guests}`).value=input.prices[item.guests]??'';if(!exportDialog.open)exportDialog.showModal();return downloadPresentation(input.prices);}
+      execute:async(input)=>{if(input&&Object.keys(input).length)throw new Error('Параметры не требуются');if(!exportDialog.open)exportDialog.showModal();return downloadPresentation();}
     },{signal:controller.signal});
   } catch(error) { console.info('WebMCP недоступен',error); }
 }
