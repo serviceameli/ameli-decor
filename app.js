@@ -34,7 +34,9 @@ let activePhotos=[];
 let activePhotoIndex=0;
 let data;
 let state={guests:40,ids:[],colors:[]};
-try {const saved=JSON.parse(localStorage.getItem('ameli-decor-selection-v1'));if(saved&&Array.isArray(saved.ids)&&Array.isArray(saved.colors)&&Number.isInteger(saved.guests)&&saved.guests>=20&&saved.guests<=100&&saved.guests%10===0)state=saved;}catch{}
+// Each page load starts a new request; discard drafts saved by older versions.
+try {localStorage.removeItem('ameli-decor-selection-v1');}catch{}
+$('#order-form').reset();
 const requestFields={'order-comment':'comment','couple-names':'coupleNames','wedding-date':'weddingDate','wedding-venue':'venue','extra-items':'extraItems'};
 let selectedGuests=state.guests;
 try {
@@ -81,7 +83,6 @@ function refreshSelection() {
   const selection=resolveSelection(data,state);
   state.ids=selection.sections.flatMap(section=>section.items.map(item=>item.id));
   state.colors=selection.palette.map(color=>color.name);
-  try {localStorage.setItem('ameli-decor-selection-v1',JSON.stringify(state));}catch{}
   document.querySelectorAll('[data-select]').forEach(button=>{
     const checked=state.ids.includes(button.dataset.select);button.setAttribute('aria-pressed',String(checked));button.textContent=checked?'Выбрано ✓':'Выбрать';
     const card=button.closest('figure');if(card){card.classList.toggle('is-selected',checked);card.querySelector('.selection-mark').hidden=!checked;}
@@ -108,19 +109,18 @@ function updateExtraFields(){
   $('#extra-items-fields').hidden=!checked;
   $('#extras-needed').setAttribute('aria-expanded',String(checked));
 }
-function saveRequestFields(){
+function updateRequestFields(){
   for(const [id,key] of Object.entries(requestFields))state[key]=$(`#${id}`).value;
   state.extrasNeeded=$('#extras-needed').checked;
   updateExtraFields();
-  try{localStorage.setItem('ameli-decor-selection-v1',JSON.stringify(state));}catch{}
   if(data)$('#selection-text').value=selectionMessage(resolveSelection(data,state));
   $('#selection-status').textContent='';
 }
-for(const id of Object.keys(requestFields))$(`#${id}`).addEventListener('input',saveRequestFields);
-$('#extras-needed').addEventListener('change',saveRequestFields);
+for(const id of Object.keys(requestFields))$(`#${id}`).addEventListener('input',updateRequestFields);
+$('#extras-needed').addEventListener('change',updateRequestFields);
 $('#order-form').addEventListener('submit',event=>event.preventDefault());
 $('#copy-selection').addEventListener('click',async()=>{
-  if(!data)return;saveRequestFields();
+  if(!data)return;updateRequestFields();
   try{await navigator.clipboard.writeText(selectionMessage(resolveSelection(data,state)));$('#selection-status').textContent='Заявка скопирована. Вставьте её в чат с менеджером.';}
   catch{$('.message-preview').open=true;$('#selection-text').focus();$('#selection-text').select();$('#selection-status').textContent='Текст выделен. Скопируйте его через меню устройства или Ctrl/Cmd+C.';}
 });
@@ -133,7 +133,7 @@ $('#download-selection').addEventListener('click',async()=>{
     const pdf=await createPresentation({jsPDF,data,selection,readBase64});
     savePDF(pdf,`Ameli-${selection.guests}-guests.pdf`);
     $('#selection-status').textContent='Презентация скачана. Её можно отправить менеджеру.';
-  }catch(error){console.error(error);$('#selection-status').textContent='Не удалось скачать PDF. Попробуйте ещё раз; ваш выбор сохранён.';}
+  }catch(error){console.error(error);$('#selection-status').textContent='Не удалось скачать PDF. Попробуйте ещё раз.';}
   finally{button.disabled=false;}
 });
 let pdfLibraryPromise;
