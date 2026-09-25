@@ -1,0 +1,877 @@
+{
+  "checkedAt": "2026-09-25",
+  "sourceRoot": "!Зоны церемоний/!Под ключ",
+  "previousZones": 10,
+  "currentZones": 15,
+  "previousPhotos": 16,
+  "currentPhotoEntries": 41,
+  "uniqueSourceImages": 40,
+  "excluded": [
+    {
+      "number": 22,
+      "reason": "Точный дубликат главного фото 39; исходный файл сохранён."
+    },
+    {
+      "number": 25,
+      "reason": "Точный дубликат главного фото 31; исходный файл сохранён."
+    },
+    {
+      "number": 32,
+      "reason": "Референс отдельного пуфа, не фотография зоны."
+    },
+    {
+      "number": 36,
+      "reason": "Референс флористики со сторонней рекламной надписью, не фотография зоны."
+    }
+  ],
+  "folders": [
+    {
+      "from": "Белатрикс + цветы",
+      "to": "Беллатрикс · цветы",
+      "id": "C01"
+    },
+    {
+      "from": "Кастор + цветы",
+      "to": "Кастор · цветы",
+      "id": "C02"
+    },
+    {
+      "from": "Белатрикс ткань",
+      "to": "Беллатрикс · ткань",
+      "id": "C03"
+    },
+    {
+      "from": "Белые цветы вертикаль",
+      "to": "Сириус · цветы",
+      "id": "C10"
+    },
+    {
+      "from": "Полотна + цветы вертикаль",
+      "to": "Вега · цветы",
+      "id": "C09"
+    },
+    {
+      "from": "Центавра белая + цветы",
+      "to": "Центавра · цветы",
+      "id": "C06"
+    },
+    {
+      "from": "Тумбы + цветы в ткани",
+      "to": "Лира · цветы",
+      "id": "C11"
+    },
+    {
+      "from": "0Белый задник сердечко тумбы",
+      "to": "Альтаир · айвори",
+      "id": "C12"
+    },
+    {
+      "from": "0Французская штора 4 панели",
+      "to": "Вега · складки",
+      "id": "C13"
+    },
+    {
+      "from": "Зеленый задник сердечко тумбы",
+      "to": "Альтаир · олива",
+      "id": "C14"
+    },
+    {
+      "from": "Панель драпировка",
+      "to": "Орион · олива",
+      "id": "C15"
+    },
+    {
+      "from": "Ткань классика",
+      "to": "Пульсар · классика",
+      "id": "C16"
+    },
+    {
+      "from": "Ткань свободная",
+      "to": "Пульсар · объём",
+      "id": "C17"
+    },
+    {
+      "from": "Пульсар черно-розовый",
+      "to": "Пульсар · цветы",
+      "id": "C18"
+    }
+  ],
+  "newFolder": {
+    "name": "Пульсар · вуаль",
+    "id": "C19",
+    "files": [
+      "пульсар с драпировкой нежной.png"
+    ]
+  },
+  "rootFilesToVolume": [
+    "пульсар объем драпировка — парк.png",
+    "пульсар объем драпировка.png",
+    "пульсар объем драпировка — парк — промпт.md"
+  ],
+  "zones": [
+    {
+      "id": "C01",
+      "previousTitle": "Белатрикс",
+      "title": "Беллатрикс · цветы",
+      "main": 3,
+      "sourceNumbers": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": "C02",
+      "previousTitle": "Кастор",
+      "title": "Кастор · цветы",
+      "main": 17,
+      "sourceNumbers": [
+        17,
+        16
+      ]
+    },
+    {
+      "id": "C03",
+      "previousTitle": "Белатрикс в розовом",
+      "title": "Беллатрикс · ткань",
+      "main": 11,
+      "sourceNumbers": [
+        11,
+        4,
+        9,
+        6,
+        5,
+        8,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "C10",
+      "previousTitle": "Белые цветочные колонны",
+      "title": "Сириус · цветы",
+      "main": 13,
+      "sourceNumbers": [
+        13,
+        12
+      ]
+    },
+    {
+      "id": "C09",
+      "previousTitle": "Полотна с белыми цветами",
+      "title": "Вега · цветы",
+      "main": 21,
+      "sourceNumbers": [
+        21,
+        20
+      ]
+    },
+    {
+      "id": "C06",
+      "previousTitle": "Центавра · жемчуг и цветы",
+      "title": "Центавра · цветы",
+      "main": 44,
+      "sourceNumbers": [
+        44,
+        43,
+        42
+      ]
+    },
+    {
+      "id": "C11",
+      "previousTitle": "Тумбы · нежная роза",
+      "title": "Лира · цветы",
+      "main": 41,
+      "sourceNumbers": [
+        41,
+        40
+      ]
+    },
+    {
+      "id": "C12",
+      "previousTitle": "Айвори · сердце",
+      "title": "Альтаир · айвори",
+      "main": 1,
+      "sourceNumbers": [
+        1
+      ]
+    },
+    {
+      "id": "C13",
+      "previousTitle": "Полотна · напуски",
+      "title": "Вега · складки",
+      "main": 2,
+      "sourceNumbers": [
+        2
+      ]
+    },
+    {
+      "id": "C14",
+      "previousTitle": "Олива · розовое сердце",
+      "title": "Альтаир · олива",
+      "main": 15,
+      "sourceNumbers": [
+        15,
+        14
+      ]
+    },
+    {
+      "id": "C15",
+      "previousTitle": null,
+      "title": "Орион · олива",
+      "main": 18,
+      "sourceNumbers": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "C16",
+      "previousTitle": null,
+      "title": "Пульсар · классика",
+      "main": 37,
+      "sourceNumbers": [
+        37,
+        35,
+        34
+      ]
+    },
+    {
+      "id": "C17",
+      "previousTitle": null,
+      "title": "Пульсар · объём",
+      "main": 39,
+      "sourceNumbers": [
+        39,
+        38,
+        23
+      ]
+    },
+    {
+      "id": "C18",
+      "previousTitle": null,
+      "title": "Пульсар · цветы",
+      "main": 31,
+      "sourceNumbers": [
+        31,
+        26,
+        27,
+        28,
+        29,
+        30,
+        33
+      ]
+    },
+    {
+      "id": "C19",
+      "previousTitle": null,
+      "title": "Пульсар · вуаль",
+      "main": 24,
+      "sourceNumbers": [
+        24
+      ]
+    }
+  ],
+  "images": [
+    {
+      "source": "Белатрикс + цветы/C01 — Белатрикс — крупный план главная.png",
+      "number": 3,
+      "sha256": "86160673bf8f0243862a01c0b9bff3ce2d05315182b08dcb2e3ab9ce5ea54d1a",
+      "asset": "assets/ceremony-2b7e544f8ffe.jpg",
+      "sourceBytes": 2870637,
+      "webBytes": 233196,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        23108,
+        63714
+      ],
+      "renamedSource": "Беллатрикс · цветы/C01 — Белатрикс — крупный план главная.png"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна тотал кокос раф цветы.jpg",
+      "number": 10,
+      "sha256": "196dd24a2936fea49365f6df5789139e4bb264f9e80672ee85c4d7a71bee1a0d",
+      "asset": "assets/ceremony-a7095f425c9c.jpg",
+      "sourceBytes": 659027,
+      "webBytes": 229364,
+      "width": 1400,
+      "height": 939,
+      "previewBytes": [
+        17798,
+        51144
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна тотал кокос раф цветы.jpg"
+    },
+    {
+      "source": "Кастор + цветы/C02 — Кастор — крупный главная.png",
+      "number": 17,
+      "sha256": "21d06e093f6ef4031519ed26fe15fe9f40511127856046335c9efe54a9278912",
+      "asset": "assets/ceremony-7d831b5d54b8.jpg",
+      "sourceBytes": 2790900,
+      "webBytes": 232579,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        21262,
+        52108
+      ],
+      "renamedSource": "Кастор · цветы/C02 — Кастор — крупный главная.png"
+    },
+    {
+      "source": "Кастор + цветы/Колонны жемчуг + рюфики.png",
+      "number": 16,
+      "sha256": "4a1538c066761d2631eb43d4edda568baa03cdf23b4b8766d57de1e5c0a61c79",
+      "asset": "assets/ceremony-2c6b2aeab67e.jpg",
+      "sourceBytes": 2831603,
+      "webBytes": 193186,
+      "width": 1400,
+      "height": 939,
+      "previewBytes": [
+        18376,
+        41736
+      ],
+      "renamedSource": "Кастор · цветы/Колонны жемчуг + рюфики.png"
+    },
+    {
+      "source": "Белатрикс ткань/C03 — Белатрикс в розовом — крупный главная.png",
+      "number": 11,
+      "sha256": "68a527b7dab543b5d6025f84f605d3601ae6323f20fad10ae32fc53221a14ef2",
+      "asset": "assets/ceremony-c80cb7f212f5.jpg",
+      "sourceBytes": 2988158,
+      "webBytes": 239830,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        20842,
+        60988
+      ],
+      "renamedSource": "Беллатрикс · ткань/C03 — Белатрикс в розовом — крупный главная.png"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна розовая + фиолет.png",
+      "number": 4,
+      "sha256": "0d8bf09a2627823563fa63ef9996fef8e6a0061c37f422f69dd2ee1691a87565",
+      "asset": "assets/ceremony-15ac4fbb64b0.jpg",
+      "sourceBytes": 902758,
+      "webBytes": 205363,
+      "width": 1264,
+      "height": 848,
+      "previewBytes": [
+        19238,
+        53454
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна розовая + фиолет.png"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна с лавками.png",
+      "number": 9,
+      "sha256": "5dca89fb827aff34b64a2a69c4f8c0529b1dcec7397858be0cb7464d4e669282",
+      "asset": "assets/ceremony-fdaf14feb9ae.jpg",
+      "sourceBytes": 2898413,
+      "webBytes": 239629,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        15648,
+        46630
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна с лавками.png"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна с лавками мал.png",
+      "number": 6,
+      "sha256": "70f35149d5d3cd39c379775dfbd57be57f6bc80769c12ee761b2c1f4b676943e",
+      "asset": "assets/ceremony-84e0414605ab.jpg",
+      "sourceBytes": 1911943,
+      "webBytes": 196680,
+      "width": 1264,
+      "height": 848,
+      "previewBytes": [
+        16028,
+        45920
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна с лавками мал.png"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна с лавками зеленый чай.jpg",
+      "number": 5,
+      "sha256": "d61b24a192803f188bc59a50981010a8af23906790460d048f755158645bb7cf",
+      "asset": "assets/ceremony-476730999984.jpg",
+      "sourceBytes": 650525,
+      "webBytes": 229629,
+      "width": 1400,
+      "height": 939,
+      "previewBytes": [
+        15864,
+        48728
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна с лавками зеленый чай.jpg"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна с лавками светло зел.jpg",
+      "number": 8,
+      "sha256": "26c62da5a1a546555c7661f591d2c83565f8750d75069d9767576fdea8302ee0",
+      "asset": "assets/ceremony-9ab52b17537d.jpg",
+      "sourceBytes": 661553,
+      "webBytes": 231013,
+      "width": 1400,
+      "height": 943,
+      "previewBytes": [
+        16286,
+        49648
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна с лавками светло зел.jpg"
+    },
+    {
+      "source": "Белатрикс ткань/арка волна с лавками розовая сакура.jpg",
+      "number": 7,
+      "sha256": "0dd1cc3c1ef63a1d59bc13b77b3d755e8c28d56afb701ec0a4724f20063f3e6d",
+      "asset": "assets/ceremony-6bbf66455eef.jpg",
+      "sourceBytes": 653053,
+      "webBytes": 227192,
+      "width": 1400,
+      "height": 943,
+      "previewBytes": [
+        16210,
+        48926
+      ],
+      "renamedSource": "Беллатрикс · ткань/арка волна с лавками розовая сакура.jpg"
+    },
+    {
+      "source": "Белые цветы вертикаль/Белые цветочные колонны главная.png",
+      "number": 13,
+      "sha256": "8952d834a1c7997566f763767cd4049b3e30d83a20cb1c32e23d3ed26f99e033",
+      "asset": "assets/ceremony-52a054504c25.jpg",
+      "sourceBytes": 3058705,
+      "webBytes": 239448,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        24582,
+        62372
+      ],
+      "renamedSource": "Сириус · цветы/Белые цветочные колонны главная.png"
+    },
+    {
+      "source": "Белые цветы вертикаль/Белые цветочные колонны — подиум и розовые пуфы-v2.png",
+      "number": 12,
+      "sha256": "44ffc6ce4dfa5a6fe6564b18e123fff51e8e5c9e7917a53776ec4d20acd75caf",
+      "asset": "assets/ceremony-3a8dc5daaef0.jpg",
+      "sourceBytes": 2827005,
+      "webBytes": 242654,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        23212,
+        56796
+      ],
+      "renamedSource": "Сириус · цветы/Белые цветочные колонны — подиум и розовые пуфы-v2.png"
+    },
+    {
+      "source": "Полотна + цветы вертикаль/Полотна + цветы главная.png",
+      "number": 21,
+      "sha256": "47aa5a6bf589e6b2c11453c0db3d17c6b9d0698bc32535ec771a197ca327e147",
+      "asset": "assets/ceremony-ef4bb29fe712.jpg",
+      "sourceBytes": 3054732,
+      "webBytes": 248340,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        23536,
+        65800
+      ],
+      "renamedSource": "Вега · цветы/Полотна + цветы главная.png"
+    },
+    {
+      "source": "Полотна + цветы вертикаль/Задник с белой флористикой — парк, лавки и дорожка.png",
+      "number": 20,
+      "sha256": "1479081eb00a0b60da6d4ff5beb06a65c66e27f91e3f5c9de75a66b74e62fc10",
+      "asset": "assets/ceremony-f0b7b5d01057.jpg",
+      "sourceBytes": 3199546,
+      "webBytes": 241376,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        21778,
+        65930
+      ],
+      "renamedSource": "Вега · цветы/Задник с белой флористикой — парк, лавки и дорожка.png"
+    },
+    {
+      "source": "Центавра белая + цветы/Центавра жемчуг + цветы главная.jpg",
+      "number": 44,
+      "sha256": "d7dc246cf4fb8797eb9f0784bb4e7ef82aa66f33c9c9ff3ce6830b98a876459a",
+      "asset": "assets/ceremony-03c3a3879b57.jpg",
+      "sourceBytes": 269034,
+      "webBytes": 240194,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        22362,
+        57040
+      ],
+      "renamedSource": "Центавра · цветы/Центавра жемчуг + цветы главная.jpg"
+    },
+    {
+      "source": "Центавра белая + цветы/Арка жемчуг + желт.png",
+      "number": 43,
+      "sha256": "a6549c688caae948c4eb90848c83b26d57c3394985edd75a6bd6f4b465b6d28a",
+      "asset": "assets/ceremony-245a03371535.jpg",
+      "sourceBytes": 882240,
+      "webBytes": 195497,
+      "width": 1264,
+      "height": 848,
+      "previewBytes": [
+        18770,
+        52066
+      ],
+      "renamedSource": "Центавра · цветы/Арка жемчуг + желт.png"
+    },
+    {
+      "source": "Центавра белая + цветы/Арка бел+зел.png",
+      "number": 42,
+      "sha256": "c3b594f716d1065d06e7e4347dbb30b6c79057c05845ae1d1b1af3486d5f3fe9",
+      "asset": "assets/ceremony-67a4274dde80.jpg",
+      "sourceBytes": 2110758,
+      "webBytes": 158296,
+      "width": 1264,
+      "height": 848,
+      "previewBytes": [
+        16868,
+        39394
+      ],
+      "renamedSource": "Центавра · цветы/Арка бел+зел.png"
+    },
+    {
+      "source": "Тумбы + цветы в ткани/тумбы без подиума главная.png",
+      "number": 41,
+      "sha256": "ee0ffe0a6f842ddcee4710cad392b7f3accb25f418c321c07d1c6bb3c539f1bd",
+      "asset": "assets/ceremony-b8072202870b.jpg",
+      "sourceBytes": 2766818,
+      "webBytes": 245318,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        22774,
+        56800
+      ],
+      "renamedSource": "Лира · цветы/тумбы без подиума главная.png"
+    },
+    {
+      "source": "Тумбы + цветы в ткани/тумбы + подиум.png",
+      "number": 40,
+      "sha256": "028416ffb287750889c19318bc4773d12dcc27027eb6cbd0f8e18db561653d02",
+      "asset": "assets/ceremony-e14441cfae71.jpg",
+      "sourceBytes": 2747317,
+      "webBytes": 241208,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        22478,
+        55584
+      ],
+      "renamedSource": "Лира · цветы/тумбы + подиум.png"
+    },
+    {
+      "source": "0Белый задник сердечко тумбы/Белый задник 2,5 м — парк — высокие тумбы.png",
+      "number": 1,
+      "sha256": "c9900cb9df4987fa68f71607086bfd9a2cffb8935423b038e50b970909ae6d8c",
+      "asset": "assets/ceremony-27c8368775ab.jpg",
+      "sourceBytes": 2153868,
+      "webBytes": 215826,
+      "width": 1120,
+      "height": 1400,
+      "previewBytes": [
+        25678,
+        60940
+      ],
+      "renamedSource": "Альтаир · айвори/Белый задник 2,5 м — парк — высокие тумбы.png"
+    },
+    {
+      "source": "0Французская штора 4 панели/французский главная.png",
+      "number": 2,
+      "sha256": "562f6c861b9b02a7690f1d5dff620b0db3d214d67214b97a310c20cb1ff1f2a8",
+      "asset": "assets/ceremony-b35022c40584.jpg",
+      "sourceBytes": 2370219,
+      "webBytes": 219301,
+      "width": 1254,
+      "height": 1254,
+      "previewBytes": [
+        21564,
+        49992
+      ],
+      "renamedSource": "Вега · складки/французский главная.png"
+    },
+    {
+      "source": "Зеленый задник сердечко тумбы/Оливковый задник 2 × 2,5 м — нейтральный главная.png",
+      "number": 15,
+      "sha256": "e5c4c95c30af77db2f8e3374f450d55659d870939f9942864536774f61f70323",
+      "asset": "assets/ceremony-88fa0e945fba.jpg",
+      "sourceBytes": 2306171,
+      "webBytes": 232025,
+      "width": 1120,
+      "height": 1400,
+      "previewBytes": [
+        27166,
+        66792
+      ],
+      "renamedSource": "Альтаир · олива/Оливковый задник 2 × 2,5 м — нейтральный главная.png"
+    },
+    {
+      "source": "Зеленый задник сердечко тумбы/Оливковая церемония — подиум 3 м — задник 2 м — естественный свет.png",
+      "number": 14,
+      "sha256": "d67bac23affd2cff5be34165b08d5925dd0ac92c58da28fbfd7f307a0b253c58",
+      "asset": "assets/ceremony-9c8d228fa625.jpg",
+      "sourceBytes": 2600456,
+      "webBytes": 246605,
+      "width": 1400,
+      "height": 939,
+      "previewBytes": [
+        24190,
+        59496
+      ],
+      "renamedSource": "Альтаир · олива/Оливковая церемония — подиум 3 м — задник 2 м — естественный свет.png"
+    },
+    {
+      "source": "Панель драпировка/Задник оливковый бархат — парк и две композиции главная.png",
+      "number": 18,
+      "sha256": "3dba18b5626c44df297fd9569aebe3b9e6f2a5d3189a2d7480e4e0269be6070e",
+      "asset": "assets/ceremony-4cca4dc07c31.jpg",
+      "sourceBytes": 3148648,
+      "webBytes": 234415,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        25730,
+        68140
+      ],
+      "renamedSource": "Орион · олива/Задник оливковый бархат — парк и две композиции главная.png"
+    },
+    {
+      "source": "Панель драпировка/Задник оливковый бархат — парк, цветы, зелёные лавки и дорожка.png",
+      "number": 19,
+      "sha256": "a4062c195ddfda470bc0d2ce4ee2fdd8f7928d81576963d04139aeed5151dd7c",
+      "asset": "assets/ceremony-97be376ca204.jpg",
+      "sourceBytes": 3342574,
+      "webBytes": 239384,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        23636,
+        71052
+      ],
+      "renamedSource": "Орион · олива/Задник оливковый бархат — парк, цветы, зелёные лавки и дорожка.png"
+    },
+    {
+      "source": "Ткань классика/Пульсар классика.png",
+      "number": 37,
+      "sha256": "fb264285d88d36a891f0aeaafa8a1c29bb15f81c1159611cfc1141b57526f3de",
+      "asset": "assets/ceremony-75db425db9c0.jpg",
+      "sourceBytes": 1364319,
+      "webBytes": 66699,
+      "width": 1400,
+      "height": 981,
+      "previewBytes": [
+        4126,
+        9562
+      ],
+      "renamedSource": "Пульсар · классика/Пульсар классика.png"
+    },
+    {
+      "source": "Ткань классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v2.png",
+      "number": 35,
+      "sha256": "f16a3f79033a2c4100d42bdb3baeb937c73762f79cf29211078fe170b8874acb",
+      "asset": "assets/ceremony-af0e7c1d65c9.jpg",
+      "sourceBytes": 2703897,
+      "webBytes": 248049,
+      "width": 1400,
+      "height": 981,
+      "previewBytes": [
+        24182,
+        62508
+      ],
+      "renamedSource": "Пульсар · классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v2.png"
+    },
+    {
+      "source": "Ткань классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v1.png",
+      "number": 34,
+      "sha256": "7a3ac5e72d5c3178edd0db7aab48870fc961e473b2627542f2ed47bad4d12dfc",
+      "asset": "assets/ceremony-1a977608d540.jpg",
+      "sourceBytes": 2815792,
+      "webBytes": 240722,
+      "width": 1400,
+      "height": 981,
+      "previewBytes": [
+        24416,
+        64328
+      ],
+      "renamedSource": "Пульсар · классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v1.png"
+    },
+    {
+      "source": "Ткань свободная/свобоная главная.png",
+      "number": 39,
+      "sha256": "b8bbe825e40b5c93d3ae5aec608787ebf4627e9812b9480631aff33adaccc259",
+      "asset": "assets/ceremony-bb0e714cb155.jpg",
+      "sourceBytes": 2392803,
+      "webBytes": 247931,
+      "width": 1141,
+      "height": 1378,
+      "previewBytes": [
+        28968,
+        72132
+      ],
+      "renamedSource": "Пульсар · объём/свобоная главная.png"
+    },
+    {
+      "source": "Ткань свободная/Изображение Codex 25 сент. 2026 г., 17_10_55.png",
+      "number": 38,
+      "sha256": "85670acbb48ae873cc1132d66ae1ab51ad46cd84145c2a03ea566ce1e8f67cb1",
+      "asset": "assets/ceremony-9cd45ca4e773.jpg",
+      "sourceBytes": 2487909,
+      "webBytes": 213124,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        21596,
+        49528
+      ],
+      "renamedSource": "Пульсар · объём/Изображение Codex 25 сент. 2026 г., 17_10_55.png"
+    },
+    {
+      "source": "пульсар объем драпировка.png",
+      "number": 23,
+      "sha256": "ce569d4ba6e035fd31e37f22b7b3b225345556cc9b68a50308b97019cd6dd58d",
+      "asset": "assets/ceremony-fac6ca37a272.jpg",
+      "sourceBytes": 1203953,
+      "webBytes": 80624,
+      "width": 1141,
+      "height": 1379,
+      "previewBytes": [
+        6054,
+        13340
+      ],
+      "renamedSource": "Пульсар · объём/пульсар объем драпировка.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/пульсар черно роз главная.png",
+      "number": 31,
+      "sha256": "13a931bea13e24a907059dadf374502d403f353413e72973bd01f8c6ba7c6551",
+      "asset": "assets/ceremony-ea2d96829166.jpg",
+      "sourceBytes": 2613819,
+      "webBytes": 249767,
+      "width": 1142,
+      "height": 1377,
+      "previewBytes": [
+        40746,
+        96088
+      ],
+      "renamedSource": "Пульсар · цветы/пульсар черно роз главная.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/Изображение Codex 25 сент. 2026 г., 15_57_43.png",
+      "number": 26,
+      "sha256": "27886da7bd690e54bda0ed9d90bddec98f012bd112fcefdc6c9a762763502301",
+      "asset": "assets/ceremony-44a8aaa6796e.jpg",
+      "sourceBytes": 2623144,
+      "webBytes": 240919,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        25712,
+        60192
+      ],
+      "renamedSource": "Пульсар · цветы/Изображение Codex 25 сент. 2026 г., 15_57_43.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/Изображение Codex 25 сент. 2026 г., 15_58_06.png",
+      "number": 27,
+      "sha256": "3894d1540319d7963172ae620c7b837de5008a03981984df84806c25071356c7",
+      "asset": "assets/ceremony-0583b41023de.jpg",
+      "sourceBytes": 1578431,
+      "webBytes": 148374,
+      "width": 1141,
+      "height": 1378,
+      "previewBytes": [
+        13712,
+        32998
+      ],
+      "renamedSource": "Пульсар · цветы/Изображение Codex 25 сент. 2026 г., 15_58_06.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/Изображение Codex 25 сент. 2026 г., 15_58_37.png",
+      "number": 28,
+      "sha256": "88cf62b22bd48945f59eb7f0905007c866d7c3fdc2396c5a9f95bbd546852872",
+      "asset": "assets/ceremony-8eae4625f45d.jpg",
+      "sourceBytes": 1503030,
+      "webBytes": 126660,
+      "width": 933,
+      "height": 1400,
+      "previewBytes": [
+        15540,
+        36596
+      ],
+      "renamedSource": "Пульсар · цветы/Изображение Codex 25 сент. 2026 г., 15_58_37.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/пульсар золото белый v1.png",
+      "number": 29,
+      "sha256": "4246ae6281043b82399adea536025190e3c770b99a9814003ce3690f2d0d2469",
+      "asset": "assets/ceremony-932709d34cca.jpg",
+      "sourceBytes": 2499272,
+      "webBytes": 246347,
+      "width": 1142,
+      "height": 1377,
+      "previewBytes": [
+        39280,
+        88306
+      ],
+      "renamedSource": "Пульсар · цветы/пульсар золото белый v1.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/пульсар подиум вуаль v1.png",
+      "number": 30,
+      "sha256": "bacca5130296994eda716af0022373adda123dff78c1bcf83b8dbc663d7a5026",
+      "asset": "assets/ceremony-92ce7fc17895.jpg",
+      "sourceBytes": 2858672,
+      "webBytes": 243821,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        26902,
+        65824
+      ],
+      "renamedSource": "Пульсар · цветы/пульсар подиум вуаль v1.png"
+    },
+    {
+      "source": "Пульсар черно-розовый/b8b90d8c-97d3-4df1-a47c-9792f53e9d2d_temp_image.jpg",
+      "number": 33,
+      "sha256": "7862514ea7e028bc8f19dfcf22155129cb03a8fb8f15fd2c0c6ce585b9931dae",
+      "asset": "assets/ceremony-5125f1d27639.jpg",
+      "sourceBytes": 1927523,
+      "webBytes": 144771,
+      "width": 947,
+      "height": 1400,
+      "previewBytes": [
+        15478,
+        37090
+      ],
+      "renamedSource": "Пульсар · цветы/b8b90d8c-97d3-4df1-a47c-9792f53e9d2d_temp_image.jpg"
+    },
+    {
+      "source": "пульсар с драпировкой нежной.png",
+      "number": 24,
+      "sha256": "a0c416dc9f0006d0ad55e39ba273e9492b708e2b91c78ca7e6e7b7fd321d5754",
+      "asset": "assets/ceremony-552ad1f80dd1.jpg",
+      "sourceBytes": 1319805,
+      "webBytes": 67057,
+      "width": 1254,
+      "height": 1254,
+      "previewBytes": [
+        4384,
+        10156
+      ],
+      "renamedSource": "Пульсар · вуаль/пульсар с драпировкой нежной.png"
+    }
+  ],
+  "foldersRenamed": true
+}

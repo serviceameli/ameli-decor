@@ -91,13 +91,15 @@ test('Объявления о дополнительном пошиве искл
   for(const item of data.napkins.concat(data.tablecloths))assert.ok(item.photos.length>=1,item.id);
 });
 
-test('Первый ряд превью как минимум в четыре раза легче полных фотографий',()=>{
-  let originals=0,previews=0;
+test('Первый ряд превью укладывается в фиксированный бюджет загрузки',()=>{
+  // A fixed byte budget remains meaningful when full-size photos are optimized too.
+  let desktop=0,mobile=0;
   for(const item of data.ceremony.slice(0,5)){
     const variants=data.imagePreviews[item.image].variants;
     assert.ok(variants.length>0);
-    originals+=fs.statSync(new URL('../'+item.image,import.meta.url)).size;
-    previews+=fs.statSync(new URL('../'+variants.at(-1).src,import.meta.url)).size;
+    desktop+=fs.statSync(new URL('../'+variants.at(-1).src,import.meta.url)).size;
+    mobile+=fs.statSync(new URL('../'+variants[0].src,import.meta.url)).size;
   }
-  assert.ok(previews<originals/4,`${previews} bytes previews / ${originals} bytes originals`);
+  assert.ok(desktop<=320000,desktop+' bytes desktop previews');
+  assert.ok(mobile<=120000,mobile+' bytes mobile previews');
 });
