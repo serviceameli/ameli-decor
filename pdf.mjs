@@ -139,7 +139,15 @@ export async function createPresentation({jsPDF,data,selection,readBase64}) {
   }
   page('Перед бронированием','Условия');
   const presentationTerms=[...data.terms.filter(term=>term.showInPresentation!==false),{title:'Скатерти в подарок',text:[data.tableclothOffer.bookingNote,data.tableclothOffer.availabilityNote,data.tableclothOffer.replacementNote].join(' ')}];
-  presentationTerms.forEach((term,i)=>{const x=46+(i%2)*392,y=184+Math.floor(i/2)*174;line(x,y-23,x+351);text(term.title,x,y,26,'Display');text(term.text,x,y+30,10,'Body',mid,345);});
+  const termSplit=Math.ceil(presentationTerms.length/2);
+  [presentationTerms.slice(0,termSplit),presentationTerms.slice(termSplit)].forEach((terms,column)=>{
+    const x=46+column*392;let y=176;
+    for(const term of terms){
+      line(x,y-22,x+351);
+      const bodyY=text(term.title,x,y,24,'Display',ink,351)+6;
+      y=text(term.text,x,bodyY,10,'Body',mid,345)+36;
+    }
+  });
   for(let i=1;i<=pdf.getNumberOfPages();i++){pdf.setPage(i);text('AMELI RENTAL',46,H-25,8,'Body',mid);text(`${String(i).padStart(2,'0')} / ${String(pdf.getNumberOfPages()).padStart(2,'0')}`,W-79,H-25,8,'Body',mid);}
   return pdf;
 }
