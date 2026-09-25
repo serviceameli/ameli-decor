@@ -1,6 +1,6 @@
 export function packageCounts(guests) {
   if (!Number.isInteger(guests) || guests<20 || guests>100 || guests%10!==0) throw new Error('Количество гостей должно быть от 20 до 100 с шагом 10');
-  return {guests,tables:guests/10,compositions:guests/10,napkins:guests,ceremony:1,presidium:1};
+  return {guests,tables:guests/10,compositions:guests/10,tablecloths:guests/10,napkins:guests,ceremony:1,presidium:1};
 }
 export function parsePrice(raw) {
   const value=String(raw??'').replace(/[\s\u00a0\u202f]/g,'');
@@ -24,7 +24,8 @@ export const selectionSections = [
   {key:'ceremony',title:'Зона церемонии',anchor:'ceremony'},
   {key:'presidiumBackdrops',title:'Зона президиума',anchor:'presidium'},
   {key:'tableCompositions',title:'Композиции на стол',anchor:'tables'},
-  {key:'napkins',title:'Салфетки',anchor:'textile'}
+  {key:'napkins',title:'Салфетки',anchor:'textile'},
+  {key:'tablecloths',title:'Скатерти в подарок',anchor:'tablecloths'}
 ];
 export function resolveSelection(data, state) {
   const counts=packageCounts(state.guests);
@@ -32,7 +33,7 @@ export function resolveSelection(data, state) {
   if(!pack)throw new Error('Пакет не найден');
   const ids=new Set(Array.isArray(state.ids)?state.ids:[]);
   const colors=new Set(Array.isArray(state.colors)?state.colors:[]);
-  return {guests:state.guests,price:pack.price,counts,comment:typeof state.comment==='string'?state.comment.trim():'',
+  return {guests:state.guests,price:pack.price,counts,tableclothOffer:data.tableclothOffer,comment:typeof state.comment==='string'?state.comment.trim():'',
     coupleNames:typeof state.coupleNames==='string'?state.coupleNames.trim():'',
     weddingDate:typeof state.weddingDate==='string'?state.weddingDate:'',
     venue:typeof state.venue==='string'?state.venue.trim():'',
@@ -61,6 +62,7 @@ export function selectionMessage(selection) {
     '• Зона президиума: 1, задник и искусственная флористика.',
     `• Композиции на стол: ${c.compositions} на ${c.tables} гостевых столов.`,
     `• Цветные салфетки: ${c.napkins} шт.`,
+    `• Бархатные скатерти в подарок: ${c.tablecloths} шт. по спецпредложению.`,
     '• Доставка, монтаж и вывоз в пределах МКАД. Доплаты за логистику — по условиям.','',
     'Выбранное оформление (по одному варианту в разделе):'];
   for(const section of selection.sections){
@@ -73,6 +75,7 @@ export function selectionMessage(selection) {
       if(item.detailsNote)lines.push(item.detailsNote);
     }
   }
+  if(selection.tableclothOffer)lines.push('',selection.tableclothOffer.title+'. '+selection.tableclothOffer.bookingNote,selection.tableclothOffer.availabilityNote,selection.tableclothOffer.replacementNote);
   lines.push('',`Палитра: ${selection.palette.map(c=>c.name).join(', ')||'пока не выбрана'}.`);
   lines.push('', 'Дополнительные позиции из каталога: '+(selection.extrasNeeded?'нужны.':'не нужны.'));
   if(selection.extrasNeeded)lines.push(selection.extraItems||'Нужна помощь менеджера с подбором.', 'Просьба рассчитать дополнительные позиции отдельно от пакета.');

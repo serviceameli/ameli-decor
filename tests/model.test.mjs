@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {packageCounts,parsePrice,validatePrices} from '../model.mjs';
 test('Все девять пакетов содержат один стол и композицию на 10 гостей',()=>{
-  for(let n=20;n<=100;n+=10)assert.deepEqual(packageCounts(n),{guests:n,tables:n/10,compositions:n/10,napkins:n,ceremony:1,presidium:1});
+  for(let n=20;n<=100;n+=10)assert.deepEqual(packageCounts(n),{guests:n,tables:n/10,compositions:n/10,tablecloths:n/10,napkins:n,ceremony:1,presidium:1});
   for(const n of [0,19,25,101,110])assert.throws(()=>packageCounts(n));
 });
 test('Цена распознаёт пробелы и пустые поля, отклоняет неправильные суммы',()=>{
@@ -45,12 +45,12 @@ test('Новая позиция заменяет выбор только в св
   assert.deepEqual(state.colors,['Роза','Олива']);assert.equal(resolveSelection(data,state).price,65000);
 });
 test('Старый множественный выбор нормализуется до одной позиции в каждом разделе',()=>{
-  const selection=resolveSelection(data,{guests:40,ids:data.ceremony.concat(data.presidiumBackdrops,data.tableCompositions,data.napkins).map(i=>i.id),colors:[]});
-  assert.equal(selection.sections.flatMap(s=>s.items).length,4);
+  const selection=resolveSelection(data,{guests:40,ids:data.ceremony.concat(data.presidiumBackdrops,data.tableCompositions,data.napkins,data.tablecloths).map(i=>i.id),colors:[]});
+  assert.equal(selection.sections.flatMap(s=>s.items).length,5);
   for(const section of selection.sections)assert.equal(section.items.length,1);
 });
 test('Каждая карточка имеет конкретный состав; сообщение показывает состав выбранного комплекта',()=>{
-  for(const key of ['ceremony','presidiumBackdrops','tableCompositions','napkins'])for(const item of data[key])assert.ok(item.components.length>0,item.id);
+  for(const key of ['ceremony','presidiumBackdrops','tableCompositions','napkins','tablecloths'])for(const item of data[key])assert.ok(item.components.length>0,item.id);
   const message=selectionMessage(resolveSelection(data,{guests:20,ids:['T01'],colors:[]}));
   assert.ok(message.includes('Светодиодные свечи «Лавгуд» — 6 шт.'));
   assert.ok(message.includes('Состав одной композиции'));
@@ -66,4 +66,26 @@ test('Скрытые дополнительные позиции не попад
   const message=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[],extrasNeeded:false,extraItems:'Не отправлять эту позицию'}));
   assert.ok(!message.includes('Не отправлять эту позицию'));assert.match(message,/Дополнительные позиции из каталога: не нужны/);assert.match(message,/Дата свадьбы: пока не указана/);
   const needed=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[],extrasNeeded:true}));assert.match(needed,/Нужна помощь менеджера с подбором/);
+});
+
+test('Скатерть выбирается отдельно, сохраняет остальные разделы и попадает в подарок без наценки',()=>{
+  let state={guests:100,ids:['C01','P05','T01','N01'],colors:[]};
+  state=toggleItem(data,state,data.tablecloths[0].id);
+  state=toggleItem(data,state,data.tablecloths[1].id);
+  const selected=resolveSelection(data,state);
+  assert.equal(selected.price,125000);
+  assert.equal(selected.counts.tablecloths,10);
+  assert.deepEqual(state.ids,['C01','P05','T01','N01',data.tablecloths[1].id]);
+  const message=selectionMessage(selected);
+  for(const value of [data.tablecloths[1].title,'Бархатные скатерти в подарок: 10 шт.','31 декабря 2026','Круглая или прямоугольная','100+'])assert.ok(message.includes(value),value);
+});
+test('Подарочные скатерти — Бета и Бета+ без повторов цвета, с остатком больше пяти',()=>{
+  const sources=JSON.parse(fs.readFileSync(new URL('../tablecloth-stock-sources.json',import.meta.url)));
+  for(const item of data.tablecloths){
+    const source=sources.items.find(x=>x.catalogId===item.catalogId);
+    assert.ok(source&&source.quantityOnHand>5);
+    assert.ok(['Бета','Бета+'].includes(source.name.split('"')[1]));
+  }
+  assert.deepEqual(data.tablecloths.map(x=>x.catalogId),sources.items.filter(x=>x.eligible).map(x=>x.catalogId));
+  assert.equal(new Set(data.tablecloths.map(x=>x.title.toLowerCase().replaceAll('ё','е'))).size,data.tablecloths.length);
 });

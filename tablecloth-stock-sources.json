@@ -1,0 +1,347 @@
+{
+  "checkedAt": "2026-09-25",
+  "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear",
+  "filterUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear?decor_model_id=465",
+  "criterion": "Models Бета and Бета+ with quantity_on_hand_now > 5; Бета+ only for colors missing among eligible Бета; made-to-order stock excluded",
+  "totalChecked": 30,
+  "addedCount": 26,
+  "items": [
+    {
+      "catalogId": 19072,
+      "name": "Скатерть бархатная \"Бета\" ледяной белый круглая",
+      "quantityOnHand": 67,
+      "totalWithFutureBatches": 97,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/19072",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/1a0d58de-dacf-4efc-946e-dc1818ecb62c_ледянои_белыи.png"
+      ]
+    },
+    {
+      "catalogId": 6457,
+      "name": "Скатерть бархатная \"Бета\" ландыш круглая",
+      "quantityOnHand": 31,
+      "totalWithFutureBatches": 31,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6457",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/1ebc4547-52fe-42f2-8d34-acb26994d405_жемч_круг.jpg"
+      ]
+    },
+    {
+      "catalogId": 5799,
+      "name": "Скатерть бархатная \"Бета\" жемчужная круглая",
+      "quantityOnHand": 24,
+      "totalWithFutureBatches": 24,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/5799",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/9cbe1854-0003-4e7b-810c-cbb7905fbb84_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6201,
+      "name": "Скатерть бархатная \"Бета\" кокосовый раф круглая",
+      "quantityOnHand": 12,
+      "totalWithFutureBatches": 12,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6201",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/ca7693ac-c774-4b25-8684-017893f397d7_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/1240c4e7-e1c2-4378-9723-f1fdc899954a_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 2982,
+      "name": "Скатерть бархатная \"Бета\" латте круглая",
+      "quantityOnHand": 12,
+      "totalWithFutureBatches": 12,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/2982",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/688178ca-583a-463e-8373-f073fbedc08b_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/8629d6f2-1e50-4057-b6bb-9b0b4eb7df66_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/9ac5e4a3-bd76-4ef3-b363-c1b2c7beedf0_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 2971,
+      "name": "Скатерть бархатная \"Бета\" капучино круглая",
+      "quantityOnHand": 11,
+      "totalWithFutureBatches": 11,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/2971",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/360dd282-efee-4a75-bd0c-098968baa0dc_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/bd8a01de-fce6-4084-9896-0dc5c857c0e0_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/ffa25559-10b5-4c70-913f-ba15c15ef96c_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/1407ff39-5af4-446f-a43d-e940e6a993cd_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 5776,
+      "name": "Скатерть бархатная \"Бета\" бледно-розовая круглая",
+      "quantityOnHand": 11,
+      "totalWithFutureBatches": 11,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/5776",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/16a1b8b0-c987-4ea3-9069-fe5b1157bcaa_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6375,
+      "name": "Скатерть бархатная \"Бета\" фруктовый зефир круглая",
+      "quantityOnHand": 6,
+      "totalWithFutureBatches": 6,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6375",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/65b1087e-7b0d-42b9-b9e6-cd07917cd43b_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 12368,
+      "name": "Скатерть бархатная \"Бета\" розовая сакура круглая",
+      "quantityOnHand": 5,
+      "totalWithFutureBatches": 5,
+      "eligible": false,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/12368"
+    },
+    {
+      "catalogId": 6633,
+      "name": "Скатерть бархатная \"Бета\" | спелая дыня круглая",
+      "quantityOnHand": 3,
+      "totalWithFutureBatches": 15,
+      "eligible": false,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6633"
+    },
+    {
+      "catalogId": 6337,
+      "name": "Скатерть бархатная \"Бета\" золотая горчица круглая",
+      "quantityOnHand": 21,
+      "totalWithFutureBatches": 21,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6337",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/c11d6c1f-6bac-4b56-b879-b96716aa3388_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6589,
+      "name": "Скатерть бархатная \"Бета\" рыжая лиса круглая",
+      "quantityOnHand": 15,
+      "totalWithFutureBatches": 15,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6589",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/f1278ed3-7b24-4914-883b-73c48fdc0c2d_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 11347,
+      "name": "Скатерть бархатная \"Бета\" янтарная круглая",
+      "quantityOnHand": 12,
+      "totalWithFutureBatches": 12,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/11347",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/428b0f0e-9351-47f5-a1bb-44e1fc783682_янтарный.jpg"
+      ]
+    },
+    {
+      "catalogId": 6571,
+      "name": "Скатерть бархатная \"Бета\" красный дракон круглая",
+      "quantityOnHand": 67,
+      "totalWithFutureBatches": 67,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6571",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/3c48e482-9b4c-4543-a76d-39be181cbad3_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6540,
+      "name": "Скатерть бархатная \"Бета\" гранатовая круглая",
+      "quantityOnHand": 15,
+      "totalWithFutureBatches": 15,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6540",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/e6425d1f-1535-4306-b03c-8babce5d173b_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 2807,
+      "name": "Скатерть бархатная \"Бета\" пастельно-сиреневая круглая",
+      "quantityOnHand": 8,
+      "totalWithFutureBatches": 8,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/2807",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/0cbd6a6a-9ff8-4345-8fb5-e5f9c43522cf_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/6d5c2a8e-2b1a-4466-ae17-9a52e49cda86_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/f7e495e8-666f-4c5b-b43f-b9623c4d2682_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/6be0fa26-5764-4920-a2d3-9e73c2b3a2c1_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6623,
+      "name": "Скатерть бархатная \"Бета+\" сиреневая дымка круглая",
+      "quantityOnHand": 30,
+      "totalWithFutureBatches": 30,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6623",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/eb9e307a-0c31-41a6-9b6a-170bcc2e8966_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 9980,
+      "name": "Скатерть бархатная \"Бета\" | фиалковая круглая",
+      "quantityOnHand": 7,
+      "totalWithFutureBatches": 7,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/9980",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/2080f3fb-4aac-4b8d-9d0d-f16ada35b84c_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6659,
+      "name": "Скатерть бархатная \"Бета\" | фиолетовый люпин круглая",
+      "quantityOnHand": 5,
+      "totalWithFutureBatches": 5,
+      "eligible": false,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6659"
+    },
+    {
+      "catalogId": 3621,
+      "name": "Скатерть бархатная \"Бета\" голубой сапфир круглая",
+      "quantityOnHand": 16,
+      "totalWithFutureBatches": 16,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/3621",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/564e53f8-ca3d-4d53-8045-22e652b6df9b_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6613,
+      "name": "Скатерть бархатная \"Бета+\" синий Ван Гога круглая",
+      "quantityOnHand": 5,
+      "totalWithFutureBatches": 5,
+      "eligible": false,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6613"
+    },
+    {
+      "catalogId": 6389,
+      "name": "Скатерть бархатная \"Бета\" синий Ван Гога круглая",
+      "quantityOnHand": 27,
+      "totalWithFutureBatches": 27,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6389",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/e5e1163b-fc52-4ce2-9563-fae2f28085e0_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/2d861f82-3b8b-4773-a977-e0785243c620_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6642,
+      "name": "Скатерть бархатная \"Бета\" темная ночь круглая",
+      "quantityOnHand": 29,
+      "totalWithFutureBatches": 29,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6642",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/08c48916-812a-4b9c-afd2-b5dd014a866c_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6481,
+      "name": "Скатерть бархатная \"Бета\" зеленый малахит круглая",
+      "quantityOnHand": 22,
+      "totalWithFutureBatches": 22,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6481",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/04b206e9-f190-48a9-aa87-81396af947a7_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 6319,
+      "name": "Скатерть бархатная \"Бета\" зеленый чай круглая",
+      "quantityOnHand": 14,
+      "totalWithFutureBatches": 14,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6319",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/cbb1cd28-380f-44b8-ac29-30125c4356e4_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 2925,
+      "name": "Скатерть бархатная \"Бета\" светло-зеленая круглая",
+      "quantityOnHand": 17,
+      "totalWithFutureBatches": 17,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/2925",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/380c10bb-79e7-4e89-bbdc-b15f682aaa45_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/7823e8eb-11a3-4573-94d0-09023fd343fc_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/231592c2-cfb5-4e43-bbfd-05707007e5c4_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/b6db0122-f563-47dd-93f6-c4cab95212ef_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/ameli-rental/7e31b838-c60c-4320-89e1-1285212fbdb2_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/cd1272b0-9d23-480b-a4ab-c77a41ff69b8_temp_image_gallery.jpg",
+        "https://cdn.frents.ru/ameli-rental/f2b7c05f-7f77-4b98-81bf-d69427307327_temp_image_gallery.jpg"
+      ]
+    },
+    {
+      "catalogId": 6328,
+      "name": "Скатерть бархатная \"Бета\" шалфей серебристый круглая",
+      "quantityOnHand": 18,
+      "totalWithFutureBatches": 18,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6328",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/24b4f7f6-5abb-4572-ae13-7729060aaef5_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 2956,
+      "name": "Скатерть бархатная \"Бета\" серая круглая",
+      "quantityOnHand": 9,
+      "totalWithFutureBatches": 9,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/2956",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/f4bab522-7cea-4c08-a2cf-2a9ae45300ba_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/7cdbf412-8fe0-49dc-88d1-ca99483c4dea_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/60eeea53-bb76-4006-85b3-c08c04adf004_temp_image.jpg",
+        "https://cdn.frents.ru/ameli-rental/f30cac17-911a-448e-94cc-4a229c837593_temp_image.jpg"
+      ]
+    },
+    {
+      "catalogId": 11225,
+      "name": "Скатерть бархатная \"Бета\" шоколадная круглая",
+      "quantityOnHand": 14,
+      "totalWithFutureBatches": 14,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/11225",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/374289e1-12c5-467a-82c2-52e470e8feb4_шоколад.jpg"
+      ]
+    },
+    {
+      "catalogId": 6668,
+      "name": "Скатерть бархатная \"Бета\" черная круглая",
+      "quantityOnHand": 15,
+      "totalWithFutureBatches": 15,
+      "eligible": true,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6668",
+      "photos": [
+        "https://cdn.frents.ru/ameli-rental/561dd6ca-2823-425f-a43a-3f4cfd9e2f9e_page.webp"
+      ]
+    }
+  ]
+}

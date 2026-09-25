@@ -72,7 +72,8 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
     text(`${selection.guests} гостей`,550,170,25,'Display');
     text(formatPrice(selection.price),550,211,35,'Display');text('Стоимость пакета под ключ',550,235,9,'Body',mid);
     text(`1 церемония · 1 президиум`,550,265,9,'Body',mid);
-    text(`Композиции: ${c.compositions} · салфетки: ${c.napkins}`,550,284,9,'Body',mid);
+    text(`Композиции: ${c.compositions} · салфетки: ${c.napkins}`,550,282,9,'Body',mid);
+    text(`Скатерти в подарок: ${c.tablecloths}`,550,298,9,'Body',mid);
     line(46,307);
     text('ПОЖЕЛАНИЯ',46,330,8,'Body',mid);
     compact(selection.comment||'Общие пожелания пока не указаны.',46,350,351,3,10,'Body',mid);
@@ -92,53 +93,53 @@ export async function createPresentation({jsPDF,data,prices,selection,readBase64
     else text('Оттенки на экране приблизительные. Цвет текстиля согласуем по образцу.',46,550,8,'Body',mid);
 
     page('Ваш выбор','Всё выбранное — на одной странице',`${selection.guests} гостей · ${formatPrice(selection.price)} · один вариант в каждом разделе`);
-    const quantities=['1 зона церемонии','1 зона президиума',`${c.compositions} композиций на ${c.tables} столов`,`${c.napkins} салфеток`];
-    selection.sections.forEach((section,i)=>{
-      const x=46+(i%2)*392,y=157+Math.floor(i/2)*190;
-      text(section.title,x,y,21,'Display');line(x,y+12,x+357);
-    });
+    const quantities={ceremony:'1 зона церемонии',presidiumBackdrops:'1 зона президиума',tableCompositions:`${c.compositions} композиций на ${c.tables} столов`,napkins:`${c.napkins} салфеток`,tablecloths:`${c.tablecloths} скатертей в подарок`};
+    const cellWidth=(W-92-40)/3;
     for(let i=0;i<selection.sections.length;i++){
-      const section=selection.sections[i],item=section.items[0],x=46+(i%2)*392,top=180+Math.floor(i/2)*190,tx=x+179;
+      const section=selection.sections[i],item=section.items[0],x=46+(i%3)*(cellWidth+20),top=154+Math.floor(i/3)*191;
+      text(section.title,x,top,19,'Display');line(x,top+10,x+cellWidth);
       if(item){
-        await photo(item.image,x,top,163,145);
-        text(item.catalogId?`${item.id} · арт. ${item.catalogId}`:item.id,tx,top+11,8,'Body',mid);
-        const after=compact(item.title,tx,top+37,178,2,21,'Display');
-        text(quantities[i],tx,after+7,9,'Body',ink);
-        compact(item.description,tx,after+28,178,3,9,'Body',mid);
-        if(item.sourceUrl)pdf.link(x,top,357,145,{url:item.sourceUrl});
+        await photo(item.image,x,top+17,cellWidth,100);
+        text(item.catalogId?`${item.id} · арт. ${item.catalogId}`:item.id,x,top+130,8,'Body',mid);
+        compact(item.title,x,top+151,cellWidth,1,18,'Display');
+        text(quantities[section.key],x,top+171,9,'Body',ink);
+        if(item.sourceUrl)pdf.link(x,top+17,cellWidth,156,{url:item.sourceUrl});
       }else{
-        pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.rect(x,top,163,145);
-        text('Не выбрано',x+41,top+76,16,'Display',mid);
-        text(quantities[i],tx,top+32,10);
-        compact('Вариант оформления согласуем с менеджером.',tx,top+58,178,3,10,'Body',mid);
+        pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.rect(x,top+17,cellWidth,100);
+        text('Не выбрано',x+cellWidth/2-36,top+72,16,'Display',mid);
+        text(quantities[section.key],x,top+142,9);
+        compact('Вариант согласуем с менеджером.',x,top+164,cellWidth,1,9,'Body',mid);
       }
     }
-    text('Наличие на дату и итоговое оформление подтвердит менеджер. Общие условия — на следующей странице.',46,550,8,'Body',mid);
+    compact(selection.tableclothOffer.title+'. '+selection.tableclothOffer.bookingNote+' Форму, цвет и наличие на дату подтвердит менеджер.',46,549,W-92,2,8,'Body',mid);
   }else{
-  // Open on the four actual package components, matching the landing.
+  // Package components and the tablecloth gift, matching the landing.
   page('Декор под ключ','Всё, что входит в ваш пакет','Готовые предложения на 20, 30, 40, 50, 60, 70, 80, 90 и 100 гостей.');
   const summary=[
     ['Зона церемонии',data.ceremony[0].image,'1 зона на мероприятие','Задник и искусственная флористика.'],
     ['Зона президиума',data.presidiumBackdrops[0].image,'1 зона на мероприятие','Оформление стола пары и задник на выбор.'],
     ['Композиции на стол',data.tableCompositions[0].image,'2–10 композиций','Один комплект на 10 гостей.'],
-    ['Салфетки',data.napkins[0].image,'20–100 салфеток','По одной цветной салфетке на гостя.']
+    ['Салфетки',data.napkins[0].image,'20–100 салфеток','По одной цветной салфетке на гостя.'],
+    ['Скатерти в подарок',data.tablecloths[0].image,'2–10 скатертей',data.tableclothOffer.bookingNote]
   ];
   for(let i=0;i<summary.length;i++){
-    const x=46+i*190;await photo(summary[i][1],x,175,176,192);text(summary[i][0],x,397,20,'Display',ink,176);
-    text(summary[i][2],x,438,10,'Body',ink,176);text(summary[i][3],x,464,9,'Body',mid,176);
+    const w=(W-92-64)/5,x=46+i*(w+16);await photo(summary[i][1],x,175,w,192);text(summary[i][0],x,397,18,'Display',ink,w);
+    text(summary[i][2],x,454,9,'Body',ink,w);text(summary[i][3],x,479,8,'Body',mid,w);
   }
   text('Доставка, монтаж и вывоз включены. Варианты оформления показаны на следующих страницах.',46,535,9,'Body',mid,W-92);
   await gallery('01 / Входит в пакет','Зона церемонии',data.ceremony,'Посадочные места и дорожка на фото показаны для примера и согласуются отдельно.');
   await gallery('02 / Входит в пакет','Зона президиума',data.presidiumBackdrops,'Варианты задников. Искусственную флористику на президиуме согласуем в палитре оформления.');
   await gallery('03 / Входит в пакет','Композиция на стол',data.tableCompositions,'Один комплект на гостевой стол. На каждые 10 гостей — один стол и одна композиция.');
   await gallery('04 / Входит в пакет','Салфетки',data.napkins,'По одной салфетке на каждого гостя. Наличие ткани и оттенка подтвердим перед бронированием.');
+  await gallery('05 / Специальное предложение','Бархатные скатерти «Бета» в подарок',data.tablecloths,data.tableclothOffer.bookingNote+' Форму и наличие на дату подтвердит менеджер.');
   page('Палитра','20 оттенков для вашего оформления','Оттенки на экране приблизительные. Цвет готового текстиля согласуем по образцу.');
   data.palette.forEach((color,i)=>{const x=46+(i%5)*150,y=160+Math.floor(i/5)*87;pdf.setFillColor(color.hex);pdf.rect(x,y,128,50,'F');text(color.name,x,y+67,9,'Body',mid);});
-  page('Стоимость под ключ','Пакеты на 20–100 гостей','Церемония и президиум входят в каждый пакет. Количество композиций и салфеток зависит от гостей.');
-  const columns=[46,116,244,373,546,655];
-  ['Гости','Церемония','Президиум','Столы / композиции','Салфетки','Стоимость'].forEach((label,i)=>text(label,columns[i],177,9,'Body',mid));line(46,192);
-  data.packages.forEach((item,i)=>{const y=220+i*32,c=packageCounts(item.guests);text(item.guests,46,y,21,'Display');text('1 зона',116,y,10);text('1 зона',244,y,10);text(`${c.tables} / ${c.compositions}`,373,y,10);text(`${c.napkins} шт.`,546,y,10);text(formatPrice(prices[item.guests]??null),655,y,10);line(46,y+12);});
-  text('Доставка, монтаж и вывоз в пределах МКАД включены при стандартной логистике площадки.',46,540,9,'Body',mid,W-92);
+  page('Стоимость под ключ','Пакеты на 20–100 гостей','Церемония и президиум входят в каждый пакет. Количество композиций, салфеток и подарочных скатертей зависит от гостей.');
+  const columns=[46,99,206,313,470,575,677];
+  ['Гости','Церемония','Президиум','Столы / композиции','Салфетки','Скатерти*','Стоимость'].forEach((label,i)=>text(label,columns[i],177,9,'Body',mid));line(46,192);
+  data.packages.forEach((item,i)=>{const y=220+i*32,c=packageCounts(item.guests);text(item.guests,46,y,21,'Display');text('1 зона',99,y,10);text('1 зона',206,y,10);text(`${c.tables} / ${c.compositions}`,313,y,10);text(`${c.napkins} шт.`,470,y,10);text(`${c.tablecloths} шт.`,575,y,10);text(formatPrice(prices[item.guests]??null),677,y,10);line(46,y+12);});
+  text('* Скатерти в подарок. '+data.tableclothOffer.bookingNote,46,533,8,'Body',mid,W-92);
+  text('Доставка, монтаж и вывоз в пределах МКАД включены при стандартной логистике площадки.',46,548,8,'Body',mid,W-92);
   }
   page('Перед бронированием','Условия');
   data.terms.forEach((term,i)=>{const x=46+(i%2)*392,y=184+Math.floor(i/2)*174;line(x,y-23,x+351);text(term.title,x,y,26,'Display');text(term.text,x,y+30,11,'Body',mid,345);});

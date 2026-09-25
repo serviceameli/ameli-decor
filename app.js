@@ -3,12 +3,13 @@ const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
 const cardPhotoIndices=new Map();
-const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<button class="card-photo-arrow card-photo-prev" type="button" data-card-photo="${escape(item.id)}" data-step="-1" aria-label="Предыдущее фото: ${escape(item.title)}">‹</button><button class="card-photo-arrow card-photo-next" type="button" data-card-photo="${escape(item.id)}" data-step="1" aria-label="Следующее фото: ${escape(item.title)}">›</button>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<div class="card-photo-dots" role="group" aria-label="Фотографии: ${escape(item.title)}">${item.photos.map((photo,index)=>`<button class="card-photo-dot" type="button" data-card-photo="${escape(item.id)}" data-index="${index}" aria-label="Фото ${index+1} из ${item.photos.length}: ${escape(item.title)}" aria-pressed="${index===0}"><span aria-hidden="true"></span></button>`).join('')}</div>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
 const sectionIconPaths = [
   '<path d="M12 51V25a20 20 0 0 1 40 0v26M19 51V26a13 13 0 0 1 26 0v25M8 52h15m18 0h15"/><path d="M12 31c-8-1-9-8-4-11 6 0 9 5 4 11Zm0 0c7-1 10 4 7 8-5 2-9-2-7-8ZM49 15c-5-4-4-10 1-11 5 3 5 8-1 11Z"/>',
   '<path d="M9 13h46v28M15 13v20m7-20v20m20-20v20m7-20v20M9 40h46l3 13H6l3-13Zm9 0v13m28-13v13"/><path d="M25 40c-4-7 1-12 7-7 6-5 11 0 7 7m-7-7v-6m-4 0c0-5 8-5 8 0-2 3-6 3-8 0Z"/>',
   '<path d="M10 52h44M17 52V29m-5 0h10m-8 0V15h6v14m12 23V22m-5 0h10m-8 0V9h6v13m12 30V33m-5 0h10m-8 0V20h6v13"/><path d="M17 11c-3-3 0-6 0-6s3 3 0 6Zm15-6c-2-2 0-4 0-4s2 2 0 4Zm15 11c-3-3 0-6 0-6s3 3 0 6Z"/>',
-  '<path d="m32 7 23 43-20-6-11 12L10 43 32 7Zm0 0 3 37m-3-37L24 56M10 43l17-5"/><path d="m38 19 10 27"/>'
+  '<path d="m32 7 23 43-20-6-11 12L10 43 32 7Zm0 0 3 37m-3-37L24 56M10 43l17-5"/><path d="m38 19 10 27"/>',
+  '<path d="M12 20h40l7 30c-6-5-12 5-18 0s-12 5-18 0-12 5-18 0l7-30Zm0 0c0-10 40-10 40 0M20 24l-3 25m27-25 3 25M16 53v5m32-5v5"/>'
 ];
 const sectionIcon = (index) => `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${sectionIconPaths[index]}</svg>`;
 let activeDetail=null;
@@ -24,27 +25,30 @@ try {
   data=await response.json();render(data);
 } catch(error) {
   document.querySelectorAll('[data-export]').forEach(button=>{button.disabled=true;});
-  $('#package-summary').textContent='Не удалось загрузить предложение. Обновите страницу.';
+  $('#collection-status').hidden=false;
+  $('#collection-status').textContent='Не удалось загрузить предложение. Обновите страницу.';
   console.error('Не удалось загрузить коллекцию',error);
 }
 function render(content) {
   renderPortfolio(content);
+  const offer=content.tableclothOffer;
+  $('#tablecloth-offer-title').textContent=offer.title;
+  $('#tablecloth-offer-booking').textContent=offer.bookingNote;
+  $('#tablecloth-offer-details').textContent=offer.availabilityNote+' '+offer.replacementNote;
   $('#ceremony-extras-list').innerHTML=(content.ceremonyExtras||[]).map(item=>`<a class="ceremony-extra" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
   for(const [id,key] of Object.entries(requestFields))$(`#${id}`).value=typeof state[key]==='string'?state[key]:'';
   $('#extras-needed').checked=state.extrasNeeded===true;updateExtraFields();
-  for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');
+  for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins'],['tablecloth-gallery','tablecloths']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');
   $('#guest-options').innerHTML=content.packages.map(item=>`<button class="guest-button" type="button" data-guests="${item.guests}" aria-pressed="${item.guests===selectedGuests}" aria-label="Пакет на ${item.guests} гостей">${item.guests}</button>`).join('');
   $('#swatches').innerHTML=content.palette.map(color=>`<button type="button" class="swatch" data-color="${escape(color.name)}" aria-pressed="false" aria-label="Выбрать цвет: ${escape(color.name)}"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></button>`).join('');
   $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}${term.title==='Изменения и дополнения'?' <a class="terms-catalog-link" href="https://catalog.ameli-rental.ru/" target="_blank" rel="noopener noreferrer">Открыть каталог ↗</a>':''}</p></div></article>`).join('');
   $('#export-fields').innerHTML=content.packages.map(item=>`<label for="price-${item.guests}">${item.guests} гостей<span class="input-wrap"><input id="price-${item.guests}" name="price-${item.guests}" type="text" inputmode="numeric" autocomplete="off" placeholder="По запросу" maxlength="12" aria-describedby="export-error"><span aria-hidden="true">₽</span></span></label>`).join('');
-  document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<4)link.innerHTML=sectionIcon(i)+'<span>'+link.textContent.replace(/^0[1-4] /,'')+'</span>';});
+  document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<sectionIconPaths.length)link.innerHTML=sectionIcon(i)+'<span>'+escape(link.textContent)+'</span>';});
   $('#venue-examples').innerHTML=(content.venueVisualizations||[]).map((group,g)=>`<article class="venue-example"><h3>${escape(group.title)}</h3><div class="venue-photo-grid">${group.photos.map((photo,i)=>`<figure><button type="button" data-venue-group="${g}" data-venue-photo="${i}" aria-label="Увеличить: ${escape(photo.alt)}"><img src="${escape(photo.src)}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(photo.label)}<span aria-hidden="true">↗</span></figcaption></figure>`).join('')}</div></article>`).join('');
   updatePackage(selectedGuests);
 }
 function updatePackage(guests) {
   state.guests=guests;selectedGuests=guests;
-  const notes=['Задник и искусственная флористика','Задник и оформление стола пары','Одна композиция на каждые 10 гостей','По одной на каждого гостя'];
-  $('#package-summary').innerHTML=selectionSections.map((section,i)=>`<a class="summary-card" href="#${section.anchor}"><div class="summary-icon">${sectionIcon(i)}</div><div class="summary-copy"><h3>${section.title}</h3><p>${notes[i]}</p></div></a>`).join('');
   document.querySelectorAll('[data-guests]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.guests)===guests)));
   refreshSelection();
 }
@@ -61,7 +65,7 @@ function refreshSelection() {
   document.querySelectorAll('[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(state.colors.includes(button.dataset.color))));
   $('#header-selection-count').textContent=state.ids.length;
   const c=selection.counts;
-  $('#package-inclusions').innerHTML=`<b>Состав оформления</b><ul><li>Зона церемонии — 1</li><li>Зона президиума — 1</li><li>Композиции на стол — ${c.compositions}<br><span>на ${c.tables} гостевых столов</span></li><li>Цветные салфетки — ${c.napkins} шт.</li></ul>`;
+  $('#package-inclusions').innerHTML=`<b>Состав оформления</b><ul><li>Зона церемонии — 1</li><li>Зона президиума — 1</li><li>Композиции на стол — ${c.compositions}<br><span>на ${c.tables} гостевых столов</span></li><li>Цветные салфетки — ${c.napkins} шт.</li><li>Бархатные скатерти — ${c.tablecloths} шт.<br><span>в подарок по спецпредложению</span></li></ul>`;
   $('#selected-items').innerHTML=selection.sections.map(section=>`<div class="selected-group"><span>${section.title}</span><div>${section.items.length?section.items.map(item=>`<button type="button" class="selection-chip" data-remove="${escape(item.id)}" aria-label="Убрать: ${escape(item.title)}">${escape(item.id)} · ${escape(item.title)} <span aria-hidden="true">×</span></button>`).join(''):`<a class="empty-selection" href="#${section.anchor}">Выбрать варианты ↗</a>`}</div></div>`).join('')+`<div class="selected-group"><span>Цветовая гамма</span><div>${selection.palette.length?selection.palette.map(color=>`<button type="button" class="selection-chip" data-color="${escape(color.name)}" aria-pressed="true" aria-label="Убрать цвет: ${escape(color.name)}"><i style="background:${color.hex}"></i>${escape(color.name)} ×</button>`).join(''):'<a class="empty-selection" href="#palette">Выбрать цвета ↗</a>'}</div></div>`;
   $('#selection-text').value=selectionMessage(selection);
   $('#selection-status').textContent='';
@@ -164,7 +168,7 @@ function updateDetailChoice(){
   button.dataset.select=item.id;button.setAttribute('aria-pressed',String(selected));button.textContent=selected?'Выбрано · убрать':'Выбрать этот вариант';
   const section=selectionSections.find(section=>data[section.key].some(i=>i.id===item.id));
   const counts=packageCounts(state.guests);
-  const quantity=section.key==='napkins'?`${counts.napkins} салфеток`:section.key==='tableCompositions'?`${counts.compositions} ${plural(counts.compositions,'комплект','комплекта','комплектов')} на ${counts.tables} ${plural(counts.tables,'стол','стола','столов')}`:'1 зона';
+  const quantity=section.key==='tablecloths'?`${counts.tablecloths} ${plural(counts.tablecloths,'скатерть','скатерти','скатертей')} в подарок`:section.key==='napkins'?`${counts.napkins} салфеток`:section.key==='tableCompositions'?`${counts.compositions} ${plural(counts.compositions,'комплект','комплекта','комплектов')} на ${counts.tables} ${plural(counts.tables,'стол','стола','столов')}`:'1 зона';
   $('#detail-quantity').textContent=`На ${state.guests} гостей: ${quantity}.`;
 }
 document.addEventListener('click',event=>{
@@ -267,12 +271,22 @@ $('.portfolio-view').addEventListener('touchstart',event=>{portfolioTouch=event.
 $('.portfolio-view').addEventListener('touchend',event=>{if(!portfolioTouch)return;const touch=event.changedTouches[0],dx=touch.clientX-portfolioTouch.x,dy=touch.clientY-portfolioTouch.y;portfolioTouch=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)showPortfolio(portfolioIndex+(dx<0?1:-1));},{passive:true});
 
 // Preview navigation does not change the chosen item or the presentation cover.
-document.addEventListener('click',event=>{
-  const arrow=event.target.closest('[data-card-photo]');if(!arrow||!data)return;
-  const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===arrow.dataset.cardPhoto);
+function showCardPhoto(button,index){
+  const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===button.dataset.cardPhoto);
   if(!item?.photos?.length)return;
-  const index=((cardPhotoIndices.get(item.id)||0)+Number(arrow.dataset.step)+item.photos.length)%item.photos.length;
+  index=(index+item.photos.length)%item.photos.length;
   cardPhotoIndices.set(item.id,index);
-  const photo=item.photos[index],img=arrow.closest('figure').querySelector('.gallery-image img');
+  const card=button.closest('figure'),photo=item.photos[index],img=card.querySelector('.gallery-image img');
   img.src=photo.src;img.alt=photo.alt||item.title;
+  card.querySelectorAll('[data-card-photo]').forEach(dot=>dot.setAttribute('aria-pressed',String(Number(dot.dataset.index)===index)));
+  return card.querySelector(`[data-index="${index}"]`);
+}
+document.addEventListener('click',event=>{
+  const dot=event.target.closest('[data-card-photo]');if(!dot||!data)return;
+  showCardPhoto(dot,Number(dot.dataset.index));
+});
+document.addEventListener('keydown',event=>{
+  const dot=event.target.closest('[data-card-photo]');if(!dot||!data||!['ArrowLeft','ArrowRight'].includes(event.key))return;
+  event.preventDefault();
+  showCardPhoto(dot,Number(dot.dataset.index)+(event.key==='ArrowRight'?1:-1))?.focus();
 });
