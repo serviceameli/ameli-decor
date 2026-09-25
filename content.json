@@ -3459,5 +3459,37 @@
     "bookingNote": "При бронировании оформления до 31 декабря 2026 года.",
     "availabilityNote": "Круглая или прямоугольная скатерть — при наличии выбранного цвета в аренду на дату мероприятия. Занятость изделий и нужное количество подтвердит менеджер.",
     "replacementNote": "В нашей коллекции — 100+ вариантов скатертей и оттенков текстиля. Если выбранный вариант занят, поможем подобрать замену."
-  }
+  },
+  "tableExtras": [
+    {
+      "title": "Зеркало «Барбара»",
+      "image": "assets/extra-mirror.jpg",
+      "alt": "Зеркало под композиции \"Барбара\" 55 - Фото 1",
+      "url": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/2951",
+      "linkLabel": "Открыть в каталоге"
+    }
+  ],
+  "napkinExtras": [
+    {
+      "title": "Кольца для салфеток",
+      "image": "assets/extra-rings.jpg",
+      "alt": "Кольцо для салфетки \"Гюго\"",
+      "url": "https://catalog.ameli-rental.ru/catalog/koltsa-dlja-salfetok-fnm-nhx",
+      "linkLabel": "Открыть в каталоге"
+    },
+    {
+      "title": "Тарелки",
+      "image": "assets/extra-plates.jpg",
+      "alt": "Набор тарелок \"Кюри\" белых",
+      "url": "https://catalog.ameli-rental.ru/catalog/tarelki-oir-djg",
+      "linkLabel": "Открыть в каталоге"
+    },
+    {
+      "title": "Бокалы",
+      "image": "assets/extra-glasses.jpg",
+      "alt": "Набор бокалов \"Роулинг\" гранатовый",
+      "url": "https://catalog.ameli-rental.ru/catalog/bokaly-drf-knl-afa-nmq",
+      "linkLabel": "Открыть в каталоге"
+    }
+  ]
 }

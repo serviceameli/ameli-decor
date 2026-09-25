@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {packageCounts} from './model.mjs';
+import {packageCounts,additionalSections} from './model.mjs';
 const data=JSON.parse(await fs.readFile('content.json','utf8'));
 if(data.packages.length!==9||data.palette.length!==20)throw new Error('Ожидаются 9 пакетов и 20 цветов');
 const guests=new Set(data.packages.map(p=>p.guests));if(guests.size!==9)throw new Error('Пакеты повторяются');
@@ -19,7 +19,7 @@ for(const key of ['ceremony','tableCompositions','presidiumFlorals','presidiumBa
   }
 }
 for(const group of data.venueVisualizations||[])for(const photo of group.photos){if(!/^assets\/[\w.-]+$/.test(photo.src)||!photo.alt||!photo.label)throw new Error('Проверьте фото визуализации');assets.add(photo.src);}
-for(const item of data.ceremonyExtras||[]){if(!/^assets\/[\w.-]+$/.test(item.image)||!item.title||!item.alt||!item.url.startsWith('https://catalog.ameli-rental.ru/catalog/'))throw new Error('Проверьте дополнительную позицию');assets.add(item.image);}
+for(const section of additionalSections)for(const item of data[section.key]||[]){if(!/^assets\/[\w.-]+$/.test(item.image)||!item.title||!item.alt||!item.url.startsWith('https://catalog.ameli-rental.ru/catalog/'))throw new Error('Проверьте дополнительную позицию');assets.add(item.image);}
 for(const photo of data.portfolio||[]){if(!photo.alt||!photo.width||!photo.height)throw new Error('Проверьте фото портфолио');for(const src of [photo.src,photo.thumb]){if(!/^assets\/[\w.-]+$/.test(src))throw new Error('Проверьте путь портфолио');assets.add(src);}}
 for(const asset of assets)await fs.access(asset);
 await fs.rm('dist',{recursive:true,force:true});

@@ -1,4 +1,4 @@
-import { packageCounts, resolveSelection, selectionMessage, selectionSections, toggleItem } from './model.mjs';
+import { packageCounts, additionalSections, resolveSelection, selectionMessage, selectionSections, toggleItem } from './model.mjs';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
@@ -35,7 +35,10 @@ function render(content) {
   $('#tablecloth-offer-title').textContent=offer.title;
   $('#tablecloth-offer-booking').textContent=offer.bookingNote;
   $('#tablecloth-offer-details').textContent=offer.availabilityNote+' '+offer.replacementNote;
-  $('#ceremony-extras-list').innerHTML=(content.ceremonyExtras||[]).map(item=>`<a class="ceremony-extra" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
+  for(const section of additionalSections){
+    const target=$(`#${section.anchor}-extras-list`);if(!target)continue;
+    target.innerHTML=(content[section.key]||[]).map(item=>`<a class="extra-card" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
+  }
   for(const [id,key] of Object.entries(requestFields))$(`#${id}`).value=typeof state[key]==='string'?state[key]:'';
   $('#extras-needed').checked=state.extrasNeeded===true;updateExtraFields();
   for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins'],['tablecloth-gallery','tablecloths']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');

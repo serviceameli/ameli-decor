@@ -1,4 +1,4 @@
-import {packageCounts} from './model.mjs';
+import {packageCounts,additionalSections} from './model.mjs';
 
 // Shared browser / Node renderer for the selected package and organizer collection.
 export async function createPresentation({jsPDF,data,selection,readBase64}) {
@@ -9,12 +9,24 @@ export async function createPresentation({jsPDF,data,selection,readBase64}) {
   pdf.addFileToVFS('cormorant.ttf',serif);pdf.addFont('cormorant.ttf','Display','normal');
   pdf.setProperties({title:'Готовые пакеты декора · Ameli Rental',author:'Ameli Rental',subject:'Состав комплектов и варианты оформления'});
   const ink='#2d2c28',mid='#64635c',paper='#f2f1ec',rule='#d8d7d0';
+  const extraGroups=additionalSections.map(section=>({...section,items:data[section.key]||[]})).filter(section=>section.items.length);
   function text(value,x,y,size=12,font='Body',color=ink,width=null){
     pdf.setFont(font,'normal');pdf.setFontSize(size);pdf.setTextColor(color);pdf.setDrawColor(color);pdf.setLineWidth(font==='Body'?size*.025:0);
     const clean=String(value).replace(/[\u00a0\u202f]/g,' ');const lines=width?pdf.splitTextToSize(clean,width):clean.split('\n');
     pdf.text(lines,x,y,{lineHeightFactor:1.35,renderingMode:font==='Body'?'fillThenStroke':'fill'});return y+lines.length*size*1.35;
   }
   function line(x1,y,x2=W-46){pdf.setDrawColor(rule);pdf.setLineWidth(.6);pdf.line(x1,y,x2,y);}
+  function extraLinks(items,x,y,width,size=8){
+    let left=x;pdf.setFont('Body','normal');pdf.setFontSize(size);
+    for(const item of items){
+      const labelWidth=pdf.getTextWidth(item.title);
+      if(left>x&&left+labelWidth>x+width){left=x;y+=size*1.5;}
+      text(item.title,left,y,size,'Body',mid);
+      pdf.link(left,y-size,labelWidth,size*1.4,{url:item.url});
+      left+=labelWidth+12;
+    }
+    return y+size*1.5;
+  }
   let first=true;
   function page(label,title,subtitle=''){
     if(!first)pdf.addPage();first=false;
@@ -109,6 +121,14 @@ export async function createPresentation({jsPDF,data,selection,readBase64}) {
         compact('Вариант согласуем с менеджером.',x,top+164,cellWidth,1,9,'Body',mid);
       }
     }
+    const extraX=46+2*(cellWidth+20),extraTop=345;
+    text('Дополнить оформление',extraX,extraTop,19,'Display');line(extraX,extraTop+10,extraX+cellWidth);
+    text('Заказываются отдельно. Нажмите на название.',extraX,extraTop+26,8,'Body',mid);
+    let extraY=extraTop+47;
+    for(const group of extraGroups){
+      text(group.title,extraX,extraY,9);
+      extraY=extraLinks(group.items,extraX,extraY+14,cellWidth)+9;
+    }
     compact(selection.tableclothOffer.title+'. '+selection.tableclothOffer.bookingNote+' Форму, цвет и наличие на дату подтвердит менеджер.',46,549,W-92,2,8,'Body',mid);
   }else{
   // Package components and the tablecloth gift, matching the landing.
@@ -131,6 +151,19 @@ export async function createPresentation({jsPDF,data,selection,readBase64}) {
   await gallery('05 / Специальное предложение',data.tableclothOffer.title,data.tablecloths,data.tableclothOffer.bookingNote+' Форму и наличие на дату подтвердит менеджер.');
   page('Палитра','20 оттенков для вашего оформления','Оттенки на экране приблизительные. Цвет готового текстиля согласуем по образцу.');
   data.palette.forEach((color,i)=>{const x=46+(i%5)*150,y=160+Math.floor(i/5)*87;pdf.setFillColor(color.hex);pdf.rect(x,y,128,50,'F');text(color.name,x,y+67,9,'Body',mid);});
+  page('Дополнить оформление','Дополнительные позиции','Заказываются отдельно. Нажмите на фото или название, чтобы открыть каталог.');
+  for(let groupIndex=0;groupIndex<extraGroups.length;groupIndex++){
+    const group=extraGroups[groupIndex],top=158+groupIndex*96;
+    text(group.title,46,top+20,21,'Display',ink,145);
+    const itemWidth=(W-92-166-28)/3;
+    for(let itemIndex=0;itemIndex<group.items.length;itemIndex++){
+      const item=group.items[itemIndex],x=212+itemIndex*(itemWidth+14);
+      await photo(item.image,x,top,62,64);
+      text(item.title,x+72,top+20,16,'Display',ink,itemWidth-72);
+      pdf.link(x,top,itemWidth,74,{url:item.url});
+    }
+    line(46,top+81);
+  }
   page('Состав комплектов','Пакеты на 20–100 гостей','Церемония и президиум входят в каждый пакет. Количество композиций, салфеток и подарочных скатертей зависит от гостей.');
   const columns=[46,130,256,388,576,702];
   ['Гости','Церемония','Президиум','Столы / композиции','Салфетки','Скатерти*'].forEach((label,i)=>text(label,columns[i],177,9,'Body',mid));line(46,192);

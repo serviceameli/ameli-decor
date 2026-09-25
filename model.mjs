@@ -2,6 +2,13 @@ export function packageCounts(guests) {
   if (!Number.isInteger(guests) || guests<20 || guests>100 || guests%10!==0) throw new Error('Количество гостей должно быть от 20 до 100 с шагом 10');
   return {guests,tables:guests/10,compositions:guests/10,tablecloths:guests/10,napkins:guests,ceremony:1,presidium:1};
 }
+export const additionalSections = [
+  {key:'ceremonyExtras',anchor:'ceremony',title:'Зона церемонии'},
+  {key:'presidiumExtras',anchor:'presidium',title:'Зона президиума'},
+  {key:'tableExtras',anchor:'tables',title:'Композиции на стол'},
+  {key:'napkinExtras',anchor:'textile',title:'Сервировка'}
+];
+
 export const selectionSections = [
   {key:'ceremony',title:'Зона церемонии',anchor:'ceremony'},
   {key:'presidiumBackdrops',title:'Зона президиума',anchor:'presidium'},
