@@ -3,7 +3,15 @@ const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const plural = (n,one,few,many) => n%100>=11 && n%100<=14 ? many : n%10===1 ? one : n%10>=2 && n%10<=4 ? few : many;
 const cardPhotoIndices=new Map();
-const galleryCard = (item) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img src="${escape(item.image)}" alt="${escape(item.alt || item.title)}" loading="lazy" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<div class="card-photo-dots" role="group" aria-label="Фотографии: ${escape(item.title)}">${item.photos.map((photo,index)=>`<button class="card-photo-dot" type="button" data-card-photo="${escape(item.id)}" data-index="${index}" aria-label="Фото ${index+1} из ${item.photos.length}: ${escape(item.title)}" aria-pressed="${index===0}"><span aria-hidden="true"></span></button>`).join('')}</div>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+const cardSizes='(max-width:700px) calc((100vw - 44px) / 2), (max-width:1100px) calc((100vw - 92px) / 4), (max-width:1424px) calc((100vw - 138px) / 5), 258px';
+function previewAttributes(path,sizes=cardSizes){
+  const variants=data.imagePreviews?.[path]?.variants;
+  if(!variants?.length)return {src:path};
+  const largest=variants[variants.length-1];
+  return {src:largest.src,srcset:variants.map(image=>image.src+' '+image.width+'w').join(', '),sizes,width:largest.width,height:largest.height};
+}
+function previewMarkup(path,sizes){return Object.entries(previewAttributes(path,sizes)).map(([key,value])=>key+'="'+escape(value)+'"').join(' ');}
+const galleryCard = (item,priority=false) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img ${previewMarkup(item.image)} alt="${escape(item.alt || item.title)}" loading="${priority?'eager':'lazy'}" fetchpriority="${priority?'high':'auto'}" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<div class="card-photo-dots" role="group" aria-label="Фотографии: ${escape(item.title)}">${item.photos.map((photo,index)=>`<button class="card-photo-dot" type="button" data-card-photo="${escape(item.id)}" data-index="${index}" aria-label="Фото ${index+1} из ${item.photos.length}: ${escape(item.title)}" aria-pressed="${index===0}"><span aria-hidden="true"></span></button>`).join('')}</div>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
 const sectionIconPaths = [
   '<path d="M12 51V25a20 20 0 0 1 40 0v26M19 51V26a13 13 0 0 1 26 0v25M8 52h15m18 0h15"/><path d="M12 31c-8-1-9-8-4-11 6 0 9 5 4 11Zm0 0c7-1 10 4 7 8-5 2-9-2-7-8ZM49 15c-5-4-4-10 1-11 5 3 5 8-1 11Z"/>',
   '<path d="M9 13h46v28M15 13v20m7-20v20m20-20v20m7-20v20M9 40h46l3 13H6l3-13Zm9 0v13m28-13v13"/><path d="M25 40c-4-7 1-12 7-7 6-5 11 0 7 7m-7-7v-6m-4 0c0-5 8-5 8 0-2 3-6 3-8 0Z"/>',
@@ -37,16 +45,16 @@ function render(content) {
   $('#tablecloth-offer-details').textContent=offer.availabilityNote+' '+offer.replacementNote;
   for(const section of additionalSections){
     const target=$(`#${section.anchor}-extras-list`);if(!target)continue;
-    target.innerHTML=(content[section.key]||[]).map(item=>`<a class="extra-card" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img src="${escape(item.image)}" alt="${escape(item.alt)}" loading="lazy"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
+    target.innerHTML=(content[section.key]||[]).map(item=>`<a class="extra-card" href="${escape(item.url)}" target="_blank" rel="noopener noreferrer"><img ${previewMarkup(item.image,'110px')} alt="${escape(item.alt)}" loading="lazy" decoding="async"><span><h4>${escape(item.title)}</h4><span class="extra-link">${escape(item.linkLabel)} ↗</span></span></a>`).join('');
   }
   for(const [id,key] of Object.entries(requestFields))$(`#${id}`).value=typeof state[key]==='string'?state[key]:'';
   $('#extras-needed').checked=state.extrasNeeded===true;updateExtraFields();
-  for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins'],['tablecloth-gallery','tablecloths']]) $(`#${target}`).innerHTML=content[key].map(galleryCard).join('');
+  for(const [target,key] of [['ceremony-gallery','ceremony'],['presidium-gallery','presidiumBackdrops'],['table-gallery','tableCompositions'],['napkin-gallery','napkins'],['tablecloth-gallery','tablecloths']]) $(`#${target}`).innerHTML=content[key].map((item,index)=>galleryCard(item,key==='ceremony'&&index<2)).join('');
   $('#guest-options').innerHTML=content.packages.map(item=>`<button class="guest-button" type="button" data-guests="${item.guests}" aria-pressed="${item.guests===selectedGuests}" aria-label="Пакет на ${item.guests} гостей">${item.guests}</button>`).join('');
   $('#swatches').innerHTML=content.palette.map(color=>`<button type="button" class="swatch" data-color="${escape(color.name)}" aria-pressed="false" aria-label="Выбрать цвет: ${escape(color.name)}"><span class="swatch-color" style="background:${/^#[0-9a-f]{6}$/i.test(color.hex)?color.hex:'#eee'}" role="img" aria-label="Цвет ${escape(color.name)}"></span><span class="swatch-name">${escape(color.name)}</span></button>`).join('');
   $('#terms-list').innerHTML=content.terms.map((term,i)=>`<article class="term"><span>${String(i+1).padStart(2,'0')}</span><div><h3>${escape(term.title)}</h3><p>${escape(term.text)}${term.title==='Изменения и дополнения'?' <a class="terms-catalog-link" href="https://catalog.ameli-rental.ru/" target="_blank" rel="noopener noreferrer">Открыть каталог ↗</a>':''}</p></div></article>`).join('');
   document.querySelectorAll('.section-nav a').forEach((link,i)=>{if(i<sectionIconPaths.length)link.innerHTML=sectionIcon(i)+'<span>'+escape(link.textContent)+'</span>';});
-  $('#venue-examples').innerHTML=(content.venueVisualizations||[]).map((group,g)=>`<article class="venue-example"><h3>${escape(group.title)}</h3><div class="venue-photo-grid">${group.photos.map((photo,i)=>`<figure><button type="button" data-venue-group="${g}" data-venue-photo="${i}" aria-label="Увеличить: ${escape(photo.alt)}"><img src="${escape(photo.src)}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(photo.label)}<span aria-hidden="true">↗</span></figcaption></figure>`).join('')}</div></article>`).join('');
+  $('#venue-examples').innerHTML=(content.venueVisualizations||[]).map((group,g)=>`<article class="venue-example"><h3>${escape(group.title)}</h3><div class="venue-photo-grid">${group.photos.map((photo,i)=>`<figure><button type="button" data-venue-group="${g}" data-venue-photo="${i}" aria-label="Увеличить: ${escape(photo.alt)}"><img ${previewMarkup(photo.src,'(max-width:700px) 30vw, 420px')} alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(photo.label)}<span aria-hidden="true">↗</span></figcaption></figure>`).join('')}</div></article>`).join('');
   updatePackage(selectedGuests);
 }
 function updatePackage(guests) {
@@ -106,13 +114,26 @@ $('#download-selection').addEventListener('click',async()=>{
   const selection=resolveSelection(data,state);
   $('#selection-status').textContent='Готовим презентацию с вашим выбором…';
   try{
-    const {createPresentation}=await import('./pdf.mjs');
-    const pdf=await createPresentation({jsPDF:window.jspdf.jsPDF,data,selection,readBase64});
+    const [{createPresentation},jsPDF]=await Promise.all([import('./pdf.mjs'),loadPdfLibrary()]);
+    const pdf=await createPresentation({jsPDF,data,selection,readBase64});
     savePDF(pdf,`Ameli-${selection.guests}-guests.pdf`);
     $('#selection-status').textContent='Презентация скачана. Её можно отправить менеджеру.';
   }catch(error){console.error(error);$('#selection-status').textContent='Не удалось скачать PDF. Попробуйте ещё раз; ваш выбор сохранён.';}
   finally{button.disabled=false;}
 });
+let pdfLibraryPromise;
+function loadPdfLibrary(){
+  if(window.jspdf?.jsPDF)return Promise.resolve(window.jspdf.jsPDF);
+  if(!pdfLibraryPromise){
+    pdfLibraryPromise=new Promise((resolve,reject)=>{
+      const script=document.createElement('script');script.src='vendor/jspdf.umd.min.js';script.async=true;
+      script.onload=()=>{if(window.jspdf?.jsPDF)resolve(window.jspdf.jsPDF);else{script.remove();reject(new Error('PDF library unavailable'));}};
+      script.onerror=()=>{script.remove();reject(new Error('PDF library unavailable'));};
+      document.head.append(script);
+    }).catch(error=>{pdfLibraryPromise=undefined;throw error;});
+  }
+  return pdfLibraryPromise;
+}
 async function readBase64(path){
   const response=await fetch(path);if(!response.ok)throw new Error(`Не удалось загрузить ${path}`);
   const bytes=new Uint8Array(await response.arrayBuffer());let binary='';
@@ -135,14 +156,13 @@ async function downloadPresentation() {
   if (button.disabled) throw new Error('PDF уже готовится');
   button.disabled=true;$('#export-error').textContent='';$('#export-status').textContent='Готовим PDF. Это займёт несколько секунд…';
   try {
-    const { createPresentation } = await import('./pdf.mjs');
-    if (!window.jspdf?.jsPDF) throw new Error('PDF library unavailable');
+    const [{createPresentation},jsPDF]=await Promise.all([import('./pdf.mjs'),loadPdfLibrary()]);
     const readBase64 = async (path) => {
       const response = await fetch(path);if (!response.ok) throw new Error(`Не удалось загрузить ${path}`);
       const bytes = new Uint8Array(await response.arrayBuffer());let binary='';
       for (let i=0;i<bytes.length;i+=8192) binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(binary);
     };
-    const pdf = await createPresentation({ jsPDF:window.jspdf.jsPDF, data, readBase64 });
+    const pdf = await createPresentation({ jsPDF, data, readBase64 });
     const blob=pdf.output('blob');const url=URL.createObjectURL(blob);
     const link=document.createElement('a');link.href=url;link.download='Ameli-Decor-Collection.pdf';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
     $('#export-status').textContent='PDF готов. Скачивание началось.';
@@ -169,7 +189,7 @@ document.addEventListener('click',event=>{
   const item=selectionSections.flatMap(section=>data[section.key]).find(item=>item.id===trigger.dataset.details);if(!item)return;
   activeDetail=item.id;
   activePhotos=item.photos?.length?item.photos:[{src:item.image,alt:item.alt||item.title,label:'Основное фото'}];
-  $('#photo-thumbnails').innerHTML=activePhotos.map((photo,i)=>`<button type="button" data-photo-index="${i}" aria-label="${escape(photo.label)}" aria-pressed="false"><img src="${escape(photo.src)}" alt="" loading="lazy"></button>`).join('');
+  $('#photo-thumbnails').innerHTML=activePhotos.map((photo,i)=>`<button type="button" data-photo-index="${i}" aria-label="${escape(photo.label)}" aria-pressed="false"><img ${previewMarkup(photo.src,'80px')} alt="" loading="lazy" decoding="async"></button>`).join('');
   $('#photo-thumbnails').hidden=activePhotos.length<2;
   $('.detail-gallery-controls').hidden=activePhotos.length<2;
   showDetailPhoto(cardPhotoIndices.get(item.id)||0);
@@ -270,7 +290,7 @@ function showCardPhoto(button,index){
   index=(index+item.photos.length)%item.photos.length;
   cardPhotoIndices.set(item.id,index);
   const card=button.closest('figure'),photo=item.photos[index],img=card.querySelector('.gallery-image img');
-  img.src=photo.src;img.alt=photo.alt||item.title;
+  for(const [key,value] of Object.entries(previewAttributes(photo.src)))img.setAttribute(key,value);img.alt=photo.alt||item.title;
   card.querySelectorAll('[data-card-photo]').forEach(dot=>dot.setAttribute('aria-pressed',String(Number(dot.dataset.index)===index)));
   return card.querySelector(`[data-index="${index}"]`);
 }

@@ -80,3 +80,24 @@ test('Подарочные скатерти — Бета и Бета+ без п�
   assert.deepEqual(data.tablecloths.map(x=>x.catalogId),sources.items.filter(x=>x.eligible).map(x=>x.catalogId));
   assert.equal(new Set(data.tablecloths.map(x=>x.title.toLowerCase().replaceAll('ё','е'))).size,data.tablecloths.length);
 });
+
+test('Объявления о дополнительном пошиве исключены из фотографий и превью текстиля',()=>{
+  const cleanup=JSON.parse(fs.readFileSync(new URL('../image-cleanup.json',import.meta.url)));
+  const paths=new Set(data.napkins.concat(data.tablecloths).flatMap(item=>[item.image,...item.photos.map(photo=>photo.src)]));
+  for(const item of cleanup.excluded){
+    assert.ok(!paths.has(item.src),item.src);
+    assert.ok(!data.imagePreviews[item.src],item.src);
+  }
+  for(const item of data.napkins.concat(data.tablecloths))assert.ok(item.photos.length>=1,item.id);
+});
+
+test('Первый ряд превью как минимум в четыре раза легче полных фотографий',()=>{
+  let originals=0,previews=0;
+  for(const item of data.ceremony.slice(0,5)){
+    const variants=data.imagePreviews[item.image].variants;
+    assert.ok(variants.length>0);
+    originals+=fs.statSync(new URL('../'+item.image,import.meta.url)).size;
+    previews+=fs.statSync(new URL('../'+variants.at(-1).src,import.meta.url)).size;
+  }
+  assert.ok(previews<originals/4,`${previews} bytes previews / ${originals} bytes originals`);
+});

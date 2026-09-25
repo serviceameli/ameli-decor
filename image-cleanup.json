@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-09-25",
+  "reason": "Убраны рекламные изображения с надписью о дополнительном пошиве по просьбе владельца.",
+  "excluded": [
+    {
+      "id": "N09",
+      "src": "assets/catalog-napkins-5803-6.jpg"
+    },
+    {
+      "id": "N11",
+      "src": "assets/catalog-napkins-3608-2.jpg"
+    },
+    {
+      "id": "N15",
+      "src": "assets/catalog-napkins-2977-4.jpg"
+    },
+    {
+      "id": "N17",
+      "src": "assets/catalog-napkins-5847-3.jpg"
+    },
+    {
+      "id": "N21",
+      "src": "assets/catalog-napkins-5838-3.jpg"
+    },
+    {
+      "id": "N27",
+      "src": "assets/catalog-napkins-2875-2.jpg"
+    },
+    {
+      "id": "N29",
+      "src": "assets/catalog-napkins-5921-2.jpg"
+    },
+    {
+      "id": "N30",
+      "src": "assets/catalog-napkins-5646-2.jpg"
+    },
+    {
+      "id": "N33",
+      "src": "assets/catalog-napkins-5926-2.jpg"
+    },
+    {
+      "id": "N35",
+      "src": "assets/catalog-napkins-2816-4.jpg"
+    },
+    {
+      "id": "N36",
+      "src": "assets/catalog-napkins-2811-3.jpg"
+    },
+    {
+      "id": "N37",
+      "src": "assets/catalog-napkins-18357-2.jpg"
+    },
+    {
+      "id": "TC18",
+      "src": "assets/tablecloth-beta-6389-2.jpg"
+    }
+  ]
+}
