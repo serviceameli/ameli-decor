@@ -301,10 +301,10 @@
       "id": "C12",
       "title": "Альтаир · айвори",
       "description": "Светлый тканевый задник.",
-      "image": "assets/ceremony-27c8368775ab.jpg",
+      "image": "assets/ceremony-wide-8fdad71c6456.jpg",
       "alt": "Альтаир · айвори — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "Белый задник 2,5 м — парк — высокие тумбы.png",
+      "sourceFile": "Альтаир · айвори — парк — широкий кадр — главная.png",
       "componentLabel": "Состав зоны",
       "components": [
         "Светлый тканевый задник.",
@@ -315,10 +315,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-27c8368775ab.jpg",
+          "src": "assets/ceremony-wide-8fdad71c6456.jpg",
           "alt": "Альтаир · айвори — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Альтаир · айвори/Белый задник 2,5 м — парк — высокие тумбы.png"
+          "sourceFile": "Альтаир · айвори/Альтаир · айвори — парк — широкий кадр — главная.png"
         }
       ],
       "sourceFolder": "Альтаир · айвори"
@@ -327,10 +327,10 @@
       "id": "C13",
       "title": "Вега · складки",
       "description": "Четыре панели со светлой драпировкой во французскую складку.",
-      "image": "assets/ceremony-b35022c40584.jpg",
+      "image": "assets/ceremony-wide-8e342d76cbc7.jpg",
       "alt": "Вега · складки — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "французский главная.png",
+      "sourceFile": "Вега · складки — парк — широкий кадр — главная.png",
       "componentLabel": "Состав зоны",
       "components": [
         "Четыре панели разной высоты.",
@@ -339,10 +339,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-b35022c40584.jpg",
+          "src": "assets/ceremony-wide-8e342d76cbc7.jpg",
           "alt": "Вега · складки — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Вега · складки/французский главная.png"
+          "sourceFile": "Вега · складки/Вега · складки — парк — широкий кадр — главная.png"
         }
       ],
       "sourceFolder": "Вега · складки"
@@ -351,10 +351,10 @@
       "id": "C14",
       "title": "Альтаир · олива",
       "description": "Оливковый тканевый задник.",
-      "image": "assets/ceremony-88fa0e945fba.jpg",
+      "image": "assets/ceremony-wide-0d3e506e08d6.jpg",
       "alt": "Альтаир · олива — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "Оливковый задник 2 × 2,5 м — нейтральный главная.png",
+      "sourceFile": "Альтаир · олива — парк — широкий кадр — главная.png",
       "componentLabel": "Состав зоны",
       "components": [
         "Оливковый тканевый задник.",
@@ -365,10 +365,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-88fa0e945fba.jpg",
+          "src": "assets/ceremony-wide-0d3e506e08d6.jpg",
           "alt": "Альтаир · олива — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Альтаир · олива/Оливковый задник 2 × 2,5 м — нейтральный главная.png"
+          "sourceFile": "Альтаир · олива/Альтаир · олива — парк — широкий кадр — главная.png"
         },
         {
           "src": "assets/ceremony-9c8d228fa625.jpg",
@@ -415,10 +415,10 @@
       "id": "C16",
       "title": "Пульсар · классика",
       "description": "Арка «Пульсар» со светлой симметричной драпировкой.",
-      "image": "assets/ceremony-75db425db9c0.jpg",
+      "image": "assets/ceremony-af0e7c1d65c9.jpg",
       "alt": "Пульсар · классика — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "Пульсар классика.png",
+      "sourceFile": "Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v2.png",
       "sourceFolder": "Пульсар · классика",
       "componentLabel": "Состав зоны",
       "components": [
@@ -428,17 +428,17 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-75db425db9c0.jpg",
-          "alt": "Пульсар · классика — декор под ключ",
-          "label": "Декор под ключ",
-          "sourceFile": "Пульсар · классика/Пульсар классика.png"
-        },
-        {
           "src": "assets/ceremony-af0e7c1d65c9.jpg",
           "alt": "Пульсар · классика — флористика · вариант 2",
           "label": "Флористика · вариант 2",
           "sourceFile": "Пульсар · классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v2.png",
           "caption": "Подиум, дорожка и посадочные места на дополнительных фото заказываются отдельно. Флористика показана как вариант дополнения и заказывается отдельно."
+        },
+        {
+          "src": "assets/ceremony-75db425db9c0.jpg",
+          "alt": "Пульсар · классика — декор под ключ",
+          "label": "Декор под ключ",
+          "sourceFile": "Пульсар · классика/Пульсар классика.png"
         },
         {
           "src": "assets/ceremony-1a977608d540.jpg",
@@ -453,10 +453,10 @@
       "id": "C17",
       "title": "Пульсар · объём",
       "description": "Арка «Пульсар» с объёмной светлой драпировкой.",
-      "image": "assets/ceremony-bb0e714cb155.jpg",
+      "image": "assets/ceremony-wide-a90d2dc4a063.jpg",
       "alt": "Пульсар · объём — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "свобоная главная.png",
+      "sourceFile": "Пульсар · объём — парк — широкий кадр — главная.png",
       "sourceFolder": "Пульсар · объём",
       "componentLabel": "Состав зоны",
       "components": [
@@ -466,10 +466,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-bb0e714cb155.jpg",
+          "src": "assets/ceremony-wide-a90d2dc4a063.jpg",
           "alt": "Пульсар · объём — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Пульсар · объём/свобоная главная.png"
+          "sourceFile": "Пульсар · объём/Пульсар · объём — парк — широкий кадр — главная.png"
         },
         {
           "src": "assets/ceremony-9cd45ca4e773.jpg",
@@ -491,10 +491,10 @@
       "id": "C18",
       "title": "Пульсар · цветы",
       "description": "Арка «Пульсар» с драпировкой и цветочными композициями.",
-      "image": "assets/ceremony-ea2d96829166.jpg",
+      "image": "assets/ceremony-wide-fcac1045d31d.jpg",
       "alt": "Пульсар · цветы — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "пульсар черно роз главная.png",
+      "sourceFile": "Пульсар · цветы — парк — широкий кадр — главная.png",
       "sourceFolder": "Пульсар · цветы",
       "componentLabel": "Состав зоны",
       "components": [
@@ -505,10 +505,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-ea2d96829166.jpg",
+          "src": "assets/ceremony-wide-fcac1045d31d.jpg",
           "alt": "Пульсар · цветы — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Пульсар · цветы/пульсар черно роз главная.png"
+          "sourceFile": "Пульсар · цветы/Пульсар · цветы — парк — широкий кадр — главная.png"
         },
         {
           "src": "assets/ceremony-44a8aaa6796e.jpg",
@@ -558,10 +558,10 @@
       "id": "C19",
       "title": "Пульсар · вуаль",
       "description": "Арка «Пульсар» с лёгкой асимметричной драпировкой.",
-      "image": "assets/ceremony-552ad1f80dd1.jpg",
+      "image": "assets/ceremony-wide-f3164f6ed316.jpg",
       "alt": "Пульсар · вуаль — оформление зоны церемонии",
       "sourceType": "provided",
-      "sourceFile": "пульсар с драпировкой нежной.png",
+      "sourceFile": "Пульсар · вуаль — парк — широкий кадр — главная.png",
       "sourceFolder": "Пульсар · вуаль",
       "componentLabel": "Состав зоны",
       "components": [
@@ -571,10 +571,10 @@
       "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
       "photos": [
         {
-          "src": "assets/ceremony-552ad1f80dd1.jpg",
+          "src": "assets/ceremony-wide-f3164f6ed316.jpg",
           "alt": "Пульсар · вуаль — декор под ключ",
           "label": "Декор под ключ",
-          "sourceFile": "Пульсар · вуаль/пульсар с драпировкой нежной.png"
+          "sourceFile": "Пульсар · вуаль/Пульсар · вуаль — парк — широкий кадр — главная.png"
         }
       ]
     }
@@ -6384,54 +6384,6 @@
         }
       ]
     },
-    "assets/ceremony-27c8368775ab.jpg": {
-      "width": 1120,
-      "height": 1400,
-      "variants": [
-        {
-          "src": "assets/preview-a50082309440-360.webp",
-          "width": 360,
-          "height": 450
-        },
-        {
-          "src": "assets/preview-b1c5ee12344d-640.webp",
-          "width": 640,
-          "height": 800
-        }
-      ]
-    },
-    "assets/ceremony-b35022c40584.jpg": {
-      "width": 1254,
-      "height": 1254,
-      "variants": [
-        {
-          "src": "assets/preview-63754ea2963c-360.webp",
-          "width": 360,
-          "height": 360
-        },
-        {
-          "src": "assets/preview-de06e8f981ad-640.webp",
-          "width": 640,
-          "height": 640
-        }
-      ]
-    },
-    "assets/ceremony-88fa0e945fba.jpg": {
-      "width": 1120,
-      "height": 1400,
-      "variants": [
-        {
-          "src": "assets/preview-32b8aa39bfe8-360.webp",
-          "width": 360,
-          "height": 450
-        },
-        {
-          "src": "assets/preview-150b9eade5c5-640.webp",
-          "width": 640,
-          "height": 800
-        }
-      ]
-    },
     "assets/ceremony-9c8d228fa625.jpg": {
       "width": 1400,
       "height": 939,
@@ -6528,22 +6480,6 @@
         }
       ]
     },
-    "assets/ceremony-bb0e714cb155.jpg": {
-      "width": 1141,
-      "height": 1378,
-      "variants": [
-        {
-          "src": "assets/preview-ecdc777f5553-360.webp",
-          "width": 360,
-          "height": 435
-        },
-        {
-          "src": "assets/preview-f8ac5dd781e0-640.webp",
-          "width": 640,
-          "height": 773
-        }
-      ]
-    },
     "assets/ceremony-9cd45ca4e773.jpg": {
       "width": 1400,
       "height": 933,
@@ -6573,22 +6509,6 @@
           "src": "assets/preview-f013cfd2743a-640.webp",
           "width": 640,
           "height": 773
-        }
-      ]
-    },
-    "assets/ceremony-ea2d96829166.jpg": {
-      "width": 1142,
-      "height": 1377,
-      "variants": [
-        {
-          "src": "assets/preview-f7bf0cb27f80-360.webp",
-          "width": 360,
-          "height": 434
-        },
-        {
-          "src": "assets/preview-796ef1b7ec7a-640.webp",
-          "width": 640,
-          "height": 772
         }
       ]
     },
@@ -6688,19 +6608,99 @@
         }
       ]
     },
-    "assets/ceremony-552ad1f80dd1.jpg": {
-      "width": 1254,
-      "height": 1254,
+    "assets/ceremony-wide-8fdad71c6456.jpg": {
+      "width": 1400,
+      "height": 933,
       "variants": [
         {
-          "src": "assets/preview-c092152ef648-360.webp",
+          "src": "assets/preview-9878d3cee457-360.webp",
           "width": 360,
-          "height": 360
+          "height": 240
         },
         {
-          "src": "assets/preview-6a2f3cfbcdc3-640.webp",
+          "src": "assets/preview-26b61f58da19-640.webp",
           "width": 640,
-          "height": 640
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-wide-8e342d76cbc7.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-cdc5b42a898e-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-e62aaf2c7c38-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-wide-0d3e506e08d6.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ba27a05452ad-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-fba6fe3f0a81-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-wide-a90d2dc4a063.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ec6e669bf1e9-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-a046cb90bf9c-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-wide-fcac1045d31d.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-224499e8d59b-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ed40ac737672-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-wide-f3164f6ed316.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-7c53cec0f8fa-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-e8c2c1f926ff-640.webp",
+          "width": 640,
+          "height": 427
         }
       ]
     }

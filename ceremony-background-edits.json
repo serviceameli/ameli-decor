@@ -1,0 +1,157 @@
+{
+  "editedAt": "2026-09-25",
+  "tool": "built-in image_gen",
+  "operation": "Расширение фона для горизонтальных обложек 3:2; для C19 — добавление зелёного парка.",
+  "records": [
+    {
+      "id": "C12",
+      "title": "Альтаир · айвори",
+      "previousImage": "assets/ceremony-27c8368775ab.jpg",
+      "previousSource": "Альтаир · айвори/Белый задник 2,5 м — парк — высокие тумбы.png",
+      "sourceFile": "Альтаир · айвори/Альтаир · айвори — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-8fdad71c6456.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5f76d98cea74de14763c8f8fe31fccaa64e0f51b94ea19ccd93b3d4e85040a83",
+      "webBytes": 229191,
+      "previewBytes": [
+        20882,
+        54536
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the supplied photo only. This is a horizontal website catalogue image, landscape aspect ratio exactly 3:2. Expand the canvas ONLY to the LEFT and RIGHT by seamlessly outpainting the SAME existing green park: continue lawn, trees, foliage, natural daylight and shadows. Preserve the complete original vertical image in the center, without cropping its top or bottom, and preserve its content as faithfully as possible. Keep the decor at the SAME scale relative to image height, do not redesign, stretch, or widen any object. The new background must fill the entire canvas, with no white bars, borders, collage or repeated/mirrored strips. Preserve camera height, perspective, colors, depth and lighting; natural photographic textures, no smoothing. Do not add any people, flowers, furniture, objects, text, logos, or watermarks. Preserve the one ivory rectangular curtain backdrop, its ivory ruffled heart on upper left, and both draped pedestals with exactly the same white flower compositions on the right.",
+      "sceneMap": {
+        "operation": "Продолжить существующий парк по бокам",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Альтаир · айвори/Белый задник 2,5 м — парк — высокие тумбы.png"
+      }
+    },
+    {
+      "id": "C13",
+      "title": "Вега · складки",
+      "previousImage": "assets/ceremony-b35022c40584.jpg",
+      "previousSource": "Вега · складки/французский главная.png",
+      "sourceFile": "Вега · складки/Вега · складки — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-8e342d76cbc7.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "81614fb2b07441f738d35880f7b3edae570ca02dc247dc9f4f61d73eb6f48ba0",
+      "webBytes": 238923,
+      "previewBytes": [
+        20410,
+        52848
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the supplied photo only. This is a horizontal website catalogue image, landscape aspect ratio exactly 3:2. Expand the canvas ONLY to the LEFT and RIGHT by seamlessly outpainting the SAME existing green park: continue lawn, trees, foliage, natural daylight and shadows. Preserve the complete original vertical image in the center, without cropping its top or bottom, and preserve its content as faithfully as possible. Keep the decor at the SAME scale relative to image height, do not redesign, stretch, or widen any object. The new background must fill the entire canvas, with no white bars, borders, collage or repeated/mirrored strips. Preserve camera height, perspective, colors, depth and lighting; natural photographic textures, no smoothing. Do not add any people, flowers, furniture, objects, text, logos, or watermarks. Preserve exactly four separate ivory French-ruched fabric panels: the two taller ones at the rear and two shorter ones in front, with their original sizes, overlaps, gaps and all folds.",
+      "sceneMap": {
+        "operation": "Продолжить существующий парк по бокам",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Вега · складки/французский главная.png"
+      }
+    },
+    {
+      "id": "C14",
+      "title": "Альтаир · олива",
+      "previousImage": "assets/ceremony-88fa0e945fba.jpg",
+      "previousSource": "Альтаир · олива/Оливковый задник 2 × 2,5 м — нейтральный главная.png",
+      "sourceFile": "Альтаир · олива/Альтаир · олива — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-0d3e506e08d6.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "071a73fa35161d82d9bd602f5e9b87fb007f10d40f856662a2a2a7c964de8a1a",
+      "webBytes": 232071,
+      "previewBytes": [
+        21096,
+        56470
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the supplied photo only. This is a horizontal website catalogue image, landscape aspect ratio exactly 3:2. Expand the canvas ONLY to the LEFT and RIGHT by seamlessly outpainting the SAME existing green park: continue lawn, trees, foliage, natural daylight and shadows. Preserve the complete original vertical image in the center, without cropping its top or bottom, and preserve its content as faithfully as possible. Keep the decor at the SAME scale relative to image height, do not redesign, stretch, or widen any object. The new background must fill the entire canvas, with no white bars, borders, collage or repeated/mirrored strips. Preserve camera height, perspective, colors, depth and lighting; natural photographic textures, no smoothing. Do not add any people, flowers, furniture, objects, text, logos, or watermarks. Preserve the one olive-green rectangular curtain backdrop, its pink ruffled heart on upper left, and both olive draped pedestals with the same white and pink flower compositions on the right.",
+      "sceneMap": {
+        "operation": "Продолжить существующий парк по бокам",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Альтаир · олива/Оливковый задник 2 × 2,5 м — нейтральный главная.png"
+      }
+    },
+    {
+      "id": "C17",
+      "title": "Пульсар · объём",
+      "previousImage": "assets/ceremony-bb0e714cb155.jpg",
+      "previousSource": "Пульсар · объём/свобоная главная.png",
+      "sourceFile": "Пульсар · объём/Пульсар · объём — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-a90d2dc4a063.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "207742471f0482a05ce32024dd75da00790e668da92e9ae413a143b908165cea",
+      "webBytes": 241978,
+      "previewBytes": [
+        24744,
+        68648
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the supplied photo only. Create one horizontal website catalogue photograph with landscape aspect ratio exactly 3:2. Outpaint the SAME green park only to the LEFT and RIGHT: seamlessly continue the grass lawn, trees, foliage and original daylight. Preserve the entire original image in the central region, with no vertical cropping. Keep the arch at the original scale relative to image height; retain camera height, geometry, colors, textile folds, all object details, and contact shadows. No stretching, redesign, additional objects, people, flowers, furniture, text, watermarks, borders, white bars, mirrored or repeated image strips. Natural photographic texture, no artificial smoothing. Preserve the ivory arch's voluminous softly gathered top swag and both tall full-height side drapes; there are NO flowers or ornaments. Keep the open lawn and trees visible through the arch. Preserve all of the curtain including the pooled hems and straight top edge.",
+      "sceneMap": {
+        "operation": "Продолжить существующий парк по бокам",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Пульсар · объём/свобоная главная.png"
+      }
+    },
+    {
+      "id": "C18",
+      "title": "Пульсар · цветы",
+      "previousImage": "assets/ceremony-ea2d96829166.jpg",
+      "previousSource": "Пульсар · цветы/пульсар черно роз главная.png",
+      "sourceFile": "Пульсар · цветы/Пульсар · цветы — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-fcac1045d31d.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1882b8616f93e5bdaa4430e1dca27ce2ea02875a2397c8f66d0c2572828e2588",
+      "webBytes": 246344,
+      "previewBytes": [
+        31198,
+        81910
+      ],
+      "prompt": "Use case: precise-object-edit. Edit the supplied photo only. Create one horizontal website catalogue photograph with landscape aspect ratio exactly 3:2. Outpaint the SAME green park only to the LEFT and RIGHT: seamlessly continue the grass lawn, trees, foliage and original daylight. Preserve the entire original image in the central region, with no vertical cropping. Keep the arch at the original scale relative to image height; retain camera height, geometry, colors, textile folds, all object details, and contact shadows. No stretching, redesign, additional objects, people, flowers, furniture, text, watermarks, borders, white bars, mirrored or repeated image strips. Natural photographic texture, no artificial smoothing. Preserve the narrow black metal rectangular arch structure with depth, all its bars and feet, light pink swags and two pink side drapes, the SAME two asymmetrical cream/pink flower arrangements (larger at upper left, smaller at upper right), and original garden hedge behind it. Do not crop the flower stems, metal feet or draped hems.",
+      "sceneMap": {
+        "operation": "Продолжить существующий парк по бокам",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Пульсар · цветы/пульсар черно роз главная.png"
+      }
+    },
+    {
+      "id": "C19",
+      "title": "Пульсар · вуаль",
+      "previousImage": "assets/ceremony-552ad1f80dd1.jpg",
+      "previousSource": "Пульсар · вуаль/пульсар с драпировкой нежной.png",
+      "sourceFile": "Пульсар · вуаль/Пульсар · вуаль — парк — широкий кадр — главная.png",
+      "image": "assets/ceremony-wide-f3164f6ed316.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a89e612d6585b874fd9a0a558da96b3fdb9f42b1f7c273510350d0ee3f18a1a3",
+      "webBytes": 234773,
+      "previewBytes": [
+        22762,
+        59018
+      ],
+      "prompt": "Use case: compositing. Create one landscape 3:2 horizontal website catalogue photograph. IMAGE 1 is the EXACT EDIT TARGET and the only source of the decor: one ivory fabric-draped rectangular arch with a high attachment at the upper right, multiple asymmetric broad diagonal swags descending toward the left, a gathered left curtain and a straight pleated right curtain. IMAGE 2 is BACKGROUND REFERENCE ONLY: copy the type of sunny green park, mature leafy trees, green lawn, natural dappled daylight and photographic color rendering. Do NOT copy the arch or fabric design from image 2. Replace every white background area in image 1, also inside the opening, with this continuous green park. Expand horizontally so the complete arch sits centered with green park visible on both sides. Preserve the exact silhouette, height-to-width ratio, ivory tone, folds and asymmetric arrangement of the arch from image 1. Keep the full arch large (around 88% of frame height), with its top and both pooled hems visible, not cropped. Place the hems physically on grass with subtle realistic contact shadows. No flowers, podiums, furniture, candles, people, added decor, lettering, logos, watermarks, white borders or strips. Natural photographic detail, no plastic smoothing. Final scene contains ONLY the unchanged source arch standing in a green park.",
+      "sceneMap": {
+        "operation": "Заменить белый фон зелёным парком; расширить кадр",
+        "preserve": "Состав, силуэты, относительные пропорции, оттенки и расположение всего декора; фронтальный ракурс.",
+        "format": "3:2, горизонтально",
+        "dimensions": "Новые физические размеры не задавались; масштаб относительно референса.",
+        "backgroundReference": "Пульсар · объём/свобоная главная.png"
+      }
+    }
+  ],
+  "coverChange": {
+    "id": "C16",
+    "previousImage": "assets/ceremony-75db425db9c0.jpg",
+    "image": "assets/ceremony-af0e7c1d65c9.jpg",
+    "sourceFile": "Пульсар · классика/Пульсар — парк и белая флористика/Пульсар-парк-белая-флористика-v2.png"
+  }
+}
