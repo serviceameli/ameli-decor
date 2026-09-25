@@ -37,8 +37,12 @@ export async function createPresentation({jsPDF,data,selection,readBase64}) {
   const images=new Map();
   async function photo(path,x,y,w,h){
     if(!images.has(path))images.set(path,readBase64(path));const b64=await images.get(path);
-    const src=`data:image/jpeg;base64,${b64}`,props=pdf.getImageProperties(src),scale=Math.min(w/props.width,h/props.height);
-    const iw=props.width*scale,ih=props.height*scale;pdf.addImage(src,props.fileType,x+(w-iw)/2,y+(h-ih)/2,iw,ih,path,'FAST');
+    const src=`data:image/jpeg;base64,${b64}`,props=pdf.getImageProperties(src);
+    const frame=data.imageFrames?.[path]||{x:0,y:0,width:props.width,height:props.height};
+    const scale=Math.min(w/frame.width,h/frame.height),left=x+(w-frame.width*scale)/2,top=y+(h-frame.height*scale)/2;
+    pdf.saveGraphicsState();pdf.rect(left,top,frame.width*scale,frame.height*scale,null);pdf.clip();pdf.discardPath();
+    pdf.addImage(src,props.fileType,left-frame.x*scale,top-frame.y*scale,props.width*scale,props.height*scale,path,'FAST');
+    pdf.restoreGraphicsState();
   }
   async function gallery(label,title,items,note){
     for(let offset=0;offset<items.length;offset+=6){

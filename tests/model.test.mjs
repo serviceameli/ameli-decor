@@ -77,7 +77,7 @@ test('Подарочные скатерти — Бета и Бета+ без п�
     assert.ok(source&&source.quantityOnHand>5);
     assert.ok(['Бета','Бета+'].includes(source.name.split('"')[1]));
   }
-  assert.deepEqual(data.tablecloths.map(x=>x.catalogId),sources.items.filter(x=>x.eligible).map(x=>x.catalogId));
+  assert.deepEqual(data.tablecloths.map(x=>x.catalogId),sources.items.filter(x=>x.eligible&&!x.excludedFromLanding).map(x=>x.catalogId));
   assert.equal(new Set(data.tablecloths.map(x=>x.title.toLowerCase().replaceAll('ё','е'))).size,data.tablecloths.length);
 });
 

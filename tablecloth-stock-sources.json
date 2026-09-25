@@ -4,7 +4,7 @@
   "filterUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear?decor_model_id=465",
   "criterion": "Models Бета and Бета+ with quantity_on_hand_now > 5; Бета+ only for colors missing among eligible Бета; made-to-order stock excluded",
   "totalChecked": 30,
-  "addedCount": 26,
+  "addedCount": 25,
   "items": [
     {
       "catalogId": 19072,
@@ -26,7 +26,9 @@
       "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kruglye-skaterti-azl-nmg-ear/6457",
       "photos": [
         "https://cdn.frents.ru/ameli-rental/1ebc4547-52fe-42f2-8d34-acb26994d405_жемч_круг.jpg"
-      ]
+      ],
+      "excludedFromLanding": true,
+      "exclusionReason": "Убрана из предложения по просьбе владельца 25 сентября 2026 года."
     },
     {
       "catalogId": 5799,

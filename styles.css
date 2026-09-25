@@ -64,3 +64,6 @@
 
 /* Keep request guidance directly beneath the form title. */
 .prices-section .package-hint{max-width:none;margin-top:10px;font-size:12px;line-height:1.5}
+
+/* Match the scale of square-source tablecloth photos to the landscape photos. */
+.gallery-image .framed-photo{display:block;width:100%;height:100%;overflow:hidden;transition:transform .3s}.gallery-image:hover .framed-photo{transform:scale(1.035)}
