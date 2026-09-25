@@ -577,6 +577,38 @@
           "sourceFile": "Пульсар · вуаль/Пульсар · вуаль — парк — широкий кадр — главная.png"
         }
       ]
+    },
+    {
+      "id": "C20",
+      "title": "Пульсар · голубой",
+      "description": "Золотая арка «Пульсар» с голубой драпировкой и белыми цветами.",
+      "image": "assets/ceremony-c20-07e55c9feb70.jpg",
+      "alt": "Пульсар · голубой — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFolder": "Пульсар · голубой",
+      "sourceFile": "Пульсар · голубой — главная.jpg",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Золотая арка «Пульсар».",
+        "Тканевая драпировка в голубом оттенке.",
+        "Две композиции из искусственных белых цветов в верхней части арки."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-c20-07e55c9feb70.jpg",
+          "alt": "Пульсар · голубой — декор под ключ",
+          "label": "Декор под ключ",
+          "sourceFile": "Пульсар · голубой/Пульсар · голубой — главная.jpg"
+        },
+        {
+          "src": "assets/ceremony-c20-bd2356c11a49.jpg",
+          "alt": "Пульсар · голубой — с подиумом и пуфами",
+          "label": "С подиумом и пуфами",
+          "sourceFile": "Пульсар · голубой/Пульсар · голубой — с подиумом и пуфами.jpg",
+          "caption": "Подиум, дорожка и посадочные места на дополнительных фото заказываются отдельно."
+        }
+      ]
     }
   ],
   "tableCompositions": [
@@ -6464,6 +6496,38 @@
         },
         {
           "src": "assets/preview-907be166feb3-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-c20-07e55c9feb70.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-97b7f24f4d7a-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-8c8c41a890fd-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-c20-bd2356c11a49.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-6b30b2a5ee71-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-4d510bc85d1d-640.webp",
           "width": 640,
           "height": 427
         }

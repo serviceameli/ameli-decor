@@ -1,0 +1,54 @@
+{
+  "addedAt": "2026-09-25",
+  "id": "C20",
+  "title": "Пульсар · голубой",
+  "sourceRoot": "!Зоны церемоний/!Под ключ",
+  "tool": "built-in image_gen",
+  "inputRoles": [
+    "Первое изображение пользователя: основа, конструкция, цветы и окружение.",
+    "Второе изображение пользователя: оттенок голубой ткани для обложки; дополнительное фото галереи."
+  ],
+  "originalInputSha256": [
+    "d74639f9fc3b8296910daa4ba3e349e9bdd7a7dff78f46d4e707892fa85cfe1a",
+    "610a9f423b162fa2c99e97120aac98058396b420e1075faad61a935967f04712"
+  ],
+  "prompt": "Use case: precise-object-edit. Produce ONE horizontal photograph, landscape aspect ratio exactly 3:2. IMAGE 1 is the EDIT TARGET and the sole source of the arch, flowers, scene and camera. IMAGE 2 is a COLOR REFERENCE ONLY: use the muted dusty light blue color of the fabric hanging on the arch, not the white fabric on the walkway, seats or podium. In image 1, change ONLY the white draped fabric on the arch (both hanging side panels and both curved top swags) to that same muted dusty light blue. Preserve its original folds, thickness, draping, shadows and highlights. The flowers must remain WHITE with their original green foliage. The metal arch must remain GOLD. Preserve the same rectangular metal structure, bars, depth, feet and all flower silhouettes and positions: larger white arrangement at upper left with trailing flowers, smaller at upper right. Expand image 1 ONLY horizontally to the left and right, seamlessly continuing its SAME green park, lawn, hedges, foliage, sunlight and shadows. Keep the full source arch large and centered at the same scale relative to image height, with its top, trailing flowers, feet and draped hems fully visible. Do not crop vertically, stretch or redesign the decor. Do NOT borrow the more distant camera, podium, seats, walkway or any objects from image 2. No new furniture, flowers, people, ornaments, text, logos, watermarks, white borders, collage, mirrored or repeated image strips. Preserve natural photographic material detail and original lighting; no plastic smoothing or excessive HDR. Final image is the source golden arch with white flowers and blue fabric standing on the grass, with added green park space on both sides.",
+  "sceneMap": {
+    "edit": "Расширить парк по бокам до 3:2 и перекрасить только ткань арки в голубой оттенок второго снимка.",
+    "preserve": "Золотой каркас, белые цветы, листья, складки, пропорции, расположение декора и дневной свет первого снимка.",
+    "excludeFromCover": "Подиум, дорожка и посадка со второго снимка.",
+    "dimensions": "Новые физические размеры не задавались; относительные пропорции взяты из исходника."
+  },
+  "records": [
+    {
+      "role": "cover",
+      "sourceFile": "Пульсар · голубой/Пульсар · голубой — главная.jpg",
+      "image": "assets/ceremony-c20-07e55c9feb70.jpg",
+      "sourceSha256": "22393faf287d106b3278150d5309bd3796f86866f5337ab0cfc9087e151cd36a",
+      "webSha256": "07e55c9feb707047af7e3b93473e40eeaa0151fb764251f4acf565a52e627bfd",
+      "sourceBytes": 3132238,
+      "webBytes": 246903,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        30946,
+        79922
+      ]
+    },
+    {
+      "role": "additional",
+      "sourceFile": "Пульсар · голубой/Пульсар · голубой — с подиумом и пуфами.jpg",
+      "image": "assets/ceremony-c20-bd2356c11a49.jpg",
+      "sourceSha256": "610a9f423b162fa2c99e97120aac98058396b420e1075faad61a935967f04712",
+      "webSha256": "bd2356c11a49556eae03d0ef0a37d753f3894e5db5286e4fa574cdf2a2f110f3",
+      "sourceBytes": 2985150,
+      "webBytes": 243482,
+      "width": 1400,
+      "height": 933,
+      "previewBytes": [
+        26718,
+        70660
+      ]
+    }
+  ]
+}
