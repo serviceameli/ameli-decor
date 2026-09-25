@@ -23,8 +23,10 @@
     {
       "key": "glasses",
       "url": "https://catalog.ameli-rental.ru/catalog/bokaly-drf-knl-afa-nmq",
-      "imageUrl": "https://cdn.frents.ru/ameli-rental/781065ec-6609-470f-9747-6fb49b7db189_thumb.png",
-      "imageAlt": "Набор бокалов \"Роулинг\" гранатовый"
+      "sourceType": "provided",
+      "sourceFile": "codex-clipboard-2b931c63-aa32-4ec3-8c2d-6dd8f96c761e.png",
+      "image": "assets/extra-glasses-green.jpg",
+      "imageAlt": "Набор зелёных бокалов и стакан"
     },
     {
       "key": "mirror",
