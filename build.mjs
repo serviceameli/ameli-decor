@@ -6,7 +6,7 @@ const data=JSON.parse(await fs.readFile('content.json','utf8'));
 if(data.packages.length!==9||data.palette.length!==20)throw new Error('Ожидаются 9 пакетов и 20 цветов');
 const guests=new Set(data.packages.map(p=>p.guests));if(guests.size!==9)throw new Error('Пакеты повторяются');
 data.packages.forEach(p=>packageCounts(p.guests));
-const assets=new Set(['fonts/montserrat.ttf','fonts/cormorant.ttf','fonts/montserrat.woff2','fonts/cormorant.woff2','vendor/jspdf.umd.min.js']);
+const assets=new Set(['fonts/montserrat-regular.ttf','fonts/cormorant.ttf','fonts/montserrat.woff2','fonts/cormorant.woff2','vendor/jspdf.umd.min.js']);
 const itemIds=new Set();
 for(const key of ['ceremony','tableCompositions','presidiumFlorals','presidiumBackdrops','napkins','tablecloths'])for(const item of data[key]){
   if(!item.title||!item.id||!item.image)throw new Error('У варианта нет названия или кода');
