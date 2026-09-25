@@ -1,0 +1,61 @@
+{
+  "updatedAt": "2026-09-25",
+  "reason": "Обновление коллекции по выбору владельца",
+  "removed": [
+    {
+      "id": "N01",
+      "title": "Снежная",
+      "catalogId": 5749,
+      "catalogName": "Салфетка \"Альфа\" снежная"
+    },
+    {
+      "id": "N02",
+      "title": "Пломбир",
+      "catalogId": 5689,
+      "catalogName": "Салфетка \"Альфа\" пломбир"
+    },
+    {
+      "id": "N06",
+      "title": "Шоколадная",
+      "catalogId": 23491,
+      "catalogName": "Салфетка \"Шелк\" шоколадная"
+    },
+    {
+      "id": "N08",
+      "title": "Ландыш",
+      "catalogId": 5762,
+      "catalogName": "Салфетка бархатная \"Бета\" ландыш"
+    },
+    {
+      "id": "N10",
+      "title": "Айвори",
+      "catalogId": 5962,
+      "catalogName": "Салфетка \"Шелк\" айвори"
+    }
+  ],
+  "firstId": "N09",
+  "added": [
+    {
+      "id": "N38",
+      "title": "Спелая дыня",
+      "catalogId": 5871,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5871",
+      "catalogNameSource": "napkin-stock-sources.json",
+      "catalogNameCheckedAt": "2026-09-13",
+      "imageSourceType": "provided",
+      "imageSourceFile": "codex-clipboard-1ff56fa3-3677-4eda-8130-5b7bf1ef3907.png",
+      "image": "assets/catalog-napkins-5871.jpg"
+    },
+    {
+      "id": "N39",
+      "title": "Фруктовый зефир",
+      "catalogId": 5888,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5888",
+      "catalogNameSource": "napkin-stock-sources.json",
+      "catalogNameCheckedAt": "2026-09-13",
+      "imageSourceType": "provided",
+      "imageSourceFile": "codex-clipboard-5a4c6917-b885-4ed7-ab6f-ff2bb4346ab1.png",
+      "image": "assets/catalog-napkins-5888.jpg"
+    }
+  ]
+}

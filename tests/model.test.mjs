@@ -17,7 +17,7 @@ test('Пакеты и заявка не содержат стоимость, в 
   }
 });
 test('В сообщение попадают выбранные позиции, их состав и цвета',()=>{
-  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P07','N06','T01','unknown'],colors:['Роза','Олива','unknown']});
+  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P07',data.napkins[0].id,'T01','unknown'],colors:['Роза','Олива','unknown']});
   const message=selectionMessage(choice);
   assert.equal(choice.counts.compositions,7);assert.equal(choice.counts.napkins,70);
   assert.equal(choice.sections.flatMap(s=>s.items).length,4);
@@ -30,9 +30,9 @@ test('В сообщение попадают выбранные позиции, 
 });
 
 test('Новая позиция заменяет выбор только в своём разделе; повторное нажатие снимает выбор',()=>{
-  let state={guests:40,ids:['C01','P05','T01','N01'],colors:['Роза','Олива']};
+  let state={guests:40,ids:['C01','P05','T01',data.napkins[0].id],colors:['Роза','Олива']};
   state=toggleItem(data,state,'C02');
-  assert.deepEqual(new Set(state.ids),new Set(['C02','P05','T01','N01']));
+  assert.deepEqual(new Set(state.ids),new Set(['C02','P05','T01',data.napkins[0].id]));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T01'));assert.ok(state.ids.includes('T04'));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T04'));assert.ok(state.ids.includes('C02'));
   assert.deepEqual(state.colors,['Роза','Олива']);
@@ -61,12 +61,12 @@ test('Скрытые дополнительные позиции не попад
 });
 
 test('Скатерть выбирается отдельно, сохраняет остальные разделы и попадает в подарок',()=>{
-  let state={guests:100,ids:['C01','P05','T01','N01'],colors:[]};
+  let state={guests:100,ids:['C01','P05','T01',data.napkins[0].id],colors:[]};
   state=toggleItem(data,state,data.tablecloths[0].id);
   state=toggleItem(data,state,data.tablecloths[1].id);
   const selected=resolveSelection(data,state);
   assert.equal(selected.counts.tablecloths,10);
-  assert.deepEqual(state.ids,['C01','P05','T01','N01',data.tablecloths[1].id]);
+  assert.deepEqual(state.ids,['C01','P05','T01',data.napkins[0].id,data.tablecloths[1].id]);
   const message=selectionMessage(selected);
   for(const value of [data.tablecloths[1].title,'Бархатные скатерти в подарок: 10 шт.','31 декабря 2026','Круглая или прямоугольная','100+'])assert.ok(message.includes(value),value);
 });

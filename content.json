@@ -1234,50 +1234,48 @@
   ],
   "napkins": [
     {
-      "id": "N01",
-      "title": "Снежная",
-      "description": "Салфетка «Альфа».",
-      "image": "assets/catalog-napkins-5749.jpg",
-      "alt": "Салфетка \"Альфа\" снежная",
-      "catalogName": "Салфетка \"Альфа\" снежная",
-      "catalogId": 5749,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5749",
+      "id": "N09",
+      "title": "Жемчужная",
+      "description": "Салфетка \"Бета\" · бархат.",
+      "image": "assets/catalog-napkins-5803.jpg",
+      "alt": "Салфетка бархатная \"Бета\" жемчужная",
+      "catalogName": "Салфетка бархатная \"Бета\" жемчужная",
+      "catalogId": 5803,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
       "components": [
-        "Салфетка \"Альфа\" снежная — 1 шт.",
+        "Салфетка бархатная \"Бета\" жемчужная — 1 шт.",
         "Размер — 45 × 45 см."
       ],
       "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу.",
-      "detailsSourceChecked": "2026-09-12",
+      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "detailsSourceChecked": "2026-09-13",
+      "stockCheckedAt": "2026-09-13",
+      "stockAtCheck": 160,
       "photos": [
         {
-          "src": "assets/catalog-napkins-5749.jpg",
-          "alt": "Салфетка \"Альфа\" снежная",
+          "src": "assets/catalog-napkins-5803.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 1",
           "label": "Основное фото"
-        }
-      ]
-    },
-    {
-      "id": "N02",
-      "title": "Пломбир",
-      "description": "Салфетка «Альфа».",
-      "image": "assets/catalog-napkins-5689.jpg",
-      "alt": "Салфетка \"Альфа\" пломбир",
-      "catalogName": "Салфетка \"Альфа\" пломбир",
-      "catalogId": 5689,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5689",
-      "components": [
-        "Салфетка \"Альфа\" пломбир — 1 шт.",
-        "Размер — 45 × 45 см."
-      ],
-      "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу.",
-      "detailsSourceChecked": "2026-09-12",
-      "photos": [
+        },
         {
-          "src": "assets/catalog-napkins-5689.jpg",
-          "alt": "Салфетка \"Альфа\" пломбир",
-          "label": "Основное фото"
+          "src": "assets/catalog-napkins-5803-2.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 2",
+          "label": "Фото из каталога 2"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-3.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 3",
+          "label": "Фото из каталога 3"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-4.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 4",
+          "label": "Фото из каталога 4"
+        },
+        {
+          "src": "assets/catalog-napkins-5803-5.jpg",
+          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 5",
+          "label": "Фото из каталога 5"
         }
       ]
     },
@@ -1301,6 +1299,28 @@
         {
           "src": "assets/catalog-napkins-5786.jpg",
           "alt": "Салфетка бархатная \"Бета\" бледно-розовая",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N39",
+      "title": "Фруктовый зефир",
+      "description": "Салфетка «Бета» · бархат.",
+      "image": "assets/catalog-napkins-5888.jpg",
+      "alt": "Салфетка бархатная \"Бета\" фруктовый зефир",
+      "catalogName": "Салфетка бархатная \"Бета\" фруктовый зефир",
+      "catalogId": 5888,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5888",
+      "components": [
+        "Салфетка бархатная \"Бета\" фруктовый зефир — 1 шт."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5888.jpg",
+          "alt": "Салфетка бархатная \"Бета\" фруктовый зефир",
           "label": "Основное фото"
         }
       ]
@@ -1354,30 +1374,6 @@
       ]
     },
     {
-      "id": "N06",
-      "title": "Шоколадная",
-      "description": "Салфетка «Шелк».",
-      "image": "assets/catalog-napkins-23491.jpg",
-      "alt": "Салфетка \"Шелк\" шоколадная",
-      "catalogName": "Салфетка \"Шелк\" шоколадная",
-      "catalogId": 23491,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/23491",
-      "components": [
-        "Салфетка \"Шелк\" шоколадная — 1 шт.",
-        "Размер — 45 × 45 см."
-      ],
-      "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу.",
-      "detailsSourceChecked": "2026-09-12",
-      "photos": [
-        {
-          "src": "assets/catalog-napkins-23491.jpg",
-          "alt": "Салфетка \"Шелк\" шоколадная",
-          "label": "Основное фото"
-        }
-      ]
-    },
-    {
       "id": "N07",
       "title": "Диор зеленая",
       "description": "Салфетка \"Каппа\".",
@@ -1399,104 +1395,6 @@
         {
           "src": "assets/optimized-4e36db6e8f45.jpg",
           "alt": "Салфетка \"Каппа\" Диор зеленая — фото 1",
-          "label": "Основное фото"
-        }
-      ]
-    },
-    {
-      "id": "N08",
-      "title": "Ландыш",
-      "description": "Салфетка \"Бета\" · бархат.",
-      "image": "assets/catalog-napkins-5762.jpg",
-      "alt": "Салфетка бархатная \"Бета\" ландыш",
-      "catalogName": "Салфетка бархатная \"Бета\" ландыш",
-      "catalogId": 5762,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5762",
-      "components": [
-        "Салфетка бархатная \"Бета\" ландыш — 1 шт.",
-        "Размер — 45 × 45 см."
-      ],
-      "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
-      "detailsSourceChecked": "2026-09-13",
-      "stockCheckedAt": "2026-09-13",
-      "stockAtCheck": 240,
-      "photos": [
-        {
-          "src": "assets/catalog-napkins-5762.jpg",
-          "alt": "Салфетка бархатная \"Бета\" ландыш — фото 1",
-          "label": "Основное фото"
-        }
-      ]
-    },
-    {
-      "id": "N09",
-      "title": "Жемчужная",
-      "description": "Салфетка \"Бета\" · бархат.",
-      "image": "assets/catalog-napkins-5803.jpg",
-      "alt": "Салфетка бархатная \"Бета\" жемчужная",
-      "catalogName": "Салфетка бархатная \"Бета\" жемчужная",
-      "catalogId": 5803,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5803",
-      "components": [
-        "Салфетка бархатная \"Бета\" жемчужная — 1 шт.",
-        "Размер — 45 × 45 см."
-      ],
-      "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
-      "detailsSourceChecked": "2026-09-13",
-      "stockCheckedAt": "2026-09-13",
-      "stockAtCheck": 160,
-      "photos": [
-        {
-          "src": "assets/catalog-napkins-5803.jpg",
-          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 1",
-          "label": "Основное фото"
-        },
-        {
-          "src": "assets/catalog-napkins-5803-2.jpg",
-          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 2",
-          "label": "Фото из каталога 2"
-        },
-        {
-          "src": "assets/catalog-napkins-5803-3.jpg",
-          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 3",
-          "label": "Фото из каталога 3"
-        },
-        {
-          "src": "assets/catalog-napkins-5803-4.jpg",
-          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 4",
-          "label": "Фото из каталога 4"
-        },
-        {
-          "src": "assets/catalog-napkins-5803-5.jpg",
-          "alt": "Салфетка бархатная \"Бета\" жемчужная — фото 5",
-          "label": "Фото из каталога 5"
-        }
-      ]
-    },
-    {
-      "id": "N10",
-      "title": "Айвори",
-      "description": "Салфетка \"Шелк\".",
-      "image": "assets/catalog-napkins-5962.jpg",
-      "alt": "Салфетка \"Шелк\" айвори",
-      "catalogName": "Салфетка \"Шелк\" айвори",
-      "catalogId": 5962,
-      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5962",
-      "components": [
-        "Салфетка \"Шелк\" айвори — 1 шт.",
-        "Размер — 45 × 45 см."
-      ],
-      "componentLabel": "Выбранный текстиль",
-      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
-      "detailsSourceChecked": "2026-09-13",
-      "stockCheckedAt": "2026-09-13",
-      "stockAtCheck": 151,
-      "photos": [
-        {
-          "src": "assets/catalog-napkins-5962.jpg",
-          "alt": "Салфетка \"Шелк\" айвори — фото 1",
           "label": "Основное фото"
         }
       ]
@@ -1745,6 +1643,28 @@
         {
           "src": "assets/catalog-napkins-5633.jpg",
           "alt": "Салфетка \"Альфа\" лимонадная — фото 1",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "N38",
+      "title": "Спелая дыня",
+      "description": "Салфетка «Бета» · бархат.",
+      "image": "assets/catalog-napkins-5871.jpg",
+      "alt": "Салфетка бархатная \"Бета\" спелая дыня",
+      "catalogName": "Салфетка бархатная \"Бета\" спелая дыня",
+      "catalogId": 5871,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/salfetki-hho-gfz-lpy/5871",
+      "components": [
+        "Салфетка бархатная \"Бета\" спелая дыня — 1 шт."
+      ],
+      "componentLabel": "Выбранный текстиль",
+      "detailsNote": "Цвет готового текстиля согласуется по образцу. Наличие на дату свадьбы подтвердит менеджер.",
+      "photos": [
+        {
+          "src": "assets/catalog-napkins-5871.jpg",
+          "alt": "Салфетка бархатная \"Бета\" спелая дыня",
           "label": "Основное фото"
         }
       ]
@@ -4122,38 +4042,6 @@
         }
       ]
     },
-    "assets/catalog-napkins-5749.jpg": {
-      "width": 835,
-      "height": 1100,
-      "variants": [
-        {
-          "src": "assets/preview-5423ac4b4249-360.webp",
-          "width": 360,
-          "height": 474
-        },
-        {
-          "src": "assets/preview-5423ac4b4249-640.webp",
-          "width": 640,
-          "height": 843
-        }
-      ]
-    },
-    "assets/catalog-napkins-5689.jpg": {
-      "width": 835,
-      "height": 1100,
-      "variants": [
-        {
-          "src": "assets/preview-0341d642e17d-360.webp",
-          "width": 360,
-          "height": 474
-        },
-        {
-          "src": "assets/preview-0341d642e17d-640.webp",
-          "width": 640,
-          "height": 843
-        }
-      ]
-    },
     "assets/catalog-napkins-5786.jpg": {
       "width": 883,
       "height": 1100,
@@ -4202,22 +4090,6 @@
         }
       ]
     },
-    "assets/catalog-napkins-23491.jpg": {
-      "width": 846,
-      "height": 1100,
-      "variants": [
-        {
-          "src": "assets/preview-b8aa776fcbf7-360.webp",
-          "width": 360,
-          "height": 468
-        },
-        {
-          "src": "assets/preview-b8aa776fcbf7-640.webp",
-          "width": 640,
-          "height": 832
-        }
-      ]
-    },
     "assets/optimized-4e36db6e8f45.jpg": {
       "width": 919,
       "height": 1200,
@@ -4231,22 +4103,6 @@
           "src": "assets/preview-859edaff2b9e-640.webp",
           "width": 640,
           "height": 836
-        }
-      ]
-    },
-    "assets/catalog-napkins-5762.jpg": {
-      "width": 900,
-      "height": 900,
-      "variants": [
-        {
-          "src": "assets/preview-9dbb55b2e23b-360.webp",
-          "width": 360,
-          "height": 360
-        },
-        {
-          "src": "assets/preview-9dbb55b2e23b-640.webp",
-          "width": 640,
-          "height": 640
         }
       ]
     },
@@ -4327,22 +4183,6 @@
           "src": "assets/preview-22d051b2f22a-640.webp",
           "width": 640,
           "height": 954
-        }
-      ]
-    },
-    "assets/catalog-napkins-5962.jpg": {
-      "width": 921,
-      "height": 1200,
-      "variants": [
-        {
-          "src": "assets/preview-e7624e3aa57a-360.webp",
-          "width": 360,
-          "height": 469
-        },
-        {
-          "src": "assets/preview-e7624e3aa57a-640.webp",
-          "width": 640,
-          "height": 834
         }
       ]
     },
