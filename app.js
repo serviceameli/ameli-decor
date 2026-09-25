@@ -11,7 +11,7 @@ function previewAttributes(path,sizes=cardSizes){
   return {src:largest.src,srcset:variants.map(image=>image.src+' '+image.width+'w').join(', '),sizes,width:largest.width,height:largest.height};
 }
 function previewMarkup(path,sizes){return Object.entries(previewAttributes(path,sizes)).map(([key,value])=>key+'="'+escape(value)+'"').join(' ');}
-const galleryCard = (item,priority=false) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img ${previewMarkup(item.image)} alt="${escape(item.alt || item.title)}" loading="${priority?'eager':'lazy'}" fetchpriority="${priority?'high':'auto'}" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<div class="card-photo-dots" role="group" aria-label="Фотографии: ${escape(item.title)}">${item.photos.map((photo,index)=>`<button class="card-photo-dot" type="button" data-card-photo="${escape(item.id)}" data-index="${index}" aria-label="Фото ${index+1} из ${item.photos.length}: ${escape(item.title)}" aria-pressed="${index===0}"><span aria-hidden="true"></span></button>`).join('')}</div>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
+const galleryCard = (item,priority=false) => `<figure data-card="${escape(item.id)}"><div class="card-photo"><button class="gallery-image" data-details="${escape(item.id)}" aria-label="Фото и состав: ${escape(item.title)}"><img ${previewMarkup(item.image)} alt="${escape(item.alt || item.title)}" loading="${priority?'eager':'lazy'}" fetchpriority="${priority?'high':'auto'}" decoding="async"><span class="selection-mark" aria-hidden="true" hidden>✓</span></button>${item.photos?.length>1?`<div class="card-photo-nav" role="group" aria-label="Фотографии: ${escape(item.title)}">${[-1,1].map(step=>`<button class="card-photo-arrow ${step<0?'is-prev':'is-next'}" type="button" data-card-photo="${escape(item.id)}" data-step="${step}" aria-label="${step<0?'Предыдущее':'Следующее'} фото: ${escape(item.title)}"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="${step<0?'M10 3 5 8l5 5':'m6 3 5 5-5 5'}"/></svg></button>`).join('')}<span class="sr-only card-photo-status" aria-live="polite">Фото 1 из ${item.photos.length}</span></div>`:''}</div><figcaption><h3><button class="card-title" data-details="${escape(item.id)}" title="${escape(item.title)}">${escape(item.title)}</button></h3><button class="choose-item" data-select="${escape(item.id)}" aria-pressed="false">Выбрать</button></figcaption></figure>`;
 const sectionIconPaths = [
   '<path d="M12 51V25a20 20 0 0 1 40 0v26M19 51V26a13 13 0 0 1 26 0v25M8 52h15m18 0h15"/><path d="M12 31c-8-1-9-8-4-11 6 0 9 5 4 11Zm0 0c7-1 10 4 7 8-5 2-9-2-7-8ZM49 15c-5-4-4-10 1-11 5 3 5 8-1 11Z"/>',
   '<path d="M9 13h46v28M15 13v20m7-20v20m20-20v20m7-20v20M9 40h46l3 13H6l3-13Zm9 0v13m28-13v13"/><path d="M25 40c-4-7 1-12 7-7 6-5 11 0 7 7m-7-7v-6m-4 0c0-5 8-5 8 0-2 3-6 3-8 0Z"/>',
@@ -291,15 +291,14 @@ function showCardPhoto(button,index){
   cardPhotoIndices.set(item.id,index);
   const card=button.closest('figure'),photo=item.photos[index],img=card.querySelector('.gallery-image img');
   for(const [key,value] of Object.entries(previewAttributes(photo.src)))img.setAttribute(key,value);img.alt=photo.alt||item.title;
-  card.querySelectorAll('[data-card-photo]').forEach(dot=>dot.setAttribute('aria-pressed',String(Number(dot.dataset.index)===index)));
-  return card.querySelector(`[data-index="${index}"]`);
+  card.querySelector('.card-photo-status').textContent=`Фото ${index+1} из ${item.photos.length}`;
 }
 document.addEventListener('click',event=>{
-  const dot=event.target.closest('[data-card-photo]');if(!dot||!data)return;
-  showCardPhoto(dot,Number(dot.dataset.index));
+  const arrow=event.target.closest('[data-card-photo]');if(!arrow||!data)return;
+  showCardPhoto(arrow,(cardPhotoIndices.get(arrow.dataset.cardPhoto)||0)+Number(arrow.dataset.step));
 });
 document.addEventListener('keydown',event=>{
-  const dot=event.target.closest('[data-card-photo]');if(!dot||!data||!['ArrowLeft','ArrowRight'].includes(event.key))return;
+  const arrow=event.target.closest('[data-card-photo]');if(!arrow||!data||!['ArrowLeft','ArrowRight'].includes(event.key))return;
   event.preventDefault();
-  showCardPhoto(dot,Number(dot.dataset.index)+(event.key==='ArrowRight'?1:-1))?.focus();
+  showCardPhoto(arrow,(cardPhotoIndices.get(arrow.dataset.cardPhoto)||0)+(event.key==='ArrowRight'?1:-1));
 });
