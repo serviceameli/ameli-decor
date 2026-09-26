@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-09-26",
+  "sectionUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp",
+  "items": [
+    {
+      "id": "T03",
+      "title": "Эрукто · белый",
+      "previous": {
+        "catalogId": 4127,
+        "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4127",
+        "components": [
+          "Белые светодиодные свечи «Эрукто» — 3 шт.",
+          "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+          "Пульт управления."
+        ]
+      },
+      "catalogId": 28500,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/28500",
+      "catalogName": "Набор свечей с пультом \"Эрукто 6\" белый",
+      "quantity": 6,
+      "catalogDescription": "Набор из 6 свечей. Высота свечей 10, 13, 15 см. Свечи светодиодные. Включаются и выключаются с помощью пульта. Батарейки рассчитаны на 1 проект",
+      "image": "assets/erukto-white-six.jpg"
+    },
+    {
+      "id": "T04",
+      "title": "Эрукто · дымчатый",
+      "previous": {
+        "catalogId": 4132,
+        "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4132",
+        "components": [
+          "Дымчатые светодиодные свечи «Эрукто» — 3 шт.",
+          "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+          "Пульт управления."
+        ]
+      },
+      "catalogId": 28499,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/28499",
+      "catalogName": "Набор свечей с пультом \"Эрукто 6\" дымчатый",
+      "quantity": 6,
+      "catalogDescription": "Набор из 6 свечей. Высота свечей 10, 13, 15 см. Свечи светодиодные. Включаются и выключаются с помощью пульта. Батарейки рассчитаны на 1 проект",
+      "image": "assets/erukto-smoke-six.jpg"
+    },
+    {
+      "id": "T05",
+      "title": "Эрукто · золотой",
+      "previous": {
+        "catalogId": 4137,
+        "sourceUrl": "https://catalog.ameli-rental.ru/catalog/elektronnye-svechi-nnm-spx/4137",
+        "components": [
+          "Золотые светодиодные свечи «Эрукто» — 3 шт.",
+          "Высота свечей — 10, 13 и 15 см; диаметр — 8 см.",
+          "Пульт управления."
+        ]
+      },
+      "catalogId": 28498,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/kompozitsii-na-stoly-ivp/28498",
+      "catalogName": "Набор свечей с пультом \"Эрукто 6\" золотой",
+      "quantity": 6,
+      "catalogDescription": "Набор из 6 свечей. Высота свечей 10, 13, 15 см. Свечи светодиодные. Включаются и выключаются с помощью пульта. Батарейки рассчитаны на 1 проект",
+      "image": "assets/erukto-gold-six.jpg"
+    }
+  ]
+}
