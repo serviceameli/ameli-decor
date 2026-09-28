@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-28",
+  "venue": "Лесная",
+  "photos": [
+    {
+      "sourceFile": "2026-09-28 10.47.35.jpg",
+      "sourceSha256": "b8b0a8bf36c817aebd3fea5a25e84944b117f6527f66b7e5e9d1be2af80c9489",
+      "sourceBytes": 181170,
+      "sourceDimensions": [
+        960,
+        1280
+      ],
+      "image": "assets/venue-lesnaya-before-b8b0a8bf36c8.jpg",
+      "width": 960,
+      "height": 1280,
+      "imageBytes": 181170,
+      "jpegQuality": null,
+      "previews": [
+        {
+          "src": "assets/preview-lesnaya-before-b8b0a8bf36c8-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 26838
+        },
+        {
+          "src": "assets/preview-lesnaya-before-b8b0a8bf36c8-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 78740
+        }
+      ],
+      "encodingNote": "Исходный JPEG уже меньше 250 КБ; сохранён без повторного сжатия. Для карточек подготовлены WebP-превью."
+    },
+    {
+      "sourceFile": "Изображение ChatGPT 28 сент. 2026 г., 10_48_06.png",
+      "sourceSha256": "1aecb57809248c4a9a08917559a0a2a2c09cd97a0b0f720f0f71f84a982509fd",
+      "sourceBytes": 2462428,
+      "sourceDimensions": [
+        1086,
+        1448
+      ],
+      "image": "assets/venue-lesnaya-pink-1aecb5780924.jpg",
+      "width": 1050,
+      "height": 1400,
+      "imageBytes": 245463,
+      "jpegQuality": 80,
+      "previews": [
+        {
+          "src": "assets/preview-lesnaya-pink-1aecb5780924-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 30662
+        },
+        {
+          "src": "assets/preview-lesnaya-pink-1aecb5780924-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 82762
+        }
+      ]
+    },
+    {
+      "sourceFile": "Изображение ChatGPT 28 сент. 2026 г., 11_12_12.png",
+      "sourceSha256": "792e22ad08e6d9c0c1e2d9c2f254e6354bdf0763f42bceee183052b4cb317ff2",
+      "sourceBytes": 2429458,
+      "sourceDimensions": [
+        1086,
+        1448
+      ],
+      "image": "assets/venue-lesnaya-blue-792e22ad08e6.jpg",
+      "width": 1050,
+      "height": 1400,
+      "imageBytes": 247027,
+      "jpegQuality": 79,
+      "previews": [
+        {
+          "src": "assets/preview-lesnaya-blue-792e22ad08e6-360.webp",
+          "width": 360,
+          "height": 480,
+          "bytes": 32734
+        },
+        {
+          "src": "assets/preview-lesnaya-blue-792e22ad08e6-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 85526
+        }
+      ]
+    }
+  ],
+  "hiddenVenue": "Терраса",
+  "originalsPreserved": true
+}

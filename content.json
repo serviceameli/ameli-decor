@@ -2360,7 +2360,7 @@
   "terms": [
     {
       "title": "Доставка и монтаж",
-      "text": "Доставка, монтаж и демонтаж включены в стоимость декора под ключ. За МКАД к доставке добавляется 170 ₽ за километр.",
+      "text": "Доставка, монтаж и демонтаж включены в стоимость декора под ключ.",
       "showInPresentation": false
     },
     {
@@ -2399,7 +2399,8 @@
           "label": "Вариант 2",
           "alt": "Терраса — Вариант 2"
         }
-      ]
+      ],
+      "hidden": true
     },
     {
       "title": "Банкетный зал",
@@ -2418,6 +2419,26 @@
           "src": "assets/venue-visualization-6.jpg",
           "label": "Вариант 2",
           "alt": "Банкетный зал — Вариант 2"
+        }
+      ]
+    },
+    {
+      "title": "Лесная",
+      "photos": [
+        {
+          "src": "assets/venue-lesnaya-before-b8b0a8bf36c8.jpg",
+          "label": "До оформления",
+          "alt": "Лесная — До оформления"
+        },
+        {
+          "src": "assets/venue-lesnaya-pink-1aecb5780924.jpg",
+          "label": "Вариант 1",
+          "alt": "Лесная — Вариант 1"
+        },
+        {
+          "src": "assets/venue-lesnaya-blue-792e22ad08e6.jpg",
+          "label": "Вариант 2",
+          "alt": "Лесная — Вариант 2"
         }
       ]
     }
@@ -6570,6 +6591,54 @@
           "src": "assets/preview-napkins-4785-640.webp",
           "width": 640,
           "height": 837
+        }
+      ]
+    },
+    "assets/venue-lesnaya-before-b8b0a8bf36c8.jpg": {
+      "width": 960,
+      "height": 1280,
+      "variants": [
+        {
+          "src": "assets/preview-lesnaya-before-b8b0a8bf36c8-360.webp",
+          "width": 360,
+          "height": 480
+        },
+        {
+          "src": "assets/preview-lesnaya-before-b8b0a8bf36c8-640.webp",
+          "width": 640,
+          "height": 853
+        }
+      ]
+    },
+    "assets/venue-lesnaya-pink-1aecb5780924.jpg": {
+      "width": 1050,
+      "height": 1400,
+      "variants": [
+        {
+          "src": "assets/preview-lesnaya-pink-1aecb5780924-360.webp",
+          "width": 360,
+          "height": 480
+        },
+        {
+          "src": "assets/preview-lesnaya-pink-1aecb5780924-640.webp",
+          "width": 640,
+          "height": 853
+        }
+      ]
+    },
+    "assets/venue-lesnaya-blue-792e22ad08e6.jpg": {
+      "width": 1050,
+      "height": 1400,
+      "variants": [
+        {
+          "src": "assets/preview-lesnaya-blue-792e22ad08e6-360.webp",
+          "width": 360,
+          "height": 480
+        },
+        {
+          "src": "assets/preview-lesnaya-blue-792e22ad08e6-640.webp",
+          "width": 640,
+          "height": 853
         }
       ]
     }
