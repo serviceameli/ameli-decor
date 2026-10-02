@@ -2441,6 +2441,26 @@
           "alt": "Малый панорамный зал — Вариант 2"
         }
       ]
+    },
+    {
+      "title": "Зал Панорама",
+      "photos": [
+        {
+          "src": "assets/venue-panorama-before-13db78d7f27f.jpg",
+          "label": "До оформления",
+          "alt": "Зал Панорама — До оформления"
+        },
+        {
+          "src": "assets/venue-panorama-variant-1-42a40ee88504.jpg",
+          "label": "Вариант 1",
+          "alt": "Зал Панорама — Вариант 1"
+        },
+        {
+          "src": "assets/venue-panorama-variant-2-70badcc5bb79.jpg",
+          "label": "Вариант 2",
+          "alt": "Зал Панорама — Вариант 2"
+        }
+      ]
     }
   ],
   "ceremonyExtras": [
@@ -6639,6 +6659,54 @@
           "src": "assets/preview-lesnaya-blue-792e22ad08e6-640.webp",
           "width": 640,
           "height": 853
+        }
+      ]
+    },
+    "assets/venue-panorama-before-13db78d7f27f.jpg": {
+      "width": 1280,
+      "height": 960,
+      "variants": [
+        {
+          "src": "assets/preview-panorama-before-13db78d7f27f-360.webp",
+          "width": 360,
+          "height": 270
+        },
+        {
+          "src": "assets/preview-panorama-before-13db78d7f27f-640.webp",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    "assets/venue-panorama-variant-1-42a40ee88504.jpg": {
+      "width": 1400,
+      "height": 1050,
+      "variants": [
+        {
+          "src": "assets/preview-panorama-variant-1-42a40ee88504-360.webp",
+          "width": 360,
+          "height": 270
+        },
+        {
+          "src": "assets/preview-panorama-variant-1-42a40ee88504-640.webp",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    "assets/venue-panorama-variant-2-70badcc5bb79.jpg": {
+      "width": 1400,
+      "height": 1050,
+      "variants": [
+        {
+          "src": "assets/preview-panorama-variant-2-70badcc5bb79-360.webp",
+          "width": 360,
+          "height": 270
+        },
+        {
+          "src": "assets/preview-panorama-variant-2-70badcc5bb79-640.webp",
+          "width": 640,
+          "height": 480
         }
       ]
     }

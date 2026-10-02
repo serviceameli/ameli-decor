@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-02",
+  "venue": "Зал Панорама",
+  "photos": [
+    {
+      "sourceFile": "панорама.jpg",
+      "sourceSha256": "13db78d7f27fdea90edadc6ec24fac3d48bf2fe2597d857fa27af82cd459d1b8",
+      "sourceBytes": 174420,
+      "sourceDimensions": [
+        1280,
+        960
+      ],
+      "image": "assets/venue-panorama-before-13db78d7f27f.jpg",
+      "width": 1280,
+      "height": 960,
+      "imageBytes": 174420,
+      "jpegQuality": null,
+      "previews": [
+        {
+          "src": "assets/preview-panorama-before-13db78d7f27f-360.webp",
+          "width": 360,
+          "height": 270,
+          "bytes": 16336
+        },
+        {
+          "src": "assets/preview-panorama-before-13db78d7f27f-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 44794
+        }
+      ]
+    },
+    {
+      "sourceFile": "Изображение ChatGPT 2 окт. 2026 г., 20_14_01.png",
+      "sourceSha256": "42a40ee88504985d2b6143d442c6632caeb5dda2515d894562ca8430b4830846",
+      "sourceBytes": 2475292,
+      "sourceDimensions": [
+        1448,
+        1086
+      ],
+      "image": "assets/venue-panorama-variant-1-42a40ee88504.jpg",
+      "width": 1400,
+      "height": 1050,
+      "imageBytes": 249529,
+      "jpegQuality": 78,
+      "previews": [
+        {
+          "src": "assets/preview-panorama-variant-1-42a40ee88504-360.webp",
+          "width": 360,
+          "height": 270,
+          "bytes": 21538
+        },
+        {
+          "src": "assets/preview-panorama-variant-1-42a40ee88504-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 55984
+        }
+      ]
+    },
+    {
+      "sourceFile": "Изображение ChatGPT 2 окт. 2026 г., 21_19_47.png",
+      "sourceSha256": "70badcc5bb7987e60cbfd65d33b977e90d29beb8590f76123615c2130ef74292",
+      "sourceBytes": 2427457,
+      "sourceDimensions": [
+        1448,
+        1086
+      ],
+      "image": "assets/venue-panorama-variant-2-70badcc5bb79.jpg",
+      "width": 1400,
+      "height": 1050,
+      "imageBytes": 236484,
+      "jpegQuality": 76,
+      "previews": [
+        {
+          "src": "assets/preview-panorama-variant-2-70badcc5bb79-360.webp",
+          "width": 360,
+          "height": 270,
+          "bytes": 22212
+        },
+        {
+          "src": "assets/preview-panorama-variant-2-70badcc5bb79-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 56150
+        }
+      ]
+    }
+  ]
+}
