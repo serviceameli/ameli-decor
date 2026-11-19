@@ -1,0 +1,337 @@
+{
+  "schema": 1,
+  "ceremony_count": 34,
+  "colored_cards": 20,
+  "order": [
+    "C26",
+    "C22",
+    "C37",
+    "C21",
+    "C39",
+    "C23",
+    "C24",
+    "C25",
+    "C27",
+    "C28",
+    "C34",
+    "C30",
+    "C38",
+    "C29",
+    "C40",
+    "C31",
+    "C32",
+    "C33",
+    "C35",
+    "C36"
+  ],
+  "new_hero_records": [
+    {
+      "id": "C39",
+      "variant": "flowers",
+      "color": "Синий Ван Гога",
+      "file": "bellatrix-flowers-van-gogh-blue.png",
+      "sha256": "a5479d44712686d050872850404ec25043d3ad5f41afd5c42ca736c70af229d4",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "C40",
+      "variant": "fabric",
+      "color": "Синий Ван Гога",
+      "file": "bellatrix-fabric-van-gogh-blue.png",
+      "sha256": "a3ff9d7660e369fc21da50d0e0d7859f7d569df7431ffb090207b2041d7dba3b",
+      "pixels": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "key": "sapphire-01",
+      "venue": "Гринхаус",
+      "color": "Голубой сапфир",
+      "ids": [
+        "C21",
+        "C29"
+      ],
+      "src": "assets/ceremony-greenhouse-sapphire-01-9051f8d5bb68.jpg",
+      "file": "greenhouse-sapphire-01.png",
+      "sha256": "9051f8d5bb68fd8e848fd9acd5cd56aa6c165a1b27df74043689378caf6745d1",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "sapphire-02",
+      "venue": "Гринхаус",
+      "color": "Голубой сапфир",
+      "ids": [
+        "C21",
+        "C29"
+      ],
+      "src": "assets/ceremony-greenhouse-sapphire-02-a947a13cb74b.jpg",
+      "file": "greenhouse-sapphire-02.png",
+      "sha256": "a947a13cb74b9de61a651135c7d59ff875ae0d62ffa169a50aae0565f1e0a851",
+      "pixels": [
+        1131,
+        1391
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "sapphire-03",
+      "venue": "Гринхаус",
+      "color": "Голубой сапфир",
+      "ids": [
+        "C21",
+        "C29"
+      ],
+      "src": "assets/ceremony-greenhouse-sapphire-03-79727d53f641.jpg",
+      "file": "greenhouse-sapphire-03.png",
+      "sha256": "79727d53f641b0fd1a0e0538e8ac2233d9b256abb557882ea7f68be36dfeae58",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "van-gogh-01",
+      "venue": "Гринхаус",
+      "color": "Синий Ван Гога",
+      "ids": [
+        "C39",
+        "C40"
+      ],
+      "src": "assets/ceremony-greenhouse-van-gogh-01-eea9334dc10c.jpg",
+      "file": "greenhouse-van-gogh-01.png",
+      "sha256": "eea9334dc10cf5cfa583508b83c3daa1c88db8bc2b04bfc46022e5ff8d61b13f",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "van-gogh-02",
+      "venue": "Гринхаус",
+      "color": "Синий Ван Гога",
+      "ids": [
+        "C39",
+        "C40"
+      ],
+      "src": "assets/ceremony-greenhouse-van-gogh-02-391b8b16d235.jpg",
+      "file": "greenhouse-van-gogh-02.png",
+      "sha256": "391b8b16d2352ad50707ff453063009cf4fdfe99887fcd74273ffaadeea91333",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "dark-night-01",
+      "venue": "Гринхаус",
+      "color": "Тёмная ночь",
+      "ids": [
+        "C28",
+        "C36"
+      ],
+      "src": "assets/ceremony-greenhouse-dark-night-01-c52b0010b7ff.jpg",
+      "file": "greenhouse-dark-night-01.png",
+      "sha256": "c52b0010b7ffed0de92d294f3b17e7cfac0079fa1ef1cc13021c2459f1fbdddb",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "key": "veranda-garnet",
+      "venue": "Веранда",
+      "color": "Гранатовый",
+      "ids": [
+        "C27",
+        "C35"
+      ],
+      "src": "assets/ceremony-veranda-garnet-5194812d3f91.jpg",
+      "file": "veranda-garnet.png",
+      "sha256": "5194812d3f91ac360c8b5add90ecccb601fb40aa56240cc607dbb518fde2aaa0",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "original_project_unchanged": true
+    }
+  ],
+  "affected_cards": [
+    "C21",
+    "C29",
+    "C39",
+    "C40",
+    "C28",
+    "C36",
+    "C27",
+    "C35"
+  ],
+  "photo_counts": {
+    "C21": 4,
+    "C29": 4,
+    "C39": 3,
+    "C40": 3,
+    "C28": 2,
+    "C36": 2,
+    "C27": 2,
+    "C35": 2
+  },
+  "old_white_pink_removed_from_affected": true,
+  "other_cards_preserved": true,
+  "portrait_contexts_preserved_without_crop": true,
+  "budgets": {
+    "mobile": 118886,
+    "desktop": 319590
+  },
+  "assets": [
+    {
+      "src": "assets/ceremony-bellatrix-flowers-van-gogh-blue-a5479d447126.jpg",
+      "bytes": 645450,
+      "sha256": "bdf81b92c997d38eb18c16eded8d596e9b46dfa7f3ff5b35746b516dc059fa02"
+    },
+    {
+      "src": "assets/preview-ceremony-bellatrix-flowers-van-gogh-blue-a5479d447126-360-70432d0527.webp",
+      "bytes": 26742,
+      "sha256": "70432d0527dcc54e8e755df8f9cf3ff5211f922c54abef18b7900508ff4a9b91"
+    },
+    {
+      "src": "assets/preview-ceremony-bellatrix-flowers-van-gogh-blue-a5479d447126-640-f62e51aca9.webp",
+      "bytes": 71042,
+      "sha256": "f62e51aca972dd62c5b7743a7a284d21b42eaaf9af3cbcad8cd96557f9103680"
+    },
+    {
+      "src": "assets/ceremony-bellatrix-fabric-van-gogh-blue-a3ff9d7660e3.jpg",
+      "bytes": 651248,
+      "sha256": "3faf446e5029d856b1bf06a201b86e7e27d20eaad4f8832f777857fb68a7944c"
+    },
+    {
+      "src": "assets/preview-ceremony-bellatrix-fabric-van-gogh-blue-a3ff9d7660e3-360-9d5f170f92.webp",
+      "bytes": 30228,
+      "sha256": "9d5f170f92199695ba8d625f68eb8059e142f1e61a4e65ef164f48ee0dd4a76b"
+    },
+    {
+      "src": "assets/preview-ceremony-bellatrix-fabric-van-gogh-blue-a3ff9d7660e3-640-d7a7c61e14.webp",
+      "bytes": 87308,
+      "sha256": "d7a7c61e1447e4fb083e7d30cf08c5bc34f979f47a7ae07d31dc1468f7139c17"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-sapphire-01-9051f8d5bb68.jpg",
+      "bytes": 649853,
+      "sha256": "720689f6fd3cfbf2d167ea3c464f41f489ef48942b9b991572017f9a5b06ec49"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-01-9051f8d5bb68-360-58fe676cc3.webp",
+      "bytes": 45530,
+      "sha256": "58fe676cc35a15c28e70ce09c4f666db91ebb2d2401b1dd2c6e4013b6c7052b6"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-01-9051f8d5bb68-640-784df41932.webp",
+      "bytes": 132434,
+      "sha256": "784df4193244f427e90ca2ec5e4cd6a3ce55fdcc0721e7858567df1bafe1c3d5"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-sapphire-02-a947a13cb74b.jpg",
+      "bytes": 618483,
+      "sha256": "978c651edd7a8b746622e780b28a0dd64cebea798bba318e98141f804b76a076"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-02-a947a13cb74b-360-1f170c568e.webp",
+      "bytes": 46752,
+      "sha256": "1f170c568eb091f12c49fb2f552a011028aeffbcc64612d366bc81c9a7f6b56f"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-02-a947a13cb74b-640-c61c0f4f52.webp",
+      "bytes": 131386,
+      "sha256": "c61c0f4f526b32940053a46cdf5458400e430ae19e64120488984cdcb287b533"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-sapphire-03-79727d53f641.jpg",
+      "bytes": 551844,
+      "sha256": "5cdf67db92650c2103e2e1d2758a34975746a2633bde1959b9026efb41e01286"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-03-79727d53f641-360-09c4fd9ed5.webp",
+      "bytes": 43622,
+      "sha256": "09c4fd9ed5e165ca378db4185d667dfddd21a8a322821bc0a62d370cc13c045b"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-sapphire-03-79727d53f641-640-313e87b7d5.webp",
+      "bytes": 113334,
+      "sha256": "313e87b7d51e40520c8d54e22f0c92c7b96140e8beede1c6489209377633272f"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-van-gogh-01-eea9334dc10c.jpg",
+      "bytes": 623067,
+      "sha256": "dc7eb208e399b027764f6b67fb2d8a488d9cb296d6b59cceabcbc50e28d15371"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-van-gogh-01-eea9334dc10c-360-d3b8336ff0.webp",
+      "bytes": 47142,
+      "sha256": "d3b8336ff0f9779324cb2b79e33dff92d81f350b689c2903183a65a2f2996f5b"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-van-gogh-01-eea9334dc10c-640-a7e17d2d25.webp",
+      "bytes": 130538,
+      "sha256": "a7e17d2d255ed026e6a3d9c6ae4963b6df92f72329be64761de800ce2c80cc0b"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-van-gogh-02-391b8b16d235.jpg",
+      "bytes": 586900,
+      "sha256": "ec12b80aa411eb053a02dae7f49bd79c24c1329d1b31f8a4a85759d596be5f72"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-van-gogh-02-391b8b16d235-360-e1cd464ee3.webp",
+      "bytes": 46290,
+      "sha256": "e1cd464ee333e28eec38d1126249efb56c2b3636b1b042743c79423b24536844"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-van-gogh-02-391b8b16d235-640-689b4124d8.webp",
+      "bytes": 125102,
+      "sha256": "689b4124d82a3592680fbad5a0ccc4786a6e6c0c97385baa72e1b2208f0f5892"
+    },
+    {
+      "src": "assets/ceremony-greenhouse-dark-night-01-c52b0010b7ff.jpg",
+      "bytes": 624796,
+      "sha256": "004d6d236d52c7f275975202462ea16bbafd6010c9da3772fa45607417f0c0a2"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-dark-night-01-c52b0010b7ff-360-c5cf15e26c.webp",
+      "bytes": 45144,
+      "sha256": "c5cf15e26c8bb090c724563a598333eb8e3b85c7d8bb1c9cecf83efd05710636"
+    },
+    {
+      "src": "assets/preview-ceremony-greenhouse-dark-night-01-c52b0010b7ff-640-94cdcca227.webp",
+      "bytes": 129930,
+      "sha256": "94cdcca227bf5644e1345fdff5fd74ac4d1c3086598cf3f3383355ea5bc2263a"
+    },
+    {
+      "src": "assets/ceremony-veranda-garnet-5194812d3f91.jpg",
+      "bytes": 694085,
+      "sha256": "6d365338edce851de7572a2cd4d68e502d6735e3de2b8a9d036787e46ab60b24"
+    },
+    {
+      "src": "assets/preview-ceremony-veranda-garnet-5194812d3f91-360-e693b435d5.webp",
+      "bytes": 30418,
+      "sha256": "e693b435d56eeae60b2b16f88e0dd54ea272e8fef913d52814a1f888da0e758a"
+    },
+    {
+      "src": "assets/preview-ceremony-veranda-garnet-5194812d3f91-640-bd5c0a6b53.webp",
+      "bytes": 94660,
+      "sha256": "bd5c0a6b530eb659e6d92a489eedba771ce7aecdcdc58e8c6eda11d622898619"
+    }
+  ],
+  "artistic_edits": "Built-in ImageGen for two blue heroes and the separate garnet derivative only"
+}

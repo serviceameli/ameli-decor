@@ -312,7 +312,7 @@ function showCardPhoto(button,index){
   const card=button.closest('figure'),photo=item.photos[index],img=card.querySelector('.gallery-image img');
   for(const [key,value] of Object.entries(previewAttributes(photo.src)))img.setAttribute(key,value);img.alt=photo.alt||item.title;
   const contextNote=card.querySelector('.card-context-note');
-  if(contextNote)contextNote.hidden=!photo.contextView;
+  if(contextNote){contextNote.hidden=!photo.contextView;contextNote.textContent=photo.contextLabel||'Общий вид · исходные цвета';}
   card.querySelector('.card-photo-status').textContent=`Фото ${index+1} из ${item.photos.length}${photo.contextView?' · '+photo.label:''}`;
 }
 document.addEventListener('click',event=>{
