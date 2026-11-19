@@ -227,6 +227,414 @@
       "sourceFolder": "Вега · цветы"
     },
     {
+      "id": "C21",
+      "title": "Беллатрикс · цветы · Голубой сапфир",
+      "description": "Цвет текстиля: «Голубой сапфир».",
+      "image": "assets/ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3.jpg",
+      "alt": "Беллатрикс · цветы · Голубой сапфир — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-sapphire-blue-v2.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Голубой сапфир».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3.jpg",
+          "alt": "Беллатрикс · цветы · Голубой сапфир — оформление зоны церемонии",
+          "label": "Голубой сапфир",
+          "sourceFile": "bellatrix-flowers-sapphire-blue-v2.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Голубой сапфир"
+    },
+    {
+      "id": "C22",
+      "title": "Беллатрикс · цветы · Кокосовый раф",
+      "description": "Цвет текстиля: «Кокосовый раф».",
+      "image": "assets/ceremony-bellatrix-flowers-coconut-raff-a482fea97a46.jpg",
+      "alt": "Беллатрикс · цветы · Кокосовый раф — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-coconut-raff.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Кокосовый раф».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-coconut-raff-a482fea97a46.jpg",
+          "alt": "Беллатрикс · цветы · Кокосовый раф — оформление зоны церемонии",
+          "label": "Кокосовый раф",
+          "sourceFile": "bellatrix-flowers-coconut-raff.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Кокосовый раф"
+    },
+    {
+      "id": "C23",
+      "title": "Беллатрикс · цветы · Розовая сакура",
+      "description": "Цвет текстиля: «Розовая сакура».",
+      "image": "assets/ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285.jpg",
+      "alt": "Беллатрикс · цветы · Розовая сакура — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-sakura-pink.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Розовая сакура».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285.jpg",
+          "alt": "Беллатрикс · цветы · Розовая сакура — оформление зоны церемонии",
+          "label": "Розовая сакура",
+          "sourceFile": "bellatrix-flowers-sakura-pink.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Розовая сакура"
+    },
+    {
+      "id": "C24",
+      "title": "Беллатрикс · цветы · Рыжая лиса",
+      "description": "Цвет текстиля: «Рыжая лиса».",
+      "image": "assets/ceremony-bellatrix-flowers-ginger-fox-d0abbe05e5ab.jpg",
+      "alt": "Беллатрикс · цветы · Рыжая лиса — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-ginger-fox.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Рыжая лиса».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-ginger-fox-d0abbe05e5ab.jpg",
+          "alt": "Беллатрикс · цветы · Рыжая лиса — оформление зоны церемонии",
+          "label": "Рыжая лиса",
+          "sourceFile": "bellatrix-flowers-ginger-fox.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Рыжая лиса"
+    },
+    {
+      "id": "C25",
+      "title": "Беллатрикс · цветы · Светло-зелёный",
+      "description": "Цвет текстиля: «Светло-зелёный».",
+      "image": "assets/ceremony-bellatrix-flowers-light-green-f0ff76daf14b.jpg",
+      "alt": "Беллатрикс · цветы · Светло-зелёный — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-light-green.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Светло-зелёный».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-light-green-f0ff76daf14b.jpg",
+          "alt": "Беллатрикс · цветы · Светло-зелёный — оформление зоны церемонии",
+          "label": "Светло-зелёный",
+          "sourceFile": "bellatrix-flowers-light-green.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Светло-зелёный"
+    },
+    {
+      "id": "C26",
+      "title": "Беллатрикс · цветы · Жемчужный",
+      "description": "Цвет текстиля: «Жемчужный».",
+      "image": "assets/ceremony-bellatrix-flowers-pearl-9087ebb18bcb.jpg",
+      "alt": "Беллатрикс · цветы · Жемчужный — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-pearl.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Жемчужный».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-pearl-9087ebb18bcb.jpg",
+          "alt": "Беллатрикс · цветы · Жемчужный — оформление зоны церемонии",
+          "label": "Жемчужный",
+          "sourceFile": "bellatrix-flowers-pearl.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Жемчужный"
+    },
+    {
+      "id": "C27",
+      "title": "Беллатрикс · цветы · Гранатовый",
+      "description": "Цвет текстиля: «Гранатовый».",
+      "image": "assets/ceremony-bellatrix-flowers-garnet-5554fb1b2f57.jpg",
+      "alt": "Беллатрикс · цветы · Гранатовый — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-garnet.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Гранатовый».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-garnet-5554fb1b2f57.jpg",
+          "alt": "Беллатрикс · цветы · Гранатовый — оформление зоны церемонии",
+          "label": "Гранатовый",
+          "sourceFile": "bellatrix-flowers-garnet.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Гранатовый"
+    },
+    {
+      "id": "C28",
+      "title": "Беллатрикс · цветы · Тёмная ночь",
+      "description": "Цвет текстиля: «Тёмная ночь».",
+      "image": "assets/ceremony-bellatrix-flowers-dark-night-964b2a2e8079.jpg",
+      "alt": "Беллатрикс · цветы · Тёмная ночь — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-flowers-dark-night.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Тёмная ночь».",
+        "Две напольные композиции из искусственных белых цветов."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-flowers-dark-night-964b2a2e8079.jpg",
+          "alt": "Беллатрикс · цветы · Тёмная ночь — оформление зоны церемонии",
+          "label": "Тёмная ночь",
+          "sourceFile": "bellatrix-flowers-dark-night.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · цветы",
+      "colorName": "Тёмная ночь"
+    },
+    {
+      "id": "C29",
+      "title": "Беллатрикс · ткань · Голубой сапфир",
+      "description": "Цвет текстиля: «Голубой сапфир».",
+      "image": "assets/ceremony-bellatrix-fabric-sapphire-blue-1abd0c9c71a1.jpg",
+      "alt": "Беллатрикс · ткань · Голубой сапфир — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-sapphire-blue.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Голубой сапфир»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-sapphire-blue-1abd0c9c71a1.jpg",
+          "alt": "Беллатрикс · ткань · Голубой сапфир — оформление зоны церемонии",
+          "label": "Голубой сапфир",
+          "sourceFile": "bellatrix-fabric-sapphire-blue.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Голубой сапфир"
+    },
+    {
+      "id": "C30",
+      "title": "Беллатрикс · ткань · Кокосовый раф",
+      "description": "Цвет текстиля: «Кокосовый раф».",
+      "image": "assets/ceremony-bellatrix-fabric-coconut-raff-d6363d2427be.jpg",
+      "alt": "Беллатрикс · ткань · Кокосовый раф — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-coconut-raff.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Кокосовый раф»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-coconut-raff-d6363d2427be.jpg",
+          "alt": "Беллатрикс · ткань · Кокосовый раф — оформление зоны церемонии",
+          "label": "Кокосовый раф",
+          "sourceFile": "bellatrix-fabric-coconut-raff.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Кокосовый раф"
+    },
+    {
+      "id": "C31",
+      "title": "Беллатрикс · ткань · Розовая сакура",
+      "description": "Цвет текстиля: «Розовая сакура».",
+      "image": "assets/ceremony-bellatrix-fabric-sakura-pink-3df23d2d89b3.jpg",
+      "alt": "Беллатрикс · ткань · Розовая сакура — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-sakura-pink.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Розовая сакура»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-sakura-pink-3df23d2d89b3.jpg",
+          "alt": "Беллатрикс · ткань · Розовая сакура — оформление зоны церемонии",
+          "label": "Розовая сакура",
+          "sourceFile": "bellatrix-fabric-sakura-pink.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Розовая сакура"
+    },
+    {
+      "id": "C32",
+      "title": "Беллатрикс · ткань · Рыжая лиса",
+      "description": "Цвет текстиля: «Рыжая лиса».",
+      "image": "assets/ceremony-bellatrix-fabric-ginger-fox-6f2e281e1f25.jpg",
+      "alt": "Беллатрикс · ткань · Рыжая лиса — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-ginger-fox.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Рыжая лиса»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-ginger-fox-6f2e281e1f25.jpg",
+          "alt": "Беллатрикс · ткань · Рыжая лиса — оформление зоны церемонии",
+          "label": "Рыжая лиса",
+          "sourceFile": "bellatrix-fabric-ginger-fox.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Рыжая лиса"
+    },
+    {
+      "id": "C33",
+      "title": "Беллатрикс · ткань · Светло-зелёный",
+      "description": "Цвет текстиля: «Светло-зелёный».",
+      "image": "assets/ceremony-bellatrix-fabric-light-green-80f5e2d872e0.jpg",
+      "alt": "Беллатрикс · ткань · Светло-зелёный — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-light-green.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Светло-зелёный»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-light-green-80f5e2d872e0.jpg",
+          "alt": "Беллатрикс · ткань · Светло-зелёный — оформление зоны церемонии",
+          "label": "Светло-зелёный",
+          "sourceFile": "bellatrix-fabric-light-green.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Светло-зелёный"
+    },
+    {
+      "id": "C34",
+      "title": "Беллатрикс · ткань · Жемчужный",
+      "description": "Цвет текстиля: «Жемчужный».",
+      "image": "assets/ceremony-bellatrix-fabric-pearl-4667cf02b6dd.jpg",
+      "alt": "Беллатрикс · ткань · Жемчужный — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-pearl.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Жемчужный»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-pearl-4667cf02b6dd.jpg",
+          "alt": "Беллатрикс · ткань · Жемчужный — оформление зоны церемонии",
+          "label": "Жемчужный",
+          "sourceFile": "bellatrix-fabric-pearl.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Жемчужный"
+    },
+    {
+      "id": "C35",
+      "title": "Беллатрикс · ткань · Гранатовый",
+      "description": "Цвет текстиля: «Гранатовый».",
+      "image": "assets/ceremony-bellatrix-fabric-garnet-89495974f800.jpg",
+      "alt": "Беллатрикс · ткань · Гранатовый — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-garnet.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Гранатовый»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-garnet-89495974f800.jpg",
+          "alt": "Беллатрикс · ткань · Гранатовый — оформление зоны церемонии",
+          "label": "Гранатовый",
+          "sourceFile": "bellatrix-fabric-garnet.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Гранатовый"
+    },
+    {
+      "id": "C36",
+      "title": "Беллатрикс · ткань · Тёмная ночь",
+      "description": "Цвет текстиля: «Тёмная ночь».",
+      "image": "assets/ceremony-bellatrix-fabric-dark-night-0a6b8c47fd6d.jpg",
+      "alt": "Беллатрикс · ткань · Тёмная ночь — оформление зоны церемонии",
+      "sourceType": "provided",
+      "sourceFile": "bellatrix-fabric-dark-night.png",
+      "componentLabel": "Состав зоны",
+      "components": [
+        "Волнообразный задник с драпировкой в цвете «Тёмная ночь»."
+      ],
+      "detailsNote": "Цветовую гамму согласуем с учётом коллекции и наличия на дату свадьбы.",
+      "photos": [
+        {
+          "src": "assets/ceremony-bellatrix-fabric-dark-night-0a6b8c47fd6d.jpg",
+          "alt": "Беллатрикс · ткань · Тёмная ночь — оформление зоны церемонии",
+          "label": "Тёмная ночь",
+          "sourceFile": "bellatrix-fabric-dark-night.png"
+        }
+      ],
+      "sourceFolder": "Беллатрикс — цветовые карточки/generated-originals",
+      "baseTitle": "Беллатрикс · ткань",
+      "colorName": "Тёмная ночь"
+    },
+    {
       "id": "C06",
       "title": "Центавра · цветы",
       "description": "Арка «Альфа Центавра» с жемчужной драпировкой.",
@@ -6707,6 +7115,262 @@
           "src": "assets/preview-panorama-variant-2-70badcc5bb79-640.webp",
           "width": 640,
           "height": 480
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-coconut-raff-a482fea97a46.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-coconut-raff-a482fea97a46-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-coconut-raff-a482fea97a46-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-ginger-fox-d0abbe05e5ab.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-ginger-fox-d0abbe05e5ab-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-ginger-fox-d0abbe05e5ab-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-light-green-f0ff76daf14b.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-light-green-f0ff76daf14b-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-light-green-f0ff76daf14b-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-pearl-9087ebb18bcb.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-pearl-9087ebb18bcb-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-pearl-9087ebb18bcb-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-garnet-5554fb1b2f57.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-garnet-5554fb1b2f57-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-garnet-5554fb1b2f57-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-flowers-dark-night-964b2a2e8079.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-dark-night-964b2a2e8079-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-flowers-dark-night-964b2a2e8079-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-sapphire-blue-1abd0c9c71a1.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-sapphire-blue-1abd0c9c71a1-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-sapphire-blue-1abd0c9c71a1-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-coconut-raff-d6363d2427be.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-coconut-raff-d6363d2427be-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-coconut-raff-d6363d2427be-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-sakura-pink-3df23d2d89b3.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-sakura-pink-3df23d2d89b3-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-sakura-pink-3df23d2d89b3-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-ginger-fox-6f2e281e1f25.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-ginger-fox-6f2e281e1f25-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-ginger-fox-6f2e281e1f25-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-light-green-80f5e2d872e0.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-light-green-80f5e2d872e0-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-light-green-80f5e2d872e0-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-pearl-4667cf02b6dd.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-pearl-4667cf02b6dd-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-pearl-4667cf02b6dd-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-garnet-89495974f800.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-garnet-89495974f800-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-garnet-89495974f800-640.webp",
+          "width": 640,
+          "height": 427
+        }
+      ]
+    },
+    "assets/ceremony-bellatrix-fabric-dark-night-0a6b8c47fd6d.jpg": {
+      "width": 1400,
+      "height": 933,
+      "variants": [
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-dark-night-0a6b8c47fd6d-360.webp",
+          "width": 360,
+          "height": 240
+        },
+        {
+          "src": "assets/preview-ceremony-bellatrix-fabric-dark-night-0a6b8c47fd6d-640.webp",
+          "width": 640,
+          "height": 427
         }
       ]
     }

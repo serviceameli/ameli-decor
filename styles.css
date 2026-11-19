@@ -71,3 +71,9 @@
 /* Independent columns: read down the right column, then down the left. */
 .terms-grid{grid-template-areas:"left right";align-items:start}.terms-column{display:grid;align-content:start;gap:26px;min-width:0}.terms-column--left{grid-area:left}.terms-column--right{grid-area:right}
 @media(max-width:700px){.terms-grid{grid-template-areas:"right" "left";gap:26px}}
+
+/* Color variants keep their shade visible instead of truncating it in the title. */
+.gallery .card-title--color{white-space:normal;overflow:visible;text-overflow:clip}
+.card-title--color .card-base-title,.card-title--color .card-color-name{display:block}
+.card-title--color .card-color-name{margin-top:4px;font:400 10px/1.4 Montserrat,Arial,sans-serif;letter-spacing:0;color:var(--mid)}
+@media(max-width:700px){.gallery .color-variant figcaption{flex-direction:column;align-items:flex-start;gap:7px}.gallery .color-variant figcaption h3{width:100%;flex:none}.gallery .color-variant .choose-item{align-self:flex-start}}
