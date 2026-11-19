@@ -1,0 +1,160 @@
+name: Publish setdecor to Timeweb
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: setdecor-timeweb-production
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Keep this repository variable unset until the manual site and HTTPS checks pass.
+    if: github.ref == 'refs/heads/main' && vars.SETDECOR_TIMEWEB_READY == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: setdecor-production
+      url: https://setdecor.ameli-rental.ru/
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Check main before building
+        id: before_build
+        shell: bash
+        run: |
+          set -euo pipefail
+          main_sha="$(git ls-remote origin refs/heads/main | awk '{print $1}')"
+          if [[ "$main_sha" == "$GITHUB_SHA" ]]; then
+            echo 'is_current=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'is_current=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::A newer main revision exists; this run will not publish.'
+          fi
+
+      - name: Set up Node.js
+        if: steps.before_build.outputs.is_current == 'true'
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+
+      # This repository currently has no dependencies or lockfile.
+      - name: Test package quantities and request text
+        if: steps.before_build.outputs.is_current == 'true'
+        run: npm test
+
+      - name: Build static website
+        if: steps.before_build.outputs.is_current == 'true'
+        run: npm run build
+
+      - name: Check main immediately before publication
+        if: steps.before_build.outputs.is_current == 'true'
+        id: before_publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          main_sha="$(git ls-remote origin refs/heads/main | awk '{print $1}')"
+          if [[ "$main_sha" == "$GITHUB_SHA" ]]; then
+            echo 'is_current=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'is_current=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::Main changed during the build; this run will not publish.'
+          fi
+
+      - name: Upload and activate through restricted deployment identity
+        if: steps.before_publish.outputs.is_current == 'true'
+        shell: bash
+        env:
+          TIMEWEB_DEPLOY_KEY: ${{ secrets.TIMEWEB_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          [[ "$GITHUB_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$GITHUB_RUN_NUMBER" =~ ^[0-9]+$ ]]
+          [[ "$GITHUB_RUN_ATTEMPT" =~ ^[1-9][0-9]*$ ]]
+          test -n "$TIMEWEB_DEPLOY_KEY"
+          test -f operations/known_hosts
+          test -f operations/stream_deploy.py
+          ssh_dir="$(mktemp -d "$RUNNER_TEMP/setdecor-ssh.XXXXXX")"
+          trap 'rm -f "$ssh_dir/deploy_key"; rmdir "$ssh_dir"' EXIT
+          chmod 700 "$ssh_dir"
+          printf '%s\n' "$TIMEWEB_DEPLOY_KEY" > "$ssh_dir/deploy_key"
+          chmod 600 "$ssh_dir/deploy_key"
+          unset TIMEWEB_DEPLOY_KEY
+          ssh_options=(
+            -F /dev/null
+            -i "$ssh_dir/deploy_key"
+            -p 22
+            -o BatchMode=yes
+            -o IdentitiesOnly=yes
+            -o ConnectTimeout=15
+            -o ServerAliveInterval=15
+            -o ServerAliveCountMax=2
+            -o StrictHostKeyChecking=yes
+            -o GlobalKnownHostsFile=/dev/null
+            -o "UserKnownHostsFile=$GITHUB_WORKSPACE/operations/known_hosts"
+            -o HostKeyAlias=217.149.19.37
+          )
+          # JSON manifest + raw file bytes. No tar/ZIP file or archive stream.
+          python3 operations/stream_deploy.py dist "$GITHUB_SHA" \
+            --manifest-sha256-output "$RUNNER_TEMP/setdecor-local-manifest.sha256" |
+            ssh "${ssh_options[@]}" setdecor-deploy@217.149.19.37 \
+              "deploy $GITHUB_SHA $GITHUB_RUN_NUMBER $GITHUB_RUN_ATTEMPT" \
+              > "$RUNNER_TEMP/setdecor-deployment-result.json"
+          python3 - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          result = json.loads((Path(os.environ['RUNNER_TEMP']) / 'setdecor-deployment-result.json').read_text())
+          expected = {
+              'commit': os.environ['GITHUB_SHA'],
+              'run_number': int(os.environ['GITHUB_RUN_NUMBER']),
+              'run_attempt': int(os.environ['GITHUB_RUN_ATTEMPT']),
+          }
+          if result.get('status') not in ('deployed', 'already_current'):
+              raise SystemExit('The deployment receiver did not confirm success.')
+          for name, value in expected.items():
+              if result.get(name) != value:
+                  raise SystemExit('The deployment receiver returned an unexpected value: ' + name)
+          if not re.fullmatch(r'[0-9a-f]{64}', result.get('manifest_sha256', '')):
+              raise SystemExit('The deployment receiver returned no valid manifest hash.')
+          local_digest = (Path(os.environ['RUNNER_TEMP']) / 'setdecor-local-manifest.sha256').read_text().strip()
+          if not re.fullmatch(r'[0-9a-f]{64}', local_digest):
+              raise SystemExit('The sender did not record a valid local manifest hash.')
+          if result['manifest_sha256'] != local_digest:
+              raise SystemExit('The receiver manifest differs from the local outgoing manifest.')
+          print('Deployment receiver confirmed the expected commit and generation.')
+          PY
+
+      - name: Verify the public HTTPS release marker
+        if: steps.before_publish.outputs.is_current == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
+            --retry 3 --retry-delay 2 \
+            --header 'Cache-Control: no-cache' \
+            "https://setdecor.ameli-rental.ru/setdecor-release.json?run=$GITHUB_RUN_ID&attempt=$GITHUB_RUN_ATTEMPT" \
+            --output "$RUNNER_TEMP/setdecor-release.json"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          marker = json.loads((Path(os.environ['RUNNER_TEMP']) / 'setdecor-release.json').read_text())
+          result = json.loads((Path(os.environ['RUNNER_TEMP']) / 'setdecor-deployment-result.json').read_text())
+          expected = {
+              'commit': os.environ['GITHUB_SHA'],
+              'run_number': int(os.environ['GITHUB_RUN_NUMBER']),
+              'run_attempt': int(os.environ['GITHUB_RUN_ATTEMPT']),
+              'manifest_sha256': result['manifest_sha256'],
+          }
+          for name, value in expected.items():
+              if marker.get(name) != value:
+                  raise SystemExit('The public release marker does not match this run: ' + name)
+          print('Verified the published commit and deployment generation over HTTPS.')
+          PY
