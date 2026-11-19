@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "removed": [
+    "C01",
+    "C03"
+  ],
+  "order": [
+    "C26",
+    "C22",
+    "C37",
+    "C21",
+    "C23",
+    "C24",
+    "C25",
+    "C27",
+    "C28",
+    "C34",
+    "C30",
+    "C38",
+    "C29",
+    "C31",
+    "C32",
+    "C33",
+    "C35",
+    "C36"
+  ],
+  "count": 32,
+  "colored": 18,
+  "photos_per_color": 8,
+  "shared_contexts": [
+    "assets/ceremony-15ac4fbb64b0.jpg",
+    "assets/ceremony-fdaf14feb9ae.jpg",
+    "assets/ceremony-84e0414605ab.jpg",
+    "assets/ceremony-476730999984.jpg",
+    "assets/ceremony-9ab52b17537d.jpg",
+    "assets/ceremony-6bbf66455eef.jpg",
+    "assets/ceremony-a7095f425c9c.jpg"
+  ],
+  "new_images": [
+    {
+      "id": "C37",
+      "variant": "flowers",
+      "color": "Бледно-розовый",
+      "file": "bellatrix-flowers-pale-pink.png",
+      "sha256": "21470b22cce8399afeb5363c6c5e3fd24b83bd0cbb176ab94e231847fbc9487a",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "image": "assets/ceremony-bellatrix-flowers-pale-pink-21470b22cce8.jpg",
+      "jpeg_sha256": "c5ab63769a13dc96560facaa3a51c4baf020e72f752d362720bdd8adf5561b57",
+      "jpeg_bytes": 564095
+    },
+    {
+      "id": "C38",
+      "variant": "fabric",
+      "color": "Бледно-розовый",
+      "file": "bellatrix-fabric-pale-pink.png",
+      "sha256": "dc2ee1dedb4b85e164772be373802b260759f4ca922bbbfa217947936f57ebdd",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "image": "assets/ceremony-bellatrix-fabric-pale-pink-dc2ee1dedb4b.jpg",
+      "jpeg_sha256": "281602d766090e9cfe716169074682b7fd6532af6706e71c3f3053ec6dfef51d",
+      "jpeg_bytes": 552755
+    }
+  ],
+  "optimized_previews": [
+    {
+      "id": "C26",
+      "src": "assets/preview-ceremony-bellatrix-flowers-pearl-9087ebb18bcb-360-ffab619b83.webp",
+      "width": 360,
+      "quality": 72,
+      "bytes": 21902,
+      "sha256": "ffab619b83ed54191751659f3819554e9f37c1674ccbb16c726be01e28830a38"
+    },
+    {
+      "id": "C26",
+      "src": "assets/preview-ceremony-bellatrix-flowers-pearl-9087ebb18bcb-640-774a762328.webp",
+      "width": 640,
+      "quality": 70,
+      "bytes": 58658,
+      "sha256": "774a76232839478d10d16d9cd67e30194a6949fdcce6f1aff0e1df1606ef3ecc"
+    },
+    {
+      "id": "C22",
+      "src": "assets/preview-ceremony-bellatrix-flowers-coconut-raff-a482fea97a46-360-59e86406af.webp",
+      "width": 360,
+      "quality": 72,
+      "bytes": 22246,
+      "sha256": "59e86406afa070b0570287b7afeb19a6d91ab3d8177618320830e3a8cb32c33e"
+    },
+    {
+      "id": "C22",
+      "src": "assets/preview-ceremony-bellatrix-flowers-coconut-raff-a482fea97a46-640-8892b93dba.webp",
+      "width": 640,
+      "quality": 70,
+      "bytes": 60056,
+      "sha256": "8892b93dba97bf90b71a29d8fdc82069b207bd25077770284d93aebbc47b3d43"
+    },
+    {
+      "id": "C37",
+      "src": "assets/preview-ceremony-bellatrix-flowers-pale-pink-21470b22cce8-360-e2e3a3286e.webp",
+      "width": 360,
+      "quality": 72,
+      "bytes": 23394,
+      "sha256": "e2e3a3286e9ccd30aa9880de2aa6df4908e616aacd176cbdc0866dc01c46283f"
+    },
+    {
+      "id": "C37",
+      "src": "assets/preview-ceremony-bellatrix-flowers-pale-pink-21470b22cce8-640-36c4675199.webp",
+      "width": 640,
+      "quality": 70,
+      "bytes": 63874,
+      "sha256": "36c46751999fd6d3c02ae2b1ef15ae4542bee809c409855a8f616aa19bfc9c17"
+    },
+    {
+      "id": "C21",
+      "src": "assets/preview-ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3-360-75c5497d20.webp",
+      "width": 360,
+      "quality": 72,
+      "bytes": 24602,
+      "sha256": "75c5497d20ea5bd3d66bcd841cf61ec3a8269add7649221e8b2cda992fe1c566"
+    },
+    {
+      "id": "C21",
+      "src": "assets/preview-ceremony-bellatrix-flowers-sapphire-blue-4af8beb927d3-640-8065007683.webp",
+      "width": 640,
+      "quality": 70,
+      "bytes": 65960,
+      "sha256": "8065007683b98b4d10d416562e8ae91706829095255567c6bff43d4d81794449"
+    },
+    {
+      "id": "C23",
+      "src": "assets/preview-ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285-360-09302a7901.webp",
+      "width": 360,
+      "quality": 72,
+      "bytes": 25626,
+      "sha256": "09302a7901543ac4e4a39a520a088f3f72460993f802868ccb96b79146e9e69e"
+    },
+    {
+      "id": "C23",
+      "src": "assets/preview-ceremony-bellatrix-flowers-sakura-pink-3c490f8fd285-640-44957664c8.webp",
+      "width": 640,
+      "quality": 70,
+      "bytes": 69790,
+      "sha256": "44957664c83e8f5a0f779bb98204d958325be2b2fea17826dad0a6ed1e37e205"
+    }
+  ],
+  "budgets": {
+    "mobile": 117770,
+    "desktop": 318338
+  },
+  "operation": "Add pale pink, consolidate Bellatrix galleries and reorder colour variants",
+  "catalog_reference": {
+    "url": "https://catalog.ameli-rental.ru/catalog/arki-s-drapirovkoj-xfx/29090",
+    "variant": 19134,
+    "caption": "Задник \"Белатрикс\" с драпировкой, бледно-розовый бархат"
+  }
+}

@@ -22,7 +22,7 @@ test('В сообщение попадают выбранные позиции, 
   assert.equal(choice.counts.compositions,7);assert.equal(choice.counts.napkins,70);
   assert.equal(choice.sections.flatMap(s=>s.items).length,4);
   assert.match(message,/C02 — Кастор/);assert.match(message,/T01 — Равенкло/);assert.match(message,/Роза, Олива/);
-  assert.doesNotMatch(message,/C01|T02|T04|unknown|Снежный/);
+  assert.doesNotMatch(message,/\bC26\b|T02|T04|unknown|Снежный/);
   assert.ok(message.includes(data.tableCompositions.find(item=>item.id==='T01').sourceUrl));
   assert.doesNotMatch(message,/undefined/);
   const empty=selectionMessage(resolveSelection(data,{guests:20,ids:[],colors:[]}));
@@ -30,7 +30,7 @@ test('В сообщение попадают выбранные позиции, 
 });
 
 test('Новая позиция заменяет выбор только в своём разделе; повторное нажатие снимает выбор',()=>{
-  let state={guests:40,ids:['C01','P05','T01',data.napkins[0].id],colors:['Роза','Олива']};
+  let state={guests:40,ids:['C26','P05','T01',data.napkins[0].id],colors:['Роза','Олива']};
   state=toggleItem(data,state,'C02');
   assert.deepEqual(new Set(state.ids),new Set(['C02','P05','T01',data.napkins[0].id]));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T01'));assert.ok(state.ids.includes('T04'));
@@ -61,12 +61,12 @@ test('Скрытые дополнительные позиции не попад
 });
 
 test('Скатерть выбирается отдельно, сохраняет остальные разделы и попадает в подарок',()=>{
-  let state={guests:100,ids:['C01','P05','T01',data.napkins[0].id],colors:[]};
+  let state={guests:100,ids:['C26','P05','T01',data.napkins[0].id],colors:[]};
   state=toggleItem(data,state,data.tablecloths[0].id);
   state=toggleItem(data,state,data.tablecloths[1].id);
   const selected=resolveSelection(data,state);
   assert.equal(selected.counts.tablecloths,10);
-  assert.deepEqual(state.ids,['C01','P05','T01',data.napkins[0].id,data.tablecloths[1].id]);
+  assert.deepEqual(state.ids,['C26','P05','T01',data.napkins[0].id,data.tablecloths[1].id]);
   const message=selectionMessage(selected);
   for(const value of [data.tablecloths[1].title,'Бархатные скатерти в подарок: 10 шт.','31 декабря 2026','Круглая или прямоугольная','100+'])assert.ok(message.includes(value),value);
 });
