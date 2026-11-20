@@ -1,0 +1,496 @@
+{
+  "schema": 1,
+  "operation": "Requested guest table additions",
+  "new_ids": [
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T22",
+    "T23",
+    "T24",
+    "T25"
+  ],
+  "order": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T06",
+    "T22",
+    "T23",
+    "T24",
+    "T25",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16"
+  ],
+  "old15_cards_preserved": true,
+  "total_table_cards": 24,
+  "decorative_material_label": "Цветы декоративные",
+  "same_five_vases_for_dried_set": true,
+  "ajour_first_in_lamp_group": true,
+  "ajour_index": 10,
+  "persephone_quantity": 1,
+  "lovegood_quantity": 5,
+  "verified_individual_dimensions_cm": {
+    "persephone_height": 27,
+    "persephone_diameter": 27,
+    "lovegood_catalog_height": 28,
+    "lovegood_diameter": 2
+  },
+  "no_exact_assembled_height_claimed": true,
+  "new_catalog_ids": [
+    28742,
+    28639,
+    28569,
+    28637
+  ],
+  "custom_sets_have_no_invented_catalog_id": true,
+  "cards": [
+    {
+      "id": "T17",
+      "title": "Персефона 30 + Лавгуд",
+      "baseTitle": "Персефона 30 + Лавгуд",
+      "colorName": "Электронные свечи",
+      "description": "5 электронных свечей.",
+      "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
+      "sourceType": "provided",
+      "sourceFolder": "Гостевые столы — новые композиции/final/lighting",
+      "sourceFile": "persephone-lovegood.png",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Канделябр «Персефона 30» — 1 шт.",
+        "Светодиодные свечи «Лавгуд» — 5 шт.",
+        "Канделябр: высота — 27 см; диаметр — 27 см.",
+        "Каждая свеча по каталогу: высота — 28 см; диаметр — 2 см."
+      ],
+      "image": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+      "photos": [
+        {
+          "src": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+          "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
+          "label": "Основное фото",
+          "sourceFile": "persephone-lovegood.png"
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "title": "Дункан · Жемчужный",
+      "baseTitle": "Дункан",
+      "colorName": "Жемчужный",
+      "description": "Цветы декоративные.",
+      "materialNote": "Цветы декоративные",
+      "alt": "Дункан · Жемчужный — пять стеклянных ваз с декоративными цветами",
+      "sourceType": "provided",
+      "sourceFolder": "Гостевые столы — новые композиции/final/vases",
+      "sourceFile": "duncan-pearl.png",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Стеклянные вазы разных форм — 5 шт.",
+        "Цветы декоративные в оттенке «Жемчужный» для наполнения пяти ваз."
+      ],
+      "image": "assets/table-duncan-pearl-c7eb1504e6e8.jpg",
+      "photos": [
+        {
+          "src": "assets/table-duncan-pearl-c7eb1504e6e8.jpg",
+          "alt": "Дункан · Жемчужный — пять стеклянных ваз с декоративными цветами",
+          "label": "Основное фото",
+          "sourceFile": "duncan-pearl.png"
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "title": "Дункан · Бледно-розовый",
+      "baseTitle": "Дункан",
+      "colorName": "Бледно-розовый",
+      "description": "Цветы декоративные.",
+      "materialNote": "Цветы декоративные",
+      "alt": "Дункан · Бледно-розовый — пять стеклянных ваз с декоративными цветами",
+      "sourceType": "provided",
+      "sourceFolder": "Гостевые столы — новые композиции/final/vases",
+      "sourceFile": "duncan-pale-pink.png",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Стеклянные вазы разных форм — 5 шт.",
+        "Цветы декоративные в оттенке «Бледно-розовый» для наполнения пяти ваз."
+      ],
+      "image": "assets/table-duncan-pale-pink-65fd80cdae64.jpg",
+      "photos": [
+        {
+          "src": "assets/table-duncan-pale-pink-65fd80cdae64.jpg",
+          "alt": "Дункан · Бледно-розовый — пять стеклянных ваз с декоративными цветами",
+          "label": "Основное фото",
+          "sourceFile": "duncan-pale-pink.png"
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "title": "Дункан · Голубой сапфир",
+      "baseTitle": "Дункан",
+      "colorName": "Голубой сапфир",
+      "description": "Цветы декоративные.",
+      "materialNote": "Цветы декоративные",
+      "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+      "sourceType": "provided",
+      "sourceFolder": "Гостевые столы — новые композиции/final/vases",
+      "sourceFile": "duncan-sapphire.png",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Стеклянные вазы разных форм — 5 шт.",
+        "Цветы декоративные в оттенке «Голубой сапфир» для наполнения пяти ваз."
+      ],
+      "image": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+      "photos": [
+        {
+          "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+          "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+          "label": "Основное фото",
+          "sourceFile": "duncan-sapphire.png"
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "title": "Дункан · колоски",
+      "baseTitle": "Дункан",
+      "colorName": "Колоски",
+      "description": "Сухоцветы в 5 вазах.",
+      "materialNote": "Сухоцветы",
+      "alt": "Дункан · колоски — пять стеклянных ваз с сухоцветами",
+      "sourceType": "provided",
+      "sourceFolder": "Гостевые столы — новые композиции/final/vases",
+      "sourceFile": "duncan-dried-grains.png",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Стеклянные вазы разных форм — 5 шт.",
+        "Сухоцветы: зерновые колоски для наполнения пяти ваз."
+      ],
+      "image": "assets/table-duncan-dried-grains-2981a130ba31.jpg",
+      "photos": [
+        {
+          "src": "assets/table-duncan-dried-grains-2981a130ba31.jpg",
+          "alt": "Дункан · колоски — пять стеклянных ваз с сухоцветами",
+          "label": "Основное фото",
+          "sourceFile": "duncan-dried-grains.png"
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "title": "Глиссео · ажурный",
+      "baseTitle": "Глиссео",
+      "colorName": "Ажурный",
+      "description": "Высота — 30 см.",
+      "alt": "Светильник «Глиссео» с ажурным абажуром",
+      "sourceType": "catalog",
+      "catalogName": "Светильник \"Глиссео\" с ажурным  абажуром",
+      "catalogId": 28742,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/28742",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Светильник «Глиссео» с ажурным абажуром — 1 шт.",
+        "Высота — 30 см; диаметр абажура — 14 см."
+      ],
+      "detailsNote": "Без флористики. Наличие на дату подтвердит менеджер.",
+      "detailsSourceChecked": "2026-11-20",
+      "startRow": true,
+      "image": "assets/table-glisseo-openwork-3b76672abae2.jpg",
+      "photos": [
+        {
+          "src": "assets/table-glisseo-openwork-3b76672abae2.jpg",
+          "alt": "Светильник «Глиссео» с ажурным абажуром",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "title": "Глиссео · Кокосовый раф",
+      "baseTitle": "Глиссео",
+      "colorName": "Кокосовый раф",
+      "description": "Высота — 30 см.",
+      "alt": "Светильник «Глиссео» с абажуром «Кокосовый раф»",
+      "sourceType": "catalog",
+      "catalogName": "Светильник \"Глиссео\" с абажуром кокосовый раф",
+      "catalogId": 28639,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/28639",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Светильник «Глиссео» с абажуром «Кокосовый раф» — 1 шт.",
+        "Высота — 30 см; диаметр абажура — 14 см."
+      ],
+      "detailsNote": "Без флористики. Наличие на дату подтвердит менеджер.",
+      "detailsSourceChecked": "2026-11-20",
+      "image": "assets/table-glisseo-coconut-raff-9cd4b1e6760c.jpg",
+      "photos": [
+        {
+          "src": "assets/table-glisseo-coconut-raff-9cd4b1e6760c.jpg",
+          "alt": "Светильник «Глиссео» с абажуром «Кокосовый раф»",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "title": "Глиссео · Голубой сапфир",
+      "baseTitle": "Глиссео",
+      "colorName": "Голубой сапфир",
+      "description": "Высота — 30 см.",
+      "alt": "Светильник «Глиссео» с абажуром «Голубой сапфир»",
+      "sourceType": "catalog",
+      "catalogName": "Светильник \"Глиссео\" с абажуром голубой сапфир",
+      "catalogId": 28569,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/28569",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Светильник «Глиссео» с абажуром «Голубой сапфир» — 1 шт.",
+        "Высота — 30 см; диаметр абажура — 14 см."
+      ],
+      "detailsNote": "Без флористики. Наличие на дату подтвердит менеджер.",
+      "detailsSourceChecked": "2026-11-20",
+      "image": "assets/table-glisseo-sapphire-b4ef061b5c8a.jpg",
+      "photos": [
+        {
+          "src": "assets/table-glisseo-sapphire-b4ef061b5c8a.jpg",
+          "alt": "Светильник «Глиссео» с абажуром «Голубой сапфир»",
+          "label": "Основное фото"
+        }
+      ]
+    },
+    {
+      "id": "T25",
+      "title": "Глиссео · Розовая сакура",
+      "baseTitle": "Глиссео",
+      "colorName": "Розовая сакура",
+      "description": "Высота — 30 см.",
+      "alt": "Светильник «Глиссео» с абажуром «Розовая сакура»",
+      "sourceType": "catalog",
+      "catalogName": "Светильник \"Глиссео\" с абажуром розовая сакура",
+      "catalogId": 28637,
+      "sourceUrl": "https://catalog.ameli-rental.ru/catalog/svetilniki-qll-kub/28637",
+      "componentLabel": "Состав одной композиции",
+      "components": [
+        "Светильник «Глиссео» с абажуром «Розовая сакура» — 1 шт.",
+        "Высота — 30 см; диаметр абажура — 14 см."
+      ],
+      "detailsNote": "Без флористики. Наличие на дату подтвердит менеджер.",
+      "detailsSourceChecked": "2026-11-20",
+      "image": "assets/table-glisseo-sakura-c8a73556acfa.jpg",
+      "photos": [
+        {
+          "src": "assets/table-glisseo-sakura-c8a73556acfa.jpg",
+          "alt": "Светильник «Глиссео» с абажуром «Розовая сакура»",
+          "label": "Основное фото"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "src": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+      "bytes": 108672,
+      "sha256": "529fc3f225495fa8b254bfba6ae80f3b34754a77a13d6670382afea928734394",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-360-e3b53148a8.webp",
+      "bytes": 7872,
+      "sha256": "e3b53148a8afebe94067fa4f8efac8f84b3a27efb7443d30583011d321b54e3b",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-640-dbc15d830f.webp",
+      "bytes": 19488,
+      "sha256": "dbc15d830f2e44228ac4c4bea3a07aab337d92f3eeead3633a64ab993120bb94",
+      "width": 640,
+      "height": 853
+    },
+    {
+      "src": "assets/table-duncan-pearl-c7eb1504e6e8.jpg",
+      "bytes": 271503,
+      "sha256": "48197b47e103fdb15db8caf505932f407aa4689244d874f0399e646bf1228711",
+      "width": 1166,
+      "height": 1349
+    },
+    {
+      "src": "assets/preview-table-duncan-pearl-c7eb1504e6e8-360-466eb23d03.webp",
+      "bytes": 20356,
+      "sha256": "466eb23d03f189a0e87301fef92d88cb8ab1db581a64726bffd9d68dc5d29f90",
+      "width": 360,
+      "height": 417
+    },
+    {
+      "src": "assets/preview-table-duncan-pearl-c7eb1504e6e8-640-3758a2d199.webp",
+      "bytes": 51682,
+      "sha256": "3758a2d19966dc08bc324cb30d4841840a33fca8ee3a6fb6e2b26aa28c9f6cd1",
+      "width": 640,
+      "height": 740
+    },
+    {
+      "src": "assets/table-duncan-pale-pink-65fd80cdae64.jpg",
+      "bytes": 278357,
+      "sha256": "0064e50d37e85ef935748744091b88d441af31f9290600783238df2afd9ff1ff",
+      "width": 1166,
+      "height": 1349
+    },
+    {
+      "src": "assets/preview-table-duncan-pale-pink-65fd80cdae64-360-cbc9c10c51.webp",
+      "bytes": 22012,
+      "sha256": "cbc9c10c512366c54b83950c21d9adbe2d4f11ee1a3813bd672cd5c51227ed92",
+      "width": 360,
+      "height": 417
+    },
+    {
+      "src": "assets/preview-table-duncan-pale-pink-65fd80cdae64-640-8c140944af.webp",
+      "bytes": 54704,
+      "sha256": "8c140944afdb1505384c0f2f412c0fb14d273304a6beb5c31364bdf5da2b5229",
+      "width": 640,
+      "height": 740
+    },
+    {
+      "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+      "bytes": 287854,
+      "sha256": "20a7ecb0a4f27faea3c2529189f0a5180d7a47f8d6e2ee273adaa62aa37c4b4f",
+      "width": 1166,
+      "height": 1349
+    },
+    {
+      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-360-12ed530785.webp",
+      "bytes": 22802,
+      "sha256": "12ed530785a89f2edebf977ab9f75a5f00f5720ffecd45ccd2c74f0b7f95ffaa",
+      "width": 360,
+      "height": 417
+    },
+    {
+      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-640-45d892fcab.webp",
+      "bytes": 57382,
+      "sha256": "45d892fcabe3c589636b1522bf2b6ef357b8184b7b7c4454251ca24a9df5b6f4",
+      "width": 640,
+      "height": 740
+    },
+    {
+      "src": "assets/table-duncan-dried-grains-2981a130ba31.jpg",
+      "bytes": 338406,
+      "sha256": "f2cb790d74a3f7297dbfc73c407906ea9886fb6a7c536888ed228b3ed70280e3",
+      "width": 1166,
+      "height": 1349
+    },
+    {
+      "src": "assets/preview-table-duncan-dried-grains-2981a130ba31-360-722ea2590c.webp",
+      "bytes": 20864,
+      "sha256": "722ea2590ccdf3a164ea13992e5569c073e2616d6e30b48b84d4f869b9fa3730",
+      "width": 360,
+      "height": 417
+    },
+    {
+      "src": "assets/preview-table-duncan-dried-grains-2981a130ba31-640-86714b2a81.webp",
+      "bytes": 57694,
+      "sha256": "86714b2a81f3bfac864070c46280b875c5758ed6cba65ca3d85a6dfbcdb621c7",
+      "width": 640,
+      "height": 740
+    },
+    {
+      "src": "assets/table-glisseo-openwork-3b76672abae2.jpg",
+      "bytes": 184200,
+      "sha256": "d024988275c2713fea1bf39e727c7b282c7897dfa2027cad7d704dc682302eaa",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "assets/preview-table-glisseo-openwork-3b76672abae2-360-5ac95f56c5.webp",
+      "bytes": 6214,
+      "sha256": "5ac95f56c5ab917020c985c739907358da1fb5e57eea6bb192a246b1e18fab25",
+      "width": 360,
+      "height": 360
+    },
+    {
+      "src": "assets/preview-table-glisseo-openwork-3b76672abae2-640-137c228849.webp",
+      "bytes": 21636,
+      "sha256": "137c228849b8c17cef183c6cd46a41f052975d854158e6f1ac4f2e3038afc6fb",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "src": "assets/table-glisseo-coconut-raff-9cd4b1e6760c.jpg",
+      "bytes": 156181,
+      "sha256": "5d3dbb8ba14000228e5e96f4ecab34a1988d8c574d427c7b8437e174a3b5cba8",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "src": "assets/preview-table-glisseo-coconut-raff-9cd4b1e6760c-360-2266ff14ca.webp",
+      "bytes": 12040,
+      "sha256": "2266ff14ca7eab82b9cb827c22af8f61d982cc58e7ec2fa4859b485cb84bf3b7",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "assets/preview-table-glisseo-coconut-raff-9cd4b1e6760c-640-7b720af963.webp",
+      "bytes": 25204,
+      "sha256": "7b720af963b2c1901ab7b074a251a900d5201403c9731b836ba438fa117662c6",
+      "width": 640,
+      "height": 1137
+    },
+    {
+      "src": "assets/table-glisseo-sapphire-b4ef061b5c8a.jpg",
+      "bytes": 157380,
+      "sha256": "6d2d4e4a6325e74ab6465a616191ff14fd118a7a2dce2cb1fd45cc166f60a866",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "src": "assets/preview-table-glisseo-sapphire-b4ef061b5c8a-360-b0dc430878.webp",
+      "bytes": 13004,
+      "sha256": "b0dc430878eff1455ad0d06db6251b3a78b55d4578ed80a789eb3ab1ab9c0e12",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "assets/preview-table-glisseo-sapphire-b4ef061b5c8a-640-a092df20e8.webp",
+      "bytes": 27750,
+      "sha256": "a092df20e81c904470eea808b61dbc6c8ae11cc4e3a408b9cda15803fefcb223",
+      "width": 640,
+      "height": 1137
+    },
+    {
+      "src": "assets/table-glisseo-sakura-c8a73556acfa.jpg",
+      "bytes": 165684,
+      "sha256": "2ada9b0cc6bde9bc43f9c3d62b6970da96910be7f6851d0530dde225d96bc8b8",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "src": "assets/preview-table-glisseo-sakura-c8a73556acfa-360-7abe78785d.webp",
+      "bytes": 13778,
+      "sha256": "7abe78785dfbb2b3231f53486a473f4c51b8166b91c7b017e6727c5b7f75fa22",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "src": "assets/preview-table-glisseo-sakura-c8a73556acfa-640-c347f41a89.webp",
+      "bytes": 28636,
+      "sha256": "c347f41a897824a1c31a2b881d37a1bddf9a54b1c8ecda3f1ee90cf7ce13662c",
+      "width": 640,
+      "height": 1137
+    }
+  ]
+}

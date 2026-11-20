@@ -1,0 +1,902 @@
+{
+  "schema": 1,
+  "operation": "40 selected catalogue colour variants for Kastor/Vega/Lyra/Pulsar",
+  "original_cards_replaced": [
+    "C02",
+    "C09",
+    "C11",
+    "C16"
+  ],
+  "new_ids": [
+    "C41",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C47",
+    "C48",
+    "C49",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55",
+    "C56",
+    "C57",
+    "C58",
+    "C59",
+    "C60",
+    "C61",
+    "C62",
+    "C63",
+    "C64",
+    "C65",
+    "C66",
+    "C67",
+    "C68",
+    "C69",
+    "C70",
+    "C71",
+    "C72",
+    "C73",
+    "C74",
+    "C75",
+    "C76",
+    "C77",
+    "C78",
+    "C79",
+    "C80"
+  ],
+  "new_cards": 40,
+  "ceremony_total": 70,
+  "unchanged_cards": 30,
+  "full_original_files_preserved": true,
+  "context_sources_reused": 5,
+  "context_assignments": 50,
+  "assets": [
+    {
+      "src": "assets/ceremony-kastor-pearl-db8b7aa88c73.jpg",
+      "bytes": 406544,
+      "sha256": "ca3cd15e29a724d7285361eae067fde486b23cda62c99b2178d1f129b311156e",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-pearl-db8b7aa88c73-360-c346f99437.webp",
+      "bytes": 27376,
+      "sha256": "c346f994375e61d8c992692926903a6f01db46518a6fffcbca6ce8f6c226bebf",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-pearl-db8b7aa88c73-640-8d40c680a3.webp",
+      "bytes": 67576,
+      "sha256": "8d40c680a36e1907d899d933ee1efc9e0021df46d87e6bb44e91f00f3c9c1e65",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-coconut-raff-9f52e7daa087.jpg",
+      "bytes": 416220,
+      "sha256": "ca251de4ff4987ab7a5e2a902e0996aea4034c14a8dfb2b4d04363876baba4a0",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-coconut-raff-9f52e7daa087-360-743f568f62.webp",
+      "bytes": 27800,
+      "sha256": "743f568f623220f5eb8ce6739fff8b797fc250b1259fc6cd239a7f6e8142b212",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-coconut-raff-9f52e7daa087-640-30bb117a4d.webp",
+      "bytes": 69448,
+      "sha256": "30bb117a4d1fec7db2259081e9cc49808b7a2c31c0bfafade9be9b18c5aeb124",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-pale-pink-f95c776a7305.jpg",
+      "bytes": 415838,
+      "sha256": "470490562b587ceb3aeebe57709f3590822f11d3823fe5c947ce62bcfb970f6f",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-pale-pink-f95c776a7305-360-43ea6b88f9.webp",
+      "bytes": 27694,
+      "sha256": "43ea6b88f929a00f599137b0b55ae326814d806d2ec64bdcf07a8aea8dd94dd8",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-pale-pink-f95c776a7305-640-ae0d4614e9.webp",
+      "bytes": 68776,
+      "sha256": "ae0d4614e99f9826028e573c57ab39e357ea8c3ffc53c340649f7da2b57de1ab",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-sapphire-blue-e5658ab8906d.jpg",
+      "bytes": 413092,
+      "sha256": "abb452dba2c89cddd2686ed9d63ad4e99d1799151d17f3bc803a05c8a0f72382",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-sapphire-blue-e5658ab8906d-360-1f25704bad.webp",
+      "bytes": 27572,
+      "sha256": "1f25704bad6eae5e4513d7cdc13eb2cf78e692f0258a23f0fa5e4712901031ac",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-sapphire-blue-e5658ab8906d-640-14bb91daa0.webp",
+      "bytes": 68470,
+      "sha256": "14bb91daa0953e2db46e08be999c13e7db6a9b14b57de672a6bfe17a72221cc8",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-van-gogh-blue-58607feb6026.jpg",
+      "bytes": 431541,
+      "sha256": "16a970617cb615d865fdf9e234c791958fad1e01de73964832a95c6877808963",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-van-gogh-blue-58607feb6026-360-03333dcaba.webp",
+      "bytes": 27828,
+      "sha256": "03333dcabaacc6213e244242d9d9ec83b6c946b30d7390aab6647b91b4645e25",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-van-gogh-blue-58607feb6026-640-fc748b06cb.webp",
+      "bytes": 70478,
+      "sha256": "fc748b06cb3789a42195b8bc98285d4209ccefc99203d29737ad19ab62caf4b6",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-sakura-pink-4504f56441b5.jpg",
+      "bytes": 412123,
+      "sha256": "f174b1c3b1e3069fef1ab0a04f4fec81eaffddcd66d0fdfc1af39ced609cfe6b",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-sakura-pink-4504f56441b5-360-7ac664e372.webp",
+      "bytes": 27458,
+      "sha256": "7ac664e372d4e91b716fca829ea42064c7b7c08029674c61550eb87a71b7b35b",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-sakura-pink-4504f56441b5-640-239cae7046.webp",
+      "bytes": 68406,
+      "sha256": "239cae70464d8ff4b526b9b57f6375c458b5713875e79b1051cf9416bc503012",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-ginger-fox-7cf64bf3dc6f.jpg",
+      "bytes": 437512,
+      "sha256": "5dec935ae9bfffb91184d2a95dc8b295c3195317f7681847dafa4f4e41e6f13c",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-ginger-fox-7cf64bf3dc6f-360-b5d03b16c1.webp",
+      "bytes": 28270,
+      "sha256": "b5d03b16c1d5cf8a974f833a43e31241e45ba37a3c7fb70e20638ff8b569b7a5",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-ginger-fox-7cf64bf3dc6f-640-793c7bdaad.webp",
+      "bytes": 71038,
+      "sha256": "793c7bdaad0b8c79884a5899847eb880114e4f98ca744d94c47822d14ce937b8",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-light-green-395ea869de5e.jpg",
+      "bytes": 403999,
+      "sha256": "e26c81f352c4025647e088724ad1c5e13c079520ec151f484fde2a55e4a7ef75",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-light-green-395ea869de5e-360-47296a5b8b.webp",
+      "bytes": 27726,
+      "sha256": "47296a5b8b24fe673135c9cc32ea1c5c5ffde89faf1f2ed65441b6ebdc5f42b6",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-light-green-395ea869de5e-640-79457ebb29.webp",
+      "bytes": 68012,
+      "sha256": "79457ebb2919795463be1acbdcda9b03d013ebb839c2652f3d4b80acd6dd62db",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-garnet-9757771cdab9.jpg",
+      "bytes": 415970,
+      "sha256": "788dc3c659e518839822c721f4d85b9a83b34d4fe21cb5a3ed63a3b0d9837f41",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-garnet-9757771cdab9-360-6823c58dee.webp",
+      "bytes": 27318,
+      "sha256": "6823c58dee93f1d080ea740c5342db8cf3d99e067ad3987994fa85cc92646792",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-garnet-9757771cdab9-640-034a696bdd.webp",
+      "bytes": 68004,
+      "sha256": "034a696bdd7391e1b2d6328af6e3bf5056ba448f99d5119e2ada71fb779cbd9b",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-kastor-dark-night-6e3b5480691d.jpg",
+      "bytes": 410895,
+      "sha256": "20c731facd218dd82e0809a2c47908ae6b11644fbad3afab257d0e0b93e4ffd6",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-dark-night-6e3b5480691d-360-1489c40cb0.webp",
+      "bytes": 27328,
+      "sha256": "1489c40cb0f359f08c7bc56ad3d35770067d20b93c0eeaa59d869768c64af411",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-kastor-dark-night-6e3b5480691d-640-6a450545e6.webp",
+      "bytes": 68088,
+      "sha256": "6a450545e6dbb75bbe5d65be4593e4c0d58916dfc18a5dcab3743dbc367a2267",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-pearl-85315248543a.jpg",
+      "bytes": 513672,
+      "sha256": "ac71b0faa428b49d172daf435296e9b8ea40ea87897410093a87e0ab33b3050a",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-pearl-85315248543a-360-3845168423.webp",
+      "bytes": 29442,
+      "sha256": "38451684238a986822f2b080b67c578b9d888a49beb12e2006eef12fe37412b5",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-pearl-85315248543a-640-701a5c89ee.webp",
+      "bytes": 84096,
+      "sha256": "701a5c89ee3d3e76536da573f74d780bbdf423c025f93abddc5008629932a46c",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-coconut-raff-8009f26f8180.jpg",
+      "bytes": 521052,
+      "sha256": "49bd13c042563941c455f48c00849ee6070a007589398de425fc069b612493f9",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-coconut-raff-8009f26f8180-360-8fd7b839bc.webp",
+      "bytes": 29978,
+      "sha256": "8fd7b839bcc835825450f60ef5c9417b617e1e9b897351943e5243686d05f81c",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-coconut-raff-8009f26f8180-640-935f8cfcf4.webp",
+      "bytes": 84376,
+      "sha256": "935f8cfcf45ce4bee628f0a11524d9e4de31d48591be74bf8f257a878af049a0",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-pale-pink-296fc5793475.jpg",
+      "bytes": 535519,
+      "sha256": "880896a3dde6859aca6251e944d37381d05996e40530813ba2bf6c32792a85a5",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-pale-pink-296fc5793475-360-103b1074e9.webp",
+      "bytes": 31632,
+      "sha256": "103b1074e9e5adb1d8406a319dde8832c595584e184591d7011106317c4bfb62",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-pale-pink-296fc5793475-640-f1104b6b9f.webp",
+      "bytes": 88636,
+      "sha256": "f1104b6b9f83d04e4fbbb9844483000406bd71d26640a7c2b7d87a907cef1f40",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-sapphire-blue-8a582d77b4b9.jpg",
+      "bytes": 522131,
+      "sha256": "aca8abc263a2c3af766d45b4a3d4cd8f348680f80b411e75fd0851158a6ef6f3",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-sapphire-blue-8a582d77b4b9-360-d23bfffe1b.webp",
+      "bytes": 31306,
+      "sha256": "d23bfffe1b2d494c29b2fdfd12e28a3d79cf075c2a0fe2aeaa58e5beff41403a",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-sapphire-blue-8a582d77b4b9-640-c9cdd69378.webp",
+      "bytes": 85738,
+      "sha256": "c9cdd69378d1fdf6005ed418029181a495aa4a888fd1ee3e330c6d345535cf81",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-van-gogh-blue-042c6feb235f.jpg",
+      "bytes": 622759,
+      "sha256": "7da01c7604b4d4fda433fcc8514c29f5d25664d79567377b175d045c0ea60276",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-van-gogh-blue-042c6feb235f-360-6331064bc2.webp",
+      "bytes": 33974,
+      "sha256": "6331064bc21432d4c170e9640c5c283a860e371547a255f3bce7a0cc5f10fe77",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-van-gogh-blue-042c6feb235f-640-72df66d20b.webp",
+      "bytes": 94666,
+      "sha256": "72df66d20b8ad2b0e563abeb8c3f32c3ab64d9c13812870d752428a134b89175",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-sakura-pink-2517db4b351b.jpg",
+      "bytes": 566465,
+      "sha256": "69bd403ff51ddd2596275d768dcd323953e0ca963ba08e26e0a08bf5452a7e12",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-sakura-pink-2517db4b351b-360-5f86397813.webp",
+      "bytes": 32904,
+      "sha256": "5f863978136d67f90a4c7a893eef722dfce3e1bbfffc7dc956108dbaf7464864",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-sakura-pink-2517db4b351b-640-d211219f63.webp",
+      "bytes": 92742,
+      "sha256": "d211219f63d98af4915e948cfc5a3f7d7956845f8f6f50c0d84dadc83146e4b1",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-ginger-fox-ce61891681de.jpg",
+      "bytes": 622666,
+      "sha256": "4ed40ccedd6ce17a8ec10082a8bf6efb20008cb351fcb68cdcfb7f2351a62f28",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-ginger-fox-ce61891681de-360-49e493b1ab.webp",
+      "bytes": 33730,
+      "sha256": "49e493b1ab3f58194157e91ed5e8c8cd33e66a60285bb705c3b8c25c3dfe0f33",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-ginger-fox-ce61891681de-640-6a3de21356.webp",
+      "bytes": 93994,
+      "sha256": "6a3de21356675ef4075f278a49c70a08c7feceb4e3c12ca03f095a8ea00b92d0",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-light-green-5c4dda5ac5dd.jpg",
+      "bytes": 517730,
+      "sha256": "97bc448ef56b7702a712382259c2a15728d2e544798e62a3072c795ed684cb37",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-light-green-5c4dda5ac5dd-360-ebdb3a623b.webp",
+      "bytes": 31170,
+      "sha256": "ebdb3a623b0375fe6fa2e60a79fc6b3f4521056a811d2cdcb948994d81e46576",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-light-green-5c4dda5ac5dd-640-3cdd005eb0.webp",
+      "bytes": 86926,
+      "sha256": "3cdd005eb08f5c0a9a653fd71a9f629a1bf55425f410de341c60111294d5e489",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-garnet-ec4677b6e733.jpg",
+      "bytes": 567727,
+      "sha256": "44cf6193de966f7f31f5ab78a6b1775ded3fd7db4707a17dced1e86d66b9aab2",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-garnet-ec4677b6e733-360-6e9f97cef7.webp",
+      "bytes": 31432,
+      "sha256": "6e9f97cef7b6af58f5d47b5a01c1b047a01d77393a36bad2ef0f1ae51c8f3339",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-garnet-ec4677b6e733-640-0b7ae62887.webp",
+      "bytes": 85642,
+      "sha256": "0b7ae62887ac7199b4d6e7e43fe4d0d440d3c5f3f64d59472fca0861cea189fc",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-vega-dark-night-a677d3a05616.jpg",
+      "bytes": 517639,
+      "sha256": "f953f499090091286f471d923666a65909fff1c881eb9b048f21cdbac03dbf12",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-vega-dark-night-a677d3a05616-360-a44a5e0087.webp",
+      "bytes": 31390,
+      "sha256": "a44a5e008718b24b3633f68a8aea27685969a336328d99e3c7d60b1859fbd3b8",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-vega-dark-night-a677d3a05616-640-38e7e33169.webp",
+      "bytes": 85912,
+      "sha256": "38e7e33169e1613c388d371d621e4de8256a3373a65bf446bf5fc41a7b4de568",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-pearl-da5889e0bd93.jpg",
+      "bytes": 448061,
+      "sha256": "9079b8b3e2a593370d8f9394e81c879f9f184fe692fdc94ff338e15987001ae9",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-pearl-da5889e0bd93-360-09722e6cb6.webp",
+      "bytes": 28742,
+      "sha256": "09722e6cb6c39ca4c6f994e8a8e38822fac56c22bf28f084a6387fd9b9d4ac42",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-pearl-da5889e0bd93-640-4a720e619d.webp",
+      "bytes": 75224,
+      "sha256": "4a720e619d101e223f517823640b98e1f3dcbe9dcf5ce6b030c4e3cae319e386",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-coconut-raff-a57b3969d481.jpg",
+      "bytes": 466234,
+      "sha256": "9dd20004366f409f54ddba8c6bc8b27230f67c1b1d5fd8028df398a9b45a0a4e",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-coconut-raff-a57b3969d481-360-4d49e55804.webp",
+      "bytes": 30390,
+      "sha256": "4d49e55804042bcc24b7c804796d9416cd332789a8f13c2051a1ae0c1212d484",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-coconut-raff-a57b3969d481-640-2d29b0e164.webp",
+      "bytes": 79992,
+      "sha256": "2d29b0e1647c35307e1e6da97d2b606586a6987cfd8459fb0a8ad039e4d812bd",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-pale-pink-546be065582b.jpg",
+      "bytes": 463596,
+      "sha256": "22a363779fd1d9d2c8f9310dc5e25ad934110472a9d2a3e9136c59ccc6d23fef",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-pale-pink-546be065582b-360-f147a3c822.webp",
+      "bytes": 31112,
+      "sha256": "f147a3c822f38ed2c9ff2297f22307a85af62ab495c78b9b7622b9f94ce49094",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-pale-pink-546be065582b-640-f45e64857e.webp",
+      "bytes": 81690,
+      "sha256": "f45e64857e46060e3583f919f460ebb3e1f4e6598a43d1fedb803813c4f7f6ba",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-sapphire-blue-8206e81a6d64.jpg",
+      "bytes": 457959,
+      "sha256": "cebea94dccbf5d9b4fa1848baa5d63a26c400c0d7ed637e844ffe415017e02d5",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-sapphire-blue-8206e81a6d64-360-0f6f8b2e46.webp",
+      "bytes": 31506,
+      "sha256": "0f6f8b2e469827d94098c2e2103f209f8bfc9ae9a92dffcbab274efa52b925f9",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-sapphire-blue-8206e81a6d64-640-8c96b051ec.webp",
+      "bytes": 81220,
+      "sha256": "8c96b051ec805f3cc08af3bf2b1d32e122883e9e8fe20c6376397ac48416931b",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-van-gogh-blue-70f5f839bd1a.jpg",
+      "bytes": 502555,
+      "sha256": "e68f73813da4ad4405d8ffdb60dc44011cd0b456b1fb452add536105bcf7d484",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-van-gogh-blue-70f5f839bd1a-360-1e092d9ab9.webp",
+      "bytes": 32842,
+      "sha256": "1e092d9ab9f035b078f61746dee36af9a5d05b70a09a1418282e4825ecc9dff0",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-van-gogh-blue-70f5f839bd1a-640-fefda802ec.webp",
+      "bytes": 83114,
+      "sha256": "fefda802ec6211a0fdd5c2703312949ea947c56699a903eb2af09933af2cd8dd",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-sakura-pink-839e7147c548.jpg",
+      "bytes": 459464,
+      "sha256": "fad0121838c9414a9865f0f89fcc2755937c0869036bf3a37082e3913836b84f",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-sakura-pink-839e7147c548-360-af59fd9077.webp",
+      "bytes": 30956,
+      "sha256": "af59fd90776a516488250b4ff4a7012dbb70c82d6f6759bbbefe662dadd878d5",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-sakura-pink-839e7147c548-640-055e8b8cb8.webp",
+      "bytes": 79164,
+      "sha256": "055e8b8cb87b412e5819d5602c329f825a9b376686b41f519b618c4d650713ae",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-ginger-fox-32fda20d8134.jpg",
+      "bytes": 499652,
+      "sha256": "ea239b130d7dcf18b5a83c9b3ba4297690e7a64027f8fea985406bb269d7352d",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-ginger-fox-32fda20d8134-360-3c7f72823c.webp",
+      "bytes": 32324,
+      "sha256": "3c7f72823c85c332c3f52a551441350beeebe2b1edf280895f5771ade30e07d4",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-ginger-fox-32fda20d8134-640-8a4113c23a.webp",
+      "bytes": 83048,
+      "sha256": "8a4113c23ab39a3eaf3a4cc28b40afe5d510c54008308976094cc6f06d38814a",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-light-green-2939f7f70121.jpg",
+      "bytes": 448746,
+      "sha256": "7361b8886d0d5ca7235c0c09c953a71713b07e00d293cf580abd31d40d66dde5",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-light-green-2939f7f70121-360-6433f0ffc4.webp",
+      "bytes": 31534,
+      "sha256": "6433f0ffc49d03c9d66d51a559b7d6e959c6ab4f0e76ced25ea39366f0684204",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-light-green-2939f7f70121-640-ac9592133e.webp",
+      "bytes": 80872,
+      "sha256": "ac9592133e86bac049c27cf65cffe34ed13e73afc36f9c4fd4af956eea070241",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-garnet-0dd4cab8a5cd.jpg",
+      "bytes": 494526,
+      "sha256": "9b9bbc0e63813e18f2abeaca088b72b10ef908a96708a1e398eb3aa7b76ac1f7",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-garnet-0dd4cab8a5cd-360-c66b0e2f68.webp",
+      "bytes": 30592,
+      "sha256": "c66b0e2f68fe24f7f045c3961587842b5e51eb6869bd485d6002a8b75d762fa0",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-garnet-0dd4cab8a5cd-640-1fc709bb14.webp",
+      "bytes": 77852,
+      "sha256": "1fc709bb14a5290d60697c0b1527a5133d13c8e4c4ffe863745d0494c3d67543",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-lyra-dark-night-49c9790ed35b.jpg",
+      "bytes": 456067,
+      "sha256": "052a6bbdad12e4ed787269dc6e54896ff54a5bc0f3f6385fe59444c988594985",
+      "width": 1400,
+      "height": 933
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-dark-night-49c9790ed35b-360-4d6792afc8.webp",
+      "bytes": 30552,
+      "sha256": "4d6792afc8cc1a923d9723896bc12e12d7dd6ed10e301b34e2ab9ce8a591e6bd",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "src": "assets/preview-ceremony-lyra-dark-night-49c9790ed35b-640-e453baed56.webp",
+      "bytes": 77148,
+      "sha256": "e453baed56b710c0150c9757d52ed7a280913c0813c3c398782cc7dc0e90807f",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "src": "assets/ceremony-pulsar-pearl-481e189735b6.jpg",
+      "bytes": 495303,
+      "sha256": "d13253c863baca7b015e967c10495318543aa78b12d160dc4d3ee04e1d3ec3ba",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-pearl-481e189735b6-360-db20aa066e.webp",
+      "bytes": 30212,
+      "sha256": "db20aa066e62e019a76f2670ac2eea30b089318bfa53b605c1bd28e8dd17fca5",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-pearl-481e189735b6-640-a90bdfd835.webp",
+      "bytes": 82586,
+      "sha256": "a90bdfd835bd9ac5fe92e96f7a1a68a93c082ffb68433c5b83e26cc5e65d35cc",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-coconut-raff-892e816807f6.jpg",
+      "bytes": 503979,
+      "sha256": "8f9839235937c6d7ca938d226d83765a6b98abae2918ba67c16926991d012213",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-coconut-raff-892e816807f6-360-9019444cd6.webp",
+      "bytes": 30566,
+      "sha256": "9019444cd6a0e8794618f9e76326ce7594d1964ec5cc7e08501650d580680724",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-coconut-raff-892e816807f6-640-76db2d5f59.webp",
+      "bytes": 83376,
+      "sha256": "76db2d5f59fc33578ce3595de87374d9bbfc02506ad37ccb5f612a364f5efed7",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-pale-pink-ec7389a6621c.jpg",
+      "bytes": 509362,
+      "sha256": "ce026b3bcaff37031eaf6e288fb368b85129b8bdefeaae79cadb3637441ad0d2",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-pale-pink-ec7389a6621c-360-83e247fb21.webp",
+      "bytes": 32002,
+      "sha256": "83e247fb21ac7fad07b57ba1fa8fd39b6131f61b9fa7a10759baf497253b211b",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-pale-pink-ec7389a6621c-640-5daafb080f.webp",
+      "bytes": 87292,
+      "sha256": "5daafb080fb4c5f35b73c31c4b78976656b82350322649c7cb1ad85c48095307",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-sapphire-blue-dfde6dee93b9.jpg",
+      "bytes": 507117,
+      "sha256": "deb36faf03ba936bef245ec8bf487d08dfc139fef7bcadfa4f47d78b3662c2cb",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-sapphire-blue-dfde6dee93b9-360-27627980bf.webp",
+      "bytes": 31874,
+      "sha256": "27627980bfdcf2949307344813b98eeaf3aba389c71a50623491f10bd1d2ab30",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-sapphire-blue-dfde6dee93b9-640-f1fbd0d143.webp",
+      "bytes": 88122,
+      "sha256": "f1fbd0d1431e5119f02dddfd8a7ea4c3f74d93874560c85f8ff27fe15836f7f3",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-van-gogh-blue-93959786313f.jpg",
+      "bytes": 571232,
+      "sha256": "be29c9f8bd02387a0bf4b1f74e60a96369fa68619383387ab5ef636c8328c22f",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-van-gogh-blue-93959786313f-360-32c687d183.webp",
+      "bytes": 33382,
+      "sha256": "32c687d18394f52541fde81465029a06bedad3505f6a6b7c9fc5b1035edb2dfb",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-van-gogh-blue-93959786313f-640-58abdda890.webp",
+      "bytes": 91770,
+      "sha256": "58abdda8907229490418999990793865900b48e767e6699d80d28f2e2d89eaf2",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-sakura-pink-91d5da0b0b21.jpg",
+      "bytes": 544530,
+      "sha256": "9985ac6aaa7d8ded61a560603769e8a5dd91fc6a27f3a16a662dfe3bcfbb65dc",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-sakura-pink-91d5da0b0b21-360-9003d54191.webp",
+      "bytes": 33822,
+      "sha256": "9003d54191196f82979cc80211093111f989c27e114526ad5f6957bd4563fa49",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-sakura-pink-91d5da0b0b21-640-52d1b65c29.webp",
+      "bytes": 92836,
+      "sha256": "52d1b65c29d32c3bd7a97cf7a2d6aba09183decc40e3953b8e517656e0121a8f",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-ginger-fox-387d8e658a84.jpg",
+      "bytes": 562933,
+      "sha256": "ad3cc029176bcfcf746feda1981ef7134c3cc93908219af5863cdd5c9a662d9f",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-ginger-fox-387d8e658a84-360-e3fa1d8143.webp",
+      "bytes": 33070,
+      "sha256": "e3fa1d8143b312ea5bccad831a65315813efe99b521eaa0881b2dedb8d88b8f4",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-ginger-fox-387d8e658a84-640-7d03babd8a.webp",
+      "bytes": 92240,
+      "sha256": "7d03babd8a3a84de31fa8504d59b7695c6b5f468e08c04a68f4cc9f02658fed9",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-light-green-29158c741efc.jpg",
+      "bytes": 490093,
+      "sha256": "a9d6a44f73c430c8a4686c6f785df3ba022a81eebc97cb2f5c199d5319588fa8",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-light-green-29158c741efc-360-1bfd300b97.webp",
+      "bytes": 32192,
+      "sha256": "1bfd300b97f51493ee75922c510ddf4af3ead248dfad2e94b180f5418d3348fd",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-light-green-29158c741efc-640-a0bd1fde00.webp",
+      "bytes": 86628,
+      "sha256": "a0bd1fde004feb748172c9b52e34a4bde7d2584dd0990068abb42ee2d8af812d",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-garnet-81d1e260cad7.jpg",
+      "bytes": 538974,
+      "sha256": "168a9341a8e84af476888c7a73591564896c7b866ecf9f973ebd8ae63e32b544",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-garnet-81d1e260cad7-360-d21ad8546a.webp",
+      "bytes": 31236,
+      "sha256": "d21ad8546a2c2670d42289d39c82ba3e249e89ac18cb385377b238513e7275d7",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-garnet-81d1e260cad7-640-657a3d835b.webp",
+      "bytes": 84174,
+      "sha256": "657a3d835b576f512ce1bdcc0eb7169094f05a815ae22c7c52b0d0d886f9a761",
+      "width": 640,
+      "height": 449
+    },
+    {
+      "src": "assets/ceremony-pulsar-dark-night-a6d14ec60cab.jpg",
+      "bytes": 503031,
+      "sha256": "d1bc1cd64a8183ba8349d80512e2faf18d19a3e979a6d82569c11bb6b186ba40",
+      "width": 1400,
+      "height": 981
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-dark-night-a6d14ec60cab-360-e2f53a942b.webp",
+      "bytes": 30528,
+      "sha256": "e2f53a942b42b3df7029ad54a186f12a70a8daf1d34c11a6f8d72a5c9afe1f24",
+      "width": 360,
+      "height": 252
+    },
+    {
+      "src": "assets/preview-ceremony-pulsar-dark-night-a6d14ec60cab-640-22ac2c918f.webp",
+      "bytes": 83376,
+      "sha256": "22ac2c918f1ecceb7fdf555fd41551ccb691d5f874de7453ac81bdda738667b2",
+      "width": 640,
+      "height": 449
+    }
+  ],
+  "PNG_generation": "built-in ImageGen",
+  "web_encoding": "JPEG1400Q90/444; WebP360/640Q82"
+}

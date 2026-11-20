@@ -29,6 +29,14 @@ for(const [source,preview] of Object.entries(data.imagePreviews||{})){
     assets.add(image.src);
   }
 }
+const retained=JSON.parse(await fs.readFile('retained-assets.json','utf8'));
+if(retained.schema!==1||!Array.isArray(retained.assets))throw new Error('Invalid retained asset manifest');
+for(const asset of retained.assets){
+  if(!/^assets\/[\w.-]+$/.test(asset.src)||!/^[a-f0-9]{64}$/.test(asset.sha256))throw new Error('Invalid retained asset path or digest');
+  const bytes=await fs.readFile(asset.src);
+  if(createHash('sha256').update(bytes).digest('hex')!==asset.sha256)throw new Error('Retained asset changed: '+asset.src);
+  assets.add(asset.src);
+}
 for(const asset of assets)await fs.access(asset);
 await fs.rm('dist',{recursive:true,force:true});
 await fs.mkdir('dist',{recursive:true});

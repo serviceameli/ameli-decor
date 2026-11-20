@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "reason": "Keep replaced ceremony hero URLs available to already-open pages; no extra gallery cards",
+  "assets": [
+    {
+      "src": "assets/ceremony-7d831b5d54b8.jpg",
+      "sha256": "7d831b5d54b8a1043097b17b245edea8317c0478a7e0ef8a97c78112be71a7c2",
+      "bytes": 232579
+    },
+    {
+      "src": "assets/preview-57284bbe5077-360.webp",
+      "sha256": "57284bbe5077766dd5321e421d201f0c79fc968f369e94a43e3adc51fbfc9e8b",
+      "bytes": 21262
+    },
+    {
+      "src": "assets/preview-03828e94220c-640.webp",
+      "sha256": "03828e94220c4441cae906e685e7494ada363255f772b72d48ade2fd24ed7b71",
+      "bytes": 52108
+    },
+    {
+      "src": "assets/ceremony-ef4bb29fe712.jpg",
+      "sha256": "ef4bb29fe7121d11f19682dd8e304d6895a7b2a096b6f3e59e531bfbcf4fd9a9",
+      "bytes": 248340
+    },
+    {
+      "src": "assets/preview-da6fed89f393-360.webp",
+      "sha256": "da6fed89f3933d401a656b0447c6490a749b7af370fa42d6231490029d8f2a6d",
+      "bytes": 23536
+    },
+    {
+      "src": "assets/preview-cb028b5380ed-640.webp",
+      "sha256": "cb028b5380ed9b34a78ec253d43e494437467168b7a7ba926213dcb923430f60",
+      "bytes": 65800
+    },
+    {
+      "src": "assets/ceremony-b8072202870b.jpg",
+      "sha256": "b8072202870b24ac16e30b8bc53554bd1f6434b89b6ce5ed713d35bf8a3da465",
+      "bytes": 245318
+    },
+    {
+      "src": "assets/preview-6765484194ce-360.webp",
+      "sha256": "6765484194ce582932d9cc906a82370585f0bf046e515fa77be686e415108426",
+      "bytes": 22774
+    },
+    {
+      "src": "assets/preview-cd9033cad4fb-640.webp",
+      "sha256": "cd9033cad4fb1b5c287a070a2d96d3c204d0eee6a465671172106f945329698f",
+      "bytes": 56800
+    },
+    {
+      "src": "assets/ceremony-af0e7c1d65c9.jpg",
+      "sha256": "af0e7c1d65c90dddc2afe552df1c06a974a8c6a6735d8f7f83ab78735ebbf0d8",
+      "bytes": 248049
+    },
+    {
+      "src": "assets/preview-6b9c12b76e61-360.webp",
+      "sha256": "6b9c12b76e6177bfcf8a015f0cc6e4c3f67617e0601ac891ffa674072c1785b6",
+      "bytes": 24182
+    },
+    {
+      "src": "assets/preview-eb6169af4044-640.webp",
+      "sha256": "eb6169af4044489070a681c6d3a808ac6763037d65b8e244cee8d0bc1182f318",
+      "bytes": 62508
+    }
+  ]
+}

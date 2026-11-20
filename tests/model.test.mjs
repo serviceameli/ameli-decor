@@ -17,11 +17,11 @@ test('Пакеты и заявка не содержат стоимость, в 
   }
 });
 test('В сообщение попадают выбранные позиции, их состав и цвета',()=>{
-  const choice=resolveSelection(data,{guests:70,ids:['C02','T01','T04','P07',data.napkins[0].id,'T01','unknown'],colors:['Роза','Олива','unknown']});
+  const choice=resolveSelection(data,{guests:70,ids:['C41','T01','T04','P07',data.napkins[0].id,'T01','unknown'],colors:['Роза','Олива','unknown']});
   const message=selectionMessage(choice);
   assert.equal(choice.counts.compositions,7);assert.equal(choice.counts.napkins,70);
   assert.equal(choice.sections.flatMap(s=>s.items).length,4);
-  assert.match(message,/C02 — Кастор/);assert.match(message,/T01 — Равенкло/);assert.match(message,/Роза, Олива/);
+  assert.match(message,/C41 — Кастор/);assert.match(message,/T01 — Равенкло/);assert.match(message,/Роза, Олива/);
   assert.doesNotMatch(message,/\bC26\b|T02|T04|unknown|Снежный/);
   assert.ok(message.includes(data.tableCompositions.find(item=>item.id==='T01').sourceUrl));
   assert.doesNotMatch(message,/undefined/);
@@ -31,10 +31,10 @@ test('В сообщение попадают выбранные позиции, 
 
 test('Новая позиция заменяет выбор только в своём разделе; повторное нажатие снимает выбор',()=>{
   let state={guests:40,ids:['C26','P05','T01',data.napkins[0].id],colors:['Роза','Олива']};
-  state=toggleItem(data,state,'C02');
-  assert.deepEqual(new Set(state.ids),new Set(['C02','P05','T01',data.napkins[0].id]));
+  state=toggleItem(data,state,'C41');
+  assert.deepEqual(new Set(state.ids),new Set(['C41','P05','T01',data.napkins[0].id]));
   state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T01'));assert.ok(state.ids.includes('T04'));
-  state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T04'));assert.ok(state.ids.includes('C02'));
+  state=toggleItem(data,state,'T04');assert.ok(!state.ids.includes('T04'));assert.ok(state.ids.includes('C41'));
   assert.deepEqual(state.colors,['Роза','Олива']);
 });
 test('Старый множественный выбор нормализуется до одной позиции в каждом разделе',()=>{
@@ -49,9 +49,9 @@ test('Каждая карточка имеет конкретный состав
   assert.ok(message.includes('Состав одной композиции'));
 });
 test('Единая заявка включает детали свадьбы, дополнительные позиции и комментарий',()=>{
-  const selection=resolveSelection(data,{guests:60,ids:['C02'],colors:['Роза'],coupleNames:' Анна и Александр ',weddingDate:'2027-06-12',venue:'Усадьба «Сад», Москва',extrasNeeded:true,extraItems:'Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/',comment:'Монтаж к 14:00.\nНужен тёплый свет.'});
+  const selection=resolveSelection(data,{guests:60,ids:['C41'],colors:['Роза'],coupleNames:' Анна и Александр ',weddingDate:'2027-06-12',venue:'Усадьба «Сад», Москва',extrasNeeded:true,extraItems:'Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/',comment:'Монтаж к 14:00.\nНужен тёплый свет.'});
   const message=selectionMessage(selection);
-  for(const value of ['Заявка на оформление свадьбы','Молодожёны: Анна и Александр','Дата свадьбы: 12.06.2027','Площадка: Усадьба «Сад», Москва','Гостей: 60','C02 — Кастор','Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/','Монтаж к 14:00.\nНужен тёплый свет.'])assert.ok(message.includes(value),value);
+  for(const value of ['Заявка на оформление свадьбы','Молодожёны: Анна и Александр','Дата свадьбы: 12.06.2027','Площадка: Усадьба «Сад», Москва','Гостей: 60','C41 — Кастор','Стулья — 60 шт.\nhttps://catalog.ameli-rental.ru/','Монтаж к 14:00.\nНужен тёплый свет.'])assert.ok(message.includes(value),value);
   assert.ok(message.includes('рассчитать дополнительные позиции отдельно'));
 });
 test('Скрытые дополнительные позиции не попадают в заявку; незаполненные поля отмечены',()=>{
