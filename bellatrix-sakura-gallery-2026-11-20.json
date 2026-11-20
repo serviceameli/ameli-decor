@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "operation": "Reuse existing Pink Sakura Veranda sketch without recolouring or full-JPEG reencoding",
+  "affected_cards": [
+    "C23",
+    "C31"
+  ],
+  "new_photo_position": 2,
+  "photos_per_affected_card": 2,
+  "original_jpeg_sha256": "efbb76b068a045dbd14d19a79793d91a49a5b6d3ab2f488445a3e08a04fbde7b",
+  "width": 1536,
+  "height": 1024,
+  "assets": [
+    {
+      "src": "assets/ceremony-veranda-sakura-efbb76b068a0.jpg",
+      "bytes": 349750,
+      "sha256": "efbb76b068a045dbd14d19a79793d91a49a5b6d3ab2f488445a3e08a04fbde7b"
+    },
+    {
+      "src": "assets/preview-ceremony-veranda-sakura-efbb76b068a0-360-5a0613dbc3.webp",
+      "bytes": 29754,
+      "sha256": "5a0613dbc33e901099237124a5eb8d8baa297b59aeb7f6d68a06ed1281eee571"
+    },
+    {
+      "src": "assets/preview-ceremony-veranda-sakura-efbb76b068a0-640-2b99f03f5d.webp",
+      "bytes": 91572,
+      "sha256": "2b99f03f5d47a6e2953cef190ff884f86ba60805d9d1ac3a9e6b0eff787c7d26"
+    }
+  ],
+  "old_generic_context_removed_only_from_affected": true,
+  "other32_cards_unchanged": true,
+  "all_heroes_titles_and_components_unchanged": true,
+  "ceremony_count": 34,
+  "colored_cards": 20
+}
