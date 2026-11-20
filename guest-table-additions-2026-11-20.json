@@ -142,27 +142,27 @@
     },
     {
       "id": "T20",
-      "title": "Дункан · Голубой сапфир",
+      "title": "Дункан · Бело-жёлтый",
       "baseTitle": "Дункан",
-      "colorName": "Голубой сапфир",
+      "colorName": "Бело-жёлтый",
       "description": "Цветы декоративные.",
       "materialNote": "Цветы декоративные",
-      "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+      "alt": "Дункан · Бело-жёлтый — пять стеклянных ваз с белой эустомой, белыми розами и жёлтыми хризантемами",
       "sourceType": "provided",
       "sourceFolder": "Гостевые столы — новые композиции/final/vases",
-      "sourceFile": "duncan-sapphire.png",
+      "sourceFile": "duncan-white-yellow.png",
       "componentLabel": "Состав одной композиции",
       "components": [
         "Стеклянные вазы разных форм — 5 шт.",
-        "Цветы декоративные в оттенке «Голубой сапфир» для наполнения пяти ваз."
+        "Цветы декоративные: белая эустома, белые розы и жёлтые хризантемы для наполнения пяти ваз."
       ],
-      "image": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+      "image": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
       "photos": [
         {
-          "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
-          "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+          "src": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
+          "alt": "Дункан · Бело-жёлтый — пять стеклянных ваз с белой эустомой, белыми розами и жёлтыми хризантемами",
           "label": "Основное фото",
-          "sourceFile": "duncan-sapphire.png"
+          "sourceFile": "duncan-white-yellow.png"
         }
       ]
     },
@@ -367,23 +367,23 @@
       "height": 740
     },
     {
-      "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
-      "bytes": 287854,
-      "sha256": "20a7ecb0a4f27faea3c2529189f0a5180d7a47f8d6e2ee273adaa62aa37c4b4f",
+      "src": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
+      "bytes": 325323,
+      "sha256": "2e0a8c28d3c37b3d84f530bfb6b5be9c1b929c2582cb5113972e2588898ad05a",
       "width": 1166,
       "height": 1349
     },
     {
-      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-360-12ed530785.webp",
-      "bytes": 22802,
-      "sha256": "12ed530785a89f2edebf977ab9f75a5f00f5720ffecd45ccd2c74f0b7f95ffaa",
+      "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-360-aa1f94f3db.webp",
+      "bytes": 23374,
+      "sha256": "aa1f94f3dba0ea49f50abd53c8eb2e1ff69face75ce3aed9f07463ff5430a2b1",
       "width": 360,
       "height": 417
     },
     {
-      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-640-45d892fcab.webp",
-      "bytes": 57382,
-      "sha256": "45d892fcabe3c589636b1522bf2b6ef357b8184b7b7c4454251ca24a9df5b6f4",
+      "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-640-36dfde6ada.webp",
+      "bytes": 59188,
+      "sha256": "36dfde6ada351d027aec3bbb4a3198bb5cde41d8f9fd4efc18f228d71dd7175a",
       "width": 640,
       "height": 740
     },

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "reason": "Keep replaced ceremony hero URLs available to already-open pages; no extra gallery cards",
+  "reason": "Keep replaced ceremony and table hero URLs available to already-open pages; no extra gallery cards",
   "assets": [
     {
       "src": "assets/ceremony-7d831b5d54b8.jpg",
@@ -61,6 +61,21 @@
       "src": "assets/preview-eb6169af4044-640.webp",
       "sha256": "eb6169af4044489070a681c6d3a808ac6763037d65b8e244cee8d0bc1182f318",
       "bytes": 62508
+    },
+    {
+      "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+      "sha256": "20a7ecb0a4f27faea3c2529189f0a5180d7a47f8d6e2ee273adaa62aa37c4b4f",
+      "bytes": 287854
+    },
+    {
+      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-360-12ed530785.webp",
+      "sha256": "12ed530785a89f2edebf977ab9f75a5f00f5720ffecd45ccd2c74f0b7f95ffaa",
+      "bytes": 22802
+    },
+    {
+      "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-640-45d892fcab.webp",
+      "sha256": "45d892fcabe3c589636b1522bf2b6ef357b8184b7b7c4454251ca24a9df5b6f4",
+      "bytes": 57382
     }
   ]
 }

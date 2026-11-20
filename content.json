@@ -3244,27 +3244,27 @@
     },
     {
       "id": "T20",
-      "title": "Дункан · Голубой сапфир",
+      "title": "Дункан · Бело-жёлтый",
       "baseTitle": "Дункан",
-      "colorName": "Голубой сапфир",
+      "colorName": "Бело-жёлтый",
       "description": "Цветы декоративные.",
       "materialNote": "Цветы декоративные",
-      "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+      "alt": "Дункан · Бело-жёлтый — пять стеклянных ваз с белой эустомой, белыми розами и жёлтыми хризантемами",
       "sourceType": "provided",
       "sourceFolder": "Гостевые столы — новые композиции/final/vases",
-      "sourceFile": "duncan-sapphire.png",
+      "sourceFile": "duncan-white-yellow.png",
       "componentLabel": "Состав одной композиции",
       "components": [
         "Стеклянные вазы разных форм — 5 шт.",
-        "Цветы декоративные в оттенке «Голубой сапфир» для наполнения пяти ваз."
+        "Цветы декоративные: белая эустома, белые розы и жёлтые хризантемы для наполнения пяти ваз."
       ],
-      "image": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
+      "image": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
       "photos": [
         {
-          "src": "assets/table-duncan-sapphire-4eda9679e8cf.jpg",
-          "alt": "Дункан · Голубой сапфир — пять стеклянных ваз с декоративными цветами",
+          "src": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
+          "alt": "Дункан · Бело-жёлтый — пять стеклянных ваз с белой эустомой, белыми розами и жёлтыми хризантемами",
           "label": "Основное фото",
-          "sourceFile": "duncan-sapphire.png"
+          "sourceFile": "duncan-white-yellow.png"
         }
       ]
     },
@@ -10438,22 +10438,6 @@
         }
       ]
     },
-    "assets/table-duncan-sapphire-4eda9679e8cf.jpg": {
-      "width": 1166,
-      "height": 1349,
-      "variants": [
-        {
-          "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-360-12ed530785.webp",
-          "width": 360,
-          "height": 417
-        },
-        {
-          "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-640-45d892fcab.webp",
-          "width": 640,
-          "height": 740
-        }
-      ]
-    },
     "assets/table-duncan-dried-grains-2981a130ba31.jpg": {
       "width": 1166,
       "height": 1349,
@@ -10531,6 +10515,22 @@
           "src": "assets/preview-table-glisseo-sakura-c8a73556acfa-640-c347f41a89.webp",
           "width": 640,
           "height": 1137
+        }
+      ]
+    },
+    "assets/table-duncan-white-yellow-95473f2f2fd2.jpg": {
+      "width": 1166,
+      "height": 1349,
+      "variants": [
+        {
+          "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-360-aa1f94f3db.webp",
+          "width": 360,
+          "height": 417
+        },
+        {
+          "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-640-36dfde6ada.webp",
+          "width": 640,
+          "height": 740
         }
       ]
     }
