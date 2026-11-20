@@ -76,6 +76,21 @@
       "src": "assets/preview-table-duncan-sapphire-4eda9679e8cf-640-45d892fcab.webp",
       "sha256": "45d892fcabe3c589636b1522bf2b6ef357b8184b7b7c4454251ca24a9df5b6f4",
       "bytes": 57382
+    },
+    {
+      "src": "assets/table-duncan-white-yellow-95473f2f2fd2.jpg",
+      "sha256": "2e0a8c28d3c37b3d84f530bfb6b5be9c1b929c2582cb5113972e2588898ad05a",
+      "bytes": 325323
+    },
+    {
+      "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-360-aa1f94f3db.webp",
+      "sha256": "aa1f94f3dba0ea49f50abd53c8eb2e1ff69face75ce3aed9f07463ff5430a2b1",
+      "bytes": 23374
+    },
+    {
+      "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-640-36dfde6ada.webp",
+      "sha256": "36dfde6ada351d027aec3bbb4a3198bb5cde41d8f9fd4efc18f228d71dd7175a",
+      "bytes": 59188
     }
   ]
 }
