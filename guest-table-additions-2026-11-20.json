@@ -70,7 +70,7 @@
       "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
       "sourceType": "provided",
       "sourceFolder": "Гостевые столы — новые композиции/final/lighting",
-      "sourceFile": "persephone-lovegood.png",
+      "sourceFile": "persephone-lovegood-real-proportions.png",
       "componentLabel": "Состав одной композиции",
       "components": [
         "Канделябр «Персефона 30» — 1 шт.",
@@ -78,13 +78,13 @@
         "Канделябр: высота — 27 см; диаметр — 27 см.",
         "Каждая свеча по каталогу: высота — 28 см; диаметр — 2 см."
       ],
-      "image": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+      "image": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
       "photos": [
         {
-          "src": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+          "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
           "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
           "label": "Основное фото",
-          "sourceFile": "persephone-lovegood.png"
+          "sourceFile": "persephone-lovegood-real-proportions.png"
         }
       ]
     },
@@ -304,23 +304,23 @@
   ],
   "assets": [
     {
-      "src": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
-      "bytes": 108672,
-      "sha256": "529fc3f225495fa8b254bfba6ae80f3b34754a77a13d6670382afea928734394",
+      "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+      "bytes": 126774,
+      "sha256": "9d8927c44cd18c46c583874dd45e32847ce77075458605efa47b82a07ca15a98",
       "width": 1086,
       "height": 1448
     },
     {
-      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-360-e3b53148a8.webp",
-      "bytes": 7872,
-      "sha256": "e3b53148a8afebe94067fa4f8efac8f84b3a27efb7443d30583011d321b54e3b",
+      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-360-e3bea88d10.webp",
+      "bytes": 7192,
+      "sha256": "e3bea88d106bbf6a10691b78f1beec18923e39a11f607897afb0c4f191247c78",
       "width": 360,
       "height": 480
     },
     {
-      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-640-dbc15d830f.webp",
-      "bytes": 19488,
-      "sha256": "dbc15d830f2e44228ac4c4bea3a07aab337d92f3eeead3633a64ab993120bb94",
+      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-640-95a331cbc6.webp",
+      "bytes": 17210,
+      "sha256": "95a331cbc603e7475a61764e8aa684a8e93fcc7bcd97582ec441bb1f1f5165ef",
       "width": 640,
       "height": 853
     },

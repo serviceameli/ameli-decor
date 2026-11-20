@@ -91,6 +91,21 @@
       "src": "assets/preview-table-duncan-white-yellow-95473f2f2fd2-640-36dfde6ada.webp",
       "sha256": "36dfde6ada351d027aec3bbb4a3198bb5cde41d8f9fd4efc18f228d71dd7175a",
       "bytes": 59188
+    },
+    {
+      "src": "assets/table-persephone-lovegood-76dd9069fadf.jpg",
+      "sha256": "529fc3f225495fa8b254bfba6ae80f3b34754a77a13d6670382afea928734394",
+      "bytes": 108672
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-360-e3b53148a8.webp",
+      "sha256": "e3b53148a8afebe94067fa4f8efac8f84b3a27efb7443d30583011d321b54e3b",
+      "bytes": 7872
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-640-dbc15d830f.webp",
+      "sha256": "dbc15d830f2e44228ac4c4bea3a07aab337d92f3eeead3633a64ab993120bb94",
+      "bytes": 19488
     }
   ]
 }
