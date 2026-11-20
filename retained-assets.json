@@ -106,6 +106,21 @@
       "src": "assets/preview-table-persephone-lovegood-76dd9069fadf-640-dbc15d830f.webp",
       "sha256": "dbc15d830f2e44228ac4c4bea3a07aab337d92f3eeead3633a64ab993120bb94",
       "bytes": 19488
+    },
+    {
+      "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+      "sha256": "9d8927c44cd18c46c583874dd45e32847ce77075458605efa47b82a07ca15a98",
+      "bytes": 126774
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-360-e3bea88d10.webp",
+      "sha256": "e3bea88d106bbf6a10691b78f1beec18923e39a11f607897afb0c4f191247c78",
+      "bytes": 7192
+    },
+    {
+      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-640-95a331cbc6.webp",
+      "sha256": "95a331cbc603e7475a61764e8aa684a8e93fcc7bcd97582ec441bb1f1f5165ef",
+      "bytes": 17210
     }
   ]
 }

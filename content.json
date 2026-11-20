@@ -3172,7 +3172,7 @@
       "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
       "sourceType": "provided",
       "sourceFolder": "Гостевые столы — новые композиции/final/lighting",
-      "sourceFile": "persephone-lovegood-real-proportions.png",
+      "sourceFile": "persephone-lovegood-upright-candles.png",
       "componentLabel": "Состав одной композиции",
       "components": [
         "Канделябр «Персефона 30» — 1 шт.",
@@ -3180,13 +3180,13 @@
         "Канделябр: высота — 27 см; диаметр — 27 см.",
         "Каждая свеча по каталогу: высота — 28 см; диаметр — 2 см."
       ],
-      "image": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+      "image": "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg",
       "photos": [
         {
-          "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+          "src": "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg",
           "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
           "label": "Основное фото",
-          "sourceFile": "persephone-lovegood-real-proportions.png"
+          "sourceFile": "persephone-lovegood-upright-candles.png"
         }
       ]
     },
@@ -10518,17 +10518,17 @@
         }
       ]
     },
-    "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg": {
+    "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg": {
       "width": 1086,
       "height": 1448,
       "variants": [
         {
-          "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-360-e3bea88d10.webp",
+          "src": "assets/preview-table-persephone-lovegood-upright-candles-7a714bf30554-360-40626780a6.webp",
           "width": 360,
           "height": 480
         },
         {
-          "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-640-95a331cbc6.webp",
+          "src": "assets/preview-table-persephone-lovegood-upright-candles-7a714bf30554-640-bc9eda37fc.webp",
           "width": 640,
           "height": 853
         }

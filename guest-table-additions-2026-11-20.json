@@ -70,7 +70,7 @@
       "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
       "sourceType": "provided",
       "sourceFolder": "Гостевые столы — новые композиции/final/lighting",
-      "sourceFile": "persephone-lovegood-real-proportions.png",
+      "sourceFile": "persephone-lovegood-upright-candles.png",
       "componentLabel": "Состав одной композиции",
       "components": [
         "Канделябр «Персефона 30» — 1 шт.",
@@ -78,13 +78,13 @@
         "Канделябр: высота — 27 см; диаметр — 27 см.",
         "Каждая свеча по каталогу: высота — 28 см; диаметр — 2 см."
       ],
-      "image": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+      "image": "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg",
       "photos": [
         {
-          "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
+          "src": "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg",
           "alt": "Канделябр «Персефона 30» с пятью светодиодными свечами «Лавгуд»",
           "label": "Основное фото",
-          "sourceFile": "persephone-lovegood-real-proportions.png"
+          "sourceFile": "persephone-lovegood-upright-candles.png"
         }
       ]
     },
@@ -304,23 +304,23 @@
   ],
   "assets": [
     {
-      "src": "assets/table-persephone-lovegood-real-proportions-4b560b341a6b.jpg",
-      "bytes": 126774,
-      "sha256": "9d8927c44cd18c46c583874dd45e32847ce77075458605efa47b82a07ca15a98",
+      "src": "assets/table-persephone-lovegood-upright-candles-7a714bf30554.jpg",
+      "bytes": 108681,
+      "sha256": "0fb8e21a78a2c709c1c8e7aeb3c65c6b080895f387e9b87e977da98a006ff1d1",
       "width": 1086,
       "height": 1448
     },
     {
-      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-360-e3bea88d10.webp",
-      "bytes": 7192,
-      "sha256": "e3bea88d106bbf6a10691b78f1beec18923e39a11f607897afb0c4f191247c78",
+      "src": "assets/preview-table-persephone-lovegood-upright-candles-7a714bf30554-360-40626780a6.webp",
+      "bytes": 7142,
+      "sha256": "40626780a6f725d1b4ae7f0f06849931432e3b80c99022b354a52852d640ff71",
       "width": 360,
       "height": 480
     },
     {
-      "src": "assets/preview-table-persephone-lovegood-real-proportions-4b560b341a6b-640-95a331cbc6.webp",
-      "bytes": 17210,
-      "sha256": "95a331cbc603e7475a61764e8aa684a8e93fcc7bcd97582ec441bb1f1f5165ef",
+      "src": "assets/preview-table-persephone-lovegood-upright-candles-7a714bf30554-640-bc9eda37fc.webp",
+      "bytes": 17320,
+      "sha256": "bc9eda37fc0b4afec52c23669aaa3bf5e1000d8f5b43680c9037a07d3c770473",
       "width": 640,
       "height": 853
     },
